@@ -55,6 +55,9 @@
 		1D0FC7271B6B9F7600302C6E /* TorsoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FC7261B6B9F7600302C6E /* TorsoViewController.m */; };
 		1D0FC7291B6B9F8900302C6E /* NonTorsoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FC7281B6B9F8900302C6E /* NonTorsoViewController.m */; };
 		1D0FC72E1B6BA20F00302C6E /* Tamponade.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FC72D1B6BA20F00302C6E /* Tamponade.m */; };
+		1DAB4B6F1B6DCBC1008F186F /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1DAB4B6D1B6DCBC1008F186F /* beep.wav */; };
+		1DAB4B701B6DCBC1008F186F /* Voicemail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1DAB4B6E1B6DCBC1008F186F /* Voicemail.wav */; };
+		1DAB4B721B6DCC9F008F186F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DAB4B711B6DCC9F008F186F /* AVFoundation.framework */; };
 		1DD19DF31B61794B001EA1FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DD19DF21B61794B001EA1FC /* Images.xcassets */; };
 		1DD19E021B61794C001EA1FC /* SurgeryProtocolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD19E011B61794C001EA1FC /* SurgeryProtocolsTests.m */; };
 		1DD19E2F1B617A9D001EA1FC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD19E231B617A9D001EA1FC /* LaunchScreen.xib */; };
@@ -143,6 +146,9 @@
 		1D0FC72A1B6B9F9400302C6E /* NonTorsoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NonTorsoViewController.h; sourceTree = "<group>"; };
 		1D0FC72C1B6BA20500302C6E /* Tamponade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tamponade.h; sourceTree = "<group>"; };
 		1D0FC72D1B6BA20F00302C6E /* Tamponade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tamponade.m; sourceTree = "<group>"; };
+		1DAB4B6D1B6DCBC1008F186F /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		1DAB4B6E1B6DCBC1008F186F /* Voicemail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Voicemail.wav; sourceTree = "<group>"; };
+		1DAB4B711B6DCC9F008F186F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1DD19DDF1B61794B001EA1FC /* SurgeryProtocols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurgeryProtocols.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD19DF21B61794B001EA1FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1DD19DFB1B61794B001EA1FC /* SurgeryProtocolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurgeryProtocolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DAB4B721B6DCC9F008F186F /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,9 +254,19 @@
 			path = CPPickerView;
 			sourceTree = "<group>";
 		};
+		1DAB4B6C1B6DCBC1008F186F /* MediaFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1DAB4B6D1B6DCBC1008F186F /* beep.wav */,
+				1DAB4B6E1B6DCBC1008F186F /* Voicemail.wav */,
+			);
+			path = MediaFiles;
+			sourceTree = "<group>";
+		};
 		1DD19DD61B61794B001EA1FC = {
 			isa = PBXGroup;
 			children = (
+				1DAB4B711B6DCC9F008F186F /* AVFoundation.framework */,
 				1DD19DE11B61794B001EA1FC /* SurgeryProtocols */,
 				1DD19DFE1B61794B001EA1FC /* SurgeryProtocolsTests */,
 				1DD19DE01B61794B001EA1FC /* Products */,
@@ -359,6 +376,7 @@
 		1DD19E391B618D6E001EA1FC /* ExternalResources */ = {
 			isa = PBXGroup;
 			children = (
+				1DAB4B6C1B6DCBC1008F186F /* MediaFiles */,
 				1D0FC71E1B6B935E00302C6E /* CPPickerView */,
 				1D0FC70E1B6B0CB000302C6E /* AFPickerView */,
 				1DD19E3A1B618D6E001EA1FC /* Classes */,
@@ -474,6 +492,7 @@
 				1D0FC6F71B6B059900302C6E /* UCH_13_Shandra_Wilson_185.Jpeg in Resources */,
 				1DD19E371B617AFF001EA1FC /* Info.plist in Resources */,
 				1D0FC7001B6B059900302C6E /* UCH_4_Nydam_243.Jpeg in Resources */,
+				1DAB4B6F1B6DCBC1008F186F /* beep.wav in Resources */,
 				1D0FC6FB1B6B059900302C6E /* UCH_14_Maria_Cruz_116.Jpeg in Resources */,
 				1D0FC71A1B6B0CB000302C6E /* pickerGlass.png in Resources */,
 				1D0FC71D1B6B0CB000302C6E /* pickerShadows@2x.png in Resources */,
@@ -495,6 +514,7 @@
 				1D0FC6FE1B6B059900302C6E /* UCH_4_Nydam_173.Jpeg in Resources */,
 				1D0FC6F21B6B059900302C6E /* 06-magnify.png in Resources */,
 				1D0FC70A1B6B059900302C6E /* UCH_9_Meguid_127.Jpeg in Resources */,
+				1DAB4B701B6DCBC1008F186F /* Voicemail.wav in Resources */,
 				1D0FC7071B6B059900302C6E /* UCH_7_Fullerton_143.Jpeg in Resources */,
 				1D0FC6FF1B6B059900302C6E /* UCH_4_Nydam_207.Jpeg in Resources */,
 				1D0FC7031B6B059900302C6E /* UCH_5_Schulick_187.Jpeg in Resources */,
