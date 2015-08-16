@@ -1,31 +1,30 @@
 //
-//  Tamponade.m
-//  Surge/Users/aartimunjal/Dropbox/sheanamhealthlab/TraumaProtocols/BLUNT CEREBROVASCULAR INJURIES .png
+//  SuspiciousActivity.m
+//  SurgeryProtocols
 //
-//  Created by Aarti Munjal on 7/31/15.
+//  Created by Aarti Munjal on 8/13/15.
 //  Copyright (c) 2015 University of Colorado Denver. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "Tamponade.h"
+#import "SuspiciousActivity.h"
 
-@implementation Tamponade
-
+@implementation SuspiciousActivity
 
 -(void)viewDidLoad
 {
-    self.torsoArray = [[NSArray alloc] initWithObjects:@"Yes", @"No", nil];
+    self.suspiciousActivityArray = [[NSArray alloc] initWithObjects:@"Yes", @"No", nil];
     
-    self.torsoView.delegate = self;
-    self.torsoView.dataSource = self;
+    self.suspiciousActivityView.delegate = self;
+    self.suspiciousActivityView.dataSource = self;
     
-    [self.torsoView selectRow:0 inComponent:0 animated:NO];
+    [self.suspiciousActivityView selectRow:0 inComponent:0 animated:NO];
     
-    [self.nextButton setStyle:HTPressableButtonStyleRounded];
+    self.nextButton.cornerRadius = 10.0;
+    self.nextButton.shadowHeight = self.nextButton.frame.size.height * 0.17;
     self.nextButton.buttonColor = [UIColor ht_bitterSweetColor];
     self.nextButton.shadowColor = [UIColor ht_bitterSweetDarkColor];
     [self.nextButton setStyle:HTPressableButtonStyleRounded];
-    [self.nextButton setShadowHeight:0.8];
     [self.nextButton setTitle:@"Next" forState:UIControlStateNormal];
     
 }
@@ -37,19 +36,19 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return [self.torsoArray count];
+    return [self.suspiciousActivityArray count];
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return [self.torsoArray objectAtIndex:row];
+    return [self.suspiciousActivityArray objectAtIndex:row];
 }
 
 - (IBAction)nextButtonPressed:(id)sender {
     
-    NSString *choice = [self.torsoArray objectAtIndex:[self.torsoView selectedRowInComponent:0]];
+    NSString *choice = [self.suspiciousActivityArray objectAtIndex:[self.suspiciousActivityView selectedRowInComponent:0]];
     if ([choice isEqualToString:@"Yes"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"sbpController"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"zone1"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -59,7 +58,7 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"deadEnd"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"nonTorsoView"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
