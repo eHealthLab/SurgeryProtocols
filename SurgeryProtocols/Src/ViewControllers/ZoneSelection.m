@@ -13,11 +13,7 @@
 
 -(void)viewDidLoad
 {
-<<<<<<< HEAD
     self.zoneSelectionArray = [[NSArray alloc] initWithObjects:@"Zone I", @"Zone II", @"Zone III", nil];
-=======
-    self.zoneSelectionArray = [[NSArray alloc] initWithObjects:@"Zone I", @"Zone II", @"Zone III", @"No", nil];
->>>>>>> 586d1d3de076c7b61a5a35744850b17841cd466f
     
     self.zoneSelectionView.delegate = self;
     self.zoneSelectionView.dataSource = self;
@@ -51,11 +47,7 @@
 - (IBAction)nextButtonPressed:(id)sender {
     
     NSString *choice = [self.zoneSelectionArray objectAtIndex:[self.zoneSelectionView selectedRowInComponent:0]];
-<<<<<<< HEAD
     if ([choice isEqualToString:@"Zone I"]) {
-=======
-    if ([choice isEqualToString:@"Yes"]) {
->>>>>>> 586d1d3de076c7b61a5a35744850b17841cd466f
         UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"zone1"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
@@ -65,7 +57,6 @@
         
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
-<<<<<<< HEAD
     else if ([choice isEqualToString:@"Zone II"]) {
         UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"zone2"];
         
@@ -78,10 +69,6 @@
     }
     else {
         UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"zone3"];
-=======
-    else {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"nonTorsoView"];
->>>>>>> 586d1d3de076c7b61a5a35744850b17841cd466f
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
