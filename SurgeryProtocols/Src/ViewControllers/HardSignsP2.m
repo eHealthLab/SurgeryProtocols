@@ -48,7 +48,11 @@
     
     NSString *choice = [self.hardSignsArray objectAtIndex:[self.hardSignsView selectedRowInComponent:0]];
     if ([choice isEqualToString:@"Yes"]) {
+<<<<<<< HEAD
         UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"hardSignYes"];
+=======
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"hardSignsYes"];
+>>>>>>> 586d1d3de076c7b61a5a35744850b17841cd466f
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";

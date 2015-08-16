@@ -48,7 +48,11 @@
     
     NSString *choice = [self.suspiciousActivityArray objectAtIndex:[self.suspiciousActivityView selectedRowInComponent:0]];
     if ([choice isEqualToString:@"Yes"]) {
+<<<<<<< HEAD
         UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"zoneSelection"];
+=======
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"zone1"];
+>>>>>>> 586d1d3de076c7b61a5a35744850b17841cd466f
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -58,7 +62,11 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else {
+<<<<<<< HEAD
         UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"noSuspiciousActivity"];
+=======
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"nonTorsoView"];
+>>>>>>> 586d1d3de076c7b61a5a35744850b17841cd466f
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
