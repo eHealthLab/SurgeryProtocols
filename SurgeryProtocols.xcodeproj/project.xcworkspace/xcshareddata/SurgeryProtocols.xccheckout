@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>63F5C1CA-574D-4D3A-AB36-2EDA4C342F64</string>
 	<key>IDESourceControlProjectName</key>
-	<string>SurgeryProtocols</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>3037943851769579C155121FBAFD3121A14B5FA3</key>
 		<string>https://github.com/eHealthLab/SurgeryProtocols.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SurgeryProtocols.xcodeproj</string>
+	<string>SurgeryProtocols.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3037943851769579C155121FBAFD3121A14B5FA3</key>

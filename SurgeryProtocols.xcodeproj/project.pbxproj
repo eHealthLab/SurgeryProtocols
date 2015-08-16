@@ -71,6 +71,16 @@
 		1DD19E441B618D6E001EA1FC /* HTPressableButtonPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD19E3E1B618D6E001EA1FC /* HTPressableButtonPrefs.m */; };
 		1DD19E451B618D6E001EA1FC /* UIColor+HTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD19E401B618D6E001EA1FC /* UIColor+HTColor.m */; };
 		1DD19E461B618D6E001EA1FC /* UIImage+HTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD19E421B618D6E001EA1FC /* UIImage+HTButton.m */; };
+		1DE817AA1B80F00400789790 /* BLUNT CEREBROVASCULAR INJURIES .png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE817A71B80F00400789790 /* BLUNT CEREBROVASCULAR INJURIES .png */; };
+		1DE817AB1B80F00400789790 /* PenetratingNeckInjuries.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE817A81B80F00400789790 /* PenetratingNeckInjuries.png */; };
+		1DE817AC1B80F00400789790 /* ResuscitativeThoracotomy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE817A91B80F00400789790 /* ResuscitativeThoracotomy.png */; };
+		1DE817AF1B80F05200789790 /* ProtocolType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE817AE1B80F05200789790 /* ProtocolType.m */; };
+		1DE817B21B8101EC00789790 /* HardSignsP2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE817B11B8101EC00789790 /* HardSignsP2.m */; };
+		1DE817B51B81031000789790 /* SuspiciousActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE817B41B81031000789790 /* SuspiciousActivity.m */; };
+		1DE817B81B810A8E00789790 /* ZoneSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE817B71B810A8E00789790 /* ZoneSelection.m */; };
+		1DE817BA1B810C9500789790 /* Zone1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE817B91B810C9500789790 /* Zone1.m */; };
+		1DE817BE1B810CC600789790 /* Zone2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE817BD1B810CC600789790 /* Zone2.m */; };
+		1DE817C01B810CCF00789790 /* Zone3.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE817BF1B810CCF00789790 /* Zone3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +182,23 @@
 		1DD19E401B618D6E001EA1FC /* UIColor+HTColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HTColor.m"; sourceTree = "<group>"; };
 		1DD19E411B618D6E001EA1FC /* UIImage+HTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HTButton.h"; sourceTree = "<group>"; };
 		1DD19E421B618D6E001EA1FC /* UIImage+HTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HTButton.m"; sourceTree = "<group>"; };
+		1DE817A71B80F00400789790 /* BLUNT CEREBROVASCULAR INJURIES .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BLUNT CEREBROVASCULAR INJURIES .png"; sourceTree = "<group>"; };
+		1DE817A81B80F00400789790 /* PenetratingNeckInjuries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PenetratingNeckInjuries.png; sourceTree = "<group>"; };
+		1DE817A91B80F00400789790 /* ResuscitativeThoracotomy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ResuscitativeThoracotomy.png; sourceTree = "<group>"; };
+		1DE817AD1B80F05200789790 /* ProtocolType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolType.h; sourceTree = "<group>"; };
+		1DE817AE1B80F05200789790 /* ProtocolType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolType.m; sourceTree = "<group>"; };
+		1DE817B01B8101EC00789790 /* HardSignsP2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HardSignsP2.h; sourceTree = "<group>"; };
+		1DE817B11B8101EC00789790 /* HardSignsP2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HardSignsP2.m; sourceTree = "<group>"; };
+		1DE817B31B81031000789790 /* SuspiciousActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspiciousActivity.h; sourceTree = "<group>"; };
+		1DE817B41B81031000789790 /* SuspiciousActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspiciousActivity.m; sourceTree = "<group>"; };
+		1DE817B61B810A8E00789790 /* ZoneSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoneSelection.h; sourceTree = "<group>"; };
+		1DE817B71B810A8E00789790 /* ZoneSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoneSelection.m; sourceTree = "<group>"; };
+		1DE817B91B810C9500789790 /* Zone1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zone1.m; sourceTree = "<group>"; };
+		1DE817BB1B810C9F00789790 /* Zone1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Zone1.h; sourceTree = "<group>"; };
+		1DE817BC1B810CBA00789790 /* Zone2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Zone2.h; sourceTree = "<group>"; };
+		1DE817BD1B810CC600789790 /* Zone2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zone2.m; sourceTree = "<group>"; };
+		1DE817BF1B810CCF00789790 /* Zone3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zone3.m; sourceTree = "<group>"; };
+		1DE817C11B810CD800789790 /* Zone3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Zone3.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +229,9 @@
 				1D0FC6D91B6B059900302C6E /* UCH_12_Jeniann_Yi_326.Jpeg */,
 				1D0FC6DA1B6B059900302C6E /* UCH_13_Shandra_Wilson_106.Jpeg */,
 				1D0FC6DB1B6B059900302C6E /* UCH_13_Shandra_Wilson_185.Jpeg */,
+				1DE817A71B80F00400789790 /* BLUNT CEREBROVASCULAR INJURIES .png */,
+				1DE817A81B80F00400789790 /* PenetratingNeckInjuries.png */,
+				1DE817A91B80F00400789790 /* ResuscitativeThoracotomy.png */,
 				1D0FC6DC1B6B059900302C6E /* UCH_13_Shandra_Wilson_386.Jpeg */,
 				1D0FC6DD1B6B059900302C6E /* UCH_13_Shandra_Wilson_468.Jpeg */,
 				1D0FC6DE1B6B059900302C6E /* UCH_13_Shandra_Wilson_519.Jpeg */,
@@ -337,6 +367,14 @@
 				1DD19E2B1B617A9D001EA1FC /* FirstViewController.h */,
 				1DD19E2C1B617A9D001EA1FC /* FirstViewController.m */,
 				1DD19E2D1B617A9D001EA1FC /* SecondViewController.h */,
+				1DE817AD1B80F05200789790 /* ProtocolType.h */,
+				1DE817B01B8101EC00789790 /* HardSignsP2.h */,
+				1DE817B11B8101EC00789790 /* HardSignsP2.m */,
+				1DE817B61B810A8E00789790 /* ZoneSelection.h */,
+				1DE817B71B810A8E00789790 /* ZoneSelection.m */,
+				1DE817B31B81031000789790 /* SuspiciousActivity.h */,
+				1DE817B41B81031000789790 /* SuspiciousActivity.m */,
+				1DE817AE1B80F05200789790 /* ProtocolType.m */,
 				1DD19E2E1B617A9D001EA1FC /* SecondViewController.m */,
 				1D0FC6B91B694A8700302C6E /* TraumaTypeViewController.h */,
 				1D0FC6BA1B694A9500302C6E /* TraumaTypeViewController.m */,
@@ -360,6 +398,12 @@
 				1D0FC72A1B6B9F9400302C6E /* NonTorsoViewController.h */,
 				1D0FC72C1B6BA20500302C6E /* Tamponade.h */,
 				1D0FC72D1B6BA20F00302C6E /* Tamponade.m */,
+				1DE817B91B810C9500789790 /* Zone1.m */,
+				1DE817BB1B810C9F00789790 /* Zone1.h */,
+				1DE817BC1B810CBA00789790 /* Zone2.h */,
+				1DE817BD1B810CC600789790 /* Zone2.m */,
+				1DE817BF1B810CCF00789790 /* Zone3.m */,
+				1DE817C11B810CD800789790 /* Zone3.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -484,9 +528,11 @@
 				1D0FC7051B6B059900302C6E /* UCH_6_Alessandro_Paniccia_174.Jpeg in Resources */,
 				1D0FC6FA1B6B059900302C6E /* UCH_13_Shandra_Wilson_519.Jpeg in Resources */,
 				1D0FC71C1B6B0CB000302C6E /* pickerShadows.png in Resources */,
+				1DE817AC1B80F00400789790 /* ResuscitativeThoracotomy.png in Resources */,
 				1D0FC71B1B6B0CB000302C6E /* pickerGlass@2x.png in Resources */,
 				1D0FC6F31B6B059900302C6E /* 111-user.png in Resources */,
 				1D0FC6F91B6B059900302C6E /* UCH_13_Shandra_Wilson_468.Jpeg in Resources */,
+				1DE817AA1B80F00400789790 /* BLUNT CEREBROVASCULAR INJURIES .png in Resources */,
 				1D0FC6FD1B6B059900302C6E /* UCH_3_Kweku_Hazel_218.Jpeg in Resources */,
 				1D0FC7191B6B0CB000302C6E /* pickerBackground@2x.png in Resources */,
 				1D0FC6F71B6B059900302C6E /* UCH_13_Shandra_Wilson_185.Jpeg in Resources */,
@@ -504,6 +550,7 @@
 				1D0FC6FC1B6B059900302C6E /* UCH_14_Maria_Cruz_200.Jpeg in Resources */,
 				1DD19E2F1B617A9D001EA1FC /* LaunchScreen.xib in Resources */,
 				1D0FC7081B6B059900302C6E /* UCH_8_Mathes_111.Jpeg in Resources */,
+				1DE817AB1B80F00400789790 /* PenetratingNeckInjuries.png in Resources */,
 				1D0FC7011B6B059900302C6E /* UCH_4_Nydam_257.Jpeg in Resources */,
 				1D0FC7041B6B059900302C6E /* UCH_5_Schulick_240.Jpeg in Resources */,
 				1D0FC7021B6B059900302C6E /* UCH_4_Nydam_298.Jpeg in Resources */,
@@ -537,7 +584,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE817AF1B80F05200789790 /* ProtocolType.m in Sources */,
 				1DD19E331B617A9D001EA1FC /* SecondViewController.m in Sources */,
+				1DE817B81B810A8E00789790 /* ZoneSelection.m in Sources */,
 				1D0FC6C71B6AD34600302C6E /* EDTCardiacRhythm.m in Sources */,
 				1D0FC6C51B69C87C00302C6E /* deadEnd.m in Sources */,
 				1D0FC6CB1B6AD9C200302C6E /* CardiacRhythmType.m in Sources */,
@@ -549,15 +598,20 @@
 				1D0FC7231B6B935E00302C6E /* CPPickerView.m in Sources */,
 				1D0FC7291B6B9F8900302C6E /* NonTorsoViewController.m in Sources */,
 				1D0FC6D11B6AF49E00302C6E /* OrEndController.m in Sources */,
+				1DE817B21B8101EC00789790 /* HardSignsP2.m in Sources */,
 				1DD19E381B617AFF001EA1FC /* main.m in Sources */,
+				1DE817BE1B810CC600789790 /* Zone2.m in Sources */,
+				1DE817B51B81031000789790 /* SuspiciousActivity.m in Sources */,
 				1D0FC6BB1B694A9500302C6E /* TraumaTypeViewController.m in Sources */,
 				1D0FC6C11B69982500302C6E /* LocationViewController.m in Sources */,
 				1DD19E431B618D6E001EA1FC /* HTPressableButton.m in Sources */,
 				1DD19E451B618D6E001EA1FC /* UIColor+HTColor.m in Sources */,
+				1DE817BA1B810C9500789790 /* Zone1.m in Sources */,
 				1D0FC72E1B6BA20F00302C6E /* Tamponade.m in Sources */,
 				1D0FC7241B6B935E00302C6E /* CPPickerViewCell.m in Sources */,
 				1D0FC6CD1B6AEA1400302C6E /* SBPContorller.m in Sources */,
 				1D0FC7271B6B9F7600302C6E /* TorsoViewController.m in Sources */,
+				1DE817C01B810CCF00789790 /* Zone3.m in Sources */,
 				1DD19E321B617A9D001EA1FC /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
