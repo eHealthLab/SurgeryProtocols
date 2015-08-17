@@ -55,6 +55,9 @@
 		1D0FC7271B6B9F7600302C6E /* TorsoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FC7261B6B9F7600302C6E /* TorsoViewController.m */; };
 		1D0FC7291B6B9F8900302C6E /* NonTorsoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FC7281B6B9F8900302C6E /* NonTorsoViewController.m */; };
 		1D0FC72E1B6BA20F00302C6E /* Tamponade.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FC72D1B6BA20F00302C6E /* Tamponade.m */; };
+		1D725B681B8153CC0006521E /* ResuscitativeThoracotomyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B671B8153CC0006521E /* ResuscitativeThoracotomyImage.m */; };
+		1D725B6A1B81550E0006521E /* PenetratingNeckInjuriesImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B691B81550E0006521E /* PenetratingNeckInjuriesImage.m */; };
+		1D725B6E1B8158940006521E /* TEInjury.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B6D1B8158940006521E /* TEInjury.m */; };
 		1DAB4B6F1B6DCBC1008F186F /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1DAB4B6D1B6DCBC1008F186F /* beep.wav */; };
 		1DAB4B701B6DCBC1008F186F /* Voicemail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1DAB4B6E1B6DCBC1008F186F /* Voicemail.wav */; };
 		1DAB4B721B6DCC9F008F186F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DAB4B711B6DCC9F008F186F /* AVFoundation.framework */; };
@@ -156,6 +159,12 @@
 		1D0FC72A1B6B9F9400302C6E /* NonTorsoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NonTorsoViewController.h; sourceTree = "<group>"; };
 		1D0FC72C1B6BA20500302C6E /* Tamponade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tamponade.h; sourceTree = "<group>"; };
 		1D0FC72D1B6BA20F00302C6E /* Tamponade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tamponade.m; sourceTree = "<group>"; };
+		1D725B661B8153B00006521E /* ResuscitativeThoracotomyImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResuscitativeThoracotomyImage.h; sourceTree = "<group>"; };
+		1D725B671B8153CC0006521E /* ResuscitativeThoracotomyImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResuscitativeThoracotomyImage.m; sourceTree = "<group>"; };
+		1D725B691B81550E0006521E /* PenetratingNeckInjuriesImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PenetratingNeckInjuriesImage.m; sourceTree = "<group>"; };
+		1D725B6B1B81551E0006521E /* PenetratingNeckInjuriesImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PenetratingNeckInjuriesImage.h; sourceTree = "<group>"; };
+		1D725B6C1B8158880006521E /* TEInjury.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TEInjury.h; sourceTree = "<group>"; };
+		1D725B6D1B8158940006521E /* TEInjury.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEInjury.m; sourceTree = "<group>"; };
 		1DAB4B6D1B6DCBC1008F186F /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
 		1DAB4B6E1B6DCBC1008F186F /* Voicemail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Voicemail.wav; sourceTree = "<group>"; };
 		1DAB4B711B6DCC9F008F186F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -404,6 +413,12 @@
 				1DE817BD1B810CC600789790 /* Zone2.m */,
 				1DE817BF1B810CCF00789790 /* Zone3.m */,
 				1DE817C11B810CD800789790 /* Zone3.h */,
+				1D725B661B8153B00006521E /* ResuscitativeThoracotomyImage.h */,
+				1D725B671B8153CC0006521E /* ResuscitativeThoracotomyImage.m */,
+				1D725B691B81550E0006521E /* PenetratingNeckInjuriesImage.m */,
+				1D725B6B1B81551E0006521E /* PenetratingNeckInjuriesImage.h */,
+				1D725B6C1B8158880006521E /* TEInjury.h */,
+				1D725B6D1B8158940006521E /* TEInjury.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -589,6 +604,7 @@
 				1DE817B81B810A8E00789790 /* ZoneSelection.m in Sources */,
 				1D0FC6C71B6AD34600302C6E /* EDTCardiacRhythm.m in Sources */,
 				1D0FC6C51B69C87C00302C6E /* deadEnd.m in Sources */,
+				1D725B681B8153CC0006521E /* ResuscitativeThoracotomyImage.m in Sources */,
 				1D0FC6CB1B6AD9C200302C6E /* CardiacRhythmType.m in Sources */,
 				1D0FC7171B6B0CB000302C6E /* AFPickerView.m in Sources */,
 				1DD19E461B618D6E001EA1FC /* UIImage+HTButton.m in Sources */,
@@ -613,6 +629,8 @@
 				1D0FC7271B6B9F7600302C6E /* TorsoViewController.m in Sources */,
 				1DE817C01B810CCF00789790 /* Zone3.m in Sources */,
 				1DD19E321B617A9D001EA1FC /* FirstViewController.m in Sources */,
+				1D725B6A1B81550E0006521E /* PenetratingNeckInjuriesImage.m in Sources */,
+				1D725B6E1B8158940006521E /* TEInjury.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

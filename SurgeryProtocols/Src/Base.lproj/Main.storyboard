@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3Tp-wp-Xbc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3Tp-wp-Xbc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -88,7 +88,7 @@ protocol</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="IFP-J7-NkW" firstAttribute="centerX" secondItem="vnw-Oz-Qgt" secondAttribute="centerX" id="9um-xD-K5T"/>
                             <constraint firstAttribute="centerX" secondItem="vnw-Oz-Qgt" secondAttribute="centerX" constant="25" id="KZS-lC-KPp"/>
@@ -105,10 +105,10 @@ protocol</string>
             </objects>
             <point key="canvasLocation" x="340" y="-1291"/>
         </scene>
-        <!--View Controller-->
+        <!--Resuscitative Thoracotomy Image-->
         <scene sceneID="kgb-kA-AOx">
             <objects>
-                <viewController storyboardIdentifier="imageresuscitative" id="wio-EI-9LU" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="imageresuscitative" id="wio-EI-9LU" customClass="ResuscitativeThoracotomyImage" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IS5-he-gmQ"/>
                         <viewControllerLayoutGuide type="bottom" id="7nz-IV-w7O"/>
@@ -147,15 +147,18 @@ protocol</string>
                             <constraint firstItem="OZk-FH-gHv" firstAttribute="trailing" secondItem="UB4-si-jUH" secondAttribute="trailing" constant="36" id="wov-gb-pwz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="UB4-si-jUH" id="F1a-JY-bAq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9y-Gs-Tbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="-1291"/>
+            <point key="canvasLocation" x="1055" y="-1309"/>
         </scene>
-        <!--View Controller-->
+        <!--Penetrating Neck Injuries Image-->
         <scene sceneID="oSg-ZU-DFk">
             <objects>
-                <viewController storyboardIdentifier="imagePENETRATINGNECKINJURIES" id="a2U-EW-49T" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="imagePENETRATINGNECKINJURIES" id="a2U-EW-49T" customClass="PenetratingNeckInjuriesImage" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AOe-RN-Awf"/>
                         <viewControllerLayoutGuide type="bottom" id="ik7-tn-tqc"/>
@@ -164,17 +167,19 @@ protocol</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PenetratingNeckInjuries.png" translatesAutoresizingMaskIntoConstraints="NO" id="7c4-gX-DwT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PenetratingNeckInjuries.png" translatesAutoresizingMaskIntoConstraints="NO" id="7c4-gX-DwT">
                                 <rect key="frame" x="0.0" y="53" width="600" height="478"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="478" id="6gQ-FG-yfp"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mma-yi-YQF" customClass="HTPressableButton">
-                                <rect key="frame" x="447" y="539" width="120" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mma-yi-YQF" customClass="HTPressableButton">
+                                <rect key="frame" x="447" y="545" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="BsW-Zy-yhb"/>
+                                    <constraint firstAttribute="height" constant="40" id="Oiu-Dy-Kge"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="QlD-BP-0jz"/>
@@ -192,6 +197,9 @@ protocol</string>
                             <constraint firstItem="mma-yi-YQF" firstAttribute="top" secondItem="7c4-gX-DwT" secondAttribute="bottom" constant="8" id="zZ6-ZP-f2M"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="mma-yi-YQF" id="AGg-cb-iqS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pd-Ha-clX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -336,23 +344,23 @@ for Air leak/Hematoma</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conduct a CTA evaluation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kba-j6-KCp">
-                                <rect key="frame" x="168" y="128" width="200" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conduct a CTA evaluation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kba-j6-KCp">
+                                <rect key="frame" x="200" y="128" width="199.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is the evaluation positive or negative?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWa-tu-URM">
-                                <rect key="frame" x="130" y="218" width="289" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is the evaluation positive or negative?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWa-tu-URM">
+                                <rect key="frame" x="130" y="218" width="289" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2k-Dp-iE0">
-                                <rect key="frame" x="-9" y="277" width="600" height="162"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2k-Dp-iE0">
+                                <rect key="frame" x="131" y="276.5" width="320" height="162"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3q-Qo-V17" customClass="HTPressableButton">
-                                <rect key="frame" x="319" y="440" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3q-Qo-V17" customClass="HTPressableButton">
+                                <rect key="frame" x="231" y="464" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="7uQ-7y-rlX"/>
                                     <constraint firstAttribute="width" constant="120" id="Lvu-Oq-iya"/>
@@ -370,6 +378,16 @@ for Air leak/Hematoma</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kba-j6-KCp" firstAttribute="top" secondItem="bkg-9i-siY" secondAttribute="bottom" constant="108" id="0We-6X-wf7"/>
+                            <constraint firstItem="RWa-tu-URM" firstAttribute="top" secondItem="kba-j6-KCp" secondAttribute="bottom" constant="69.5" id="IP1-Aq-9ri"/>
+                            <constraint firstItem="kba-j6-KCp" firstAttribute="centerX" secondItem="RWa-tu-URM" secondAttribute="centerX" constant="25.75" id="hm5-AL-EML"/>
+                            <constraint firstItem="W2k-Dp-iE0" firstAttribute="centerX" secondItem="RWa-tu-URM" secondAttribute="centerX" constant="16.5" id="iNQ-m7-oVN"/>
+                            <constraint firstItem="W2k-Dp-iE0" firstAttribute="top" secondItem="RWa-tu-URM" secondAttribute="bottom" constant="38" id="l1Q-2g-9ie"/>
+                            <constraint firstAttribute="centerX" secondItem="kba-j6-KCp" secondAttribute="centerX" id="l9p-dg-K5F"/>
+                            <constraint firstItem="X3q-Qo-V17" firstAttribute="top" secondItem="W2k-Dp-iE0" secondAttribute="bottom" constant="25.5" id="uue-Va-9Gl"/>
+                            <constraint firstItem="W2k-Dp-iE0" firstAttribute="centerX" secondItem="X3q-Qo-V17" secondAttribute="centerX" id="yaY-Sc-jFe"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="nextButton" destination="X3q-Qo-V17" id="tIx-6r-giA"/>
@@ -449,19 +467,19 @@ for Air leak/Hematoma</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one of the following" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mam-Sq-HwP">
-                                <rect key="frame" x="225" y="137" width="215" height="21"/>
+                                <rect key="frame" x="192.5" y="137" width="215" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sma-qZ-1dz">
-                                <rect key="frame" x="172" y="230" width="320" height="162"/>
+                                <rect key="frame" x="129" y="233" width="320" height="162"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCQ-7J-GG8" customClass="HTPressableButton">
-                                <rect key="frame" x="266" y="445" width="120" height="40"/>
+                                <rect key="frame" x="212" y="445" width="120" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="Yv5-3f-MFV"/>
-                                    <constraint firstAttribute="height" constant="40" id="rj7-jt-H3P"/>
+                                    <constraint firstAttribute="width" constant="120" id="lj2-HA-02C"/>
+                                    <constraint firstAttribute="height" constant="40" id="n50-yK-7zZ"/>
                                 </constraints>
                                 <state key="normal" title="Next">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -476,12 +494,12 @@ for Air leak/Hematoma</string>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="mam-Sq-HwP" secondAttribute="centerX" constant="-32.5" id="2J5-OE-MW7"/>
-                            <constraint firstItem="mam-Sq-HwP" firstAttribute="top" secondItem="dMG-Ha-pld" secondAttribute="bottom" constant="117" id="3QV-9V-7z2"/>
-                            <constraint firstItem="mam-Sq-HwP" firstAttribute="centerX" secondItem="sma-qZ-1dz" secondAttribute="centerX" constant="0.5" id="FOF-Jp-DtE"/>
-                            <constraint firstItem="NCQ-7J-GG8" firstAttribute="top" secondItem="sma-qZ-1dz" secondAttribute="bottom" constant="53" id="aGN-DE-K75"/>
-                            <constraint firstItem="NCQ-7J-GG8" firstAttribute="centerX" secondItem="sma-qZ-1dz" secondAttribute="centerX" constant="-6" id="qoF-yj-olc"/>
-                            <constraint firstItem="sma-qZ-1dz" firstAttribute="top" secondItem="mam-Sq-HwP" secondAttribute="bottom" constant="72" id="yIN-dM-dNR"/>
+                            <constraint firstItem="NCQ-7J-GG8" firstAttribute="centerX" secondItem="sma-qZ-1dz" secondAttribute="centerX" constant="-17" id="Ala-86-biY"/>
+                            <constraint firstItem="sma-qZ-1dz" firstAttribute="top" secondItem="mam-Sq-HwP" secondAttribute="bottom" constant="75.5" id="EL1-WE-ftD"/>
+                            <constraint firstItem="mam-Sq-HwP" firstAttribute="top" secondItem="dMG-Ha-pld" secondAttribute="bottom" constant="117" id="YgQ-KK-0uc"/>
+                            <constraint firstItem="NCQ-7J-GG8" firstAttribute="top" secondItem="sma-qZ-1dz" secondAttribute="bottom" constant="50" id="n1E-CV-DWu"/>
+                            <constraint firstItem="mam-Sq-HwP" firstAttribute="centerX" secondItem="sma-qZ-1dz" secondAttribute="centerX" constant="11" id="t1F-xP-bpM"/>
+                            <constraint firstAttribute="centerX" secondItem="mam-Sq-HwP" secondAttribute="centerX" id="zDD-EB-gxl"/>
                         </constraints>
                     </view>
                     <connections>
@@ -523,10 +541,10 @@ for Air leak/Hematoma</string>
             </objects>
             <point key="canvasLocation" x="4750" y="1711"/>
         </scene>
-        <!--View Controller-->
+        <!--Injury-->
         <scene sceneID="Ar5-ac-T37">
             <objects>
-                <viewController storyboardIdentifier="CTANegative" id="XyH-ZS-qPc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CTANegative" id="XyH-ZS-qPc" customClass="TEInjury" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oAm-tf-PqJ"/>
                         <viewControllerLayoutGuide type="bottom" id="uCH-fx-yfo"/>
@@ -535,21 +553,48 @@ for Air leak/Hematoma</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suspicion for T/E injury?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9e-tf-mse">
-                                <rect key="frame" x="156" y="109" width="188" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suspicion for T/E injury?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9e-tf-mse">
+                                <rect key="frame" x="206" y="100" width="187.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swallow/EGD/Bronch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8z-KA-MYh">
-                                <rect key="frame" x="171" y="238" width="166" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AuT-JW-5Nl">
+                                <rect key="frame" x="126" y="181" width="320" height="162"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0u-o5-ACx" customClass="HTPressableButton">
+                                <rect key="frame" x="226" y="405" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Nb8-jW-srr"/>
+                                    <constraint firstAttribute="height" constant="40" id="dW2-u9-sy2"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="1dO-rk-r4m" eventType="touchUpInside" id="Gq9-Tr-2LA"/>
+                                    <action selector="nextButtonPressed:" destination="jRs-hL-uBg" eventType="touchUpInside" id="XJo-a8-Rq2"/>
+                                    <action selector="nextButtonPressed:" destination="XyH-ZS-qPc" eventType="touchUpInside" id="nPy-zO-Mfz"/>
+                                    <action selector="nextButtonPressed:" destination="BMH-gw-0Bg" eventType="touchUpInside" id="p5D-on-5Go"/>
+                                    <action selector="nextButtonPressed:" destination="DE0-ia-bTM" eventType="touchUpInside" id="t0E-Xm-4Hb"/>
+                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="utX-3a-Vz7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="a9e-tf-mse" secondAttribute="centerX" id="7W2-bT-SmA"/>
+                            <constraint firstItem="L0u-o5-ACx" firstAttribute="top" secondItem="AuT-JW-5Nl" secondAttribute="bottom" constant="62" id="HHe-BL-eNe"/>
+                            <constraint firstItem="a9e-tf-mse" firstAttribute="centerX" secondItem="AuT-JW-5Nl" secondAttribute="centerX" constant="14.25" id="NSO-l5-ppR"/>
+                            <constraint firstItem="AuT-JW-5Nl" firstAttribute="top" secondItem="a9e-tf-mse" secondAttribute="bottom" constant="60.5" id="Ycw-R7-svN"/>
+                            <constraint firstItem="a9e-tf-mse" firstAttribute="top" secondItem="oAm-tf-PqJ" secondAttribute="bottom" constant="80" id="ekz-j8-sJR"/>
+                            <constraint firstItem="L0u-o5-ACx" firstAttribute="centerX" secondItem="AuT-JW-5Nl" secondAttribute="centerX" id="oxR-yR-pkc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="L0u-o5-ACx" id="TOm-Ex-9kA"/>
+                        <outlet property="teInjuryView" destination="AuT-JW-5Nl" id="eco-tE-Lgn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EKp-sF-UWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -558,7 +603,7 @@ for Air leak/Hematoma</string>
         <!--View Controller-->
         <scene sceneID="yHy-k2-STO">
             <objects>
-                <viewController id="JJK-ek-W56" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="teInjuryPositive" id="JJK-ek-W56" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UeN-eg-XhW"/>
                         <viewControllerLayoutGuide type="bottom" id="oqN-SI-EJh"/>
@@ -574,12 +619,56 @@ for Air leak/Hematoma</string>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q8c-pK-OR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6021" y="1711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rLU-Aj-KwZ">
+            <objects>
+                <viewController storyboardIdentifier="teInjuryNegative" id="7Yi-c6-ne8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KEt-Kb-APH"/>
+                        <viewControllerLayoutGuide type="bottom" id="nSQ-9g-8NQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P9p-T3-yuF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conduct a CTA evaluation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffj-g5-ggl">
+                                <rect key="frame" x="200" y="290" width="199.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upp-EK-bWR">
+                                <rect key="frame" x="178.5" y="375" width="241" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="4h6-xm-igA"/>
+                                    <constraint firstAttribute="height" constant="59" id="H2f-fW-O5D"/>
+                                </constraints>
+                                <string key="text">If positive, then send to OR for 
++/-EGD Bronch</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="ffj-g5-ggl" secondAttribute="centerY" id="HWw-5O-eRY"/>
+                            <constraint firstItem="Upp-EK-bWR" firstAttribute="centerX" secondItem="ffj-g5-ggl" secondAttribute="centerX" constant="-0.75" id="e7R-T3-PZ7"/>
+                            <constraint firstItem="Upp-EK-bWR" firstAttribute="top" secondItem="ffj-g5-ggl" secondAttribute="bottom" constant="64.5" id="fq4-5f-ZJd"/>
+                            <constraint firstAttribute="centerX" secondItem="ffj-g5-ggl" secondAttribute="centerX" id="z0T-LJ-VyR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTT-VV-pMt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6021" y="2453"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="iuG-gc-vlW">

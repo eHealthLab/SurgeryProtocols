@@ -1,5 +1,5 @@
 //
-//  Zone1.m
+//  TEInjury.m
 //  SurgeryProtocols
 //
 //  Created by Aarti Munjal on 8/16/15.
@@ -7,25 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Zone1.h"
+#import "TEInjury.h"
 
-@implementation Zone1
+@implementation TEInjury
 
 
 -(void)viewDidLoad
 {
-    self.zone1Array = [[NSArray alloc] initWithObjects:@"Positive", @"Negative", nil];
+    self.teInjuryArray = [[NSArray alloc] initWithObjects:@"Positive", @"Negative", nil];
     
-    self.zone1View.delegate = self;
-    self.zone1View.dataSource = self;
+    self.teInjuryView.delegate = self;
+    self.teInjuryView.dataSource = self;
     
-    [self.zone1View selectRow:0 inComponent:0 animated:NO];
+    [self.teInjuryView selectRow:0 inComponent:0 animated:NO];
     
-    self.nextButton.cornerRadius = 10.0;
-    self.nextButton.shadowHeight = self.nextButton.frame.size.height * 0.17;
+    [self.nextButton setStyle:HTPressableButtonStyleRounded];
     self.nextButton.buttonColor = [UIColor ht_bitterSweetColor];
     self.nextButton.shadowColor = [UIColor ht_bitterSweetDarkColor];
     [self.nextButton setStyle:HTPressableButtonStyleRounded];
+    [self.nextButton setShadowHeight:0.8];
     [self.nextButton setTitle:@"Next" forState:UIControlStateNormal];
     
 }
@@ -37,19 +37,19 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return [self.zone1Array count];
+    return [self.teInjuryArray count];
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return [self.zone1Array objectAtIndex:row];
+    return [self.teInjuryArray objectAtIndex:row];
 }
 
 - (IBAction)nextButtonPressed:(id)sender {
     
-    NSString *choice = [self.zone1Array objectAtIndex:[self.zone1View selectedRowInComponent:0]];
+    NSString *choice = [self.teInjuryArray objectAtIndex:[self.teInjuryView selectedRowInComponent:0]];
     if ([choice isEqualToString:@"Positive"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CTAPositive"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"teInjuryPositive"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -59,7 +59,7 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CTANegative"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"teInjuryNegative"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
