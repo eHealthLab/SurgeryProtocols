@@ -48,8 +48,8 @@
 - (IBAction)nextButtonPressed:(id)sender {
     
     NSString *choice = [self.zone2Array objectAtIndex:[self.zone2View selectedRowInComponent:0]];
-    if ([choice isEqualToString:@"Yes"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"sbpController"];
+    if ([choice isEqualToString:@"Symptoms"]) {
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"zone2Symptoms"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -59,7 +59,7 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"deadEnd"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"teInjuryNegative"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
