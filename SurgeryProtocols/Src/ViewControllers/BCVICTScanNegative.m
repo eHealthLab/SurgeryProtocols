@@ -1,5 +1,5 @@
 //
-//  BCVICTScanPositive.m
+//  BCVICTScanNegative.m
 //  SurgeryProtocols
 //
 //  Created by Aarti Munjal on 8/25/15.
@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BCVICTScanPositive.h"
+#import "BCVICTScanNegative.h"
 
-@implementation BCVICTScanPositive
+@implementation BCVICTScanNegative
 
 -(void)viewDidLoad
 {
@@ -20,11 +20,11 @@
     
     [self.BCVIPicker selectRow:0 inComponent:0 animated:NO];
     
-    [self.nextButton setStyle:HTPressableButtonStyleRounded];
+    self.nextButton.cornerRadius = 10.0;
+    self.nextButton.shadowHeight = self.nextButton.frame.size.height * 0.17;
     self.nextButton.buttonColor = [UIColor ht_bitterSweetColor];
     self.nextButton.shadowColor = [UIColor ht_bitterSweetDarkColor];
-    [self.nextButton setStyle:HTPressableButtonStyleRounded];
-    [self.nextButton setShadowHeight:0.8];
+    
     [self.nextButton setTitle:@"Next" forState:UIControlStateNormal];
     
 }

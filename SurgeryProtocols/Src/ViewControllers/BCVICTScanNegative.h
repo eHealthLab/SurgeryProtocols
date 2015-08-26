@@ -1,5 +1,5 @@
 //
-//  BCVICTScanPositive.h
+//  BCVICTScanNegative.h
 //  SurgeryProtocols
 //
 //  Created by Aarti Munjal on 8/25/15.
@@ -14,7 +14,7 @@
 #import "HTPressableButton.h"
 #import "UIColor+HTColor.h"
 
-@interface BCVICTScanPositive: UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface BCVICTScanNegative: UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (strong, nonatomic) IBOutlet HTPressableButton *nextButton;
 

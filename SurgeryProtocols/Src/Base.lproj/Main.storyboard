@@ -288,7 +288,7 @@ and risk factors for BCVI</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="l5F-lb-wKd" secondAttribute="centerY" constant="-229" id="A5R-Hp-h5A"/>
                             <constraint firstAttribute="centerX" secondItem="qDA-f1-4Sl" secondAttribute="centerX" constant="7.5" id="MUd-bw-BXB"/>
@@ -338,7 +338,7 @@ and choose one</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Fvq-V5-xqt" firstAttribute="centerX" secondItem="ptm-cl-OjM" secondAttribute="centerX" constant="29.5" id="KNz-X3-2y4"/>
                             <constraint firstItem="vI3-2D-860" firstAttribute="trailing" secondItem="ptm-cl-OjM" secondAttribute="trailing" constant="-26" id="duJ-kc-hDA"/>
@@ -606,10 +606,10 @@ for Air leak/Hematoma</string>
             </objects>
             <point key="canvasLocation" x="2746" y="2447"/>
         </scene>
-        <!--Scan Positive-->
+        <!--Scan Negative-->
         <scene sceneID="OAX-wP-TY0">
             <objects>
-                <viewController storyboardIdentifier="ctScanNegative" id="aXd-RC-wUT" customClass="BCVICTScanPositive" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ctScanNegative" id="aXd-RC-wUT" customClass="BCVICTScanNegative" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a8p-ax-J28"/>
                         <viewControllerLayoutGuide type="bottom" id="0du-3Q-6gs"/>
@@ -630,7 +630,7 @@ for Air leak/Hematoma</string>
                                 <rect key="frame" x="140" y="228" width="320" height="162"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucg-2Z-aly" customClass="HTPressableButton">
-                                <rect key="frame" x="390" y="466.5" width="120" height="40"/>
+                                <rect key="frame" x="324" y="430" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="J88-zA-ANu"/>
                                     <constraint firstAttribute="height" constant="40" id="u91-10-gzc"/>
@@ -644,13 +644,13 @@ for Air leak/Hematoma</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Ucg-2Z-aly" firstAttribute="top" secondItem="P1f-cs-xyi" secondAttribute="bottom" constant="77" id="5Ue-wY-YkO"/>
+                            <constraint firstItem="Ucg-2Z-aly" firstAttribute="top" secondItem="P1f-cs-xyi" secondAttribute="bottom" constant="40" id="5Ue-wY-YkO"/>
                             <constraint firstItem="gm2-MZ-EVS" firstAttribute="top" secondItem="a8p-ax-J28" secondAttribute="bottom" constant="115" id="Mbh-MB-JHm"/>
                             <constraint firstItem="P1f-cs-xyi" firstAttribute="top" secondItem="gm2-MZ-EVS" secondAttribute="bottom" constant="52" id="Wi8-ok-m5i"/>
                             <constraint firstAttribute="centerX" secondItem="gm2-MZ-EVS" secondAttribute="centerX" constant="-10.5" id="Z9c-C0-csa"/>
-                            <constraint firstItem="Ucg-2Z-aly" firstAttribute="trailing" secondItem="P1f-cs-xyi" secondAttribute="trailing" constant="50" id="kGu-sA-kIf"/>
+                            <constraint firstItem="Ucg-2Z-aly" firstAttribute="trailing" secondItem="P1f-cs-xyi" secondAttribute="trailing" constant="-16" id="kGu-sA-kIf"/>
                             <constraint firstItem="P1f-cs-xyi" firstAttribute="centerX" secondItem="gm2-MZ-EVS" secondAttribute="centerX" constant="-10.5" id="pDk-Gb-L3i"/>
                         </constraints>
                     </view>
@@ -682,7 +682,7 @@ for Air leak/Hematoma</string>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="ad1-ls-PWU" secondAttribute="centerY" constant="-1.5" id="Ope-AQ-jfd"/>
                             <constraint firstAttribute="centerX" secondItem="ad1-ls-PWU" secondAttribute="centerX" id="Zrm-vS-93W"/>
@@ -716,7 +716,7 @@ for Air leak/Hematoma</string>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="Fzg-Ub-zgz" secondAttribute="centerY" id="YMW-Zn-nej"/>
                             <constraint firstAttribute="centerX" secondItem="Fzg-Ub-zgz" secondAttribute="centerX" id="cRB-qw-tDU"/>
@@ -748,8 +748,21 @@ for Air leak/Hematoma</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUE-88-AfC">
+                                <rect key="frame" x="137" y="252" width="317.5" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="317.5" id="Mf4-P4-Xqh"/>
+                                    <constraint firstAttribute="height" constant="96" id="oSn-qU-GSj"/>
+                                </constraints>
+                                <string key="text">then offer an Anthithrombotics: Heparin 
+{first-line; goal PPT 40-50 seconds}
+or ASA/clopidogrel (Plavix)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHE-wg-Nq2" customClass="HTPressableButton">
-                                <rect key="frame" x="388" y="465" width="120" height="40"/>
+                                <rect key="frame" x="329" y="413" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="1Dz-sD-Meq"/>
                                     <constraint firstAttribute="width" constant="120" id="Vez-nO-kdI"/>
@@ -763,23 +776,14 @@ for Air leak/Hematoma</string>
                                     <segue destination="9QZ-L1-z4X" kind="show" id="NXZ-gv-mdm"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUE-88-AfC">
-                                <rect key="frame" x="110" y="252" width="379.5" height="61"/>
-                                <string key="text">then offer an Anthithrombotics: Heparin {first-line;
-goal PPT 40-50 seconds}
-or ASA/clopidogrel (Plavix)</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sUE-88-AfC" firstAttribute="top" secondItem="YAC-bl-Gpv" secondAttribute="bottom" constant="31.5" id="5n3-5q-ZPO"/>
-                            <constraint firstItem="sUE-88-AfC" firstAttribute="centerX" secondItem="YAC-bl-Gpv" secondAttribute="centerX" constant="-0.25" id="6QW-5k-9aw"/>
-                            <constraint firstItem="HHE-wg-Nq2" firstAttribute="trailing" secondItem="sUE-88-AfC" secondAttribute="trailing" constant="18.5" id="GVc-md-RP5"/>
+                            <constraint firstItem="sUE-88-AfC" firstAttribute="centerX" secondItem="YAC-bl-Gpv" secondAttribute="centerX" constant="-4" id="6QW-5k-9aw"/>
+                            <constraint firstItem="HHE-wg-Nq2" firstAttribute="trailing" secondItem="sUE-88-AfC" secondAttribute="trailing" constant="-5.5" id="GVc-md-RP5"/>
                             <constraint firstAttribute="centerX" secondItem="YAC-bl-Gpv" secondAttribute="centerX" id="LSI-8D-tqX"/>
-                            <constraint firstItem="HHE-wg-Nq2" firstAttribute="top" secondItem="sUE-88-AfC" secondAttribute="bottom" constant="152" id="T7s-8a-Xfw"/>
+                            <constraint firstItem="HHE-wg-Nq2" firstAttribute="top" secondItem="sUE-88-AfC" secondAttribute="bottom" constant="65" id="T7s-8a-Xfw"/>
                             <constraint firstItem="YAC-bl-Gpv" firstAttribute="top" secondItem="Lki-jr-qDG" secondAttribute="bottom" constant="180" id="sj7-M6-XO5"/>
                         </constraints>
                     </view>
@@ -825,7 +829,7 @@ or ASA/clopidogrel (Plavix)</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="U7u-co-0IV" secondAttribute="centerY" constant="92.5" id="Mz5-ic-T3d"/>
                             <constraint firstAttribute="centerX" secondItem="U7u-co-0IV" secondAttribute="centerX" constant="-5.75" id="Odv-W0-cTm"/>
@@ -878,7 +882,7 @@ or ASA/clopidogrel (Plavix)</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kUx-Zn-lUc" firstAttribute="trailing" secondItem="wZ9-cU-0tv" secondAttribute="trailing" constant="-18" id="KLh-SN-wtp"/>
                             <constraint firstItem="kUx-Zn-lUc" firstAttribute="top" secondItem="wZ9-cU-0tv" secondAttribute="bottom" constant="13" id="NXu-q4-bpg"/>
@@ -920,7 +924,7 @@ or ASA/clopidogrel (Plavix)</string>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Kaq-dm-Ce6" secondAttribute="centerX" constant="12" id="avX-kj-Ox8"/>
                             <constraint firstAttribute="centerY" secondItem="Kaq-dm-Ce6" secondAttribute="centerY" constant="44" id="zBp-d1-OXS"/>
@@ -953,7 +957,7 @@ or ASA/clopidogrel (Plavix)</string>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="52k-4N-ABJ" secondAttribute="centerY" constant="26.75" id="af9-i5-EhQ"/>
                             <constraint firstAttribute="centerX" secondItem="52k-4N-ABJ" secondAttribute="centerX" constant="-5.5" id="yDl-ng-auF"/>
@@ -983,7 +987,7 @@ or ASA/clopidogrel (Plavix)</string>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="kmj-ua-tM5" secondAttribute="centerX" id="Ieh-cg-EWY"/>
                             <constraint firstAttribute="centerY" secondItem="kmj-ua-tM5" secondAttribute="centerY" constant="29.75" id="cWn-08-a2a"/>
@@ -1033,7 +1037,7 @@ Accessible BCVI?</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8iE-sq-G3M" firstAttribute="top" secondItem="V3Q-yO-6Nz" secondAttribute="bottom" constant="35" id="9Lu-Cs-TXf"/>
                             <constraint firstItem="V3Q-yO-6Nz" firstAttribute="centerX" secondItem="8iE-sq-G3M" secondAttribute="centerX" constant="-3" id="FNB-iX-nSd"/>

@@ -64,7 +64,7 @@
 		1DCC352C1B8CD74100FD2B82 /* BCVIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC352B1B8CD74100FD2B82 /* BCVIImage.m */; };
 		1DCC35301B8CDB0900FD2B82 /* BCVISignsRiskFactors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC352F1B8CDB0900FD2B82 /* BCVISignsRiskFactors.m */; };
 		1DCC35321B8CDD0B00FD2B82 /* BCVIEmergentYes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35311B8CDD0B00FD2B82 /* BCVIEmergentYes.m */; };
-		1DCC35361B8CE4B200FD2B82 /* BCVICTScanPositive.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35351B8CE4B200FD2B82 /* BCVICTScanPositive.m */; };
+		1DCC35361B8CE4B200FD2B82 /* BCVICTScanNegative.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35351B8CE4B200FD2B82 /* BCVICTScanNegative.m */; };
 		1DCC35381B8D03B400FD2B82 /* BCVISurgicallyAccessible.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35371B8D03B400FD2B82 /* BCVISurgicallyAccessible.m */; };
 		1DCC353C1B8D052E00FD2B82 /* BCVIInjuryHealed.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC353B1B8D052E00FD2B82 /* BCVIInjuryHealed.m */; };
 		1DCC353E1B8D074A00FD2B82 /* BCVIRepeatMultiscaleScan.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC353D1B8D074A00FD2B82 /* BCVIRepeatMultiscaleScan.m */; };
@@ -184,8 +184,8 @@
 		1DCC352F1B8CDB0900FD2B82 /* BCVISignsRiskFactors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVISignsRiskFactors.m; sourceTree = "<group>"; };
 		1DCC35311B8CDD0B00FD2B82 /* BCVIEmergentYes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVIEmergentYes.m; sourceTree = "<group>"; };
 		1DCC35331B8CDD2600FD2B82 /* BCVIEmergentYes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVIEmergentYes.h; sourceTree = "<group>"; };
-		1DCC35341B8CE4A200FD2B82 /* BCVICTScanPositive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVICTScanPositive.h; sourceTree = "<group>"; };
-		1DCC35351B8CE4B200FD2B82 /* BCVICTScanPositive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVICTScanPositive.m; sourceTree = "<group>"; };
+		1DCC35341B8CE4A200FD2B82 /* BCVICTScanNegative.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVICTScanNegative.h; sourceTree = "<group>"; };
+		1DCC35351B8CE4B200FD2B82 /* BCVICTScanNegative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVICTScanNegative.m; sourceTree = "<group>"; };
 		1DCC35371B8D03B400FD2B82 /* BCVISurgicallyAccessible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVISurgicallyAccessible.m; sourceTree = "<group>"; };
 		1DCC35391B8D03C100FD2B82 /* BCVISurgicallyAccessible.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVISurgicallyAccessible.h; sourceTree = "<group>"; };
 		1DCC353A1B8D051D00FD2B82 /* BCVIInjuryHealed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVIInjuryHealed.h; sourceTree = "<group>"; };
@@ -455,8 +455,8 @@
 				1DCC352F1B8CDB0900FD2B82 /* BCVISignsRiskFactors.m */,
 				1DCC35311B8CDD0B00FD2B82 /* BCVIEmergentYes.m */,
 				1DCC35331B8CDD2600FD2B82 /* BCVIEmergentYes.h */,
-				1DCC35341B8CE4A200FD2B82 /* BCVICTScanPositive.h */,
-				1DCC35351B8CE4B200FD2B82 /* BCVICTScanPositive.m */,
+				1DCC35341B8CE4A200FD2B82 /* BCVICTScanNegative.h */,
+				1DCC35351B8CE4B200FD2B82 /* BCVICTScanNegative.m */,
 				1DCC35371B8D03B400FD2B82 /* BCVISurgicallyAccessible.m */,
 				1DCC35391B8D03C100FD2B82 /* BCVISurgicallyAccessible.h */,
 				1DCC353A1B8D051D00FD2B82 /* BCVIInjuryHealed.h */,
@@ -658,7 +658,7 @@
 				1DCC352C1B8CD74100FD2B82 /* BCVIImage.m in Sources */,
 				1D0FC6C71B6AD34600302C6E /* EDTCardiacRhythm.m in Sources */,
 				1DCC353E1B8D074A00FD2B82 /* BCVIRepeatMultiscaleScan.m in Sources */,
-				1DCC35361B8CE4B200FD2B82 /* BCVICTScanPositive.m in Sources */,
+				1DCC35361B8CE4B200FD2B82 /* BCVICTScanNegative.m in Sources */,
 				1D0FC6C51B69C87C00302C6E /* deadEnd.m in Sources */,
 				1D725B681B8153CC0006521E /* ResuscitativeThoracotomyImage.m in Sources */,
 				1D0FC6CB1B6AD9C200302C6E /* CardiacRhythmType.m in Sources */,
