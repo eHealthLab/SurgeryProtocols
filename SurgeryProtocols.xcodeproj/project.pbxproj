@@ -61,6 +61,16 @@
 		1DAB4B6F1B6DCBC1008F186F /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1DAB4B6D1B6DCBC1008F186F /* beep.wav */; };
 		1DAB4B701B6DCBC1008F186F /* Voicemail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1DAB4B6E1B6DCBC1008F186F /* Voicemail.wav */; };
 		1DAB4B721B6DCC9F008F186F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DAB4B711B6DCC9F008F186F /* AVFoundation.framework */; };
+		1DCC352C1B8CD74100FD2B82 /* BCVIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC352B1B8CD74100FD2B82 /* BCVIImage.m */; };
+		1DCC35301B8CDB0900FD2B82 /* BCVISignsRiskFactors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC352F1B8CDB0900FD2B82 /* BCVISignsRiskFactors.m */; };
+		1DCC35321B8CDD0B00FD2B82 /* BCVIEmergentYes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35311B8CDD0B00FD2B82 /* BCVIEmergentYes.m */; };
+		1DCC35361B8CE4B200FD2B82 /* BCVICTScanPositive.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35351B8CE4B200FD2B82 /* BCVICTScanPositive.m */; };
+		1DCC35381B8D03B400FD2B82 /* BCVISurgicallyAccessible.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35371B8D03B400FD2B82 /* BCVISurgicallyAccessible.m */; };
+		1DCC353C1B8D052E00FD2B82 /* BCVIInjuryHealed.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC353B1B8D052E00FD2B82 /* BCVIInjuryHealed.m */; };
+		1DCC353E1B8D074A00FD2B82 /* BCVIRepeatMultiscaleScan.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC353D1B8D074A00FD2B82 /* BCVIRepeatMultiscaleScan.m */; };
+		1DCC35421B8D08BB00FD2B82 /* BCVIOperate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35411B8D08BB00FD2B82 /* BCVIOperate.m */; };
+		1DCC35441B8D09A500FD2B82 /* BCVIStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35431B8D09A500FD2B82 /* BCVIStop.m */; };
+		1DCC35481B8D0B3700FD2B82 /* BCVIGradeInjury.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35471B8D0B3700FD2B82 /* BCVIGradeInjury.m */; };
 		1DD19DF31B61794B001EA1FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DD19DF21B61794B001EA1FC /* Images.xcassets */; };
 		1DD19E021B61794C001EA1FC /* SurgeryProtocolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD19E011B61794C001EA1FC /* SurgeryProtocolsTests.m */; };
 		1DD19E2F1B617A9D001EA1FC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD19E231B617A9D001EA1FC /* LaunchScreen.xib */; };
@@ -168,6 +178,26 @@
 		1DAB4B6D1B6DCBC1008F186F /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
 		1DAB4B6E1B6DCBC1008F186F /* Voicemail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Voicemail.wav; sourceTree = "<group>"; };
 		1DAB4B711B6DCC9F008F186F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1DCC352B1B8CD74100FD2B82 /* BCVIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVIImage.m; sourceTree = "<group>"; };
+		1DCC352D1B8CD74A00FD2B82 /* BCVIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVIImage.h; sourceTree = "<group>"; };
+		1DCC352E1B8CDAFA00FD2B82 /* BCVISignsRiskFactors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVISignsRiskFactors.h; sourceTree = "<group>"; };
+		1DCC352F1B8CDB0900FD2B82 /* BCVISignsRiskFactors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVISignsRiskFactors.m; sourceTree = "<group>"; };
+		1DCC35311B8CDD0B00FD2B82 /* BCVIEmergentYes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVIEmergentYes.m; sourceTree = "<group>"; };
+		1DCC35331B8CDD2600FD2B82 /* BCVIEmergentYes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVIEmergentYes.h; sourceTree = "<group>"; };
+		1DCC35341B8CE4A200FD2B82 /* BCVICTScanPositive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVICTScanPositive.h; sourceTree = "<group>"; };
+		1DCC35351B8CE4B200FD2B82 /* BCVICTScanPositive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVICTScanPositive.m; sourceTree = "<group>"; };
+		1DCC35371B8D03B400FD2B82 /* BCVISurgicallyAccessible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVISurgicallyAccessible.m; sourceTree = "<group>"; };
+		1DCC35391B8D03C100FD2B82 /* BCVISurgicallyAccessible.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVISurgicallyAccessible.h; sourceTree = "<group>"; };
+		1DCC353A1B8D051D00FD2B82 /* BCVIInjuryHealed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVIInjuryHealed.h; sourceTree = "<group>"; };
+		1DCC353B1B8D052E00FD2B82 /* BCVIInjuryHealed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVIInjuryHealed.m; sourceTree = "<group>"; };
+		1DCC353D1B8D074A00FD2B82 /* BCVIRepeatMultiscaleScan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVIRepeatMultiscaleScan.m; sourceTree = "<group>"; };
+		1DCC353F1B8D075700FD2B82 /* BCVIRepeatMultiscaleScan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVIRepeatMultiscaleScan.h; sourceTree = "<group>"; };
+		1DCC35401B8D08B100FD2B82 /* BCVIOperate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVIOperate.h; sourceTree = "<group>"; };
+		1DCC35411B8D08BB00FD2B82 /* BCVIOperate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVIOperate.m; sourceTree = "<group>"; };
+		1DCC35431B8D09A500FD2B82 /* BCVIStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVIStop.m; sourceTree = "<group>"; };
+		1DCC35451B8D09AE00FD2B82 /* BCVIStop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVIStop.h; sourceTree = "<group>"; };
+		1DCC35461B8D0B2C00FD2B82 /* BCVIGradeInjury.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVIGradeInjury.h; sourceTree = "<group>"; };
+		1DCC35471B8D0B3700FD2B82 /* BCVIGradeInjury.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVIGradeInjury.m; sourceTree = "<group>"; };
 		1DD19DDF1B61794B001EA1FC /* SurgeryProtocols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurgeryProtocols.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD19DF21B61794B001EA1FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1DD19DFB1B61794B001EA1FC /* SurgeryProtocolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurgeryProtocolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -419,6 +449,26 @@
 				1D725B6B1B81551E0006521E /* PenetratingNeckInjuriesImage.h */,
 				1D725B6C1B8158880006521E /* TEInjury.h */,
 				1D725B6D1B8158940006521E /* TEInjury.m */,
+				1DCC352B1B8CD74100FD2B82 /* BCVIImage.m */,
+				1DCC352D1B8CD74A00FD2B82 /* BCVIImage.h */,
+				1DCC352E1B8CDAFA00FD2B82 /* BCVISignsRiskFactors.h */,
+				1DCC352F1B8CDB0900FD2B82 /* BCVISignsRiskFactors.m */,
+				1DCC35311B8CDD0B00FD2B82 /* BCVIEmergentYes.m */,
+				1DCC35331B8CDD2600FD2B82 /* BCVIEmergentYes.h */,
+				1DCC35341B8CE4A200FD2B82 /* BCVICTScanPositive.h */,
+				1DCC35351B8CE4B200FD2B82 /* BCVICTScanPositive.m */,
+				1DCC35371B8D03B400FD2B82 /* BCVISurgicallyAccessible.m */,
+				1DCC35391B8D03C100FD2B82 /* BCVISurgicallyAccessible.h */,
+				1DCC353A1B8D051D00FD2B82 /* BCVIInjuryHealed.h */,
+				1DCC353B1B8D052E00FD2B82 /* BCVIInjuryHealed.m */,
+				1DCC353D1B8D074A00FD2B82 /* BCVIRepeatMultiscaleScan.m */,
+				1DCC353F1B8D075700FD2B82 /* BCVIRepeatMultiscaleScan.h */,
+				1DCC35401B8D08B100FD2B82 /* BCVIOperate.h */,
+				1DCC35411B8D08BB00FD2B82 /* BCVIOperate.m */,
+				1DCC35431B8D09A500FD2B82 /* BCVIStop.m */,
+				1DCC35451B8D09AE00FD2B82 /* BCVIStop.h */,
+				1DCC35461B8D0B2C00FD2B82 /* BCVIGradeInjury.h */,
+				1DCC35471B8D0B3700FD2B82 /* BCVIGradeInjury.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -601,13 +651,20 @@
 			files = (
 				1DE817AF1B80F05200789790 /* ProtocolType.m in Sources */,
 				1DD19E331B617A9D001EA1FC /* SecondViewController.m in Sources */,
+				1DCC35481B8D0B3700FD2B82 /* BCVIGradeInjury.m in Sources */,
+				1DCC35441B8D09A500FD2B82 /* BCVIStop.m in Sources */,
+				1DCC35301B8CDB0900FD2B82 /* BCVISignsRiskFactors.m in Sources */,
 				1DE817B81B810A8E00789790 /* ZoneSelection.m in Sources */,
+				1DCC352C1B8CD74100FD2B82 /* BCVIImage.m in Sources */,
 				1D0FC6C71B6AD34600302C6E /* EDTCardiacRhythm.m in Sources */,
+				1DCC353E1B8D074A00FD2B82 /* BCVIRepeatMultiscaleScan.m in Sources */,
+				1DCC35361B8CE4B200FD2B82 /* BCVICTScanPositive.m in Sources */,
 				1D0FC6C51B69C87C00302C6E /* deadEnd.m in Sources */,
 				1D725B681B8153CC0006521E /* ResuscitativeThoracotomyImage.m in Sources */,
 				1D0FC6CB1B6AD9C200302C6E /* CardiacRhythmType.m in Sources */,
 				1D0FC7171B6B0CB000302C6E /* AFPickerView.m in Sources */,
 				1DD19E461B618D6E001EA1FC /* UIImage+HTButton.m in Sources */,
+				1DCC35381B8D03B400FD2B82 /* BCVISurgicallyAccessible.m in Sources */,
 				1D0FC6BD1B6997DB00302C6E /* ECGViewController.m in Sources */,
 				1DD19E311B617A9D001EA1FC /* AppDelegate.m in Sources */,
 				1DD19E441B618D6E001EA1FC /* HTPressableButtonPrefs.m in Sources */,
@@ -617,9 +674,12 @@
 				1DE817B21B8101EC00789790 /* HardSignsP2.m in Sources */,
 				1DD19E381B617AFF001EA1FC /* main.m in Sources */,
 				1DE817BE1B810CC600789790 /* Zone2.m in Sources */,
+				1DCC35321B8CDD0B00FD2B82 /* BCVIEmergentYes.m in Sources */,
 				1DE817B51B81031000789790 /* SuspiciousActivity.m in Sources */,
 				1D0FC6BB1B694A9500302C6E /* TraumaTypeViewController.m in Sources */,
+				1DCC353C1B8D052E00FD2B82 /* BCVIInjuryHealed.m in Sources */,
 				1D0FC6C11B69982500302C6E /* LocationViewController.m in Sources */,
+				1DCC35421B8D08BB00FD2B82 /* BCVIOperate.m in Sources */,
 				1DD19E431B618D6E001EA1FC /* HTPressableButton.m in Sources */,
 				1DD19E451B618D6E001EA1FC /* UIColor+HTColor.m in Sources */,
 				1DE817BA1B810C9500789790 /* Zone1.m in Sources */,

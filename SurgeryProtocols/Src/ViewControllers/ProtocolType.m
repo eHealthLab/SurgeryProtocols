@@ -69,7 +69,7 @@
     }
     
     else if ([choice isEqualToString:@"Blunt Cerebrovascular Injuries"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BLUNTCEREBROVASCULARINJURIES"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BCVIImage"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";

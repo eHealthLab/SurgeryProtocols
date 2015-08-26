@@ -167,14 +167,14 @@ protocol</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PenetratingNeckInjuries.png" translatesAutoresizingMaskIntoConstraints="NO" id="7c4-gX-DwT">
-                                <rect key="frame" x="0.0" y="53" width="600" height="478"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PenetratingNeckInjuries.png" translatesAutoresizingMaskIntoConstraints="NO" id="7c4-gX-DwT">
+                                <rect key="frame" x="0.0" y="28" width="600" height="401"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="478" id="6gQ-FG-yfp"/>
+                                    <constraint firstAttribute="height" constant="401" id="6gQ-FG-yfp"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mma-yi-YQF" customClass="HTPressableButton">
-                                <rect key="frame" x="447" y="545" width="120" height="40"/>
+                                <rect key="frame" x="447" y="518" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="BsW-Zy-yhb"/>
                                     <constraint firstAttribute="height" constant="40" id="Oiu-Dy-Kge"/>
@@ -189,12 +189,13 @@ protocol</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ik7-tn-tqc" firstAttribute="top" secondItem="mma-yi-YQF" secondAttribute="bottom" constant="15" id="7Zp-mn-Jsc"/>
-                            <constraint firstItem="7c4-gX-DwT" firstAttribute="top" secondItem="AOe-RN-Awf" secondAttribute="bottom" constant="33" id="V0h-aT-zp2"/>
+                            <constraint firstItem="ik7-tn-tqc" firstAttribute="top" secondItem="mma-yi-YQF" secondAttribute="bottom" constant="42" id="7Zp-mn-Jsc"/>
+                            <constraint firstItem="7c4-gX-DwT" firstAttribute="top" secondItem="AOe-RN-Awf" secondAttribute="bottom" constant="8" id="V0h-aT-zp2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mma-yi-YQF" secondAttribute="trailing" constant="17" id="Wh7-Y0-7ro"/>
                             <constraint firstItem="7c4-gX-DwT" firstAttribute="leading" secondItem="rZe-Sv-xUq" secondAttribute="leading" id="i4m-sb-FWq"/>
+                            <constraint firstAttribute="centerX" secondItem="7c4-gX-DwT" secondAttribute="centerX" id="nOv-BS-Rct"/>
                             <constraint firstAttribute="trailing" secondItem="7c4-gX-DwT" secondAttribute="trailing" id="naS-tq-w0j"/>
-                            <constraint firstItem="mma-yi-YQF" firstAttribute="top" secondItem="7c4-gX-DwT" secondAttribute="bottom" constant="8" id="zZ6-ZP-f2M"/>
+                            <constraint firstItem="mma-yi-YQF" firstAttribute="top" secondItem="7c4-gX-DwT" secondAttribute="bottom" constant="89" id="zZ6-ZP-f2M"/>
                         </constraints>
                     </view>
                     <connections>
@@ -204,6 +205,157 @@ protocol</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pd-Ha-clX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1409" y="1815"/>
+        </scene>
+        <!--Image-->
+        <scene sceneID="Inm-oq-7C5">
+            <objects>
+                <viewController storyboardIdentifier="BCVIImage" id="E6f-ce-21L" customClass="BCVIImage" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pqk-d4-TUb"/>
+                        <viewControllerLayoutGuide type="bottom" id="F18-B6-W1G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3FK-v8-2Of">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BLUNT CEREBROVASCULAR INJURIES .png" translatesAutoresizingMaskIntoConstraints="NO" id="U6l-kJ-Mj9">
+                                <rect key="frame" x="16" y="20" width="568" height="484"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="484" id="uLZ-Pm-BoH"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3d-7V-Jdd" customClass="HTPressableButton">
+                                <rect key="frame" x="438" y="531" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="he8-PD-C7d"/>
+                                    <constraint firstAttribute="height" constant="40" id="tzk-hk-7Lq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="3ro-CX-5jT"/>
+                                    <segue destination="sQL-Ha-7iF" kind="show" id="NeO-9p-l0w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U6l-kJ-Mj9" firstAttribute="trailing" secondItem="3FK-v8-2Of" secondAttribute="trailingMargin" id="TZA-nk-pB7"/>
+                            <constraint firstItem="U6l-kJ-Mj9" firstAttribute="leading" secondItem="3FK-v8-2Of" secondAttribute="leadingMargin" id="lqT-Zz-ep3"/>
+                            <constraint firstItem="U6l-kJ-Mj9" firstAttribute="top" secondItem="pqk-d4-TUb" secondAttribute="bottom" id="s4I-7N-02e"/>
+                            <constraint firstItem="b3d-7V-Jdd" firstAttribute="trailing" secondItem="U6l-kJ-Mj9" secondAttribute="trailing" constant="-26" id="swY-1H-7fm"/>
+                            <constraint firstItem="b3d-7V-Jdd" firstAttribute="top" secondItem="U6l-kJ-Mj9" secondAttribute="bottom" constant="27" id="v9O-CJ-YGi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="b3d-7V-Jdd" id="ZoX-eC-2uy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u2C-pq-1Rj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1409" y="2481"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mRw-uE-ktR">
+            <objects>
+                <viewController id="sQL-Ha-7iF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MxM-2p-6cZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zat-aN-SG3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5cX-f9-k59">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDA-f1-4Sl">
+                                <rect key="frame" x="198.5" y="76" width="188" height="41"/>
+                                <string key="text">Select signs/symptoms 
+and risk factors for BCVI</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5F-lb-wKd" customClass="HTPressableButton">
+                                <rect key="frame" x="223" y="509" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EBu-BM-PZE"/>
+                                    <constraint firstAttribute="width" constant="120" id="jPe-1o-ytc"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="vRh-xD-fX2"/>
+                                    <segue destination="wfh-uh-Vay" kind="show" id="pwh-qt-3w5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="l5F-lb-wKd" secondAttribute="centerY" constant="-229" id="A5R-Hp-h5A"/>
+                            <constraint firstAttribute="centerX" secondItem="qDA-f1-4Sl" secondAttribute="centerX" constant="7.5" id="MUd-bw-BXB"/>
+                            <constraint firstItem="qDA-f1-4Sl" firstAttribute="top" secondItem="MxM-2p-6cZ" secondAttribute="bottom" constant="56" id="bpI-Bo-ZHn"/>
+                            <constraint firstAttribute="centerX" secondItem="l5F-lb-wKd" secondAttribute="centerX" constant="17" id="xiz-BY-7So"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KR3-mE-qkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1409" y="3185"/>
+        </scene>
+        <!--Emergent Yes-->
+        <scene sceneID="h2z-8R-n3p">
+            <objects>
+                <viewController storyboardIdentifier="BCVIEmergentYes" id="wfh-uh-Vay" customClass="BCVIEmergentYes" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f5x-6P-xTn"/>
+                        <viewControllerLayoutGuide type="bottom" id="dYR-qg-Mrh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="evR-vm-TLF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvq-V5-xqt">
+                                <rect key="frame" x="208" y="117" width="232.5" height="41"/>
+                                <string key="text">Conduct a MultiSlice CT scan 
+and choose one</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ptm-cl-OjM">
+                                <rect key="frame" x="135" y="192" width="320" height="162"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vI3-2D-860" customClass="HTPressableButton">
+                                <rect key="frame" x="309" y="371" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="U4c-4E-HD0"/>
+                                    <constraint firstAttribute="height" constant="40" id="bYZ-AE-Sdb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="wfh-uh-Vay" eventType="touchUpInside" id="K1g-mi-seD"/>
+                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="uXQ-wE-ogw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fvq-V5-xqt" firstAttribute="centerX" secondItem="ptm-cl-OjM" secondAttribute="centerX" constant="29.5" id="KNz-X3-2y4"/>
+                            <constraint firstItem="vI3-2D-860" firstAttribute="trailing" secondItem="ptm-cl-OjM" secondAttribute="trailing" constant="-26" id="duJ-kc-hDA"/>
+                            <constraint firstItem="ptm-cl-OjM" firstAttribute="top" secondItem="Fvq-V5-xqt" secondAttribute="bottom" constant="21" id="fYf-xA-Oud"/>
+                            <constraint firstItem="Fvq-V5-xqt" firstAttribute="top" secondItem="f5x-6P-xTn" secondAttribute="bottom" constant="97" id="fik-aq-G0i"/>
+                            <constraint firstAttribute="centerX" secondItem="Fvq-V5-xqt" secondAttribute="centerX" constant="-24.5" id="jSX-dY-6vW"/>
+                            <constraint firstItem="vI3-2D-860" firstAttribute="top" secondItem="ptm-cl-OjM" secondAttribute="bottom" constant="30" id="oM4-57-neP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BCVIPicker" destination="ptm-cl-OjM" id="TQE-1w-XBo"/>
+                        <outlet property="nextButton" destination="vI3-2D-860" id="WWn-kM-K7q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FXu-39-YjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2128" y="3185"/>
         </scene>
         <!--Hard SignsP2-->
         <scene sceneID="sQL-bT-sgv">
@@ -314,8 +466,8 @@ for Air leak/Hematoma</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Observer/Serial Exams" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oc4-yI-vxA">
-                                <rect key="frame" x="197" y="174" width="176" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Observe/Serial Exams" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oc4-yI-vxA">
+                                <rect key="frame" x="197" y="174" width="175.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -323,7 +475,7 @@ for Air leak/Hematoma</string>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="Oc4-yI-vxA" secondAttribute="centerY" constant="115.5" id="IxX-k6-uRV"/>
+                            <constraint firstAttribute="centerY" secondItem="Oc4-yI-vxA" secondAttribute="centerY" constant="116" id="IxX-k6-uRV"/>
                             <constraint firstAttribute="centerX" secondItem="Oc4-yI-vxA" secondAttribute="centerX" constant="15" id="riq-al-UpS"/>
                         </constraints>
                     </view>
@@ -453,6 +605,452 @@ for Air leak/Hematoma</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qa-i8-yT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2746" y="2447"/>
+        </scene>
+        <!--Scan Positive-->
+        <scene sceneID="OAX-wP-TY0">
+            <objects>
+                <viewController storyboardIdentifier="ctScanNegative" id="aXd-RC-wUT" customClass="BCVICTScanPositive" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a8p-ax-J28"/>
+                        <viewControllerLayoutGuide type="bottom" id="0du-3Q-6gs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nsn-To-Cax">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gm2-MZ-EVS">
+                                <rect key="frame" x="165" y="135" width="291" height="41"/>
+                                <string key="text">Do you have a High Clinical Suspicion
+ or Equivocal Finding?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1f-cs-xyi">
+                                <rect key="frame" x="140" y="228" width="320" height="162"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucg-2Z-aly" customClass="HTPressableButton">
+                                <rect key="frame" x="390" y="466.5" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="J88-zA-ANu"/>
+                                    <constraint firstAttribute="height" constant="40" id="u91-10-gzc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="aXd-RC-wUT" eventType="touchUpInside" id="HY2-mX-vxU"/>
+                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="s3K-0q-SlA"/>
+                                    <action selector="nextButtonPressed:" destination="wfh-uh-Vay" eventType="touchUpInside" id="tx6-M6-9b2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ucg-2Z-aly" firstAttribute="top" secondItem="P1f-cs-xyi" secondAttribute="bottom" constant="77" id="5Ue-wY-YkO"/>
+                            <constraint firstItem="gm2-MZ-EVS" firstAttribute="top" secondItem="a8p-ax-J28" secondAttribute="bottom" constant="115" id="Mbh-MB-JHm"/>
+                            <constraint firstItem="P1f-cs-xyi" firstAttribute="top" secondItem="gm2-MZ-EVS" secondAttribute="bottom" constant="52" id="Wi8-ok-m5i"/>
+                            <constraint firstAttribute="centerX" secondItem="gm2-MZ-EVS" secondAttribute="centerX" constant="-10.5" id="Z9c-C0-csa"/>
+                            <constraint firstItem="Ucg-2Z-aly" firstAttribute="trailing" secondItem="P1f-cs-xyi" secondAttribute="trailing" constant="50" id="kGu-sA-kIf"/>
+                            <constraint firstItem="P1f-cs-xyi" firstAttribute="centerX" secondItem="gm2-MZ-EVS" secondAttribute="centerX" constant="-10.5" id="pDk-Gb-L3i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BCVIPicker" destination="P1f-cs-xyi" id="hO8-pQ-ifd"/>
+                        <outlet property="nextButton" destination="Ucg-2Z-aly" id="a0I-o6-mZt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G2j-Ji-cvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="3133"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a1H-Ve-HL9">
+            <objects>
+                <viewController storyboardIdentifier="angio" id="WVd-8H-qYj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TF3-u7-7Ch"/>
+                        <viewControllerLayoutGuide type="bottom" id="mqF-Ze-dhQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9TJ-pY-bdl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send for Angio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ad1-ls-PWU">
+                                <rect key="frame" x="243" y="290.5" width="114.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="ad1-ls-PWU" secondAttribute="centerY" constant="-1.5" id="Ope-AQ-jfd"/>
+                            <constraint firstAttribute="centerX" secondItem="ad1-ls-PWU" secondAttribute="centerX" id="Zrm-vS-93W"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yjw-vb-aMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3460" y="3133"/>
+        </scene>
+        <!--Stop-->
+        <scene sceneID="euY-eW-wqy">
+            <objects>
+                <viewController storyboardIdentifier="stop" id="9vr-lu-jx6" customClass="BCVIStop" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XVj-xC-PC6"/>
+                        <viewControllerLayoutGuide type="bottom" id="eBc-op-rLz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZaM-HH-udI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzg-Ub-zgz" customClass="HTPressableButton">
+                                <rect key="frame" x="225" y="225" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Tco-mK-Q5b"/>
+                                    <constraint firstAttribute="height" constant="150" id="kqe-WF-XCX"/>
+                                </constraints>
+                                <state key="normal" title="STOP">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Fzg-Ub-zgz" secondAttribute="centerY" id="YMW-Zn-nej"/>
+                            <constraint firstAttribute="centerX" secondItem="Fzg-Ub-zgz" secondAttribute="centerX" id="cRB-qw-tDU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="Fzg-Ub-zgz" id="VmI-Z0-M0G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24K-8t-7l6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3460" y="3817"/>
+        </scene>
+        <!--Grade Injury-->
+        <scene sceneID="CmG-Od-EOP">
+            <objects>
+                <viewController storyboardIdentifier="gradeInjury" id="93l-HH-vxc" customClass="BCVIGradeInjury" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lki-jr-qDG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uhd-bR-ZPF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dyX-gx-oZV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If there is a Grade I-IV Injury?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAC-bl-Gpv">
+                                <rect key="frame" x="188" y="200" width="223.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHE-wg-Nq2" customClass="HTPressableButton">
+                                <rect key="frame" x="388" y="465" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1Dz-sD-Meq"/>
+                                    <constraint firstAttribute="width" constant="120" id="Vez-nO-kdI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="aXd-RC-wUT" eventType="touchUpInside" id="IHF-dU-AfR"/>
+                                    <action selector="nextButtonPressed:" destination="wfh-uh-Vay" eventType="touchUpInside" id="QSD-2m-Dri"/>
+                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="qjX-i0-Olg"/>
+                                    <segue destination="9QZ-L1-z4X" kind="show" id="NXZ-gv-mdm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUE-88-AfC">
+                                <rect key="frame" x="110" y="252" width="379.5" height="61"/>
+                                <string key="text">then offer an Anthithrombotics: Heparin {first-line;
+goal PPT 40-50 seconds}
+or ASA/clopidogrel (Plavix)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sUE-88-AfC" firstAttribute="top" secondItem="YAC-bl-Gpv" secondAttribute="bottom" constant="31.5" id="5n3-5q-ZPO"/>
+                            <constraint firstItem="sUE-88-AfC" firstAttribute="centerX" secondItem="YAC-bl-Gpv" secondAttribute="centerX" constant="-0.25" id="6QW-5k-9aw"/>
+                            <constraint firstItem="HHE-wg-Nq2" firstAttribute="trailing" secondItem="sUE-88-AfC" secondAttribute="trailing" constant="18.5" id="GVc-md-RP5"/>
+                            <constraint firstAttribute="centerX" secondItem="YAC-bl-Gpv" secondAttribute="centerX" id="LSI-8D-tqX"/>
+                            <constraint firstItem="HHE-wg-Nq2" firstAttribute="top" secondItem="sUE-88-AfC" secondAttribute="bottom" constant="152" id="T7s-8a-Xfw"/>
+                            <constraint firstItem="YAC-bl-Gpv" firstAttribute="top" secondItem="Lki-jr-qDG" secondAttribute="bottom" constant="180" id="sj7-M6-XO5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="HHE-wg-Nq2" id="pf0-dG-R20"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hRh-9v-zCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="4525"/>
+        </scene>
+        <!--Repeat Multiscale Scan-->
+        <scene sceneID="s2u-LN-xWO">
+            <objects>
+                <viewController storyboardIdentifier="repeatMultisliceScan" id="9QZ-L1-z4X" customClass="BCVIRepeatMultiscaleScan" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="02R-0v-K7W"/>
+                        <viewControllerLayoutGuide type="bottom" id="rkU-5d-3bK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qSc-XA-RCf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Repeat MultiSlice CT scan in 7-10 days" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7u-co-0IV">
+                                <rect key="frame" x="116" y="177" width="379.5" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNZ-XI-jdQ" customClass="HTPressableButton">
+                                <rect key="frame" x="344.5" y="452" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="n7H-sy-1wR"/>
+                                    <constraint firstAttribute="width" constant="120" id="qSc-6b-7wx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="wfh-uh-Vay" eventType="touchUpInside" id="0tB-m5-jw2"/>
+                                    <action selector="nextButtonPressed:" destination="aXd-RC-wUT" eventType="touchUpInside" id="3p9-aT-hU3"/>
+                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="kKU-ab-o3t"/>
+                                    <segue destination="mV7-td-twi" kind="show" id="YB3-A6-BcS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="U7u-co-0IV" secondAttribute="centerY" constant="92.5" id="Mz5-ic-T3d"/>
+                            <constraint firstAttribute="centerX" secondItem="U7u-co-0IV" secondAttribute="centerX" constant="-5.75" id="Odv-W0-cTm"/>
+                            <constraint firstItem="UNZ-XI-jdQ" firstAttribute="top" secondItem="U7u-co-0IV" secondAttribute="bottom" constant="234" id="lDO-na-iM9"/>
+                            <constraint firstItem="U7u-co-0IV" firstAttribute="trailing" secondItem="UNZ-XI-jdQ" secondAttribute="trailing" constant="-7.5" id="vSn-4T-FJQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="UNZ-XI-jdQ" id="gVL-PV-enU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pjw-UZ-nEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="5189"/>
+        </scene>
+        <!--Injury Healed-->
+        <scene sceneID="6ey-iq-ylY">
+            <objects>
+                <viewController id="mV7-td-twi" customClass="BCVIInjuryHealed" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ior-LK-jhx"/>
+                        <viewControllerLayoutGuide type="bottom" id="oVa-YL-LE8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uS5-g3-YYP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Has the injury healed?" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLO-om-j89">
+                                <rect key="frame" x="230.5" y="162" width="170.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZ9-cU-0tv">
+                                <rect key="frame" x="138" y="245" width="320" height="162"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUx-Zn-lUc" customClass="HTPressableButton">
+                                <rect key="frame" x="320" y="420" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="5dp-rA-5K6"/>
+                                    <constraint firstAttribute="height" constant="40" id="ka1-Og-vf1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="aXd-RC-wUT" eventType="touchUpInside" id="730-MW-9fc"/>
+                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="ZaX-Jh-j2u"/>
+                                    <action selector="nextButtonPressed:" destination="wfh-uh-Vay" eventType="touchUpInside" id="puH-cv-e8Q"/>
+                                    <action selector="nextButtonPressed:" destination="mV7-td-twi" eventType="touchUpInside" id="u23-Mk-JFe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kUx-Zn-lUc" firstAttribute="trailing" secondItem="wZ9-cU-0tv" secondAttribute="trailing" constant="-18" id="KLh-SN-wtp"/>
+                            <constraint firstItem="kUx-Zn-lUc" firstAttribute="top" secondItem="wZ9-cU-0tv" secondAttribute="bottom" constant="13" id="NXu-q4-bpg"/>
+                            <constraint firstItem="MLO-om-j89" firstAttribute="centerX" secondItem="wZ9-cU-0tv" secondAttribute="centerX" constant="17.75" id="Pmt-TN-gh2"/>
+                            <constraint firstAttribute="centerX" secondItem="MLO-om-j89" secondAttribute="centerX" constant="-15.75" id="bKP-Za-FEJ"/>
+                            <constraint firstItem="wZ9-cU-0tv" firstAttribute="top" secondItem="MLO-om-j89" secondAttribute="bottom" constant="62.5" id="j2B-TK-gAD"/>
+                            <constraint firstItem="MLO-om-j89" firstAttribute="top" secondItem="Ior-LK-jhx" secondAttribute="bottom" constant="142" id="zRC-PU-c0D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BCVIPicker" destination="wZ9-cU-0tv" id="8SN-wZ-WHi"/>
+                        <outlet property="nextButton" destination="kUx-Zn-lUc" id="RTT-fo-L7R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6l-eu-adj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3460" y="5189"/>
+        </scene>
+        <!--Operate-->
+        <scene sceneID="2AO-k1-hi4">
+            <objects>
+                <viewController storyboardIdentifier="operate" id="A6R-Mh-chw" customClass="BCVIOperate" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="seW-sr-sNW"/>
+                        <viewControllerLayoutGuide type="bottom" id="r90-U9-H0R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4r1-MP-juE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kaq-dm-Ce6" customClass="HTPressableButton">
+                                <rect key="frame" x="213" y="181" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="g59-Gm-Bxp"/>
+                                    <constraint firstAttribute="height" constant="150" id="vfW-Am-5WY"/>
+                                </constraints>
+                                <state key="normal" title="OPERATE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Kaq-dm-Ce6" secondAttribute="centerX" constant="12" id="avX-kj-Ox8"/>
+                            <constraint firstAttribute="centerY" secondItem="Kaq-dm-Ce6" secondAttribute="centerY" constant="44" id="zBp-d1-OXS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="Kaq-dm-Ce6" id="JOO-hJ-Otp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pcv-mZ-meW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3454" y="4507"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jPL-IC-9dH">
+            <objects>
+                <viewController storyboardIdentifier="discontinueAnthithrombotics" id="jo4-4s-mJN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PuK-gA-RXw"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Du-so-M6X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jdu-Jx-0fj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discontinue Antithrombotics" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52k-4N-ABJ">
+                                <rect key="frame" x="197" y="263" width="217" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="52k-4N-ABJ" secondAttribute="centerY" constant="26.75" id="af9-i5-EhQ"/>
+                            <constraint firstAttribute="centerX" secondItem="52k-4N-ABJ" secondAttribute="centerX" constant="-5.5" id="yDl-ng-auF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ic2-Ki-Q7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4160" y="4661"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c38-g1-YEn">
+            <objects>
+                <viewController storyboardIdentifier="anthithrombotics6months" id="be8-OX-0Bi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VGF-Y0-nPe"/>
+                        <viewControllerLayoutGuide type="bottom" id="npv-xI-uUT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GdH-sS-8Lp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antithrombotics for 6 months and reimaging" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmj-ua-tM5">
+                                <rect key="frame" x="131" y="260" width="338" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="kmj-ua-tM5" secondAttribute="centerX" id="Ieh-cg-EWY"/>
+                            <constraint firstAttribute="centerY" secondItem="kmj-ua-tM5" secondAttribute="centerY" constant="29.75" id="cWn-08-a2a"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zNn-i7-cGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4160" y="5323"/>
+        </scene>
+        <!--Surgically Accessible-->
+        <scene sceneID="47U-9i-v7I">
+            <objects>
+                <viewController storyboardIdentifier="ctScanPositive" id="65K-da-uro" customClass="BCVISurgicallyAccessible" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rel-Ur-qRk"/>
+                        <viewControllerLayoutGuide type="bottom" id="rSh-r4-puJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cXh-re-t6w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3Q-yO-6Nz">
+                                <rect key="frame" x="171" y="143" width="194" height="41"/>
+                                <string key="text">Do you have a Surgically 
+Accessible BCVI?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iE-sq-G3M">
+                                <rect key="frame" x="111" y="219" width="320" height="162"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiF-BZ-ltr" customClass="HTPressableButton">
+                                <rect key="frame" x="297" y="439" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7x3-KG-pJP"/>
+                                    <constraint firstAttribute="width" constant="120" id="FFB-SM-hgE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="wfh-uh-Vay" eventType="touchUpInside" id="O7Q-Md-uQ9"/>
+                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="YHO-6s-pKt"/>
+                                    <action selector="nextButtonPressed:" destination="aXd-RC-wUT" eventType="touchUpInside" id="YdV-wI-zgJ"/>
+                                    <action selector="nextButtonPressed:" destination="65K-da-uro" eventType="touchUpInside" id="uqR-tm-HEF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8iE-sq-G3M" firstAttribute="top" secondItem="V3Q-yO-6Nz" secondAttribute="bottom" constant="35" id="9Lu-Cs-TXf"/>
+                            <constraint firstItem="V3Q-yO-6Nz" firstAttribute="centerX" secondItem="8iE-sq-G3M" secondAttribute="centerX" constant="-3" id="FNB-iX-nSd"/>
+                            <constraint firstItem="ZiF-BZ-ltr" firstAttribute="top" secondItem="8iE-sq-G3M" secondAttribute="bottom" constant="58" id="Ox6-iW-xO3"/>
+                            <constraint firstItem="V3Q-yO-6Nz" firstAttribute="top" secondItem="rel-Ur-qRk" secondAttribute="bottom" constant="123" id="iPM-nN-xOb"/>
+                            <constraint firstItem="ZiF-BZ-ltr" firstAttribute="trailing" secondItem="8iE-sq-G3M" secondAttribute="trailing" constant="-14" id="rgw-fW-ULx"/>
+                            <constraint firstAttribute="centerX" secondItem="V3Q-yO-6Nz" secondAttribute="centerX" constant="32" id="zdh-Xt-d8c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BCVIPicker" destination="8iE-sq-G3M" id="nJR-cd-buf"/>
+                        <outlet property="nextButton" destination="ZiF-BZ-ltr" id="Gzc-uq-HHu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QsA-8b-vbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="3817"/>
         </scene>
         <!--Zone Selection-->
         <scene sceneID="fve-sC-8kd">
@@ -1566,6 +2164,7 @@ and CPR &lt; 10min</string>
         <image name="06-magnify.png" width="24" height="24"/>
         <image name="111-user.png" width="24" height="21"/>
         <image name="81-dashboard.png" width="28" height="28"/>
+        <image name="BLUNT CEREBROVASCULAR INJURIES .png" width="1182" height="1125"/>
         <image name="PenetratingNeckInjuries.png" width="1500" height="1110"/>
         <image name="ResuscitativeThoracotomy.png" width="1500" height="1037"/>
     </resources>
