@@ -9,12 +9,29 @@
 #import <Foundation/Foundation.h>
 
 #import "SBPController.h"
-
+#import "AppDelegate.h"
 @implementation SBPController
-
+{
+    AppDelegate *appDelegate;
+}
 -(void)viewDidLoad
 {
+    
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
     self.sbpArray = [[NSArray alloc] initWithObjects:@"Yes", @"No", nil];
+    
+    if ([appDelegate.ResThoractomySBPControllerLabel isEqualToString:@"Repair Heart"]) {
+            self.SBPControllerLabel.text = @"Repair Heart";
+    }
+    else if ([appDelegate.ResThoractomySBPControllerLabel isEqualToString:@"Control"]) {
+        self.SBPControllerLabel.text = @"Control";
+    }
+    else if ([appDelegate.ResThoractomySBPControllerLabel isEqualToString:@"Hilar X-clamp"]) {
+        self.SBPControllerLabel.text = @"Hilar X-clamp";
+    }
+    else
+        self.SBPControllerLabel.text = @"";
+        
     
     self.sbpPickerView.delegate = self;
     self.sbpPickerView.dataSource = self;

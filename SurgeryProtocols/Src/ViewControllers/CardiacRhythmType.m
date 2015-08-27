@@ -8,11 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "CardiacRhythmType.h"
+#import "AppDelegate.h"
 
 @implementation CardiacRhythmType
-
+{
+    AppDelegate *appDelegate;
+}
 -(void)viewDidLoad
 {
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
     self.rhythmTypeArray = [[NSArray alloc] initWithObjects:@"Tamponade", @"Thoracic hemorrhage", @"Air emboli", @"Extrathoracic hemorrhage", nil];
     
     self.rhythmPickerView.delegate = self;
@@ -48,6 +52,7 @@
     NSString *choice = [self.rhythmTypeArray objectAtIndex:[self.rhythmPickerView selectedRowInComponent:0]];
     if ([choice isEqualToString:@"Tamponade"]) {
         UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"sbpController"];
+        appDelegate.ResThoractomySBPControllerLabel = @"Repair Heart";
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -58,6 +63,7 @@
     }
     else if ([choice isEqualToString:@"Thoracic hemorrhage"]) {
         UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"sbpController"];
+        appDelegate.ResThoractomySBPControllerLabel = @"Control";
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -69,6 +75,7 @@
     
     else if ([choice isEqualToString:@"Air emboli"]) {
         UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"sbpController"];
+        appDelegate.ResThoractomySBPControllerLabel = @"Hilar X-clamp";
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -79,6 +86,7 @@
     }
     else {
         UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"sbpController"];
+        appDelegate.ResThoractomySBPControllerLabel = @" ";
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";

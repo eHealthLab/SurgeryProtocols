@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "Tamponade.h"
+#import "AppDelegate.h"
 
 @implementation Tamponade
-
+{
+    AppDelegate *delegate;
+}
 
 -(void)viewDidLoad
 {
+    delegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
     self.torsoArray = [[NSArray alloc] initWithObjects:@"Yes", @"No", nil];
     
     self.torsoView.delegate = self;
@@ -21,11 +25,11 @@
     
     [self.torsoView selectRow:0 inComponent:0 animated:NO];
     
-    [self.nextButton setStyle:HTPressableButtonStyleRounded];
+    self.nextButton.cornerRadius = 10.0;
+    self.nextButton.shadowHeight = self.nextButton.frame.size.height * 0.17;
     self.nextButton.buttonColor = [UIColor ht_bitterSweetColor];
     self.nextButton.shadowColor = [UIColor ht_bitterSweetDarkColor];
     [self.nextButton setStyle:HTPressableButtonStyleRounded];
-    [self.nextButton setShadowHeight:0.8];
     [self.nextButton setTitle:@"Next" forState:UIControlStateNormal];
     
 }
@@ -50,6 +54,8 @@
     NSString *choice = [self.torsoArray objectAtIndex:[self.torsoView selectedRowInComponent:0]];
     if ([choice isEqualToString:@"Yes"]) {
         UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"sbpController"];
+        delegate.ResThoractomySBPControllerLabel = @"Repair Heart";
+        
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";

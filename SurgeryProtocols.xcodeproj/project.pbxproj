@@ -557,6 +557,7 @@
 				TargetAttributes = {
 					1DD19DDE1B61794B001EA1FC = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 8B2Z9YK54P;
 					};
 					1DD19DFA1B61794B001EA1FC = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -819,10 +820,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sheana Bull (8B2Z9YK54P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sheana Bull (8B2Z9YK54P)";
 				INFOPLIST_FILE = "$(SRCROOT)/SurgeryProtocols/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2f1d2492-2626-47a4-ba07-f7071e51acff";
 			};
 			name = Debug;
 		};
@@ -831,10 +835,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sheana Bull (8B2Z9YK54P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sheana Bull (8B2Z9YK54P)";
 				INFOPLIST_FILE = "$(SRCROOT)/SurgeryProtocols/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2f1d2492-2626-47a4-ba07-f7071e51acff";
 			};
 			name = Release;
 		};

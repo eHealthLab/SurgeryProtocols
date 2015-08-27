@@ -22,6 +22,7 @@
 - (IBAction)nextButtonPressed:(id)sender;
 
 @property(strong, nonatomic) NSArray *sbpArray;
+@property (weak, nonatomic) IBOutlet UILabel *SBPControllerLabel;
 
 @end
 

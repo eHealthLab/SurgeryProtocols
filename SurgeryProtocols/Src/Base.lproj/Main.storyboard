@@ -1759,21 +1759,11 @@ and CPR &lt; 10min</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and SBP &gt; 70mm Hg?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pY2-9S-wQ9">
-                                <rect key="frame" x="200" y="158" width="200" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="F49-HJ-i6c"/>
-                                    <constraint firstAttribute="width" constant="200" id="Y6q-I7-ylD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85r-8y-5bK">
-                                <rect key="frame" x="140" y="245" width="320" height="162"/>
+                                <rect key="frame" x="140" y="269" width="320" height="162"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1K-54-ckf" customClass="HTPressableButton">
-                                <rect key="frame" x="240" y="423" width="120" height="40"/>
+                                <rect key="frame" x="240" y="447" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="j9C-Eq-Rgl"/>
                                     <constraint firstAttribute="height" constant="40" id="ufZ-dF-C2C"/>
@@ -1785,20 +1775,34 @@ and CPR &lt; 10min</string>
                                     <action selector="nextButtonPressed:" destination="1PX-HO-ihS" eventType="touchUpInside" id="evP-5B-dDR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pY2-9S-wQ9">
+                                <rect key="frame" x="83" y="155" width="446" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="F49-HJ-i6c"/>
+                                    <constraint firstAttribute="width" constant="446" id="Y6q-I7-ylD"/>
+                                </constraints>
+                                <string key="text">If SBP &gt; 70,
+apply Aortic X-clamp and 
+Assess Viability</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pY2-9S-wQ9" firstAttribute="top" secondItem="QHk-Bh-WCl" secondAttribute="bottom" constant="27" id="8R8-1f-KVu"/>
+                            <constraint firstItem="pY2-9S-wQ9" firstAttribute="top" secondItem="QHk-Bh-WCl" secondAttribute="bottom" constant="24" id="8R8-1f-KVu"/>
                             <constraint firstItem="M1K-54-ckf" firstAttribute="top" secondItem="85r-8y-5bK" secondAttribute="bottom" constant="16" id="FzF-7A-dpT"/>
-                            <constraint firstItem="pY2-9S-wQ9" firstAttribute="centerX" secondItem="85r-8y-5bK" secondAttribute="centerX" id="IUn-qI-ZrS"/>
+                            <constraint firstItem="pY2-9S-wQ9" firstAttribute="centerX" secondItem="85r-8y-5bK" secondAttribute="centerX" constant="6" id="IUn-qI-ZrS"/>
                             <constraint firstItem="QHk-Bh-WCl" firstAttribute="top" secondItem="GwM-Mb-01X" secondAttribute="bottom" constant="63" id="Iez-oh-sHt"/>
-                            <constraint firstItem="85r-8y-5bK" firstAttribute="top" secondItem="pY2-9S-wQ9" secondAttribute="bottom" constant="39" id="MbG-dG-3yI"/>
-                            <constraint firstItem="pY2-9S-wQ9" firstAttribute="centerX" secondItem="QHk-Bh-WCl" secondAttribute="centerX" id="Ozk-FB-YcW"/>
+                            <constraint firstItem="85r-8y-5bK" firstAttribute="top" secondItem="pY2-9S-wQ9" secondAttribute="bottom" constant="42" id="MbG-dG-3yI"/>
+                            <constraint firstItem="pY2-9S-wQ9" firstAttribute="centerX" secondItem="QHk-Bh-WCl" secondAttribute="centerX" constant="6" id="Ozk-FB-YcW"/>
                             <constraint firstAttribute="centerX" secondItem="QHk-Bh-WCl" secondAttribute="centerX" id="aVv-kY-vm1"/>
                             <constraint firstItem="M1K-54-ckf" firstAttribute="centerX" secondItem="85r-8y-5bK" secondAttribute="centerX" id="hGG-aq-LHI"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="SBPControllerLabel" destination="QHk-Bh-WCl" id="XId-0b-Ifg"/>
                         <outlet property="nextButton" destination="M1K-54-ckf" id="clH-JQ-zeX"/>
                         <outlet property="sbpPickerView" destination="85r-8y-5bK" id="39W-Yf-unD"/>
                     </connections>

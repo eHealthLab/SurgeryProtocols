@@ -13,10 +13,16 @@
 @end
 
 @implementation AppDelegate
-
+-(void)initProfile
+{
+    self.ResThoractomySBPControllerLabel = @" ";
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.ResThoractomySBPControllerLabel = @" ";
+    
     return YES;
 }
 
