@@ -58,6 +58,12 @@
 		1D725B681B8153CC0006521E /* ResuscitativeThoracotomyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B671B8153CC0006521E /* ResuscitativeThoracotomyImage.m */; };
 		1D725B6A1B81550E0006521E /* PenetratingNeckInjuriesImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B691B81550E0006521E /* PenetratingNeckInjuriesImage.m */; };
 		1D725B6E1B8158940006521E /* TEInjury.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B6D1B8158940006521E /* TEInjury.m */; };
+		1D82B01C1B93432A0066546E /* PVIAssessment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82B01B1B93432A0066546E /* PVIAssessment.m */; };
+		1D82B0201B93435E0066546E /* PVIHard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82B01F1B93435E0066546E /* PVIHard.m */; };
+		1D82B0221B9343690066546E /* PVISoft.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82B0211B9343690066546E /* PVISoft.m */; };
+		1D82B0261B9343900066546E /* PVIOperatingRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82B0251B9343900066546E /* PVIOperatingRoom.m */; };
+		1D82B0281B93497A0066546E /* PVIImaging.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82B0271B93497A0066546E /* PVIImaging.m */; };
+		1D82B02C1B934A6F0066546E /* PVIImagingArteriography.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82B02B1B934A6F0066546E /* PVIImagingArteriography.m */; };
 		1DAB4B6F1B6DCBC1008F186F /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1DAB4B6D1B6DCBC1008F186F /* beep.wav */; };
 		1DAB4B701B6DCBC1008F186F /* Voicemail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1DAB4B6E1B6DCBC1008F186F /* Voicemail.wav */; };
 		1DAB4B721B6DCC9F008F186F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DAB4B711B6DCC9F008F186F /* AVFoundation.framework */; };
@@ -71,6 +77,15 @@
 		1DCC35421B8D08BB00FD2B82 /* BCVIOperate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35411B8D08BB00FD2B82 /* BCVIOperate.m */; };
 		1DCC35441B8D09A500FD2B82 /* BCVIStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35431B8D09A500FD2B82 /* BCVIStop.m */; };
 		1DCC35481B8D0B3700FD2B82 /* BCVIGradeInjury.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35471B8D0B3700FD2B82 /* BCVIGradeInjury.m */; };
+		1DCF03471B8F825A005839B4 /* PenetratingNeckInjuries_scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCF03461B8F825A005839B4 /* PenetratingNeckInjuries_scaled.png */; };
+		1DCF03491B8F8684005839B4 /* BLUNT CEREBROVASCULAR INJURIES_scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCF03481B8F8684005839B4 /* BLUNT CEREBROVASCULAR INJURIES_scaled.png */; };
+		1DCF034B1B8F8688005839B4 /* ResuscitativeThoracotomy_scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCF034A1B8F8688005839B4 /* ResuscitativeThoracotomy_scaled.png */; };
+		1DCF034E1B91094F005839B4 /* PenetratingAbdominalInjuryType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCF034D1B91094F005839B4 /* PenetratingAbdominalInjuryType.m */; };
+		1DCF03501B910A95005839B4 /* PAIHemoStable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCF034F1B910A95005839B4 /* PAIHemoStable.m */; };
+		1DCF03551B910F24005839B4 /* PAIGSW.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCF03541B910F24005839B4 /* PAIGSW.m */; };
+		1DCF03571B910F2F005839B4 /* PAISW.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCF03561B910F2F005839B4 /* PAISW.m */; };
+		1DCF03591B9118CA005839B4 /* PAIFinal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCF03581B9118CA005839B4 /* PAIFinal.m */; };
+		1DCF035D1B912476005839B4 /* operatingRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCF035C1B912476005839B4 /* operatingRoom.m */; };
 		1DD19DF31B61794B001EA1FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DD19DF21B61794B001EA1FC /* Images.xcassets */; };
 		1DD19E021B61794C001EA1FC /* SurgeryProtocolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD19E011B61794C001EA1FC /* SurgeryProtocolsTests.m */; };
 		1DD19E2F1B617A9D001EA1FC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD19E231B617A9D001EA1FC /* LaunchScreen.xib */; };
@@ -175,6 +190,18 @@
 		1D725B6B1B81551E0006521E /* PenetratingNeckInjuriesImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PenetratingNeckInjuriesImage.h; sourceTree = "<group>"; };
 		1D725B6C1B8158880006521E /* TEInjury.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TEInjury.h; sourceTree = "<group>"; };
 		1D725B6D1B8158940006521E /* TEInjury.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEInjury.m; sourceTree = "<group>"; };
+		1D82B01B1B93432A0066546E /* PVIAssessment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIAssessment.m; sourceTree = "<group>"; };
+		1D82B01D1B9343300066546E /* PVIAssessment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIAssessment.h; sourceTree = "<group>"; };
+		1D82B01E1B9343550066546E /* PVIHard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIHard.h; sourceTree = "<group>"; };
+		1D82B01F1B93435E0066546E /* PVIHard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIHard.m; sourceTree = "<group>"; };
+		1D82B0211B9343690066546E /* PVISoft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVISoft.m; sourceTree = "<group>"; };
+		1D82B0231B9343710066546E /* PVISoft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVISoft.h; sourceTree = "<group>"; };
+		1D82B0241B93437A0066546E /* PVIOperatingRoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIOperatingRoom.h; sourceTree = "<group>"; };
+		1D82B0251B9343900066546E /* PVIOperatingRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIOperatingRoom.m; sourceTree = "<group>"; };
+		1D82B0271B93497A0066546E /* PVIImaging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIImaging.m; sourceTree = "<group>"; };
+		1D82B0291B9349830066546E /* PVIImaging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIImaging.h; sourceTree = "<group>"; };
+		1D82B02A1B934A670066546E /* PVIImagingArteriography.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIImagingArteriography.h; sourceTree = "<group>"; };
+		1D82B02B1B934A6F0066546E /* PVIImagingArteriography.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIImagingArteriography.m; sourceTree = "<group>"; };
 		1DAB4B6D1B6DCBC1008F186F /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
 		1DAB4B6E1B6DCBC1008F186F /* Voicemail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Voicemail.wav; sourceTree = "<group>"; };
 		1DAB4B711B6DCC9F008F186F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -198,6 +225,21 @@
 		1DCC35451B8D09AE00FD2B82 /* BCVIStop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVIStop.h; sourceTree = "<group>"; };
 		1DCC35461B8D0B2C00FD2B82 /* BCVIGradeInjury.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVIGradeInjury.h; sourceTree = "<group>"; };
 		1DCC35471B8D0B3700FD2B82 /* BCVIGradeInjury.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVIGradeInjury.m; sourceTree = "<group>"; };
+		1DCF03461B8F825A005839B4 /* PenetratingNeckInjuries_scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PenetratingNeckInjuries_scaled.png; sourceTree = "<group>"; };
+		1DCF03481B8F8684005839B4 /* BLUNT CEREBROVASCULAR INJURIES_scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BLUNT CEREBROVASCULAR INJURIES_scaled.png"; sourceTree = "<group>"; };
+		1DCF034A1B8F8688005839B4 /* ResuscitativeThoracotomy_scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ResuscitativeThoracotomy_scaled.png; sourceTree = "<group>"; };
+		1DCF034C1B910934005839B4 /* PenetratingAbdominalInjuryType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PenetratingAbdominalInjuryType.h; sourceTree = "<group>"; };
+		1DCF034D1B91094F005839B4 /* PenetratingAbdominalInjuryType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PenetratingAbdominalInjuryType.m; sourceTree = "<group>"; };
+		1DCF034F1B910A95005839B4 /* PAIHemoStable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAIHemoStable.m; sourceTree = "<group>"; };
+		1DCF03511B910A9B005839B4 /* PAIHemoStable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAIHemoStable.h; sourceTree = "<group>"; };
+		1DCF03521B910C70005839B4 /* PAIGSW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAIGSW.h; sourceTree = "<group>"; };
+		1DCF03531B910C78005839B4 /* PAISW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAISW.h; sourceTree = "<group>"; };
+		1DCF03541B910F24005839B4 /* PAIGSW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAIGSW.m; sourceTree = "<group>"; };
+		1DCF03561B910F2F005839B4 /* PAISW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAISW.m; sourceTree = "<group>"; };
+		1DCF03581B9118CA005839B4 /* PAIFinal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAIFinal.m; sourceTree = "<group>"; };
+		1DCF035A1B9118D2005839B4 /* PAIFinal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAIFinal.h; sourceTree = "<group>"; };
+		1DCF035B1B912462005839B4 /* operatingRoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = operatingRoom.h; sourceTree = "<group>"; };
+		1DCF035C1B912476005839B4 /* operatingRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = operatingRoom.m; sourceTree = "<group>"; };
 		1DD19DDF1B61794B001EA1FC /* SurgeryProtocols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurgeryProtocols.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD19DF21B61794B001EA1FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1DD19DFB1B61794B001EA1FC /* SurgeryProtocolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurgeryProtocolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -268,9 +310,12 @@
 				1D0FC6D91B6B059900302C6E /* UCH_12_Jeniann_Yi_326.Jpeg */,
 				1D0FC6DA1B6B059900302C6E /* UCH_13_Shandra_Wilson_106.Jpeg */,
 				1D0FC6DB1B6B059900302C6E /* UCH_13_Shandra_Wilson_185.Jpeg */,
+				1DCF034A1B8F8688005839B4 /* ResuscitativeThoracotomy_scaled.png */,
+				1DCF03481B8F8684005839B4 /* BLUNT CEREBROVASCULAR INJURIES_scaled.png */,
 				1DE817A71B80F00400789790 /* BLUNT CEREBROVASCULAR INJURIES .png */,
 				1DE817A81B80F00400789790 /* PenetratingNeckInjuries.png */,
 				1DE817A91B80F00400789790 /* ResuscitativeThoracotomy.png */,
+				1DCF03461B8F825A005839B4 /* PenetratingNeckInjuries_scaled.png */,
 				1D0FC6DC1B6B059900302C6E /* UCH_13_Shandra_Wilson_386.Jpeg */,
 				1D0FC6DD1B6B059900302C6E /* UCH_13_Shandra_Wilson_468.Jpeg */,
 				1D0FC6DE1B6B059900302C6E /* UCH_13_Shandra_Wilson_519.Jpeg */,
@@ -469,6 +514,30 @@
 				1DCC35451B8D09AE00FD2B82 /* BCVIStop.h */,
 				1DCC35461B8D0B2C00FD2B82 /* BCVIGradeInjury.h */,
 				1DCC35471B8D0B3700FD2B82 /* BCVIGradeInjury.m */,
+				1DCF034C1B910934005839B4 /* PenetratingAbdominalInjuryType.h */,
+				1DCF034F1B910A95005839B4 /* PAIHemoStable.m */,
+				1DCF03511B910A9B005839B4 /* PAIHemoStable.h */,
+				1DCF034D1B91094F005839B4 /* PenetratingAbdominalInjuryType.m */,
+				1DCF03521B910C70005839B4 /* PAIGSW.h */,
+				1DCF03531B910C78005839B4 /* PAISW.h */,
+				1DCF03541B910F24005839B4 /* PAIGSW.m */,
+				1DCF03561B910F2F005839B4 /* PAISW.m */,
+				1DCF03581B9118CA005839B4 /* PAIFinal.m */,
+				1DCF035A1B9118D2005839B4 /* PAIFinal.h */,
+				1DCF035B1B912462005839B4 /* operatingRoom.h */,
+				1DCF035C1B912476005839B4 /* operatingRoom.m */,
+				1D82B01B1B93432A0066546E /* PVIAssessment.m */,
+				1D82B01D1B9343300066546E /* PVIAssessment.h */,
+				1D82B01E1B9343550066546E /* PVIHard.h */,
+				1D82B01F1B93435E0066546E /* PVIHard.m */,
+				1D82B0211B9343690066546E /* PVISoft.m */,
+				1D82B0231B9343710066546E /* PVISoft.h */,
+				1D82B0241B93437A0066546E /* PVIOperatingRoom.h */,
+				1D82B0251B9343900066546E /* PVIOperatingRoom.m */,
+				1D82B0271B93497A0066546E /* PVIImaging.m */,
+				1D82B0291B9349830066546E /* PVIImaging.h */,
+				1D82B02A1B934A670066546E /* PVIImagingArteriography.h */,
+				1D82B02B1B934A6F0066546E /* PVIImagingArteriography.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -603,6 +672,7 @@
 				1D0FC7191B6B0CB000302C6E /* pickerBackground@2x.png in Resources */,
 				1D0FC6F71B6B059900302C6E /* UCH_13_Shandra_Wilson_185.Jpeg in Resources */,
 				1DD19E371B617AFF001EA1FC /* Info.plist in Resources */,
+				1DCF034B1B8F8688005839B4 /* ResuscitativeThoracotomy_scaled.png in Resources */,
 				1D0FC7001B6B059900302C6E /* UCH_4_Nydam_243.Jpeg in Resources */,
 				1DAB4B6F1B6DCBC1008F186F /* beep.wav in Resources */,
 				1D0FC6FB1B6B059900302C6E /* UCH_14_Maria_Cruz_116.Jpeg in Resources */,
@@ -619,12 +689,14 @@
 				1DE817AB1B80F00400789790 /* PenetratingNeckInjuries.png in Resources */,
 				1D0FC7011B6B059900302C6E /* UCH_4_Nydam_257.Jpeg in Resources */,
 				1D0FC7041B6B059900302C6E /* UCH_5_Schulick_240.Jpeg in Resources */,
+				1DCF03491B8F8684005839B4 /* BLUNT CEREBROVASCULAR INJURIES_scaled.png in Resources */,
 				1D0FC7021B6B059900302C6E /* UCH_4_Nydam_298.Jpeg in Resources */,
 				1D0FC6F81B6B059900302C6E /* UCH_13_Shandra_Wilson_386.Jpeg in Resources */,
 				1D0FC7181B6B0CB000302C6E /* pickerBackground.png in Resources */,
 				1D0FC6F51B6B059900302C6E /* UCH_12_Jeniann_Yi_326.Jpeg in Resources */,
 				1D0FC7061B6B059900302C6E /* UCH_7_Fullerton_107.Jpeg in Resources */,
 				1D0FC6FE1B6B059900302C6E /* UCH_4_Nydam_173.Jpeg in Resources */,
+				1DCF03471B8F825A005839B4 /* PenetratingNeckInjuries_scaled.png in Resources */,
 				1D0FC6F21B6B059900302C6E /* 06-magnify.png in Resources */,
 				1D0FC70A1B6B059900302C6E /* UCH_9_Meguid_127.Jpeg in Resources */,
 				1DAB4B701B6DCBC1008F186F /* Voicemail.wav in Resources */,
@@ -654,12 +726,16 @@
 				1DD19E331B617A9D001EA1FC /* SecondViewController.m in Sources */,
 				1DCC35481B8D0B3700FD2B82 /* BCVIGradeInjury.m in Sources */,
 				1DCC35441B8D09A500FD2B82 /* BCVIStop.m in Sources */,
+				1D82B02C1B934A6F0066546E /* PVIImagingArteriography.m in Sources */,
 				1DCC35301B8CDB0900FD2B82 /* BCVISignsRiskFactors.m in Sources */,
 				1DE817B81B810A8E00789790 /* ZoneSelection.m in Sources */,
+				1DCF03571B910F2F005839B4 /* PAISW.m in Sources */,
 				1DCC352C1B8CD74100FD2B82 /* BCVIImage.m in Sources */,
 				1D0FC6C71B6AD34600302C6E /* EDTCardiacRhythm.m in Sources */,
+				1DCF03501B910A95005839B4 /* PAIHemoStable.m in Sources */,
 				1DCC353E1B8D074A00FD2B82 /* BCVIRepeatMultiscaleScan.m in Sources */,
 				1DCC35361B8CE4B200FD2B82 /* BCVICTScanNegative.m in Sources */,
+				1DCF034E1B91094F005839B4 /* PenetratingAbdominalInjuryType.m in Sources */,
 				1D0FC6C51B69C87C00302C6E /* deadEnd.m in Sources */,
 				1D725B681B8153CC0006521E /* ResuscitativeThoracotomyImage.m in Sources */,
 				1D0FC6CB1B6AD9C200302C6E /* CardiacRhythmType.m in Sources */,
@@ -673,19 +749,27 @@
 				1D0FC7291B6B9F8900302C6E /* NonTorsoViewController.m in Sources */,
 				1D0FC6D11B6AF49E00302C6E /* OrEndController.m in Sources */,
 				1DE817B21B8101EC00789790 /* HardSignsP2.m in Sources */,
+				1DCF03551B910F24005839B4 /* PAIGSW.m in Sources */,
 				1DD19E381B617AFF001EA1FC /* main.m in Sources */,
 				1DE817BE1B810CC600789790 /* Zone2.m in Sources */,
 				1DCC35321B8CDD0B00FD2B82 /* BCVIEmergentYes.m in Sources */,
+				1D82B01C1B93432A0066546E /* PVIAssessment.m in Sources */,
 				1DE817B51B81031000789790 /* SuspiciousActivity.m in Sources */,
 				1D0FC6BB1B694A9500302C6E /* TraumaTypeViewController.m in Sources */,
+				1DCF035D1B912476005839B4 /* operatingRoom.m in Sources */,
+				1D82B0201B93435E0066546E /* PVIHard.m in Sources */,
 				1DCC353C1B8D052E00FD2B82 /* BCVIInjuryHealed.m in Sources */,
 				1D0FC6C11B69982500302C6E /* LocationViewController.m in Sources */,
 				1DCC35421B8D08BB00FD2B82 /* BCVIOperate.m in Sources */,
 				1DD19E431B618D6E001EA1FC /* HTPressableButton.m in Sources */,
+				1D82B0281B93497A0066546E /* PVIImaging.m in Sources */,
+				1D82B0221B9343690066546E /* PVISoft.m in Sources */,
 				1DD19E451B618D6E001EA1FC /* UIColor+HTColor.m in Sources */,
 				1DE817BA1B810C9500789790 /* Zone1.m in Sources */,
+				1D82B0261B9343900066546E /* PVIOperatingRoom.m in Sources */,
 				1D0FC72E1B6BA20F00302C6E /* Tamponade.m in Sources */,
 				1D0FC7241B6B935E00302C6E /* CPPickerViewCell.m in Sources */,
+				1DCF03591B9118CA005839B4 /* PAIFinal.m in Sources */,
 				1D0FC6CD1B6AEA1400302C6E /* SBPContorller.m in Sources */,
 				1D0FC7271B6B9F7600302C6E /* TorsoViewController.m in Sources */,
 				1DE817C01B810CCF00789790 /* Zone3.m in Sources */,
@@ -750,6 +834,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sheana Bull (8B2Z9YK54P)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sheana Bull (8B2Z9YK54P)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -772,6 +857,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "4dd9253d-88ae-488a-854f-f3fb87364e09";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -794,6 +880,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sheana Bull (8B2Z9YK54P)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sheana Bull (8B2Z9YK54P)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -809,6 +896,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "4dd9253d-88ae-488a-854f-f3fb87364e09";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

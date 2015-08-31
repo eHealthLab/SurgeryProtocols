@@ -26,7 +26,7 @@
     self.nextButton.shadowColor = [UIColor ht_bitterSweetDarkColor];
     [self.nextButton setStyle:HTPressableButtonStyleRounded];
     [self.nextButton setTitle:@"Next" forState:UIControlStateNormal];
-}
+    }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
@@ -79,7 +79,7 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else if ([choice isEqualToString:@"Penetrating Abdominal Injuries"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PENETRATINGABDOMINALINJURIES"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PenetratingAbdominalInjuriesImage"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";

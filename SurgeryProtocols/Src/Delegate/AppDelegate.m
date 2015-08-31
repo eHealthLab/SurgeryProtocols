@@ -16,12 +16,14 @@
 -(void)initProfile
 {
     self.ResThoractomySBPControllerLabel = @" ";
+    self.AbdominalInjuryFinalOutcomeLabel = @" ";
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
     self.ResThoractomySBPControllerLabel = @" ";
+    self.AbdominalInjuryFinalOutcomeLabel = @" ";
     
     return YES;
 }
