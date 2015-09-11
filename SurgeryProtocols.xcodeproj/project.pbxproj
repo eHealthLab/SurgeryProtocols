@@ -93,7 +93,6 @@
 		1DD19E311B617A9D001EA1FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD19E291B617A9D001EA1FC /* AppDelegate.m */; };
 		1DD19E321B617A9D001EA1FC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD19E2C1B617A9D001EA1FC /* FirstViewController.m */; };
 		1DD19E331B617A9D001EA1FC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD19E2E1B617A9D001EA1FC /* SecondViewController.m */; };
-		1DD19E371B617AFF001EA1FC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DD19E351B617AFF001EA1FC /* Info.plist */; };
 		1DD19E381B617AFF001EA1FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD19E361B617AFF001EA1FC /* main.m */; };
 		1DD19E431B618D6E001EA1FC /* HTPressableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD19E3C1B618D6E001EA1FC /* HTPressableButton.m */; };
 		1DD19E441B618D6E001EA1FC /* HTPressableButtonPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD19E3E1B618D6E001EA1FC /* HTPressableButtonPrefs.m */; };
@@ -621,7 +620,7 @@
 		1DD19DD71B61794B001EA1FC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "University of Colorado Denver";
 				TargetAttributes = {
 					1DD19DDE1B61794B001EA1FC = {
@@ -671,7 +670,6 @@
 				1D0FC6FD1B6B059900302C6E /* UCH_3_Kweku_Hazel_218.Jpeg in Resources */,
 				1D0FC7191B6B0CB000302C6E /* pickerBackground@2x.png in Resources */,
 				1D0FC6F71B6B059900302C6E /* UCH_13_Shandra_Wilson_185.Jpeg in Resources */,
-				1DD19E371B617AFF001EA1FC /* Info.plist in Resources */,
 				1DCF034B1B8F8688005839B4 /* ResuscitativeThoracotomy_scaled.png in Resources */,
 				1D0FC7001B6B059900302C6E /* UCH_4_Nydam_243.Jpeg in Resources */,
 				1DAB4B6F1B6DCBC1008F186F /* beep.wav in Resources */,
