@@ -13,9 +13,12 @@
 #import "HTPressableButton.h"
 #import "UIColor+HTColor.h"
 
-@interface ResuscitativeThoracotomyImage: UIViewController
+@interface ResuscitativeThoracotomyImage: UIViewController<UIScrollViewDelegate>
 
 @property (strong, nonatomic) IBOutlet HTPressableButton *nextButton;
+@property (strong, nonatomic) IBOutlet UIImageView *image;
+//- (IBAction)handlePan:(UIGestureRecognizer *)sender;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 

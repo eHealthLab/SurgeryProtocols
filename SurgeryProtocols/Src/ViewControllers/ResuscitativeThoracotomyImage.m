@@ -22,6 +22,17 @@
     self.view.backgroundColor = [[UIColor colorWithPatternImage:image] colorWithAlphaComponent:0.8];*/
     
     
+    
+    /*UIImageView *imageView = [[UIImageView alloc] initW];
+    imageView.frame = CGRectMake(0, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height);
+    imageView.image = [UIImageView ]*/
+    
+    self.scrollView.delegate = self;
+
+    self.scrollView.minimumZoomScale=1.0;
+    self.scrollView.maximumZoomScale=6.0;
+
+    
     self.nextButton.cornerRadius = 10.0;
     self.nextButton.shadowHeight = self.nextButton.frame.size.height * 0.17;
     
@@ -34,4 +45,19 @@
     
 }
 
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.image;
+}
+/*
+- (IBAction)handlePan:(UIGestureRecognizer *)sender {
+    NSLog(@"panning\n");
+    CGPoint netTranslation;
+    CGPoint translation = [(UIPanGestureRecognizer *) sender translationInView:self.image];
+    sender.view.transform =CGAffineTransformMakeTranslation(netTranslation.x + translation.x, netTranslation.y + translation.y);
+    if (sender.state == UIGestureRecognizerStateEnded) {
+        netTranslation.x += translation.x;
+        netTranslation.y += translation.y;
+    }
+}*/
 @end

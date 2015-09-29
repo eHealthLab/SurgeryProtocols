@@ -17,6 +17,10 @@
 {
     self.ResThoractomySBPControllerLabel = @" ";
     self.AbdominalInjuryFinalOutcomeLabel = @" ";
+    self.AbdPelvicTrauma = @"";
+    self.AbdPelvicTraumaGradeType = @"";
+    self.BluntHepaticLabel = @"";
+    self.BluntHepaticScanOutcome = @"";
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -24,6 +28,10 @@
     
     self.ResThoractomySBPControllerLabel = @" ";
     self.AbdominalInjuryFinalOutcomeLabel = @" ";
+    self.AbdPelvicTrauma = @"";
+    self.AbdPelvicTraumaGradeType = @"";
+    self.BluntHepaticLabel = @"";
+    self.BluntHepaticScanOutcome = @"";
     
     return YES;
 }

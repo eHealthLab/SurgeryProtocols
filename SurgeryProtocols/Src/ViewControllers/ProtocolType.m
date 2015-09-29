@@ -109,7 +109,7 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else if ([choice isEqualToString:@"Imaging For Blunt Abdominal Trauma"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"IMAGINGFORBLUNTABDOMINALTRAUMA"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"IMAGINGFORBLUNTABDOMINALTRAUMAImage"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -129,7 +129,7 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else if ([choice isEqualToString:@"Blunt Hepatic Injury – Part 1 (Non-Operative Management)"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BLUNTHEPATICINJURY–PART1(NON-OPERATIVEMANAGEMENT)"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BluntHepticImage"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -139,7 +139,7 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else if ([choice isEqualToString:@"Blunt Hepatic Injury – Part 2 (Operative Management)"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BLUNTHEPATICINJURY–PART2(OPERATIVEMANAGEMENT)"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BluntHepticPart2Image"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";

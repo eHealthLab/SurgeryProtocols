@@ -15,6 +15,10 @@
 @property (strong, nonatomic) UIWindow *window;
 @property(strong, nonatomic) NSString *ResThoractomySBPControllerLabel;
 @property(strong, nonatomic) NSString *AbdominalInjuryFinalOutcomeLabel;
+@property(strong, nonatomic) NSString *AbdPelvicTrauma;
+@property(strong, nonatomic) NSString *AbdPelvicTraumaGradeType;
+@property(strong, nonatomic) NSString *BluntHepaticLabel;
+@property(strong, nonatomic) NSString *BluntHepaticScanOutcome;
 
 @end
 

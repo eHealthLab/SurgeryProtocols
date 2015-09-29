@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05784A291BB307BE0096703F /* AbdomnialPelvicCT.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */; };
+		05784A2D1BB309350096703F /* AbdPelFast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A2C1BB309350096703F /* AbdPelFast.m */; };
+		05784A2F1BB30B230096703F /* AbdPelRepeatFast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A2E1BB30B230096703F /* AbdPelRepeatFast.m */; };
+		05784A331BB30C460096703F /* AbdominalPelvicCTScan.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A321BB30C460096703F /* AbdominalPelvicCTScan.m */; };
+		05784A351BB37FB20096703F /* Blush.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A341BB37FB20096703F /* Blush.m */; };
+		05943C421BB70232005DF268 /* NeckTraumaImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 05943C411BB70232005DF268 /* NeckTraumaImage.png */; };
+		05943C451BB709F3005DF268 /* Angiography.m in Sources */ = {isa = PBXBuildFile; fileRef = 05943C441BB709F3005DF268 /* Angiography.m */; };
+		05943C471BB70C19005DF268 /* Observation.m in Sources */ = {isa = PBXBuildFile; fileRef = 05943C461BB70C19005DF268 /* Observation.m */; };
+		05943C4B1BB745F1005DF268 /* BluntHepticInitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 05943C4A1BB745F1005DF268 /* BluntHepticInitial.m */; };
+		05943C4D1BB746D7005DF268 /* BLTHepticStable.m in Sources */ = {isa = PBXBuildFile; fileRef = 05943C4C1BB746D7005DF268 /* BLTHepticStable.m */; };
+		05943C511BB746EF005DF268 /* BLTHepticUnstable.m in Sources */ = {isa = PBXBuildFile; fileRef = 05943C501BB746EF005DF268 /* BLTHepticUnstable.m */; };
+		05943C531BB748FB005DF268 /* BluntHepaticObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 05943C521BB748FB005DF268 /* BluntHepaticObservation.m */; };
+		05943C571BB749D1005DF268 /* BluntHepaticRepeatCTScan.m in Sources */ = {isa = PBXBuildFile; fileRef = 05943C561BB749D1005DF268 /* BluntHepaticRepeatCTScan.m */; };
+		05943C591BB756D2005DF268 /* BluntHepticBlush.m in Sources */ = {isa = PBXBuildFile; fileRef = 05943C581BB756D2005DF268 /* BluntHepticBlush.m */; };
+		05943C5D1BB760E3005DF268 /* BluntHepaticScanOutcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 05943C5C1BB760E3005DF268 /* BluntHepaticScanOutcome.m */; };
+		05943C5F1BB82D92005DF268 /* BluntHepaticFinal.m in Sources */ = {isa = PBXBuildFile; fileRef = 05943C5E1BB82D92005DF268 /* BluntHepaticFinal.m */; };
+		05943C631BB8351D005DF268 /* BluntHepticPart2Initial.m in Sources */ = {isa = PBXBuildFile; fileRef = 05943C621BB8351D005DF268 /* BluntHepticPart2Initial.m */; };
+		05943C6B1BBA80DD005DF268 /* Protocol2.png in Resources */ = {isa = PBXBuildFile; fileRef = 05943C6A1BBA80DD005DF268 /* Protocol2.png */; };
+		05943C701BBA80E5005DF268 /* Protocol5.png in Resources */ = {isa = PBXBuildFile; fileRef = 05943C6C1BBA80E5005DF268 /* Protocol5.png */; };
+		05943C711BBA80E5005DF268 /* Protocol6.png in Resources */ = {isa = PBXBuildFile; fileRef = 05943C6D1BBA80E5005DF268 /* Protocol6.png */; };
+		05943C721BBA80E5005DF268 /* Protocol7.png in Resources */ = {isa = PBXBuildFile; fileRef = 05943C6E1BBA80E5005DF268 /* Protocol7.png */; };
+		05943C731BBA80E5005DF268 /* Protocol8.png in Resources */ = {isa = PBXBuildFile; fileRef = 05943C6F1BBA80E5005DF268 /* Protocol8.png */; };
 		1D0FC6BB1B694A9500302C6E /* TraumaTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FC6BA1B694A9500302C6E /* TraumaTypeViewController.m */; };
 		1D0FC6BD1B6997DB00302C6E /* ECGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FC6BC1B6997DB00302C6E /* ECGViewController.m */; };
 		1D0FC6C11B69982500302C6E /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FC6C01B69982500302C6E /* LocationViewController.m */; };
@@ -121,6 +143,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbdomnialPelvicCT.m; sourceTree = "<group>"; };
+		05784A2A1BB307CF0096703F /* AbdominalPelvicCT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdominalPelvicCT.h; sourceTree = "<group>"; };
+		05784A2B1BB3092D0096703F /* AbdPelFast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdPelFast.h; sourceTree = "<group>"; };
+		05784A2C1BB309350096703F /* AbdPelFast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbdPelFast.m; sourceTree = "<group>"; };
+		05784A2E1BB30B230096703F /* AbdPelRepeatFast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbdPelRepeatFast.m; sourceTree = "<group>"; };
+		05784A301BB30B290096703F /* AbdPelRepeatFast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdPelRepeatFast.h; sourceTree = "<group>"; };
+		05784A311BB30C3D0096703F /* AbdominalPelvicCTScan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdominalPelvicCTScan.h; sourceTree = "<group>"; };
+		05784A321BB30C460096703F /* AbdominalPelvicCTScan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbdominalPelvicCTScan.m; sourceTree = "<group>"; };
+		05784A341BB37FB20096703F /* Blush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Blush.m; sourceTree = "<group>"; };
+		05784A361BB380A60096703F /* Blush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Blush.h; sourceTree = "<group>"; };
+		05943C411BB70232005DF268 /* NeckTraumaImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NeckTraumaImage.png; sourceTree = "<group>"; };
+		05943C431BB709E7005DF268 /* Angiography.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Angiography.h; sourceTree = "<group>"; };
+		05943C441BB709F3005DF268 /* Angiography.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Angiography.m; sourceTree = "<group>"; };
+		05943C461BB70C19005DF268 /* Observation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observation.m; sourceTree = "<group>"; };
+		05943C481BB70C20005DF268 /* Observation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Observation.h; sourceTree = "<group>"; };
+		05943C491BB745EB005DF268 /* BluntHepticInitial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluntHepticInitial.h; sourceTree = "<group>"; };
+		05943C4A1BB745F1005DF268 /* BluntHepticInitial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluntHepticInitial.m; sourceTree = "<group>"; };
+		05943C4C1BB746D7005DF268 /* BLTHepticStable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTHepticStable.m; sourceTree = "<group>"; };
+		05943C4E1BB746DE005DF268 /* BLTHepticStable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLTHepticStable.h; sourceTree = "<group>"; };
+		05943C4F1BB746E8005DF268 /* BLTHepticUnstable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLTHepticUnstable.h; sourceTree = "<group>"; };
+		05943C501BB746EF005DF268 /* BLTHepticUnstable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTHepticUnstable.m; sourceTree = "<group>"; };
+		05943C521BB748FB005DF268 /* BluntHepaticObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluntHepaticObservation.m; sourceTree = "<group>"; };
+		05943C541BB74901005DF268 /* BluntHepaticObservation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluntHepaticObservation.h; sourceTree = "<group>"; };
+		05943C551BB749CB005DF268 /* BluntHepaticRepeatCTScan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluntHepaticRepeatCTScan.h; sourceTree = "<group>"; };
+		05943C561BB749D1005DF268 /* BluntHepaticRepeatCTScan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluntHepaticRepeatCTScan.m; sourceTree = "<group>"; };
+		05943C581BB756D2005DF268 /* BluntHepticBlush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluntHepticBlush.m; sourceTree = "<group>"; };
+		05943C5A1BB756D7005DF268 /* BluntHepticBlush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluntHepticBlush.h; sourceTree = "<group>"; };
+		05943C5B1BB760DC005DF268 /* BluntHepaticScanOutcome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluntHepaticScanOutcome.h; sourceTree = "<group>"; };
+		05943C5C1BB760E3005DF268 /* BluntHepaticScanOutcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluntHepaticScanOutcome.m; sourceTree = "<group>"; };
+		05943C5E1BB82D92005DF268 /* BluntHepaticFinal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluntHepaticFinal.m; sourceTree = "<group>"; };
+		05943C601BB82D98005DF268 /* BluntHepaticFinal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluntHepaticFinal.h; sourceTree = "<group>"; };
+		05943C611BB83516005DF268 /* BluntHepticPart2Initial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluntHepticPart2Initial.h; sourceTree = "<group>"; };
+		05943C621BB8351D005DF268 /* BluntHepticPart2Initial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluntHepticPart2Initial.m; sourceTree = "<group>"; };
+		05943C6A1BBA80DD005DF268 /* Protocol2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Protocol2.png; sourceTree = "<group>"; };
+		05943C6C1BBA80E5005DF268 /* Protocol5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Protocol5.png; sourceTree = "<group>"; };
+		05943C6D1BBA80E5005DF268 /* Protocol6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Protocol6.png; sourceTree = "<group>"; };
+		05943C6E1BBA80E5005DF268 /* Protocol7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Protocol7.png; sourceTree = "<group>"; };
+		05943C6F1BBA80E5005DF268 /* Protocol8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Protocol8.png; sourceTree = "<group>"; };
 		1D0FC6B91B694A8700302C6E /* TraumaTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TraumaTypeViewController.h; sourceTree = "<group>"; };
 		1D0FC6BA1B694A9500302C6E /* TraumaTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TraumaTypeViewController.m; sourceTree = "<group>"; };
 		1D0FC6BC1B6997DB00302C6E /* ECGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECGViewController.m; sourceTree = "<group>"; };
@@ -308,6 +368,8 @@
 				1D0FC6D81B6B059900302C6E /* 81-dashboard.png */,
 				1D0FC6D91B6B059900302C6E /* UCH_12_Jeniann_Yi_326.Jpeg */,
 				1D0FC6DA1B6B059900302C6E /* UCH_13_Shandra_Wilson_106.Jpeg */,
+				05943C411BB70232005DF268 /* NeckTraumaImage.png */,
+				05943C6A1BBA80DD005DF268 /* Protocol2.png */,
 				1D0FC6DB1B6B059900302C6E /* UCH_13_Shandra_Wilson_185.Jpeg */,
 				1DCF034A1B8F8688005839B4 /* ResuscitativeThoracotomy_scaled.png */,
 				1DCF03481B8F8684005839B4 /* BLUNT CEREBROVASCULAR INJURIES_scaled.png */,
@@ -315,6 +377,10 @@
 				1DE817A81B80F00400789790 /* PenetratingNeckInjuries.png */,
 				1DE817A91B80F00400789790 /* ResuscitativeThoracotomy.png */,
 				1DCF03461B8F825A005839B4 /* PenetratingNeckInjuries_scaled.png */,
+				05943C6C1BBA80E5005DF268 /* Protocol5.png */,
+				05943C6D1BBA80E5005DF268 /* Protocol6.png */,
+				05943C6E1BBA80E5005DF268 /* Protocol7.png */,
+				05943C6F1BBA80E5005DF268 /* Protocol8.png */,
 				1D0FC6DC1B6B059900302C6E /* UCH_13_Shandra_Wilson_386.Jpeg */,
 				1D0FC6DD1B6B059900302C6E /* UCH_13_Shandra_Wilson_468.Jpeg */,
 				1D0FC6DE1B6B059900302C6E /* UCH_13_Shandra_Wilson_519.Jpeg */,
@@ -537,6 +603,38 @@
 				1D82B0291B9349830066546E /* PVIImaging.h */,
 				1D82B02A1B934A670066546E /* PVIImagingArteriography.h */,
 				1D82B02B1B934A6F0066546E /* PVIImagingArteriography.m */,
+				05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */,
+				05784A2A1BB307CF0096703F /* AbdominalPelvicCT.h */,
+				05784A2B1BB3092D0096703F /* AbdPelFast.h */,
+				05784A2C1BB309350096703F /* AbdPelFast.m */,
+				05784A2E1BB30B230096703F /* AbdPelRepeatFast.m */,
+				05784A301BB30B290096703F /* AbdPelRepeatFast.h */,
+				05784A311BB30C3D0096703F /* AbdominalPelvicCTScan.h */,
+				05784A321BB30C460096703F /* AbdominalPelvicCTScan.m */,
+				05784A341BB37FB20096703F /* Blush.m */,
+				05784A361BB380A60096703F /* Blush.h */,
+				05943C431BB709E7005DF268 /* Angiography.h */,
+				05943C441BB709F3005DF268 /* Angiography.m */,
+				05943C461BB70C19005DF268 /* Observation.m */,
+				05943C481BB70C20005DF268 /* Observation.h */,
+				05943C491BB745EB005DF268 /* BluntHepticInitial.h */,
+				05943C4A1BB745F1005DF268 /* BluntHepticInitial.m */,
+				05943C4C1BB746D7005DF268 /* BLTHepticStable.m */,
+				05943C4E1BB746DE005DF268 /* BLTHepticStable.h */,
+				05943C4F1BB746E8005DF268 /* BLTHepticUnstable.h */,
+				05943C501BB746EF005DF268 /* BLTHepticUnstable.m */,
+				05943C521BB748FB005DF268 /* BluntHepaticObservation.m */,
+				05943C541BB74901005DF268 /* BluntHepaticObservation.h */,
+				05943C551BB749CB005DF268 /* BluntHepaticRepeatCTScan.h */,
+				05943C561BB749D1005DF268 /* BluntHepaticRepeatCTScan.m */,
+				05943C581BB756D2005DF268 /* BluntHepticBlush.m */,
+				05943C5A1BB756D7005DF268 /* BluntHepticBlush.h */,
+				05943C5B1BB760DC005DF268 /* BluntHepaticScanOutcome.h */,
+				05943C5C1BB760E3005DF268 /* BluntHepaticScanOutcome.m */,
+				05943C5E1BB82D92005DF268 /* BluntHepaticFinal.m */,
+				05943C601BB82D98005DF268 /* BluntHepaticFinal.h */,
+				05943C611BB83516005DF268 /* BluntHepticPart2Initial.h */,
+				05943C621BB8351D005DF268 /* BluntHepticPart2Initial.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -663,6 +761,8 @@
 				1D0FC6FA1B6B059900302C6E /* UCH_13_Shandra_Wilson_519.Jpeg in Resources */,
 				1D0FC71C1B6B0CB000302C6E /* pickerShadows.png in Resources */,
 				1DE817AC1B80F00400789790 /* ResuscitativeThoracotomy.png in Resources */,
+				05943C6B1BBA80DD005DF268 /* Protocol2.png in Resources */,
+				05943C731BBA80E5005DF268 /* Protocol8.png in Resources */,
 				1D0FC71B1B6B0CB000302C6E /* pickerGlass@2x.png in Resources */,
 				1D0FC6F31B6B059900302C6E /* 111-user.png in Resources */,
 				1D0FC6F91B6B059900302C6E /* UCH_13_Shandra_Wilson_468.Jpeg in Resources */,
@@ -670,10 +770,12 @@
 				1D0FC6FD1B6B059900302C6E /* UCH_3_Kweku_Hazel_218.Jpeg in Resources */,
 				1D0FC7191B6B0CB000302C6E /* pickerBackground@2x.png in Resources */,
 				1D0FC6F71B6B059900302C6E /* UCH_13_Shandra_Wilson_185.Jpeg in Resources */,
+				05943C421BB70232005DF268 /* NeckTraumaImage.png in Resources */,
 				1DCF034B1B8F8688005839B4 /* ResuscitativeThoracotomy_scaled.png in Resources */,
 				1D0FC7001B6B059900302C6E /* UCH_4_Nydam_243.Jpeg in Resources */,
 				1DAB4B6F1B6DCBC1008F186F /* beep.wav in Resources */,
 				1D0FC6FB1B6B059900302C6E /* UCH_14_Maria_Cruz_116.Jpeg in Resources */,
+				05943C711BBA80E5005DF268 /* Protocol6.png in Resources */,
 				1D0FC71A1B6B0CB000302C6E /* pickerGlass.png in Resources */,
 				1D0FC71D1B6B0CB000302C6E /* pickerShadows@2x.png in Resources */,
 				1D0FC70B1B6B059900302C6E /* UCH_Nehler_Vascular_194.Jpeg in Resources */,
@@ -690,11 +792,13 @@
 				1DCF03491B8F8684005839B4 /* BLUNT CEREBROVASCULAR INJURIES_scaled.png in Resources */,
 				1D0FC7021B6B059900302C6E /* UCH_4_Nydam_298.Jpeg in Resources */,
 				1D0FC6F81B6B059900302C6E /* UCH_13_Shandra_Wilson_386.Jpeg in Resources */,
+				05943C721BBA80E5005DF268 /* Protocol7.png in Resources */,
 				1D0FC7181B6B0CB000302C6E /* pickerBackground.png in Resources */,
 				1D0FC6F51B6B059900302C6E /* UCH_12_Jeniann_Yi_326.Jpeg in Resources */,
 				1D0FC7061B6B059900302C6E /* UCH_7_Fullerton_107.Jpeg in Resources */,
 				1D0FC6FE1B6B059900302C6E /* UCH_4_Nydam_173.Jpeg in Resources */,
 				1DCF03471B8F825A005839B4 /* PenetratingNeckInjuries_scaled.png in Resources */,
+				05943C701BBA80E5005DF268 /* Protocol5.png in Resources */,
 				1D0FC6F21B6B059900302C6E /* 06-magnify.png in Resources */,
 				1D0FC70A1B6B059900302C6E /* UCH_9_Meguid_127.Jpeg in Resources */,
 				1DAB4B701B6DCBC1008F186F /* Voicemail.wav in Resources */,
@@ -721,6 +825,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DE817AF1B80F05200789790 /* ProtocolType.m in Sources */,
+				05943C571BB749D1005DF268 /* BluntHepaticRepeatCTScan.m in Sources */,
 				1DD19E331B617A9D001EA1FC /* SecondViewController.m in Sources */,
 				1DCC35481B8D0B3700FD2B82 /* BCVIGradeInjury.m in Sources */,
 				1DCC35441B8D09A500FD2B82 /* BCVIStop.m in Sources */,
@@ -729,20 +834,25 @@
 				1DE817B81B810A8E00789790 /* ZoneSelection.m in Sources */,
 				1DCF03571B910F2F005839B4 /* PAISW.m in Sources */,
 				1DCC352C1B8CD74100FD2B82 /* BCVIImage.m in Sources */,
+				05943C451BB709F3005DF268 /* Angiography.m in Sources */,
 				1D0FC6C71B6AD34600302C6E /* EDTCardiacRhythm.m in Sources */,
 				1DCF03501B910A95005839B4 /* PAIHemoStable.m in Sources */,
 				1DCC353E1B8D074A00FD2B82 /* BCVIRepeatMultiscaleScan.m in Sources */,
 				1DCC35361B8CE4B200FD2B82 /* BCVICTScanNegative.m in Sources */,
 				1DCF034E1B91094F005839B4 /* PenetratingAbdominalInjuryType.m in Sources */,
 				1D0FC6C51B69C87C00302C6E /* deadEnd.m in Sources */,
+				05943C631BB8351D005DF268 /* BluntHepticPart2Initial.m in Sources */,
 				1D725B681B8153CC0006521E /* ResuscitativeThoracotomyImage.m in Sources */,
+				05784A331BB30C460096703F /* AbdominalPelvicCTScan.m in Sources */,
 				1D0FC6CB1B6AD9C200302C6E /* CardiacRhythmType.m in Sources */,
+				05943C591BB756D2005DF268 /* BluntHepticBlush.m in Sources */,
 				1D0FC7171B6B0CB000302C6E /* AFPickerView.m in Sources */,
 				1DD19E461B618D6E001EA1FC /* UIImage+HTButton.m in Sources */,
 				1DCC35381B8D03B400FD2B82 /* BCVISurgicallyAccessible.m in Sources */,
 				1D0FC6BD1B6997DB00302C6E /* ECGViewController.m in Sources */,
 				1DD19E311B617A9D001EA1FC /* AppDelegate.m in Sources */,
 				1DD19E441B618D6E001EA1FC /* HTPressableButtonPrefs.m in Sources */,
+				05943C4B1BB745F1005DF268 /* BluntHepticInitial.m in Sources */,
 				1D0FC7231B6B935E00302C6E /* CPPickerView.m in Sources */,
 				1D0FC7291B6B9F8900302C6E /* NonTorsoViewController.m in Sources */,
 				1D0FC6D11B6AF49E00302C6E /* OrEndController.m in Sources */,
@@ -758,18 +868,28 @@
 				1D82B0201B93435E0066546E /* PVIHard.m in Sources */,
 				1DCC353C1B8D052E00FD2B82 /* BCVIInjuryHealed.m in Sources */,
 				1D0FC6C11B69982500302C6E /* LocationViewController.m in Sources */,
+				05784A351BB37FB20096703F /* Blush.m in Sources */,
 				1DCC35421B8D08BB00FD2B82 /* BCVIOperate.m in Sources */,
+				05943C511BB746EF005DF268 /* BLTHepticUnstable.m in Sources */,
 				1DD19E431B618D6E001EA1FC /* HTPressableButton.m in Sources */,
 				1D82B0281B93497A0066546E /* PVIImaging.m in Sources */,
+				05943C5F1BB82D92005DF268 /* BluntHepaticFinal.m in Sources */,
 				1D82B0221B9343690066546E /* PVISoft.m in Sources */,
 				1DD19E451B618D6E001EA1FC /* UIColor+HTColor.m in Sources */,
 				1DE817BA1B810C9500789790 /* Zone1.m in Sources */,
 				1D82B0261B9343900066546E /* PVIOperatingRoom.m in Sources */,
+				05784A2D1BB309350096703F /* AbdPelFast.m in Sources */,
 				1D0FC72E1B6BA20F00302C6E /* Tamponade.m in Sources */,
+				05943C4D1BB746D7005DF268 /* BLTHepticStable.m in Sources */,
 				1D0FC7241B6B935E00302C6E /* CPPickerViewCell.m in Sources */,
 				1DCF03591B9118CA005839B4 /* PAIFinal.m in Sources */,
+				05784A2F1BB30B230096703F /* AbdPelRepeatFast.m in Sources */,
 				1D0FC6CD1B6AEA1400302C6E /* SBPContorller.m in Sources */,
+				05943C471BB70C19005DF268 /* Observation.m in Sources */,
+				05943C5D1BB760E3005DF268 /* BluntHepaticScanOutcome.m in Sources */,
+				05943C531BB748FB005DF268 /* BluntHepaticObservation.m in Sources */,
 				1D0FC7271B6B9F7600302C6E /* TorsoViewController.m in Sources */,
+				05784A291BB307BE0096703F /* AbdomnialPelvicCT.m in Sources */,
 				1DE817C01B810CCF00789790 /* Zone3.m in Sources */,
 				1DD19E321B617A9D001EA1FC /* FirstViewController.m in Sources */,
 				1D725B6A1B81550E0006521E /* PenetratingNeckInjuriesImage.m in Sources */,

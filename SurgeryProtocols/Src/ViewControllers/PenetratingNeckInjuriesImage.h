@@ -13,9 +13,11 @@
 #import "HTPressableButton.h"
 #import "UIColor+HTColor.h"
 
-@interface PenetratingNeckInjuriesImage: UIViewController
+@interface PenetratingNeckInjuriesImage: UIViewController<UIScrollViewDelegate>
 
 @property (strong, nonatomic) IBOutlet HTPressableButton *nextButton;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIImageView *image;
 
 @end
 
