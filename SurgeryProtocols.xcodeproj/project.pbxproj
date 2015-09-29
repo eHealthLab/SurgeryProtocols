@@ -29,6 +29,7 @@
 		05943C711BBA80E5005DF268 /* Protocol6.png in Resources */ = {isa = PBXBuildFile; fileRef = 05943C6D1BBA80E5005DF268 /* Protocol6.png */; };
 		05943C721BBA80E5005DF268 /* Protocol7.png in Resources */ = {isa = PBXBuildFile; fileRef = 05943C6E1BBA80E5005DF268 /* Protocol7.png */; };
 		05943C731BBA80E5005DF268 /* Protocol8.png in Resources */ = {isa = PBXBuildFile; fileRef = 05943C6F1BBA80E5005DF268 /* Protocol8.png */; };
+		05943C751BBA98AB005DF268 /* PenetratingAbdominalInjuriesImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05943C741BBA98AB005DF268 /* PenetratingAbdominalInjuriesImage.m */; };
 		1D0FC6BB1B694A9500302C6E /* TraumaTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FC6BA1B694A9500302C6E /* TraumaTypeViewController.m */; };
 		1D0FC6BD1B6997DB00302C6E /* ECGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FC6BC1B6997DB00302C6E /* ECGViewController.m */; };
 		1D0FC6C11B69982500302C6E /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FC6C01B69982500302C6E /* LocationViewController.m */; };
@@ -181,6 +182,8 @@
 		05943C6D1BBA80E5005DF268 /* Protocol6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Protocol6.png; sourceTree = "<group>"; };
 		05943C6E1BBA80E5005DF268 /* Protocol7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Protocol7.png; sourceTree = "<group>"; };
 		05943C6F1BBA80E5005DF268 /* Protocol8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Protocol8.png; sourceTree = "<group>"; };
+		05943C741BBA98AB005DF268 /* PenetratingAbdominalInjuriesImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PenetratingAbdominalInjuriesImage.m; sourceTree = "<group>"; };
+		05943C761BBA98B2005DF268 /* PenetratingAbdominalInjuriesImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PenetratingAbdominalInjuriesImage.h; sourceTree = "<group>"; };
 		1D0FC6B91B694A8700302C6E /* TraumaTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TraumaTypeViewController.h; sourceTree = "<group>"; };
 		1D0FC6BA1B694A9500302C6E /* TraumaTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TraumaTypeViewController.m; sourceTree = "<group>"; };
 		1D0FC6BC1B6997DB00302C6E /* ECGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECGViewController.m; sourceTree = "<group>"; };
@@ -635,6 +638,8 @@
 				05943C601BB82D98005DF268 /* BluntHepaticFinal.h */,
 				05943C611BB83516005DF268 /* BluntHepticPart2Initial.h */,
 				05943C621BB8351D005DF268 /* BluntHepticPart2Initial.m */,
+				05943C741BBA98AB005DF268 /* PenetratingAbdominalInjuriesImage.m */,
+				05943C761BBA98B2005DF268 /* PenetratingAbdominalInjuriesImage.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -881,6 +886,7 @@
 				05784A2D1BB309350096703F /* AbdPelFast.m in Sources */,
 				1D0FC72E1B6BA20F00302C6E /* Tamponade.m in Sources */,
 				05943C4D1BB746D7005DF268 /* BLTHepticStable.m in Sources */,
+				05943C751BBA98AB005DF268 /* PenetratingAbdominalInjuriesImage.m in Sources */,
 				1D0FC7241B6B935E00302C6E /* CPPickerViewCell.m in Sources */,
 				1DCF03591B9118CA005839B4 /* PAIFinal.m in Sources */,
 				05784A2F1BB30B230096703F /* AbdPelRepeatFast.m in Sources */,

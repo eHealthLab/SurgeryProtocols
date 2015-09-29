@@ -74,7 +74,7 @@ protocol</string>
                                 <rect key="frame" x="185" y="128" width="217" height="162"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFP-J7-NkW" customClass="HTPressableButton">
-                                <rect key="frame" x="215" y="349" width="120" height="40"/>
+                                <rect key="frame" x="333" y="364" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="I5a-cE-ZeI"/>
                                     <constraint firstAttribute="height" constant="40" id="Y68-3f-PTx"/>
@@ -90,9 +90,9 @@ protocol</string>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IFP-J7-NkW" firstAttribute="centerX" secondItem="vnw-Oz-Qgt" secondAttribute="centerX" constant="-18.5" id="9um-xD-K5T"/>
+                            <constraint firstItem="IFP-J7-NkW" firstAttribute="centerX" secondItem="vnw-Oz-Qgt" secondAttribute="centerX" constant="99.5" id="9um-xD-K5T"/>
                             <constraint firstAttribute="centerX" secondItem="vnw-Oz-Qgt" secondAttribute="centerX" constant="6.5" id="KZS-lC-KPp"/>
-                            <constraint firstItem="IFP-J7-NkW" firstAttribute="top" secondItem="vnw-Oz-Qgt" secondAttribute="bottom" constant="59" id="eqM-9s-thb"/>
+                            <constraint firstItem="IFP-J7-NkW" firstAttribute="top" secondItem="vnw-Oz-Qgt" secondAttribute="bottom" constant="74" id="eqM-9s-thb"/>
                             <constraint firstAttribute="centerY" secondItem="vnw-Oz-Qgt" secondAttribute="centerY" constant="91" id="hDh-nb-7vN"/>
                         </constraints>
                     </view>
@@ -203,24 +203,6 @@ protocol</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Km-k3-dtD">
-                                <rect key="frame" x="-5" y="0.0" width="605" height="532"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Protocol2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ysS-Cz-bXj">
-                                        <rect key="frame" x="20" y="2" width="563" height="519"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="519" id="UtD-Gk-io9"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="ysS-Cz-bXj" firstAttribute="top" secondItem="7Km-k3-dtD" secondAttribute="top" constant="2" id="3n9-Nn-Ay2"/>
-                                    <constraint firstAttribute="bottom" secondItem="ysS-Cz-bXj" secondAttribute="bottom" constant="11" id="AJ0-v0-tld"/>
-                                    <constraint firstAttribute="trailing" secondItem="ysS-Cz-bXj" secondAttribute="trailing" constant="22" id="vAL-P9-TBV"/>
-                                    <constraint firstItem="ysS-Cz-bXj" firstAttribute="leading" secondItem="7Km-k3-dtD" secondAttribute="leading" constant="20" id="yTq-DN-whR"/>
-                                    <constraint firstAttribute="centerX" secondItem="ysS-Cz-bXj" secondAttribute="centerX" constant="1" id="zwd-qb-sfr"/>
-                                </constraints>
-                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mma-yi-YQF" customClass="HTPressableButton">
                                 <rect key="frame" x="445" y="552" width="120" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -230,8 +212,8 @@ protocol</string>
                                     <segue destination="BMH-gw-0Bg" kind="show" id="uxF-JE-kqH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfz-Pl-J8K" customClass="HTPressableButton">
-                                <rect key="frame" x="445" y="541" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfz-Pl-J8K" customClass="HTPressableButton">
+                                <rect key="frame" x="445" y="540" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="K1c-gF-6Bc"/>
                                     <constraint firstAttribute="height" constant="40" id="g7E-sQ-s3e"/>
@@ -241,15 +223,33 @@ protocol</string>
                                     <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="22i-2C-Brh"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Km-k3-dtD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="532"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NeckTraumaImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="ysS-Cz-bXj">
+                                        <rect key="frame" x="37" y="24" width="515" height="471"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="471" id="UtD-Gk-io9"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ysS-Cz-bXj" firstAttribute="top" secondItem="7Km-k3-dtD" secondAttribute="top" constant="24" id="3n9-Nn-Ay2"/>
+                                    <constraint firstAttribute="bottom" secondItem="ysS-Cz-bXj" secondAttribute="bottom" constant="37" id="AJ0-v0-tld"/>
+                                    <constraint firstAttribute="trailing" secondItem="ysS-Cz-bXj" secondAttribute="trailing" constant="48" id="vAL-P9-TBV"/>
+                                    <constraint firstItem="ysS-Cz-bXj" firstAttribute="leading" secondItem="7Km-k3-dtD" secondAttribute="leading" constant="37" id="yTq-DN-whR"/>
+                                    <constraint firstAttribute="centerX" secondItem="ysS-Cz-bXj" secondAttribute="centerX" constant="5.5" id="zwd-qb-sfr"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="7Km-k3-dtD" secondAttribute="trailing" id="1Y6-X6-up8"/>
-                            <constraint firstItem="rfz-Pl-J8K" firstAttribute="top" secondItem="7Km-k3-dtD" secondAttribute="bottom" constant="9" id="2rY-uD-Ryh"/>
+                            <constraint firstItem="rfz-Pl-J8K" firstAttribute="top" secondItem="7Km-k3-dtD" secondAttribute="bottom" constant="8" id="2rY-uD-Ryh"/>
                             <constraint firstItem="7Km-k3-dtD" firstAttribute="top" secondItem="rZe-Sv-xUq" secondAttribute="topMargin" id="8gG-a9-SEg"/>
                             <constraint firstItem="rfz-Pl-J8K" firstAttribute="trailing" secondItem="7Km-k3-dtD" secondAttribute="trailing" constant="-35" id="AFK-rY-iTa"/>
                             <constraint firstAttribute="bottom" secondItem="7Km-k3-dtD" secondAttribute="bottom" constant="68" id="LXS-gE-zXY"/>
-                            <constraint firstItem="7Km-k3-dtD" firstAttribute="leading" secondItem="rZe-Sv-xUq" secondAttribute="leading" constant="-5" id="hkj-jz-5aD"/>
+                            <constraint firstItem="7Km-k3-dtD" firstAttribute="leading" secondItem="rZe-Sv-xUq" secondAttribute="leading" id="hkj-jz-5aD"/>
                         </constraints>
                     </view>
                     <connections>
@@ -275,7 +275,7 @@ protocol</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3d-7V-Jdd" customClass="HTPressableButton">
-                                <rect key="frame" x="438" y="531" width="120" height="40"/>
+                                <rect key="frame" x="438" y="551" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="1Et-Jw-CqB"/>
                                     <constraint firstAttribute="width" constant="120" id="bmE-cj-eig"/>
@@ -288,19 +288,19 @@ protocol</string>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5M1-AA-o5u">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="523"/>
+                                <rect key="frame" x="0.0" y="19" width="600" height="523"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Protocol2.png" translatesAutoresizingMaskIntoConstraints="NO" id="I4D-aw-eif">
-                                        <rect key="frame" x="8" y="8" width="572" height="507"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NeckTraumaImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="I4D-aw-eif">
+                                        <rect key="frame" x="32" y="34" width="527" height="489"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="I4D-aw-eif" secondAttribute="bottom" constant="8" id="6AK-kH-yLV"/>
-                                    <constraint firstItem="I4D-aw-eif" firstAttribute="centerX" secondItem="5M1-AA-o5u" secondAttribute="centerX" constant="-6" id="TNw-b0-f8s"/>
-                                    <constraint firstAttribute="trailing" secondItem="I4D-aw-eif" secondAttribute="trailing" constant="20" id="TOm-Hb-qTY"/>
-                                    <constraint firstItem="I4D-aw-eif" firstAttribute="top" secondItem="5M1-AA-o5u" secondAttribute="top" constant="8" id="Vag-oI-iBw"/>
-                                    <constraint firstItem="I4D-aw-eif" firstAttribute="leading" secondItem="5M1-AA-o5u" secondAttribute="leading" constant="8" id="gfQ-dK-gbt"/>
-                                    <constraint firstItem="I4D-aw-eif" firstAttribute="centerY" secondItem="5M1-AA-o5u" secondAttribute="centerY" id="tge-0F-nF7"/>
+                                    <constraint firstAttribute="bottom" secondItem="I4D-aw-eif" secondAttribute="bottom" id="6AK-kH-yLV"/>
+                                    <constraint firstItem="I4D-aw-eif" firstAttribute="centerX" secondItem="5M1-AA-o5u" secondAttribute="centerX" constant="-4.5" id="TNw-b0-f8s"/>
+                                    <constraint firstAttribute="trailing" secondItem="I4D-aw-eif" secondAttribute="trailing" constant="41" id="TOm-Hb-qTY"/>
+                                    <constraint firstItem="I4D-aw-eif" firstAttribute="top" secondItem="5M1-AA-o5u" secondAttribute="top" constant="34" id="Vag-oI-iBw"/>
+                                    <constraint firstItem="I4D-aw-eif" firstAttribute="leading" secondItem="5M1-AA-o5u" secondAttribute="leading" constant="32" id="gfQ-dK-gbt"/>
+                                    <constraint firstItem="I4D-aw-eif" firstAttribute="centerY" secondItem="5M1-AA-o5u" secondAttribute="centerY" constant="17" id="tge-0F-nF7"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -308,9 +308,9 @@ protocol</string>
                         <constraints>
                             <constraint firstItem="5M1-AA-o5u" firstAttribute="trailing" secondItem="b3d-7V-Jdd" secondAttribute="trailing" constant="42" id="D6f-ja-MNc"/>
                             <constraint firstItem="5M1-AA-o5u" firstAttribute="leading" secondItem="3FK-v8-2Of" secondAttribute="leading" id="MEp-XW-6Aw"/>
-                            <constraint firstItem="5M1-AA-o5u" firstAttribute="top" secondItem="3FK-v8-2Of" secondAttribute="top" id="McV-Rn-Hjz"/>
-                            <constraint firstAttribute="bottom" secondItem="5M1-AA-o5u" secondAttribute="bottom" constant="77" id="aUL-Ff-HGX"/>
-                            <constraint firstItem="b3d-7V-Jdd" firstAttribute="top" secondItem="5M1-AA-o5u" secondAttribute="bottom" constant="8" id="jim-bm-qgy"/>
+                            <constraint firstItem="5M1-AA-o5u" firstAttribute="top" secondItem="3FK-v8-2Of" secondAttribute="top" constant="19" id="McV-Rn-Hjz"/>
+                            <constraint firstAttribute="bottom" secondItem="5M1-AA-o5u" secondAttribute="bottom" constant="58" id="aUL-Ff-HGX"/>
+                            <constraint firstItem="b3d-7V-Jdd" firstAttribute="top" secondItem="5M1-AA-o5u" secondAttribute="bottom" constant="9" id="jim-bm-qgy"/>
                             <constraint firstAttribute="trailing" secondItem="5M1-AA-o5u" secondAttribute="trailing" id="mBG-ys-Geg"/>
                         </constraints>
                     </view>
@@ -370,10 +370,10 @@ and risk factors for BCVI</string>
             </objects>
             <point key="canvasLocation" x="1409" y="3185"/>
         </scene>
-        <!--View Controller-->
+        <!--Penetrating Abdominal Injuries Image-->
         <scene sceneID="8aC-jG-iep">
             <objects>
-                <viewController storyboardIdentifier="PenetratingAbdominalInjuriesImage" id="bXL-ad-Vmq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PenetratingAbdominalInjuriesImage" id="bXL-ad-Vmq" customClass="PenetratingAbdominalInjuriesImage" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gff-5k-c6J"/>
                         <viewControllerLayoutGuide type="bottom" id="Wda-aC-D5G"/>
@@ -382,11 +382,28 @@ and risk factors for BCVI</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgc-wG-AVR" customClass="HTPressableButton">
-                                <rect key="frame" x="407" y="498" width="120" height="40"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SEt-IT-Oqj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="544"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NeckTraumaImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="fJ2-He-P3B">
+                                        <rect key="frame" x="34" y="33" width="531" height="485"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="485" id="lzJ-Y6-atm"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="EMv-M9-j79"/>
-                                    <constraint firstAttribute="height" constant="40" id="Ssj-UN-PE0"/>
+                                    <constraint firstAttribute="bottom" secondItem="fJ2-He-P3B" secondAttribute="bottom" constant="26" id="A0v-LL-pUy"/>
+                                    <constraint firstItem="fJ2-He-P3B" firstAttribute="centerX" secondItem="SEt-IT-Oqj" secondAttribute="centerX" constant="-0.5" id="FWG-iF-iZ5"/>
+                                    <constraint firstItem="fJ2-He-P3B" firstAttribute="leading" secondItem="SEt-IT-Oqj" secondAttribute="leading" constant="34" id="JCX-qI-Yni"/>
+                                    <constraint firstItem="fJ2-He-P3B" firstAttribute="top" secondItem="SEt-IT-Oqj" secondAttribute="topMargin" constant="25" id="izv-KZ-98l"/>
+                                    <constraint firstAttribute="trailing" secondItem="fJ2-He-P3B" secondAttribute="trailing" constant="35" id="w1h-mG-Xom"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgc-wG-AVR" customClass="HTPressableButton">
+                                <rect key="frame" x="453" y="552" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="XKL-aR-l1U"/>
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
@@ -395,22 +412,24 @@ and risk factors for BCVI</string>
                                     <segue destination="0G4-Oq-sT0" kind="show" id="sIj-g8-ze3"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BLUNT CEREBROVASCULAR INJURIES_scaled.png" translatesAutoresizingMaskIntoConstraints="NO" id="c1x-La-sCE">
-                                <rect key="frame" x="32" y="0.0" width="568" height="484"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="484" id="rj6-83-jbf"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Tgc-wG-AVR" secondAttribute="trailing" constant="57" id="5dT-SR-V0U"/>
-                            <constraint firstItem="Tgc-wG-AVR" firstAttribute="top" secondItem="c1x-La-sCE" secondAttribute="bottom" constant="14" id="GR4-Bi-0rA"/>
-                            <constraint firstItem="c1x-La-sCE" firstAttribute="leading" secondItem="I0X-Zi-pCG" secondAttribute="leadingMargin" constant="16" id="d9a-RM-KZT"/>
-                            <constraint firstItem="c1x-La-sCE" firstAttribute="top" secondItem="I0X-Zi-pCG" secondAttribute="top" id="mnR-8k-FxZ"/>
-                            <constraint firstAttribute="trailing" secondItem="c1x-La-sCE" secondAttribute="trailing" id="oEe-24-Mxl"/>
+                            <constraint firstItem="Tgc-wG-AVR" firstAttribute="top" secondItem="SEt-IT-Oqj" secondAttribute="bottom" constant="8" symbolic="YES" id="Abr-TS-zwL"/>
+                            <constraint firstItem="SEt-IT-Oqj" firstAttribute="top" secondItem="I0X-Zi-pCG" secondAttribute="top" id="RrJ-H9-gYZ"/>
+                            <constraint firstItem="SEt-IT-Oqj" firstAttribute="leading" secondItem="I0X-Zi-pCG" secondAttribute="leading" id="U3K-5u-q7F"/>
+                            <constraint firstAttribute="centerX" secondItem="SEt-IT-Oqj" secondAttribute="centerX" id="WeC-ZV-9kE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tgc-wG-AVR" secondAttribute="trailing" constant="11" id="cIE-Ke-nUo"/>
+                            <constraint firstItem="Wda-aC-D5G" firstAttribute="top" secondItem="SEt-IT-Oqj" secondAttribute="bottom" constant="56" id="pTn-rJ-dya"/>
+                            <constraint firstItem="Wda-aC-D5G" firstAttribute="top" secondItem="Tgc-wG-AVR" secondAttribute="bottom" constant="8" symbolic="YES" id="sXp-Ta-Dfz"/>
+                            <constraint firstAttribute="trailing" secondItem="SEt-IT-Oqj" secondAttribute="trailing" id="ubC-Lz-Uko"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="fJ2-He-P3B" id="tVF-Ks-nwq"/>
+                        <outlet property="nextButton" destination="Tgc-wG-AVR" id="tLb-q2-Ywk"/>
+                        <outlet property="scrollView" destination="SEt-IT-Oqj" id="klv-Vk-W86"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6p-Kk-Unf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -435,10 +454,10 @@ and risk factors for BCVI</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFV-KC-Nf3">
-                                <rect key="frame" x="135" y="174" width="320" height="162"/>
+                                <rect key="frame" x="134" y="150" width="320" height="162"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeK-Q4-3Fi" customClass="HTPressableButton">
-                                <rect key="frame" x="250" y="357" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeK-Q4-3Fi" customClass="HTPressableButton">
+                                <rect key="frame" x="302" y="348" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="EjN-uf-v7Y"/>
                                     <constraint firstAttribute="width" constant="120" id="tQR-VI-MDh"/>
@@ -453,11 +472,12 @@ and risk factors for BCVI</string>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CFV-KC-Nf3" firstAttribute="centerX" secondItem="aeK-Q4-3Fi" secondAttribute="centerX" constant="-15" id="3mq-yg-4wO"/>
-                            <constraint firstItem="CFV-KC-Nf3" firstAttribute="top" secondItem="65x-gU-YRB" secondAttribute="bottom" constant="60" id="6Pq-Az-fGV"/>
-                            <constraint firstItem="CFV-KC-Nf3" firstAttribute="centerX" secondItem="65x-gU-YRB" secondAttribute="centerX" constant="-5.5" id="790-L0-PI6"/>
-                            <constraint firstItem="aeK-Q4-3Fi" firstAttribute="top" secondItem="CFV-KC-Nf3" secondAttribute="bottom" constant="21" id="aeh-fJ-xnp"/>
+                            <constraint firstItem="CFV-KC-Nf3" firstAttribute="centerX" secondItem="aeK-Q4-3Fi" secondAttribute="centerX" constant="-68" id="3mq-yg-4wO"/>
+                            <constraint firstItem="CFV-KC-Nf3" firstAttribute="top" secondItem="65x-gU-YRB" secondAttribute="bottom" constant="58" id="6Pq-Az-fGV"/>
+                            <constraint firstItem="CFV-KC-Nf3" firstAttribute="centerX" secondItem="65x-gU-YRB" secondAttribute="centerX" constant="9.5" id="790-L0-PI6"/>
+                            <constraint firstItem="aeK-Q4-3Fi" firstAttribute="top" secondItem="CFV-KC-Nf3" secondAttribute="bottom" constant="36" id="aeh-fJ-xnp"/>
                             <constraint firstItem="65x-gU-YRB" firstAttribute="top" secondItem="ZJj-XE-xxb" secondAttribute="bottom" constant="74" id="mcj-iE-HVj"/>
+                            <constraint firstItem="aeK-Q4-3Fi" firstAttribute="trailing" secondItem="CFV-KC-Nf3" secondAttribute="trailing" constant="-32" id="pAU-YX-8GN"/>
                             <constraint firstAttribute="centerX" secondItem="65x-gU-YRB" secondAttribute="centerX" id="tvd-Dk-Mlj"/>
                         </constraints>
                     </view>
@@ -483,7 +503,7 @@ and risk factors for BCVI</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Amy-96-iiX">
-                                <rect key="frame" x="153" y="182" width="320" height="162"/>
+                                <rect key="frame" x="153" y="181" width="320" height="162"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhy-Mn-ND1">
                                 <rect key="frame" x="254" y="122" width="93" height="21"/>
@@ -491,8 +511,8 @@ and risk factors for BCVI</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtl-tl-jui" customClass="HTPressableButton">
-                                <rect key="frame" x="252" y="383" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtl-tl-jui" customClass="HTPressableButton">
+                                <rect key="frame" x="319" y="374" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="oFB-OE-qcj"/>
                                     <constraint firstAttribute="width" constant="120" id="ph3-tF-4HB"/>
@@ -507,10 +527,10 @@ and risk factors for BCVI</string>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Mtl-tl-jui" firstAttribute="centerX" secondItem="Amy-96-iiX" secondAttribute="centerX" constant="-1" id="aFU-Td-HU2"/>
                             <constraint firstAttribute="centerX" secondItem="Vhy-Mn-ND1" secondAttribute="centerX" id="aXK-Cq-aoP"/>
                             <constraint firstItem="Vhy-Mn-ND1" firstAttribute="centerX" secondItem="Amy-96-iiX" secondAttribute="centerX" constant="-12.5" id="fGH-j7-740"/>
                             <constraint firstItem="Vhy-Mn-ND1" firstAttribute="top" secondItem="qmW-Cf-Ni4" secondAttribute="bottom" constant="102" id="ofr-VG-vJ9"/>
+                            <constraint firstItem="Amy-96-iiX" firstAttribute="trailing" secondItem="Mtl-tl-jui" secondAttribute="trailing" constant="34" id="sPF-sQ-dAQ"/>
                             <constraint firstItem="Amy-96-iiX" firstAttribute="top" secondItem="Vhy-Mn-ND1" secondAttribute="bottom" constant="39" id="wkX-ho-0Ia"/>
                             <constraint firstItem="Mtl-tl-jui" firstAttribute="top" secondItem="Amy-96-iiX" secondAttribute="bottom" constant="39" id="x1S-1y-xSa"/>
                         </constraints>
@@ -537,7 +557,7 @@ and risk factors for BCVI</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PS6-7h-wfL">
-                                <rect key="frame" x="153" y="171" width="320" height="162"/>
+                                <rect key="frame" x="153" y="170" width="320" height="162"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8F-mU-fbu">
                                 <rect key="frame" x="259" y="105" width="93" height="21"/>
@@ -545,8 +565,8 @@ and risk factors for BCVI</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDJ-aO-ib2" customClass="HTPressableButton">
-                                <rect key="frame" x="259" y="388" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDJ-aO-ib2" customClass="HTPressableButton">
+                                <rect key="frame" x="328" y="358" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="R2B-BA-SzM"/>
                                     <constraint firstAttribute="width" constant="120" id="k7K-SN-ynE"/>
@@ -561,10 +581,10 @@ and risk factors for BCVI</string>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="PS6-7h-wfL" firstAttribute="trailing" secondItem="qDJ-aO-ib2" secondAttribute="trailing" constant="25" id="4g5-U3-AC2"/>
                             <constraint firstItem="qDJ-aO-ib2" firstAttribute="top" secondItem="PS6-7h-wfL" secondAttribute="bottom" constant="55" id="6H6-m5-UEv"/>
                             <constraint firstItem="PS6-7h-wfL" firstAttribute="top" secondItem="C8F-mU-fbu" secondAttribute="bottom" constant="45" id="ap3-iH-q8j"/>
                             <constraint firstItem="C8F-mU-fbu" firstAttribute="centerX" secondItem="PS6-7h-wfL" secondAttribute="centerX" constant="-7.5" id="l9B-qf-HrB"/>
-                            <constraint firstItem="qDJ-aO-ib2" firstAttribute="centerX" secondItem="PS6-7h-wfL" secondAttribute="centerX" constant="6" id="m1R-M4-nFf"/>
                             <constraint firstItem="C8F-mU-fbu" firstAttribute="top" secondItem="aqT-86-sbo" secondAttribute="bottom" constant="85" id="vQA-w9-zXN"/>
                             <constraint firstAttribute="centerX" secondItem="C8F-mU-fbu" secondAttribute="centerX" constant="-5.5" id="wMy-6i-DHj"/>
                         </constraints>
@@ -602,8 +622,8 @@ and risk factors for BCVI</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcm-XY-g6i" customClass="HTPressableButton">
-                                <rect key="frame" x="246" y="373" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcm-XY-g6i" customClass="HTPressableButton">
+                                <rect key="frame" x="293" y="359" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="DRf-oo-kBY"/>
                                     <constraint firstAttribute="width" constant="120" id="nYU-ww-tHk"/>
@@ -620,9 +640,9 @@ and risk factors for BCVI</string>
                         <constraints>
                             <constraint firstItem="wZU-YA-UAn" firstAttribute="centerX" secondItem="5U3-lv-1lc" secondAttribute="centerX" id="ZHb-Cp-Pzy"/>
                             <constraint firstItem="wZU-YA-UAn" firstAttribute="top" secondItem="bgR-ge-hDQ" secondAttribute="bottom" constant="45" id="dco-TL-lcC"/>
-                            <constraint firstItem="zcm-XY-g6i" firstAttribute="centerX" secondItem="wZU-YA-UAn" secondAttribute="centerX" constant="6" id="dlN-tn-0lh"/>
                             <constraint firstItem="bgR-ge-hDQ" firstAttribute="centerX" secondItem="wZU-YA-UAn" secondAttribute="centerX" constant="-7.5" id="eJy-sd-UzB"/>
                             <constraint firstItem="zcm-XY-g6i" firstAttribute="top" secondItem="wZU-YA-UAn" secondAttribute="bottom" constant="55" id="iCt-fq-f3Q"/>
+                            <constraint firstItem="zcm-XY-g6i" firstAttribute="trailing" secondItem="wZU-YA-UAn" secondAttribute="trailing" constant="-47" id="sm3-IW-Qmb"/>
                             <constraint firstItem="bgR-ge-hDQ" firstAttribute="top" secondItem="ciW-ZO-Z2x" secondAttribute="bottom" constant="70" id="vHi-zg-yUN"/>
                         </constraints>
                     </view>
@@ -648,17 +668,13 @@ and risk factors for BCVI</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sax-JF-zvy">
-                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <rect key="frame" x="267" y="231" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJJ-q7-8fG" customClass="HTPressableButton">
-                                <rect key="frame" x="240" y="384" width="120" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="0Vc-Tu-GXf"/>
-                                    <constraint firstAttribute="width" constant="120" id="FgG-xE-vRa"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJJ-q7-8fG" customClass="HTPressableButton">
+                                <rect key="frame" x="228" y="356" width="120" height="40"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="dle-KE-mKK" kind="show" id="ONU-0C-u9r"/>
@@ -667,10 +683,10 @@ and risk factors for BCVI</string>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jJJ-q7-8fG" firstAttribute="centerX" secondItem="sax-JF-zvy" secondAttribute="centerX" id="2Gd-tR-6Ns"/>
                             <constraint firstAttribute="centerX" secondItem="sax-JF-zvy" secondAttribute="centerX" id="DsP-ZD-s7m"/>
                             <constraint firstAttribute="centerY" secondItem="sax-JF-zvy" secondAttribute="centerY" id="Gg2-oi-LXr"/>
-                            <constraint firstItem="jJJ-q7-8fG" firstAttribute="top" secondItem="sax-JF-zvy" secondAttribute="bottom" constant="74" id="NAN-de-gd0"/>
+                            <constraint firstItem="jJJ-q7-8fG" firstAttribute="top" secondItem="sax-JF-zvy" secondAttribute="bottom" constant="104" id="ZtF-QX-62E"/>
+                            <constraint firstItem="jJJ-q7-8fG" firstAttribute="centerX" secondItem="sax-JF-zvy" secondAttribute="centerX" id="hKj-1R-J5E"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2224,20 +2240,29 @@ Conduct a DPA</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h4-b1-Zj4" customClass="HTPressableButton">
-                                <rect key="frame" x="225" y="225" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="AR8-dm-eph"/>
-                                    <constraint firstAttribute="width" constant="150" id="mqF-u8-bxY"/>
-                                </constraints>
+                                <rect key="frame" x="222" y="198" width="110" height="116"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Operating Room">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSL-V1-1X9">
+                                <rect key="frame" x="208" y="358" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="HD0-0V-g5M"/>
+                                    <constraint firstAttribute="height" constant="21" id="tf4-1d-Q16"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="3h4-b1-Zj4" secondAttribute="centerX" id="d56-91-RVd"/>
-                            <constraint firstAttribute="centerY" secondItem="3h4-b1-Zj4" secondAttribute="centerY" id="oL2-cg-SYO"/>
+                            <constraint firstAttribute="centerX" secondItem="3h4-b1-Zj4" secondAttribute="centerX" id="Wbb-qt-2gj"/>
+                            <constraint firstItem="JSL-V1-1X9" firstAttribute="top" secondItem="3h4-b1-Zj4" secondAttribute="bottom" constant="123" id="byK-Bt-QY7"/>
+                            <constraint firstAttribute="centerY" secondItem="3h4-b1-Zj4" secondAttribute="centerY" id="cXn-al-wLs"/>
+                            <constraint firstItem="3h4-b1-Zj4" firstAttribute="centerX" secondItem="JSL-V1-1X9" secondAttribute="centerX" constant="-23.5" id="tjx-G6-dt2"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2355,7 +2380,7 @@ and choose one</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FXu-39-YjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2128" y="3185"/>
+            <point key="canvasLocation" x="2128" y="3133"/>
         </scene>
         <!--Hard SignsP2-->
         <scene sceneID="sQL-bT-sgv">
@@ -2472,10 +2497,22 @@ for Air leak/Hematoma</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYW-xH-pWD">
+                                <rect key="frame" x="216" y="400" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dMg-5W-pS5"/>
+                                    <constraint firstAttribute="width" constant="139" id="tgP-jy-JGZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Oc4-yI-vxA" firstAttribute="trailing" secondItem="ZYW-xH-pWD" secondAttribute="trailing" constant="18" id="C7N-5j-STD"/>
                             <constraint firstAttribute="centerY" secondItem="Oc4-yI-vxA" secondAttribute="centerY" constant="116" id="IxX-k6-uRV"/>
+                            <constraint firstItem="ZYW-xH-pWD" firstAttribute="top" secondItem="Oc4-yI-vxA" secondAttribute="bottom" constant="205" id="LYJ-f7-oWx"/>
                             <constraint firstAttribute="centerX" secondItem="Oc4-yI-vxA" secondAttribute="centerX" constant="15" id="riq-al-UpS"/>
                         </constraints>
                     </view>
@@ -2681,11 +2718,23 @@ Suspicion or Equivocal Finding?</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3O-A7-kRw">
+                                <rect key="frame" x="221" y="345" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="38P-xR-ojG"/>
+                                    <constraint firstAttribute="width" constant="139" id="t3p-EI-v8d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="E3O-A7-kRw" firstAttribute="centerX" secondItem="ad1-ls-PWU" secondAttribute="centerX" id="EWf-EJ-fXE"/>
                             <constraint firstAttribute="centerY" secondItem="ad1-ls-PWU" secondAttribute="centerY" constant="50.5" id="Ope-AQ-jfd"/>
                             <constraint firstAttribute="centerX" secondItem="ad1-ls-PWU" secondAttribute="centerX" constant="9.5" id="Zrm-vS-93W"/>
+                            <constraint firstItem="E3O-A7-kRw" firstAttribute="top" secondItem="ad1-ls-PWU" secondAttribute="bottom" constant="85" id="el5-zy-eZa"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -2706,7 +2755,7 @@ Suspicion or Equivocal Finding?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzg-Ub-zgz" customClass="HTPressableButton">
-                                <rect key="frame" x="225" y="225" width="150" height="150"/>
+                                <rect key="frame" x="225" y="159" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="Tco-mK-Q5b"/>
                                     <constraint firstAttribute="height" constant="150" id="kqe-WF-XCX"/>
@@ -2715,10 +2764,22 @@ Suspicion or Equivocal Finding?</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcT-N8-ckl">
+                                <rect key="frame" x="236" y="432" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="A6c-gL-Tuy"/>
+                                    <constraint firstAttribute="width" constant="139" id="t0S-vW-iRq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="Fzg-Ub-zgz" secondAttribute="centerY" id="YMW-Zn-nej"/>
+                            <constraint firstItem="WcT-N8-ckl" firstAttribute="centerX" secondItem="Fzg-Ub-zgz" secondAttribute="centerX" constant="5.5" id="KSa-ek-lEp"/>
+                            <constraint firstItem="WcT-N8-ckl" firstAttribute="top" secondItem="Fzg-Ub-zgz" secondAttribute="bottom" constant="123" id="VB4-zz-Vtf"/>
+                            <constraint firstAttribute="centerY" secondItem="Fzg-Ub-zgz" secondAttribute="centerY" constant="66" id="YMW-Zn-nej"/>
                             <constraint firstAttribute="centerX" secondItem="Fzg-Ub-zgz" secondAttribute="centerX" id="cRB-qw-tDU"/>
                         </constraints>
                     </view>
@@ -2917,6 +2978,16 @@ n 7-10 days</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJz-GU-fe9">
+                                <rect key="frame" x="219" y="371" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2te-Cs-7NI"/>
+                                    <constraint firstAttribute="width" constant="139" id="Zvw-Au-bKi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kaq-dm-Ce6" customClass="HTPressableButton">
                                 <rect key="frame" x="213" y="181" width="150" height="150"/>
                                 <constraints>
@@ -2930,7 +3001,9 @@ n 7-10 days</string>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="XJz-GU-fe9" firstAttribute="top" secondItem="Kaq-dm-Ce6" secondAttribute="bottom" constant="40" id="Bhn-Ps-sBM"/>
                             <constraint firstAttribute="centerX" secondItem="Kaq-dm-Ce6" secondAttribute="centerX" constant="12" id="avX-kj-Ox8"/>
+                            <constraint firstItem="XJz-GU-fe9" firstAttribute="centerX" secondItem="Kaq-dm-Ce6" secondAttribute="centerX" constant="0.5" id="fpa-ig-vPT"/>
                             <constraint firstAttribute="centerY" secondItem="Kaq-dm-Ce6" secondAttribute="centerY" constant="44" id="zBp-d1-OXS"/>
                         </constraints>
                     </view>
@@ -2955,16 +3028,28 @@ n 7-10 days</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discontinue Antithrombotics" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52k-4N-ABJ">
-                                <rect key="frame" x="197" y="263" width="217" height="21"/>
+                                <rect key="frame" x="192" y="210" width="217" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujx-Ge-5pe">
+                                <rect key="frame" x="231" y="316" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="UGb-8z-h1Q"/>
+                                    <constraint firstAttribute="width" constant="139" id="j89-fu-Fgx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="52k-4N-ABJ" secondAttribute="centerY" constant="26.75" id="af9-i5-EhQ"/>
-                            <constraint firstAttribute="centerX" secondItem="52k-4N-ABJ" secondAttribute="centerX" constant="-5.5" id="yDl-ng-auF"/>
+                            <constraint firstItem="52k-4N-ABJ" firstAttribute="centerX" secondItem="ujx-Ge-5pe" secondAttribute="centerX" id="Iyk-L7-xkr"/>
+                            <constraint firstItem="ujx-Ge-5pe" firstAttribute="top" secondItem="52k-4N-ABJ" secondAttribute="bottom" constant="85" id="ZhX-GR-mbY"/>
+                            <constraint firstAttribute="centerY" secondItem="52k-4N-ABJ" secondAttribute="centerY" constant="79.5" id="af9-i5-EhQ"/>
+                            <constraint firstAttribute="centerX" secondItem="52k-4N-ABJ" secondAttribute="centerX" constant="-0.5" id="yDl-ng-auF"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -2985,18 +3070,30 @@ n 7-10 days</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmj-ua-tM5">
-                                <rect key="frame" x="186" y="250" width="229" height="41"/>
+                                <rect key="frame" x="186" y="183" width="229" height="41"/>
                                 <string key="text">Antithrombotics for 6 months 
 and reimaging</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bT-fZ-BYK">
+                                <rect key="frame" x="231" y="364" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="ig2-nO-Vj7"/>
+                                    <constraint firstAttribute="height" constant="21" id="wJx-UQ-0JH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="kmj-ua-tM5" secondAttribute="centerX" id="Ieh-cg-EWY"/>
-                            <constraint firstAttribute="centerY" secondItem="kmj-ua-tM5" secondAttribute="centerY" constant="29.75" id="cWn-08-a2a"/>
+                            <constraint firstAttribute="centerY" secondItem="kmj-ua-tM5" secondAttribute="centerY" constant="96.5" id="cWn-08-a2a"/>
+                            <constraint firstItem="kmj-ua-tM5" firstAttribute="centerX" secondItem="5bT-fZ-BYK" secondAttribute="centerX" id="l3e-km-bxT"/>
+                            <constraint firstItem="5bT-fZ-BYK" firstAttribute="top" secondItem="kmj-ua-tM5" secondAttribute="bottom" constant="140" id="w8A-Br-XFI"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -3132,16 +3229,28 @@ Accessible BCVI?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send to OR for endo/embo +/- EGD bronch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gm1-M6-cEh">
-                                <rect key="frame" x="133" y="290" width="335" height="21"/>
+                                <rect key="frame" x="133" y="207" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIo-bC-DkH">
+                                <rect key="frame" x="216" y="412" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4VD-5s-2Fv"/>
+                                    <constraint firstAttribute="width" constant="139" id="5vz-hV-dCC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="AIo-bC-DkH" firstAttribute="centerX" secondItem="gm1-M6-cEh" secondAttribute="centerX" constant="-15" id="4mw-Hl-9E4"/>
+                            <constraint firstItem="AIo-bC-DkH" firstAttribute="top" secondItem="gm1-M6-cEh" secondAttribute="bottom" constant="184" id="cwp-Ja-HJh"/>
                             <constraint firstAttribute="centerX" secondItem="gm1-M6-cEh" secondAttribute="centerX" id="jAB-pA-Rty"/>
-                            <constraint firstAttribute="centerY" secondItem="gm1-M6-cEh" secondAttribute="centerY" id="zr1-W9-htm"/>
+                            <constraint firstAttribute="centerY" secondItem="gm1-M6-cEh" secondAttribute="centerY" constant="82.5" id="zr1-W9-htm"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -3221,16 +3330,28 @@ Accessible BCVI?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swallow EGD/Bronch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUq-UT-S6X">
-                                <rect key="frame" x="218" y="290" width="165" height="21"/>
+                                <rect key="frame" x="218" y="207" width="165" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HY9-lU-JJs">
+                                <rect key="frame" x="231" y="338" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="F0g-pR-dX6"/>
+                                    <constraint firstAttribute="height" constant="21" id="j6E-2f-hJe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="tUq-UT-S6X" secondAttribute="centerX" id="DwB-9O-yOS"/>
-                            <constraint firstAttribute="centerY" secondItem="tUq-UT-S6X" secondAttribute="centerY" id="dt1-7H-pNe"/>
+                            <constraint firstAttribute="centerY" secondItem="tUq-UT-S6X" secondAttribute="centerY" constant="82.5" id="dt1-7H-pNe"/>
+                            <constraint firstItem="HY9-lU-JJs" firstAttribute="centerX" secondItem="tUq-UT-S6X" secondAttribute="centerX" id="qe5-Sh-aKm"/>
+                            <constraint firstItem="HY9-lU-JJs" firstAttribute="top" secondItem="tUq-UT-S6X" secondAttribute="bottom" constant="110" id="xha-mp-xYg"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -3251,7 +3372,7 @@ Accessible BCVI?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conduct a CTA evaluation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffj-g5-ggl">
-                                <rect key="frame" x="199" y="212" width="200" height="21"/>
+                                <rect key="frame" x="200" y="212" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -3268,12 +3389,24 @@ Accessible BCVI?</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgJ-oD-2Vc">
+                                <rect key="frame" x="237" y="426" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="dO0-SJ-rdN"/>
+                                    <constraint firstAttribute="height" constant="21" id="sM1-gl-jZw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="ffj-g5-ggl" secondAttribute="centerY" constant="77.5" id="HWw-5O-eRY"/>
+                            <constraint firstItem="Upp-EK-bWR" firstAttribute="centerX" secondItem="KgJ-oD-2Vc" secondAttribute="centerX" constant="5" id="T8f-cM-baO"/>
                             <constraint firstItem="Upp-EK-bWR" firstAttribute="centerX" secondItem="ffj-g5-ggl" secondAttribute="centerX" constant="12.5" id="e7R-T3-PZ7"/>
                             <constraint firstItem="Upp-EK-bWR" firstAttribute="top" secondItem="ffj-g5-ggl" secondAttribute="bottom" constant="8" id="fq4-5f-ZJd"/>
+                            <constraint firstItem="KgJ-oD-2Vc" firstAttribute="top" secondItem="Upp-EK-bWR" secondAttribute="bottom" constant="126" id="tV7-AZ-f62"/>
                             <constraint firstAttribute="centerX" secondItem="ffj-g5-ggl" secondAttribute="centerX" constant="1" id="z0T-LJ-VyR"/>
                         </constraints>
                     </view>
@@ -3300,9 +3433,21 @@ Accessible BCVI?</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5w-go-i4a">
+                                <rect key="frame" x="205" y="354" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="O8L-Ws-MRI"/>
+                                    <constraint firstAttribute="width" constant="139" id="u5J-Yf-fPl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="y5w-go-i4a" firstAttribute="centerX" secondItem="GQM-u6-6IJ" secondAttribute="centerX" constant="-3.5" id="6tN-my-D47"/>
+                            <constraint firstItem="y5w-go-i4a" firstAttribute="top" secondItem="GQM-u6-6IJ" secondAttribute="bottom" constant="116" id="Te5-Bu-vDD"/>
                             <constraint firstAttribute="centerX" secondItem="GQM-u6-6IJ" secondAttribute="centerX" constant="22" id="sTE-ap-I4A"/>
                             <constraint firstAttribute="centerY" secondItem="GQM-u6-6IJ" secondAttribute="centerY" constant="72.5" id="z9q-NW-2fC"/>
                         </constraints>
@@ -3338,11 +3483,23 @@ send to OR for +/- EGD Bronch</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFh-SM-GXg">
+                                <rect key="frame" x="238" y="408" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="6LM-C0-YfY"/>
+                                    <constraint firstAttribute="height" constant="21" id="BOi-5n-md0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ten-8E-rv9" firstAttribute="top" secondItem="RO7-s5-7Rd" secondAttribute="bottom" constant="25" id="7rC-L2-vNw"/>
                             <constraint firstAttribute="centerY" secondItem="RO7-s5-7Rd" secondAttribute="centerY" constant="93.5" id="S6Z-Gv-cue"/>
+                            <constraint firstItem="RFh-SM-GXg" firstAttribute="top" secondItem="ten-8E-rv9" secondAttribute="bottom" constant="125" id="Y2Z-u6-C6y"/>
+                            <constraint firstItem="RFh-SM-GXg" firstAttribute="centerX" secondItem="ten-8E-rv9" secondAttribute="centerX" id="YUl-3l-aLL"/>
                             <constraint firstAttribute="centerX" secondItem="RO7-s5-7Rd" secondAttribute="centerX" constant="-7" id="faf-dc-HCO"/>
                             <constraint firstItem="RO7-s5-7Rd" firstAttribute="centerX" secondItem="ten-8E-rv9" secondAttribute="centerX" constant="-0.5" id="mEj-eq-3Rn"/>
                         </constraints>
@@ -3365,22 +3522,33 @@ send to OR for +/- EGD Bronch</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conduct a CTA Eval and if positive, " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9y-7F-WJE">
-                                <rect key="frame" x="163" y="290" width="275" height="21"/>
+                                <rect key="frame" x="163" y="182" width="275" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="send to OR endo/embo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt6-PI-T47">
-                                <rect key="frame" x="210" y="344" width="180" height="21"/>
+                                <rect key="frame" x="210" y="236" width="180" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udN-gp-p3m">
+                                <rect key="frame" x="231" y="360" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="uxD-bt-Z09"/>
+                                    <constraint firstAttribute="width" constant="139" id="ykV-dV-o6W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="pt6-PI-T47" firstAttribute="centerX" secondItem="udN-gp-p3m" secondAttribute="centerX" constant="-0.5" id="A7a-f5-8uU"/>
                             <constraint firstAttribute="centerX" secondItem="x9y-7F-WJE" secondAttribute="centerX" id="WHp-2Y-1Sz"/>
-                            <constraint firstAttribute="centerY" secondItem="x9y-7F-WJE" secondAttribute="centerY" id="f8g-UU-aE2"/>
+                            <constraint firstAttribute="centerY" secondItem="x9y-7F-WJE" secondAttribute="centerY" constant="107.5" id="f8g-UU-aE2"/>
                             <constraint firstItem="x9y-7F-WJE" firstAttribute="centerX" secondItem="pt6-PI-T47" secondAttribute="centerX" constant="0.5" id="nsF-bf-FCz"/>
                             <constraint firstItem="pt6-PI-T47" firstAttribute="top" secondItem="x9y-7F-WJE" secondAttribute="bottom" constant="33" id="s6f-9h-EUm"/>
                         </constraints>
@@ -4204,8 +4372,6 @@ Assess Viability</string>
         <image name="06-magnify.png" width="24" height="24"/>
         <image name="111-user.png" width="24" height="21"/>
         <image name="81-dashboard.png" width="28" height="28"/>
-        <image name="BLUNT CEREBROVASCULAR INJURIES_scaled.png" width="800" height="1125"/>
         <image name="NeckTraumaImage.png" width="1085" height="1838"/>
-        <image name="Protocol2.png" width="1271" height="1904"/>
     </resources>
 </document>
