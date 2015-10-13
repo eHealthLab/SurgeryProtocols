@@ -7,6 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0533D6531BCA7FA800B9536A /* BHP2PackAndRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6521BCA7FA800B9536A /* BHP2PackAndRes.m */; };
+		0533D6571BCA819000B9536A /* BHP2ControlledBleeding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6561BCA819000B9536A /* BHP2ControlledBleeding.m */; };
+		0533D6591BCA81B400B9536A /* BHP2UnControlledBleeding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6581BCA81B400B9536A /* BHP2UnControlledBleeding.m */; };
+		0533D65D1BCB046A00B9536A /* BHP2Laparotomy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D65C1BCB046A00B9536A /* BHP2Laparotomy.m */; };
+		0533D65F1BCB08DA00B9536A /* BHP2Pringle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D65E1BCB08DA00B9536A /* BHP2Pringle.m */; };
+		0533D6631BCB09C200B9536A /* BHP2SelectiveVessel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6621BCB09C200B9536A /* BHP2SelectiveVessel.m */; };
+		0533D6651BCB0AFF00B9536A /* BHP2SHAL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6641BCB0AFF00B9536A /* BHP2SHAL.m */; };
+		0533D6691BCB2B5B00B9536A /* PCIP2Initial.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6681BCB2B5B00B9536A /* PCIP2Initial.m */; };
+		0533D66B1BCB2B7100B9536A /* PCIP2Pneumothorax.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D66A1BCB2B7100B9536A /* PCIP2Pneumothorax.m */; };
+		0533D66F1BCB2B9000B9536A /* PCIP2CXR.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D66E1BCB2B9000B9536A /* PCIP2CXR.m */; };
+		0533D6711BCB2B9F00B9536A /* PCIP2Hemothorax.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6701BCB2B9F00B9536A /* PCIP2Hemothorax.m */; };
+		0533D6751BCB855500B9536A /* PCIP2Outcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6741BCB855500B9536A /* PCIP2Outcome.m */; };
+		0533D6771BCB872400B9536A /* PCIP2VATS.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6761BCB872400B9536A /* PCIP2VATS.m */; };
+		0533D67B1BCB893A00B9536A /* PCIP2OR.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D67A1BCB893A00B9536A /* PCIP2OR.m */; };
+		0533D67D1BCB89EF00B9536A /* PCIP2Transmed.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D67C1BCB89EF00B9536A /* PCIP2Transmed.m */; };
+		0533D6811BCB8A0900B9536A /* PCIP2Cardiac.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6801BCB8A0900B9536A /* PCIP2Cardiac.m */; };
+		0533D6831BCB8D1000B9536A /* PCIP2CardiacOutcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6821BCB8D1000B9536A /* PCIP2CardiacOutcome.m */; };
+		0533D6871BCBDF2A00B9536A /* PCIP1Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6861BCBDF2A00B9536A /* PCIP1Image.m */; };
+		0533D6891BCBDFC500B9536A /* PCIP1Options.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6881BCBDFC500B9536A /* PCIP1Options.m */; };
+		0533D68D1BCBE21C00B9536A /* PCIP1WTA.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D68C1BCBE21C00B9536A /* PCIP1WTA.m */; };
+		0533D68F1BCBE23000B9536A /* PCIP1InitialAssessment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D68E1BCBE23000B9536A /* PCIP1InitialAssessment.m */; };
+		0533D6931BCBE26400B9536A /* PCIP1InitialOutcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6921BCBE26400B9536A /* PCIP1InitialOutcome.m */; };
+		0533D6951BCBE4B000B9536A /* PCIP1Anterior.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6941BCBE4B000B9536A /* PCIP1Anterior.m */; };
+		0533D6991BCBE4D000B9536A /* PCIP1Lateral.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6981BCBE4D000B9536A /* PCIP1Lateral.m */; };
+		0533D69B1BCBE4F500B9536A /* PCIP1FinalOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D69A1BCBE4F500B9536A /* PCIP1FinalOptions.m */; };
+		0533D69F1BCC53EA00B9536A /* BPIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D69E1BCC53EA00B9536A /* BPIImage.m */; };
+		0533D6A11BCC543E00B9536A /* BPIInitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6A01BCC543E00B9536A /* BPIInitial.m */; };
+		0533D6A51BCC545D00B9536A /* BPICTAbdomen.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6A41BCC545D00B9536A /* BPICTAbdomen.m */; };
+		0533D6A71BCC547100B9536A /* BPIExploratoryLaparotomy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6A61BCC547100B9536A /* BPIExploratoryLaparotomy.m */; };
+		0533D6AB1BCC549300B9536A /* BPINormalPancreas.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6AA1BCC549300B9536A /* BPINormalPancreas.m */; };
+		0533D6AD1BCC54A000B9536A /* BPIMainDuct.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6AC1BCC54A000B9536A /* BPIMainDuct.m */; };
+		0533D6B51BCC607F00B9536A /* BPITransection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6B41BCC607F00B9536A /* BPITransection.m */; };
+		0533D6B81BCC624D00B9536A /* BPIExpectant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6B71BCC624D00B9536A /* BPIExpectant.m */; };
+		0533D6BA1BCC647600B9536A /* BPIExpectantFinal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6B91BCC647600B9536A /* BPIExpectantFinal.m */; };
 		05784A291BB307BE0096703F /* AbdomnialPelvicCT.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */; };
 		05784A2D1BB309350096703F /* AbdPelFast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A2C1BB309350096703F /* AbdPelFast.m */; };
 		05784A2F1BB30B230096703F /* AbdPelRepeatFast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A2E1BB30B230096703F /* AbdPelRepeatFast.m */; };
@@ -144,6 +178,74 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0533D6521BCA7FA800B9536A /* BHP2PackAndRes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHP2PackAndRes.m; sourceTree = "<group>"; };
+		0533D6541BCA7FAE00B9536A /* BHP2PackAndRes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHP2PackAndRes.h; sourceTree = "<group>"; };
+		0533D6551BCA818800B9536A /* BHP2ControlledBleeding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHP2ControlledBleeding.h; sourceTree = "<group>"; };
+		0533D6561BCA819000B9536A /* BHP2ControlledBleeding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHP2ControlledBleeding.m; sourceTree = "<group>"; };
+		0533D6581BCA81B400B9536A /* BHP2UnControlledBleeding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHP2UnControlledBleeding.m; sourceTree = "<group>"; };
+		0533D65A1BCA81BB00B9536A /* BHP2UnControlledBleeding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHP2UnControlledBleeding.h; sourceTree = "<group>"; };
+		0533D65B1BCB045F00B9536A /* BHP2Laparotomy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHP2Laparotomy.h; sourceTree = "<group>"; };
+		0533D65C1BCB046A00B9536A /* BHP2Laparotomy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHP2Laparotomy.m; sourceTree = "<group>"; };
+		0533D65E1BCB08DA00B9536A /* BHP2Pringle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHP2Pringle.m; sourceTree = "<group>"; };
+		0533D6601BCB08E100B9536A /* BHP2Pringle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHP2Pringle.h; sourceTree = "<group>"; };
+		0533D6611BCB09BB00B9536A /* BHP2SelectiveVessel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHP2SelectiveVessel.h; sourceTree = "<group>"; };
+		0533D6621BCB09C200B9536A /* BHP2SelectiveVessel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHP2SelectiveVessel.m; sourceTree = "<group>"; };
+		0533D6641BCB0AFF00B9536A /* BHP2SHAL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHP2SHAL.m; sourceTree = "<group>"; };
+		0533D6661BCB0B0500B9536A /* BHP2SHAL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHP2SHAL.h; sourceTree = "<group>"; };
+		0533D6671BCB2B5400B9536A /* PCIP2Initial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP2Initial.h; sourceTree = "<group>"; };
+		0533D6681BCB2B5B00B9536A /* PCIP2Initial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP2Initial.m; sourceTree = "<group>"; };
+		0533D66A1BCB2B7100B9536A /* PCIP2Pneumothorax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP2Pneumothorax.m; sourceTree = "<group>"; };
+		0533D66C1BCB2B7800B9536A /* PCIP2Pneumothorax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP2Pneumothorax.h; sourceTree = "<group>"; };
+		0533D66D1BCB2B8200B9536A /* PCIP2CXR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP2CXR.h; sourceTree = "<group>"; };
+		0533D66E1BCB2B9000B9536A /* PCIP2CXR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP2CXR.m; sourceTree = "<group>"; };
+		0533D6701BCB2B9F00B9536A /* PCIP2Hemothorax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP2Hemothorax.m; sourceTree = "<group>"; };
+		0533D6721BCB2BA500B9536A /* PCIP2Hemothorax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP2Hemothorax.h; sourceTree = "<group>"; };
+		0533D6731BCB854D00B9536A /* PCIP2Outcome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP2Outcome.h; sourceTree = "<group>"; };
+		0533D6741BCB855500B9536A /* PCIP2Outcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP2Outcome.m; sourceTree = "<group>"; };
+		0533D6761BCB872400B9536A /* PCIP2VATS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP2VATS.m; sourceTree = "<group>"; };
+		0533D6781BCB872900B9536A /* PCIP2VATS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP2VATS.h; sourceTree = "<group>"; };
+		0533D6791BCB892F00B9536A /* PCIP2OR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP2OR.h; sourceTree = "<group>"; };
+		0533D67A1BCB893A00B9536A /* PCIP2OR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP2OR.m; sourceTree = "<group>"; };
+		0533D67C1BCB89EF00B9536A /* PCIP2Transmed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP2Transmed.m; sourceTree = "<group>"; };
+		0533D67E1BCB89F700B9536A /* PCIP2Transmed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP2Transmed.h; sourceTree = "<group>"; };
+		0533D67F1BCB8A0300B9536A /* PCIP2Cardiac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP2Cardiac.h; sourceTree = "<group>"; };
+		0533D6801BCB8A0900B9536A /* PCIP2Cardiac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP2Cardiac.m; sourceTree = "<group>"; };
+		0533D6821BCB8D1000B9536A /* PCIP2CardiacOutcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCIP2CardiacOutcome.m; path = ../Delegate/PCIP2CardiacOutcome.m; sourceTree = "<group>"; };
+		0533D6841BCB8D1D00B9536A /* PCIP2CardiacOutcome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP2CardiacOutcome.h; sourceTree = "<group>"; };
+		0533D6851BCBDF2000B9536A /* PCIP1Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PCIP1Image.h; path = ../Delegate/PCIP1Image.h; sourceTree = "<group>"; };
+		0533D6861BCBDF2A00B9536A /* PCIP1Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCIP1Image.m; path = ../Delegate/PCIP1Image.m; sourceTree = "<group>"; };
+		0533D6881BCBDFC500B9536A /* PCIP1Options.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP1Options.m; sourceTree = "<group>"; };
+		0533D68A1BCBDFCB00B9536A /* PCIP1Options.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP1Options.h; sourceTree = "<group>"; };
+		0533D68B1BCBE21400B9536A /* PCIP1WTA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP1WTA.h; sourceTree = "<group>"; };
+		0533D68C1BCBE21C00B9536A /* PCIP1WTA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP1WTA.m; sourceTree = "<group>"; };
+		0533D68E1BCBE23000B9536A /* PCIP1InitialAssessment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP1InitialAssessment.m; sourceTree = "<group>"; };
+		0533D6901BCBE23700B9536A /* PCIP1InitialAssessment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP1InitialAssessment.h; sourceTree = "<group>"; };
+		0533D6911BCBE25C00B9536A /* PCIP1InitialOutcome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP1InitialOutcome.h; sourceTree = "<group>"; };
+		0533D6921BCBE26400B9536A /* PCIP1InitialOutcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP1InitialOutcome.m; sourceTree = "<group>"; };
+		0533D6941BCBE4B000B9536A /* PCIP1Anterior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP1Anterior.m; sourceTree = "<group>"; };
+		0533D6961BCBE4BA00B9536A /* PCIP1Anterior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP1Anterior.h; sourceTree = "<group>"; };
+		0533D6971BCBE4C800B9536A /* PCIP1Lateral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP1Lateral.h; sourceTree = "<group>"; };
+		0533D6981BCBE4D000B9536A /* PCIP1Lateral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP1Lateral.m; sourceTree = "<group>"; };
+		0533D69A1BCBE4F500B9536A /* PCIP1FinalOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP1FinalOptions.m; sourceTree = "<group>"; };
+		0533D69C1BCBE4FC00B9536A /* PCIP1FinalOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP1FinalOptions.h; sourceTree = "<group>"; };
+		0533D69D1BCC53E100B9536A /* BPIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPIImage.h; sourceTree = "<group>"; };
+		0533D69E1BCC53EA00B9536A /* BPIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPIImage.m; sourceTree = "<group>"; };
+		0533D6A01BCC543E00B9536A /* BPIInitial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPIInitial.m; sourceTree = "<group>"; };
+		0533D6A21BCC544500B9536A /* BPIInitial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPIInitial.h; sourceTree = "<group>"; };
+		0533D6A31BCC545500B9536A /* BPICTAbdomen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPICTAbdomen.h; sourceTree = "<group>"; };
+		0533D6A41BCC545D00B9536A /* BPICTAbdomen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPICTAbdomen.m; sourceTree = "<group>"; };
+		0533D6A61BCC547100B9536A /* BPIExploratoryLaparotomy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPIExploratoryLaparotomy.m; sourceTree = "<group>"; };
+		0533D6A81BCC547800B9536A /* BPIExploratoryLaparotomy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPIExploratoryLaparotomy.h; sourceTree = "<group>"; };
+		0533D6A91BCC548C00B9536A /* BPINormalPancreas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPINormalPancreas.h; sourceTree = "<group>"; };
+		0533D6AA1BCC549300B9536A /* BPINormalPancreas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPINormalPancreas.m; sourceTree = "<group>"; };
+		0533D6AC1BCC54A000B9536A /* BPIMainDuct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPIMainDuct.m; sourceTree = "<group>"; };
+		0533D6AE1BCC54A600B9536A /* BPIMainDuct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPIMainDuct.h; sourceTree = "<group>"; };
+		0533D6B31BCC607600B9536A /* BPITransection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPITransection.h; sourceTree = "<group>"; };
+		0533D6B41BCC607F00B9536A /* BPITransection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPITransection.m; sourceTree = "<group>"; };
+		0533D6B61BCC624500B9536A /* BPIExpectant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPIExpectant.h; sourceTree = "<group>"; };
+		0533D6B71BCC624D00B9536A /* BPIExpectant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPIExpectant.m; sourceTree = "<group>"; };
+		0533D6B91BCC647600B9536A /* BPIExpectantFinal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPIExpectantFinal.m; sourceTree = "<group>"; };
+		0533D6BB1BCC647D00B9536A /* BPIExpectantFinal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPIExpectantFinal.h; sourceTree = "<group>"; };
 		05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbdomnialPelvicCT.m; sourceTree = "<group>"; };
 		05784A2A1BB307CF0096703F /* AbdominalPelvicCT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdominalPelvicCT.h; sourceTree = "<group>"; };
 		05784A2B1BB3092D0096703F /* AbdPelFast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdPelFast.h; sourceTree = "<group>"; };
@@ -516,6 +618,38 @@
 		1DD19E2A1B617A9D001EA1FC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0533D6851BCBDF2000B9536A /* PCIP1Image.h */,
+				0533D6B31BCC607600B9536A /* BPITransection.h */,
+				0533D6B41BCC607F00B9536A /* BPITransection.m */,
+				0533D6861BCBDF2A00B9536A /* PCIP1Image.m */,
+				0533D6821BCB8D1000B9536A /* PCIP2CardiacOutcome.m */,
+				0533D6841BCB8D1D00B9536A /* PCIP2CardiacOutcome.h */,
+				0533D6881BCBDFC500B9536A /* PCIP1Options.m */,
+				0533D68A1BCBDFCB00B9536A /* PCIP1Options.h */,
+				0533D68B1BCBE21400B9536A /* PCIP1WTA.h */,
+				0533D68C1BCBE21C00B9536A /* PCIP1WTA.m */,
+				0533D68E1BCBE23000B9536A /* PCIP1InitialAssessment.m */,
+				0533D6901BCBE23700B9536A /* PCIP1InitialAssessment.h */,
+				0533D6921BCBE26400B9536A /* PCIP1InitialOutcome.m */,
+				0533D6941BCBE4B000B9536A /* PCIP1Anterior.m */,
+				0533D6961BCBE4BA00B9536A /* PCIP1Anterior.h */,
+				0533D6971BCBE4C800B9536A /* PCIP1Lateral.h */,
+				0533D6981BCBE4D000B9536A /* PCIP1Lateral.m */,
+				0533D69A1BCBE4F500B9536A /* PCIP1FinalOptions.m */,
+				0533D69C1BCBE4FC00B9536A /* PCIP1FinalOptions.h */,
+				0533D69D1BCC53E100B9536A /* BPIImage.h */,
+				0533D69E1BCC53EA00B9536A /* BPIImage.m */,
+				0533D6A01BCC543E00B9536A /* BPIInitial.m */,
+				0533D6A21BCC544500B9536A /* BPIInitial.h */,
+				0533D6A31BCC545500B9536A /* BPICTAbdomen.h */,
+				0533D6A41BCC545D00B9536A /* BPICTAbdomen.m */,
+				0533D6A61BCC547100B9536A /* BPIExploratoryLaparotomy.m */,
+				0533D6A81BCC547800B9536A /* BPIExploratoryLaparotomy.h */,
+				0533D6A91BCC548C00B9536A /* BPINormalPancreas.h */,
+				0533D6AA1BCC549300B9536A /* BPINormalPancreas.m */,
+				0533D6AC1BCC54A000B9536A /* BPIMainDuct.m */,
+				0533D6AE1BCC54A600B9536A /* BPIMainDuct.h */,
+				0533D6911BCBE25C00B9536A /* PCIP1InitialOutcome.h */,
 				1DD19E2B1B617A9D001EA1FC /* FirstViewController.h */,
 				1DD19E2C1B617A9D001EA1FC /* FirstViewController.m */,
 				1DD19E2D1B617A9D001EA1FC /* SecondViewController.h */,
@@ -640,6 +774,42 @@
 				05943C621BB8351D005DF268 /* BluntHepticPart2Initial.m */,
 				05943C741BBA98AB005DF268 /* PenetratingAbdominalInjuriesImage.m */,
 				05943C761BBA98B2005DF268 /* PenetratingAbdominalInjuriesImage.h */,
+				0533D6521BCA7FA800B9536A /* BHP2PackAndRes.m */,
+				0533D65E1BCB08DA00B9536A /* BHP2Pringle.m */,
+				0533D67C1BCB89EF00B9536A /* PCIP2Transmed.m */,
+				0533D67E1BCB89F700B9536A /* PCIP2Transmed.h */,
+				0533D67F1BCB8A0300B9536A /* PCIP2Cardiac.h */,
+				0533D6801BCB8A0900B9536A /* PCIP2Cardiac.m */,
+				0533D6601BCB08E100B9536A /* BHP2Pringle.h */,
+				0533D6611BCB09BB00B9536A /* BHP2SelectiveVessel.h */,
+				0533D6621BCB09C200B9536A /* BHP2SelectiveVessel.m */,
+				0533D65B1BCB045F00B9536A /* BHP2Laparotomy.h */,
+				0533D65C1BCB046A00B9536A /* BHP2Laparotomy.m */,
+				0533D6541BCA7FAE00B9536A /* BHP2PackAndRes.h */,
+				0533D6641BCB0AFF00B9536A /* BHP2SHAL.m */,
+				0533D6671BCB2B5400B9536A /* PCIP2Initial.h */,
+				0533D6681BCB2B5B00B9536A /* PCIP2Initial.m */,
+				0533D66A1BCB2B7100B9536A /* PCIP2Pneumothorax.m */,
+				0533D66C1BCB2B7800B9536A /* PCIP2Pneumothorax.h */,
+				0533D66D1BCB2B8200B9536A /* PCIP2CXR.h */,
+				0533D6731BCB854D00B9536A /* PCIP2Outcome.h */,
+				0533D6741BCB855500B9536A /* PCIP2Outcome.m */,
+				0533D6761BCB872400B9536A /* PCIP2VATS.m */,
+				0533D6781BCB872900B9536A /* PCIP2VATS.h */,
+				0533D6791BCB892F00B9536A /* PCIP2OR.h */,
+				0533D67A1BCB893A00B9536A /* PCIP2OR.m */,
+				0533D66E1BCB2B9000B9536A /* PCIP2CXR.m */,
+				0533D6721BCB2BA500B9536A /* PCIP2Hemothorax.h */,
+				0533D6701BCB2B9F00B9536A /* PCIP2Hemothorax.m */,
+				0533D6661BCB0B0500B9536A /* BHP2SHAL.h */,
+				0533D6551BCA818800B9536A /* BHP2ControlledBleeding.h */,
+				0533D6561BCA819000B9536A /* BHP2ControlledBleeding.m */,
+				0533D6581BCA81B400B9536A /* BHP2UnControlledBleeding.m */,
+				0533D65A1BCA81BB00B9536A /* BHP2UnControlledBleeding.h */,
+				0533D6B61BCC624500B9536A /* BPIExpectant.h */,
+				0533D6B91BCC647600B9536A /* BPIExpectantFinal.m */,
+				0533D6BB1BCC647D00B9536A /* BPIExpectantFinal.h */,
+				0533D6B71BCC624D00B9536A /* BPIExpectant.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -832,64 +1002,97 @@
 				1DE817AF1B80F05200789790 /* ProtocolType.m in Sources */,
 				05943C571BB749D1005DF268 /* BluntHepaticRepeatCTScan.m in Sources */,
 				1DD19E331B617A9D001EA1FC /* SecondViewController.m in Sources */,
+				0533D69F1BCC53EA00B9536A /* BPIImage.m in Sources */,
 				1DCC35481B8D0B3700FD2B82 /* BCVIGradeInjury.m in Sources */,
 				1DCC35441B8D09A500FD2B82 /* BCVIStop.m in Sources */,
 				1D82B02C1B934A6F0066546E /* PVIImagingArteriography.m in Sources */,
+				0533D6811BCB8A0900B9536A /* PCIP2Cardiac.m in Sources */,
 				1DCC35301B8CDB0900FD2B82 /* BCVISignsRiskFactors.m in Sources */,
 				1DE817B81B810A8E00789790 /* ZoneSelection.m in Sources */,
 				1DCF03571B910F2F005839B4 /* PAISW.m in Sources */,
 				1DCC352C1B8CD74100FD2B82 /* BCVIImage.m in Sources */,
+				0533D6871BCBDF2A00B9536A /* PCIP1Image.m in Sources */,
+				0533D6BA1BCC647600B9536A /* BPIExpectantFinal.m in Sources */,
 				05943C451BB709F3005DF268 /* Angiography.m in Sources */,
+				0533D6AD1BCC54A000B9536A /* BPIMainDuct.m in Sources */,
 				1D0FC6C71B6AD34600302C6E /* EDTCardiacRhythm.m in Sources */,
 				1DCF03501B910A95005839B4 /* PAIHemoStable.m in Sources */,
 				1DCC353E1B8D074A00FD2B82 /* BCVIRepeatMultiscaleScan.m in Sources */,
 				1DCC35361B8CE4B200FD2B82 /* BCVICTScanNegative.m in Sources */,
+				0533D68D1BCBE21C00B9536A /* PCIP1WTA.m in Sources */,
+				0533D6AB1BCC549300B9536A /* BPINormalPancreas.m in Sources */,
+				0533D6631BCB09C200B9536A /* BHP2SelectiveVessel.m in Sources */,
+				0533D6951BCBE4B000B9536A /* PCIP1Anterior.m in Sources */,
+				0533D66F1BCB2B9000B9536A /* PCIP2CXR.m in Sources */,
+				0533D6571BCA819000B9536A /* BHP2ControlledBleeding.m in Sources */,
 				1DCF034E1B91094F005839B4 /* PenetratingAbdominalInjuryType.m in Sources */,
 				1D0FC6C51B69C87C00302C6E /* deadEnd.m in Sources */,
+				0533D6591BCA81B400B9536A /* BHP2UnControlledBleeding.m in Sources */,
 				05943C631BB8351D005DF268 /* BluntHepticPart2Initial.m in Sources */,
 				1D725B681B8153CC0006521E /* ResuscitativeThoracotomyImage.m in Sources */,
 				05784A331BB30C460096703F /* AbdominalPelvicCTScan.m in Sources */,
+				0533D6931BCBE26400B9536A /* PCIP1InitialOutcome.m in Sources */,
+				0533D6831BCB8D1000B9536A /* PCIP2CardiacOutcome.m in Sources */,
 				1D0FC6CB1B6AD9C200302C6E /* CardiacRhythmType.m in Sources */,
 				05943C591BB756D2005DF268 /* BluntHepticBlush.m in Sources */,
 				1D0FC7171B6B0CB000302C6E /* AFPickerView.m in Sources */,
+				0533D6A11BCC543E00B9536A /* BPIInitial.m in Sources */,
 				1DD19E461B618D6E001EA1FC /* UIImage+HTButton.m in Sources */,
 				1DCC35381B8D03B400FD2B82 /* BCVISurgicallyAccessible.m in Sources */,
+				0533D6711BCB2B9F00B9536A /* PCIP2Hemothorax.m in Sources */,
 				1D0FC6BD1B6997DB00302C6E /* ECGViewController.m in Sources */,
 				1DD19E311B617A9D001EA1FC /* AppDelegate.m in Sources */,
 				1DD19E441B618D6E001EA1FC /* HTPressableButtonPrefs.m in Sources */,
+				0533D65D1BCB046A00B9536A /* BHP2Laparotomy.m in Sources */,
 				05943C4B1BB745F1005DF268 /* BluntHepticInitial.m in Sources */,
 				1D0FC7231B6B935E00302C6E /* CPPickerView.m in Sources */,
 				1D0FC7291B6B9F8900302C6E /* NonTorsoViewController.m in Sources */,
 				1D0FC6D11B6AF49E00302C6E /* OrEndController.m in Sources */,
+				0533D6771BCB872400B9536A /* PCIP2VATS.m in Sources */,
 				1DE817B21B8101EC00789790 /* HardSignsP2.m in Sources */,
+				0533D68F1BCBE23000B9536A /* PCIP1InitialAssessment.m in Sources */,
+				0533D6A71BCC547100B9536A /* BPIExploratoryLaparotomy.m in Sources */,
 				1DCF03551B910F24005839B4 /* PAIGSW.m in Sources */,
+				0533D6751BCB855500B9536A /* PCIP2Outcome.m in Sources */,
 				1DD19E381B617AFF001EA1FC /* main.m in Sources */,
+				0533D6531BCA7FA800B9536A /* BHP2PackAndRes.m in Sources */,
 				1DE817BE1B810CC600789790 /* Zone2.m in Sources */,
 				1DCC35321B8CDD0B00FD2B82 /* BCVIEmergentYes.m in Sources */,
 				1D82B01C1B93432A0066546E /* PVIAssessment.m in Sources */,
 				1DE817B51B81031000789790 /* SuspiciousActivity.m in Sources */,
 				1D0FC6BB1B694A9500302C6E /* TraumaTypeViewController.m in Sources */,
+				0533D6B51BCC607F00B9536A /* BPITransection.m in Sources */,
 				1DCF035D1B912476005839B4 /* operatingRoom.m in Sources */,
+				0533D65F1BCB08DA00B9536A /* BHP2Pringle.m in Sources */,
+				0533D6B81BCC624D00B9536A /* BPIExpectant.m in Sources */,
+				0533D6891BCBDFC500B9536A /* PCIP1Options.m in Sources */,
 				1D82B0201B93435E0066546E /* PVIHard.m in Sources */,
 				1DCC353C1B8D052E00FD2B82 /* BCVIInjuryHealed.m in Sources */,
 				1D0FC6C11B69982500302C6E /* LocationViewController.m in Sources */,
+				0533D6A51BCC545D00B9536A /* BPICTAbdomen.m in Sources */,
 				05784A351BB37FB20096703F /* Blush.m in Sources */,
 				1DCC35421B8D08BB00FD2B82 /* BCVIOperate.m in Sources */,
 				05943C511BB746EF005DF268 /* BLTHepticUnstable.m in Sources */,
+				0533D69B1BCBE4F500B9536A /* PCIP1FinalOptions.m in Sources */,
 				1DD19E431B618D6E001EA1FC /* HTPressableButton.m in Sources */,
+				0533D67B1BCB893A00B9536A /* PCIP2OR.m in Sources */,
+				0533D66B1BCB2B7100B9536A /* PCIP2Pneumothorax.m in Sources */,
 				1D82B0281B93497A0066546E /* PVIImaging.m in Sources */,
 				05943C5F1BB82D92005DF268 /* BluntHepaticFinal.m in Sources */,
 				1D82B0221B9343690066546E /* PVISoft.m in Sources */,
 				1DD19E451B618D6E001EA1FC /* UIColor+HTColor.m in Sources */,
 				1DE817BA1B810C9500789790 /* Zone1.m in Sources */,
 				1D82B0261B9343900066546E /* PVIOperatingRoom.m in Sources */,
+				0533D6991BCBE4D000B9536A /* PCIP1Lateral.m in Sources */,
 				05784A2D1BB309350096703F /* AbdPelFast.m in Sources */,
 				1D0FC72E1B6BA20F00302C6E /* Tamponade.m in Sources */,
 				05943C4D1BB746D7005DF268 /* BLTHepticStable.m in Sources */,
 				05943C751BBA98AB005DF268 /* PenetratingAbdominalInjuriesImage.m in Sources */,
 				1D0FC7241B6B935E00302C6E /* CPPickerViewCell.m in Sources */,
 				1DCF03591B9118CA005839B4 /* PAIFinal.m in Sources */,
+				0533D67D1BCB89EF00B9536A /* PCIP2Transmed.m in Sources */,
 				05784A2F1BB30B230096703F /* AbdPelRepeatFast.m in Sources */,
+				0533D6691BCB2B5B00B9536A /* PCIP2Initial.m in Sources */,
 				1D0FC6CD1B6AEA1400302C6E /* SBPContorller.m in Sources */,
 				05943C471BB70C19005DF268 /* Observation.m in Sources */,
 				05943C5D1BB760E3005DF268 /* BluntHepaticScanOutcome.m in Sources */,
@@ -898,6 +1101,7 @@
 				05784A291BB307BE0096703F /* AbdomnialPelvicCT.m in Sources */,
 				1DE817C01B810CCF00789790 /* Zone3.m in Sources */,
 				1DD19E321B617A9D001EA1FC /* FirstViewController.m in Sources */,
+				0533D6651BCB0AFF00B9536A /* BHP2SHAL.m in Sources */,
 				1D725B6A1B81550E0006521E /* PenetratingNeckInjuriesImage.m in Sources */,
 				1D725B6E1B8158940006521E /* TEInjury.m in Sources */,
 			);

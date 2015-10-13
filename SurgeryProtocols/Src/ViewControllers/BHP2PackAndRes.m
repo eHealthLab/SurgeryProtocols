@@ -1,16 +1,16 @@
 //
-//  BluntHepticPart2Initial.m
+//  BHP2PackAndRes.m
 //  SurgeryProtocols
 //
-//  Created by Aarti Munjal on 9/27/15.
+//  Created by Aarti Munjal on 10/11/15.
 //  Copyright (c) 2015 University of Colorado Denver. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "BluntHepticPart2Initial.h"
+#import "BHP2PackAndRes.h"
 #import "AppDelegate.h"
 
-@implementation BluntHepticPart2Initial
+@implementation BHP2PackAndRes
 {
     AppDelegate *delegate;
 }
@@ -19,7 +19,7 @@
 {
     
     delegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
-    self.BluntHepaticArray = [[NSArray alloc] initWithObjects:@"Minor bleeding", @"Major bleeding", nil];
+    self.BluntHepaticArray = [[NSArray alloc] initWithObjects:@"Controlled Bleeding", @"Uncontrolled Bleeding", nil];
     
     self.BluntHepaticPicker.delegate = self;
     self.BluntHepaticPicker.dataSource = self;
@@ -32,6 +32,18 @@
     self.nextButton.shadowColor = [UIColor ht_bitterSweetDarkColor];
     
     [self.nextButton setTitle:@"Next" forState:UIControlStateNormal];
+    
+    if ([delegate.BluntHepaticPart2BleedingType isEqualToString:@"Minor bleeding"]) {
+        self.nextButton.hidden = YES;
+        self.BluntHepaticPicker.hidden = YES;
+        self.label.text = @"Electrocautery and argon beam Topical hemostatic agents";
+        self.label.numberOfLines=2;
+        
+    }
+    else{
+        self.label.text = @"Pack and resuscitate";
+        self.endOfProtocolLabel.hidden = YES;
+    }
     
 }
 
@@ -53,11 +65,11 @@
 - (IBAction)nextButtonPressed:(id)sender {
     
     NSString *choice = [self.BluntHepaticArray objectAtIndex:[self.BluntHepaticPicker selectedRowInComponent:0]];
-    if ([choice isEqualToString:@"Minor bleeding"]) {
+    if ([choice isEqualToString:@"Controlled Bleeding"]) {
         
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BHP2packAndRes"];
-        delegate.BluntHepaticPart2BleedingType = @"Minor bleeding";
-
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BHP2Laparotomy"];
+        //delegate.BluntHepaticPart2BleedingType = @"Electrocautery and argon beam Topical hemostatic agents";
+        
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
         
@@ -67,8 +79,8 @@
     }
     
     else {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BHP2packAndRes"];
-        delegate.BluntHepaticPart2BleedingType = @"Major bleeding";
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BHP2Pringle"];
+        
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -80,6 +92,7 @@
 }
 
 @end
+
 
 
 

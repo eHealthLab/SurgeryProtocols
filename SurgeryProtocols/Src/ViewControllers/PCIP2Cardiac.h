@@ -1,20 +1,20 @@
 //
-//  BluntHepticPart2Initial.h
+//  PCIP2Cardiac.h
 //  SurgeryProtocols
 //
-//  Created by Aarti Munjal on 9/27/15.
+//  Created by Aarti Munjal on 10/12/15.
 //  Copyright (c) 2015 University of Colorado Denver. All rights reserved.
 //
 
-#ifndef SurgeryProtocols_BluntHepticPart2Initial_h
-#define SurgeryProtocols_BluntHepticPart2Initial_h
+#ifndef SurgeryProtocols_PCIP2Cardiac_h
+#define SurgeryProtocols_PCIP2Cardiac_h
 
 #import <Foundation/Foundation.h>
 #import<UIKit/UIKit.h>
 #import "HTPressableButton.h"
 #import "UIColor+HTColor.h"
 
-@interface BluntHepticPart2Initial: UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface PCIP2Cardiac: UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (strong, nonatomic) IBOutlet HTPressableButton *nextButton;
 @property (weak, nonatomic) IBOutlet UIPickerView *BluntHepaticPicker;

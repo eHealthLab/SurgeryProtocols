@@ -1,16 +1,16 @@
 //
-//  BluntHepticPart2Initial.m
+//  PCIP2Cardiac.m
 //  SurgeryProtocols
 //
-//  Created by Aarti Munjal on 9/27/15.
+//  Created by Aarti Munjal on 10/12/15.
 //  Copyright (c) 2015 University of Colorado Denver. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "BluntHepticPart2Initial.h"
+#import "PCIP2Cardiac.h"
 #import "AppDelegate.h"
 
-@implementation BluntHepticPart2Initial
+@implementation PCIP2Cardiac
 {
     AppDelegate *delegate;
 }
@@ -19,7 +19,7 @@
 {
     
     delegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
-    self.BluntHepaticArray = [[NSArray alloc] initWithObjects:@"Minor bleeding", @"Major bleeding", nil];
+    self.BluntHepaticArray = [[NSArray alloc] initWithObjects:@"Positive", @"Negative", nil];
     
     self.BluntHepaticPicker.delegate = self;
     self.BluntHepaticPicker.dataSource = self;
@@ -32,6 +32,7 @@
     self.nextButton.shadowColor = [UIColor ht_bitterSweetDarkColor];
     
     [self.nextButton setTitle:@"Next" forState:UIControlStateNormal];
+    
     
 }
 
@@ -53,11 +54,12 @@
 - (IBAction)nextButtonPressed:(id)sender {
     
     NSString *choice = [self.BluntHepaticArray objectAtIndex:[self.BluntHepaticPicker selectedRowInComponent:0]];
-    if ([choice isEqualToString:@"Minor bleeding"]) {
+    
+    if ([choice isEqualToString:@"Positive"]) {
         
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BHP2packAndRes"];
-        delegate.BluntHepaticPart2BleedingType = @"Minor bleeding";
-
+        delegate.PCIP2CardiacType=@"Sternotomy";
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PCIP2CardiacOutcome"];
+        
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
         
@@ -67,8 +69,9 @@
     }
     
     else {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BHP2packAndRes"];
-        delegate.BluntHepaticPart2BleedingType = @"Major bleeding";
+        delegate.PCIP2CardiacType=@"VATS Pleuroscopy Window";
+        
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PCIP2CardiacOutcome"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -80,7 +83,5 @@
 }
 
 @end
-
-
 
 

@@ -21,6 +21,15 @@
     self.AbdPelvicTraumaGradeType = @"";
     self.BluntHepaticLabel = @"";
     self.BluntHepaticScanOutcome = @"";
+    self.BluntHepaticPart2BleedingType=@"";
+    self.PCIP2HemothoraxType=@"";
+    self.PCIP2PneumoType=@"";
+    self.PCIP2CXRType=@"";
+    self.PCIP2CardiacType=@"";
+    self.PCIP2TransmedType=@"";
+    self.PCIP1Type=@"";
+    self.PCIP1Final=@"";
+    self.BPIExpectantFinal=@"";
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -32,7 +41,16 @@
     self.AbdPelvicTraumaGradeType = @"";
     self.BluntHepaticLabel = @"";
     self.BluntHepaticScanOutcome = @"";
-    
+    self.BluntHepaticPart2BleedingType=@"";
+    self.PCIP2HemothoraxType=@"";
+    self.PCIP2PneumoType=@"";
+    self.PCIP2CXRType=@"";
+    self.PCIP2CardiacType=@"";
+    self.PCIP2TransmedType=@"";
+    self.PCIP1Type=@"";
+    self.PCIP1Final=@"";
+    self.BPIExpectantFinal=@"";
+
     return YES;
 }
 

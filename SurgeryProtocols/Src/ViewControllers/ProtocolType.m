@@ -13,7 +13,7 @@
 
 -(void)viewDidLoad
 {
-    self.protocolTypeArray = [[NSArray alloc] initWithObjects:@"Resuscitative Thoracotomy", @"Penetrating Neck Injuries", @"Blunt Cerebrovascular Injuries", @"Penetrating Abdominal Injuries", @"Peripheral Vascular Injury – Part 1", @"Peripheral Vascular Injury – Part 2", @"Imaging For Blunt Abdominal Trauma", @"Blunt Splenic Injury", @"Blunt Hepatic Injury – Part 1 (Non-Operative Management)", @"Blunt Hepatic Injury – Part 2 (Operative Management)", @"Blunt Pancreatic Injury", @"Penetrating Chest Injury – Part 1 (Stable Patient)", @"Penetrating Chest Injury – Part 2 (Unstable Patient)", nil];
+    self.protocolTypeArray = [[NSArray alloc] initWithObjects:@"Resuscitative Thoracotomy", @"Penetrating Neck Injuries", @"Blunt Cerebrovascular Injuries", @"Penetrating Abdominal Injuries", @"Peripheral Vascular Injury – Part 1", @"Peripheral Vascular Injury – Part 2", @"Imaging For Blunt Abdominal Trauma", @"Blunt Splenic Injury", @"Blunt Hepatic Injury – Part 1 (Non-Operative Management)", @"Blunt Hepatic Injury – Part 2 (Operative Management)", @"Blunt Pancreatic Injury", @"Penetrating Chest Injury – Part 1", @"Penetrating Chest Injury – Part 2", nil];
     
     self.protocolPicker.delegate = self;
     self.protocolPicker.dataSource = self;
@@ -139,7 +139,7 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else if ([choice isEqualToString:@"Blunt Hepatic Injury – Part 2 (Operative Management)"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BluntHepticPart2Image"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BluntHepaticPart2Image"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -158,8 +158,8 @@
         
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
-    else if ([choice isEqualToString:@"Penetrating Chest Injury – Part 1 (Stable Patient)"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PENETRATINGCHESTINJURY–PART1 (STABLEPATIENT)"];
+    else if ([choice isEqualToString:@"Penetrating Chest Injury – Part 1"]) {
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PCIP1Image"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -168,8 +168,8 @@
         
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
-    else if ([choice isEqualToString:@"Penetrating Chest Injury – Part 2 (Unstable Patient)"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PENETRATINGCHESTINJURY–PART2 (UNSTABLEPATIENT)"];
+    else if ([choice isEqualToString:@"Penetrating Chest Injury – Part 2"]) {
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PCIP2Image"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";

@@ -19,6 +19,15 @@
 @property(strong, nonatomic) NSString *AbdPelvicTraumaGradeType;
 @property(strong, nonatomic) NSString *BluntHepaticLabel;
 @property(strong, nonatomic) NSString *BluntHepaticScanOutcome;
+@property(strong, nonatomic) NSString *BluntHepaticPart2BleedingType;
+@property(strong, nonatomic) NSString *PCIP2HemothoraxType;
+@property(strong, nonatomic) NSString *PCIP2PneumoType;
+@property(strong, nonatomic) NSString *PCIP2CXRType;
+@property(strong, nonatomic) NSString *PCIP2CardiacType;
+@property(strong, nonatomic) NSString *PCIP2TransmedType;
+@property(strong, nonatomic) NSString *PCIP1Type;
+@property(strong, nonatomic) NSString *PCIP1Final;
+@property(strong, nonatomic) NSString *BPIExpectantFinal;
 
 @end
 
