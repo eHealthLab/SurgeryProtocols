@@ -21,7 +21,7 @@
     delegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
     
     
-    self.AngioLabel = delegate.AbdPelvicTrauma;
+    self.AngioLabel.text = delegate.AbdPelvicTrauma;
     self.nextButton.cornerRadius = 10.0;
     self.nextButton.shadowHeight = self.nextButton.frame.size.height * 0.17;
     self.nextButton.buttonColor = [UIColor ht_bitterSweetColor];

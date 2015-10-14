@@ -36,7 +36,7 @@
     if ([delegate.BluntHepaticPart2BleedingType isEqualToString:@"Minor bleeding"]) {
         self.nextButton.hidden = YES;
         self.BluntHepaticPicker.hidden = YES;
-        self.label.text = @"Electrocautery and argon beam Topical hemostatic agents";
+        self.label.text = @"Electrocautery and argon beam \n Topical hemostatic agents";
         self.label.numberOfLines=2;
         
     }

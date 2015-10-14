@@ -41,6 +41,11 @@
 		0533D6B51BCC607F00B9536A /* BPITransection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6B41BCC607F00B9536A /* BPITransection.m */; };
 		0533D6B81BCC624D00B9536A /* BPIExpectant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6B71BCC624D00B9536A /* BPIExpectant.m */; };
 		0533D6BA1BCC647600B9536A /* BPIExpectantFinal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6B91BCC647600B9536A /* BPIExpectantFinal.m */; };
+		0533D6BE1BCDFB9B00B9536A /* BCVISymptmos.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6BD1BCDFB9B00B9536A /* BCVISymptmos.m */; };
+		0533D6C01BCE0E4400B9536A /* BATImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6BF1BCE0E4400B9536A /* BATImage.m */; };
+		0533D6C41BCE191100B9536A /* FinalAbdominal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6C31BCE191100B9536A /* FinalAbdominal.m */; };
+		0533D6C61BCEBBCE00B9536A /* PCIP2Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6C51BCEBBCE00B9536A /* PCIP2Image.m */; };
+		0533D6CA1BCEC74200B9536A /* BluntHepaticPart2Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6C91BCEC74200B9536A /* BluntHepaticPart2Image.m */; };
 		05784A291BB307BE0096703F /* AbdomnialPelvicCT.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */; };
 		05784A2D1BB309350096703F /* AbdPelFast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A2C1BB309350096703F /* AbdPelFast.m */; };
 		05784A2F1BB30B230096703F /* AbdPelRepeatFast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A2E1BB30B230096703F /* AbdPelRepeatFast.m */; };
@@ -246,6 +251,16 @@
 		0533D6B71BCC624D00B9536A /* BPIExpectant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPIExpectant.m; sourceTree = "<group>"; };
 		0533D6B91BCC647600B9536A /* BPIExpectantFinal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPIExpectantFinal.m; sourceTree = "<group>"; };
 		0533D6BB1BCC647D00B9536A /* BPIExpectantFinal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPIExpectantFinal.h; sourceTree = "<group>"; };
+		0533D6BC1BCDFB9000B9536A /* BCVISymptmos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVISymptmos.h; sourceTree = "<group>"; };
+		0533D6BD1BCDFB9B00B9536A /* BCVISymptmos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVISymptmos.m; sourceTree = "<group>"; };
+		0533D6BF1BCE0E4400B9536A /* BATImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATImage.m; sourceTree = "<group>"; };
+		0533D6C11BCE0E4F00B9536A /* BATImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BATImage.h; sourceTree = "<group>"; };
+		0533D6C21BCE190800B9536A /* FinalAbdominal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinalAbdominal.h; sourceTree = "<group>"; };
+		0533D6C31BCE191100B9536A /* FinalAbdominal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalAbdominal.m; sourceTree = "<group>"; };
+		0533D6C51BCEBBCE00B9536A /* PCIP2Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP2Image.m; sourceTree = "<group>"; };
+		0533D6C71BCEBBD400B9536A /* PCIP2Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP2Image.h; sourceTree = "<group>"; };
+		0533D6C81BCEC73800B9536A /* BluntHepaticPart2Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluntHepaticPart2Image.h; sourceTree = "<group>"; };
+		0533D6C91BCEC74200B9536A /* BluntHepaticPart2Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluntHepaticPart2Image.m; sourceTree = "<group>"; };
 		05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbdomnialPelvicCT.m; sourceTree = "<group>"; };
 		05784A2A1BB307CF0096703F /* AbdominalPelvicCT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdominalPelvicCT.h; sourceTree = "<group>"; };
 		05784A2B1BB3092D0096703F /* AbdPelFast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdPelFast.h; sourceTree = "<group>"; };
@@ -622,6 +637,8 @@
 				0533D6B31BCC607600B9536A /* BPITransection.h */,
 				0533D6B41BCC607F00B9536A /* BPITransection.m */,
 				0533D6861BCBDF2A00B9536A /* PCIP1Image.m */,
+				0533D6C81BCEC73800B9536A /* BluntHepaticPart2Image.h */,
+				0533D6C91BCEC74200B9536A /* BluntHepaticPart2Image.m */,
 				0533D6821BCB8D1000B9536A /* PCIP2CardiacOutcome.m */,
 				0533D6841BCB8D1D00B9536A /* PCIP2CardiacOutcome.h */,
 				0533D6881BCBDFC500B9536A /* PCIP1Options.m */,
@@ -661,6 +678,8 @@
 				1DE817B31B81031000789790 /* SuspiciousActivity.h */,
 				1DE817B41B81031000789790 /* SuspiciousActivity.m */,
 				1DE817AE1B80F05200789790 /* ProtocolType.m */,
+				0533D6BF1BCE0E4400B9536A /* BATImage.m */,
+				0533D6C11BCE0E4F00B9536A /* BATImage.h */,
 				1DD19E2E1B617A9D001EA1FC /* SecondViewController.m */,
 				1D0FC6B91B694A8700302C6E /* TraumaTypeViewController.h */,
 				1D0FC6BA1B694A9500302C6E /* TraumaTypeViewController.m */,
@@ -693,6 +712,8 @@
 				1D725B661B8153B00006521E /* ResuscitativeThoracotomyImage.h */,
 				1D725B671B8153CC0006521E /* ResuscitativeThoracotomyImage.m */,
 				1D725B691B81550E0006521E /* PenetratingNeckInjuriesImage.m */,
+				0533D6BC1BCDFB9000B9536A /* BCVISymptmos.h */,
+				0533D6BD1BCDFB9B00B9536A /* BCVISymptmos.m */,
 				1D725B6B1B81551E0006521E /* PenetratingNeckInjuriesImage.h */,
 				1D725B6C1B8158880006521E /* TEInjury.h */,
 				1D725B6D1B8158940006521E /* TEInjury.m */,
@@ -745,6 +766,8 @@
 				05784A2B1BB3092D0096703F /* AbdPelFast.h */,
 				05784A2C1BB309350096703F /* AbdPelFast.m */,
 				05784A2E1BB30B230096703F /* AbdPelRepeatFast.m */,
+				0533D6C71BCEBBD400B9536A /* PCIP2Image.h */,
+				0533D6C51BCEBBCE00B9536A /* PCIP2Image.m */,
 				05784A301BB30B290096703F /* AbdPelRepeatFast.h */,
 				05784A311BB30C3D0096703F /* AbdominalPelvicCTScan.h */,
 				05784A321BB30C460096703F /* AbdominalPelvicCTScan.m */,
@@ -754,6 +777,8 @@
 				05943C441BB709F3005DF268 /* Angiography.m */,
 				05943C461BB70C19005DF268 /* Observation.m */,
 				05943C481BB70C20005DF268 /* Observation.h */,
+				0533D6C31BCE191100B9536A /* FinalAbdominal.m */,
+				0533D6C21BCE190800B9536A /* FinalAbdominal.h */,
 				05943C491BB745EB005DF268 /* BluntHepticInitial.h */,
 				05943C4A1BB745F1005DF268 /* BluntHepticInitial.m */,
 				05943C4C1BB746D7005DF268 /* BLTHepticStable.m */,
@@ -1005,11 +1030,13 @@
 				0533D69F1BCC53EA00B9536A /* BPIImage.m in Sources */,
 				1DCC35481B8D0B3700FD2B82 /* BCVIGradeInjury.m in Sources */,
 				1DCC35441B8D09A500FD2B82 /* BCVIStop.m in Sources */,
+				0533D6CA1BCEC74200B9536A /* BluntHepaticPart2Image.m in Sources */,
 				1D82B02C1B934A6F0066546E /* PVIImagingArteriography.m in Sources */,
 				0533D6811BCB8A0900B9536A /* PCIP2Cardiac.m in Sources */,
 				1DCC35301B8CDB0900FD2B82 /* BCVISignsRiskFactors.m in Sources */,
 				1DE817B81B810A8E00789790 /* ZoneSelection.m in Sources */,
 				1DCF03571B910F2F005839B4 /* PAISW.m in Sources */,
+				0533D6BE1BCDFB9B00B9536A /* BCVISymptmos.m in Sources */,
 				1DCC352C1B8CD74100FD2B82 /* BCVIImage.m in Sources */,
 				0533D6871BCBDF2A00B9536A /* PCIP1Image.m in Sources */,
 				0533D6BA1BCC647600B9536A /* BPIExpectantFinal.m in Sources */,
@@ -1090,6 +1117,7 @@
 				05943C751BBA98AB005DF268 /* PenetratingAbdominalInjuriesImage.m in Sources */,
 				1D0FC7241B6B935E00302C6E /* CPPickerViewCell.m in Sources */,
 				1DCF03591B9118CA005839B4 /* PAIFinal.m in Sources */,
+				0533D6C41BCE191100B9536A /* FinalAbdominal.m in Sources */,
 				0533D67D1BCB89EF00B9536A /* PCIP2Transmed.m in Sources */,
 				05784A2F1BB30B230096703F /* AbdPelRepeatFast.m in Sources */,
 				0533D6691BCB2B5B00B9536A /* PCIP2Initial.m in Sources */,
@@ -1100,7 +1128,9 @@
 				1D0FC7271B6B9F7600302C6E /* TorsoViewController.m in Sources */,
 				05784A291BB307BE0096703F /* AbdomnialPelvicCT.m in Sources */,
 				1DE817C01B810CCF00789790 /* Zone3.m in Sources */,
+				0533D6C01BCE0E4400B9536A /* BATImage.m in Sources */,
 				1DD19E321B617A9D001EA1FC /* FirstViewController.m in Sources */,
+				0533D6C61BCEBBCE00B9536A /* PCIP2Image.m in Sources */,
 				0533D6651BCB0AFF00B9536A /* BHP2SHAL.m in Sources */,
 				1D725B6A1B81550E0006521E /* PenetratingNeckInjuriesImage.m in Sources */,
 				1D725B6E1B8158940006521E /* TEInjury.m in Sources */,

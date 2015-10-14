@@ -109,7 +109,7 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else if ([choice isEqualToString:@"Imaging For Blunt Abdominal Trauma"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"IMAGINGFORBLUNTABDOMINALTRAUMAImage"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BATImage"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -119,7 +119,7 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else if ([choice isEqualToString:@"Blunt Splenic Injury"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BLUNTSPLENICINJURY"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BATImage"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";

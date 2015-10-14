@@ -173,24 +173,6 @@ protocol</string>
             </objects>
             <point key="canvasLocation" x="1055" y="-1309"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Lh9-ns-uH7">
-            <objects>
-                <viewController id="uWt-do-pU1" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9wJ-Jn-SfN"/>
-                        <viewControllerLayoutGuide type="bottom" id="avr-rZ-7RW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="i2P-pD-bAX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="djh-XV-dqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1676" y="-1309"/>
-        </scene>
         <!--Penetrating Neck Injuries Image-->
         <scene sceneID="oSg-ZU-DFk">
             <objects>
@@ -203,26 +185,6 @@ protocol</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mma-yi-YQF" customClass="HTPressableButton">
-                                <rect key="frame" x="445" y="552" width="120" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="QlD-BP-0jz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfz-Pl-J8K" customClass="HTPressableButton">
-                                <rect key="frame" x="445" y="540" width="120" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="K1c-gF-6Bc"/>
-                                    <constraint firstAttribute="height" constant="40" id="g7E-sQ-s3e"/>
-                                </constraints>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="22i-2C-Brh"/>
-                                    <segue destination="BMH-gw-0Bg" kind="show" id="f9g-bR-Bfb"/>
-                                </connections>
-                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Km-k3-dtD">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="532"/>
                                 <subviews>
@@ -241,15 +203,28 @@ protocol</string>
                                     <constraint firstAttribute="centerX" secondItem="ysS-Cz-bXj" secondAttribute="centerX" constant="5.5" id="zwd-qb-sfr"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mma-yi-YQF" customClass="HTPressableButton">
+                                <rect key="frame" x="445" y="540" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NIk-BY-68h"/>
+                                    <constraint firstAttribute="width" constant="120" id="Vmv-1A-mcV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="QlD-BP-0jz"/>
+                                    <segue destination="BMH-gw-0Bg" kind="show" id="Gr2-W6-d4e"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="7Km-k3-dtD" secondAttribute="trailing" id="1Y6-X6-up8"/>
-                            <constraint firstItem="rfz-Pl-J8K" firstAttribute="top" secondItem="7Km-k3-dtD" secondAttribute="bottom" constant="8" id="2rY-uD-Ryh"/>
                             <constraint firstItem="7Km-k3-dtD" firstAttribute="top" secondItem="rZe-Sv-xUq" secondAttribute="topMargin" id="8gG-a9-SEg"/>
-                            <constraint firstItem="rfz-Pl-J8K" firstAttribute="trailing" secondItem="7Km-k3-dtD" secondAttribute="trailing" constant="-35" id="AFK-rY-iTa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mma-yi-YQF" secondAttribute="trailing" constant="19" id="IW2-io-agL"/>
                             <constraint firstAttribute="bottom" secondItem="7Km-k3-dtD" secondAttribute="bottom" constant="68" id="LXS-gE-zXY"/>
                             <constraint firstItem="7Km-k3-dtD" firstAttribute="leading" secondItem="rZe-Sv-xUq" secondAttribute="leading" id="hkj-jz-5aD"/>
+                            <constraint firstItem="mma-yi-YQF" firstAttribute="top" secondItem="7Km-k3-dtD" secondAttribute="bottom" constant="8" id="kgv-re-v6o"/>
                         </constraints>
                     </view>
                     <connections>
@@ -324,10 +299,10 @@ protocol</string>
             </objects>
             <point key="canvasLocation" x="1409" y="2481"/>
         </scene>
-        <!--View Controller-->
+        <!--Symptmos-->
         <scene sceneID="mRw-uE-ktR">
             <objects>
-                <viewController id="sQL-Ha-7iF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BCVISymptmos" id="sQL-Ha-7iF" customClass="BCVISymptmos" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MxM-2p-6cZ"/>
                         <viewControllerLayoutGuide type="bottom" id="Zat-aN-SG3"/>
@@ -336,6 +311,21 @@ protocol</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5F-lb-wKd" customClass="HTPressableButton">
+                                <rect key="frame" x="223" y="509" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EBu-BM-PZE"/>
+                                    <constraint firstAttribute="width" constant="120" id="jPe-1o-ytc"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="sQL-Ha-7iF" eventType="touchUpInside" id="pil-IZ-j0A"/>
+                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="vRh-xD-fX2"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Quw-Xf-YWr">
+                                <rect key="frame" x="120" y="186" width="320" height="162"/>
+                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDA-f1-4Sl">
                                 <rect key="frame" x="199" y="76" width="188" height="41"/>
                                 <string key="text">Select signs/symptoms 
@@ -344,27 +334,22 @@ and risk factors for BCVI</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5F-lb-wKd" customClass="HTPressableButton">
-                                <rect key="frame" x="223" y="509" width="120" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="EBu-BM-PZE"/>
-                                    <constraint firstAttribute="width" constant="120" id="jPe-1o-ytc"/>
-                                </constraints>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="vRh-xD-fX2"/>
-                                    <segue destination="wfh-uh-Vay" kind="show" id="pwh-qt-3w5"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Quw-Xf-YWr" firstAttribute="centerX" secondItem="qDA-f1-4Sl" secondAttribute="centerX" constant="-13" id="8np-ZS-sYR"/>
                             <constraint firstAttribute="centerY" secondItem="l5F-lb-wKd" secondAttribute="centerY" constant="-229" id="A5R-Hp-h5A"/>
                             <constraint firstAttribute="centerX" secondItem="qDA-f1-4Sl" secondAttribute="centerX" constant="7.5" id="MUd-bw-BXB"/>
+                            <constraint firstItem="Quw-Xf-YWr" firstAttribute="top" secondItem="qDA-f1-4Sl" secondAttribute="bottom" constant="69" id="PHx-G2-30g"/>
                             <constraint firstItem="qDA-f1-4Sl" firstAttribute="top" secondItem="MxM-2p-6cZ" secondAttribute="bottom" constant="56" id="bpI-Bo-ZHn"/>
-                            <constraint firstAttribute="centerX" secondItem="l5F-lb-wKd" secondAttribute="centerX" constant="17" id="xiz-BY-7So"/>
+                            <constraint firstItem="l5F-lb-wKd" firstAttribute="top" secondItem="Quw-Xf-YWr" secondAttribute="bottom" constant="161" id="hNX-fl-VVr"/>
+                            <constraint firstItem="Quw-Xf-YWr" firstAttribute="centerX" secondItem="l5F-lb-wKd" secondAttribute="centerX" constant="-3" id="zl5-mh-FUL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="BCVIView" destination="Quw-Xf-YWr" id="1Oj-0G-TCJ"/>
+                        <outlet property="nextButton" destination="l5F-lb-wKd" id="qqm-Ye-uDy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KR3-mE-qkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -738,10 +723,10 @@ and risk factors for BCVI</string>
             </objects>
             <point key="canvasLocation" x="1409" y="8025"/>
         </scene>
-        <!--View Controller-->
+        <!--Image-->
         <scene sceneID="U6h-HD-s9C">
             <objects>
-                <viewController storyboardIdentifier="IMAGINGFORBLUNTABDOMINALTRAUMAImage" id="bHF-m5-BqG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BATImage" id="bHF-m5-BqG" customClass="BATImage" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8KU-co-NRF"/>
                         <viewControllerLayoutGuide type="bottom" id="wjA-C1-zb7"/>
@@ -750,7 +735,7 @@ and risk factors for BCVI</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUp-Zd-c95" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUp-Zd-c95" customClass="HTPressableButton">
                                 <rect key="frame" x="448" y="505" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="9C0-zb-VWK"/>
@@ -780,6 +765,9 @@ and risk factors for BCVI</string>
                             <constraint firstAttribute="bottom" secondItem="CUp-Zd-c95" secondAttribute="bottom" constant="55" id="puI-yk-8Sp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="CUp-Zd-c95" id="dWl-6o-Y4J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KSV-GT-1gK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -798,7 +786,7 @@ and risk factors for BCVI</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDn-UC-bbQ">
-                                <rect key="frame" x="126" y="122" width="320" height="162"/>
+                                <rect key="frame" x="126" y="121" width="320" height="162"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response to resuscitation" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cK-dD-ANZ">
                                 <rect key="frame" x="200" y="56" width="200" height="21"/>
@@ -806,8 +794,8 @@ and risk factors for BCVI</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1L-yr-4Ny" customClass="HTPressableButton">
-                                <rect key="frame" x="220" y="335" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1L-yr-4Ny" customClass="HTPressableButton">
+                                <rect key="frame" x="220" y="334" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="P7q-Ou-2Dp"/>
                                     <constraint firstAttribute="height" constant="40" id="ReU-Rh-9Pg"/>
@@ -850,16 +838,16 @@ and risk factors for BCVI</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZF-b9-bRK">
-                                <rect key="frame" x="268" y="94" width="93" height="21"/>
+                                <rect key="frame" x="181" y="94" width="251" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="93" id="AR0-CR-fAn"/>
-                                    <constraint firstAttribute="height" constant="21" id="bzL-OI-Dhh"/>
+                                    <constraint firstAttribute="width" constant="251" id="AR0-CR-fAn"/>
+                                    <constraint firstAttribute="height" constant="35" id="bzL-OI-Dhh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTj-Pg-wAj" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTj-Pg-wAj" customClass="HTPressableButton">
                                 <rect key="frame" x="254" y="356" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="3lC-Sn-wfk"/>
@@ -876,10 +864,10 @@ and risk factors for BCVI</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LTj-Pg-wAj" firstAttribute="top" secondItem="CZF-b9-bRK" secondAttribute="bottom" constant="241" id="0Fg-Wr-0IF"/>
+                            <constraint firstItem="LTj-Pg-wAj" firstAttribute="top" secondItem="CZF-b9-bRK" secondAttribute="bottom" constant="227" id="0Fg-Wr-0IF"/>
                             <constraint firstItem="CZF-b9-bRK" firstAttribute="top" secondItem="xnv-93-9ad" secondAttribute="bottom" constant="74" id="TRa-Nf-AfE"/>
-                            <constraint firstAttribute="centerX" secondItem="CZF-b9-bRK" secondAttribute="centerX" constant="-14.5" id="YQt-KV-9AS"/>
-                            <constraint firstItem="CZF-b9-bRK" firstAttribute="centerX" secondItem="LTj-Pg-wAj" secondAttribute="centerX" constant="0.5" id="b9D-rN-qvb"/>
+                            <constraint firstAttribute="centerX" secondItem="CZF-b9-bRK" secondAttribute="centerX" constant="-6.5" id="YQt-KV-9AS"/>
+                            <constraint firstItem="CZF-b9-bRK" firstAttribute="centerX" secondItem="LTj-Pg-wAj" secondAttribute="centerX" constant="-7.5" id="b9D-rN-qvb"/>
                         </constraints>
                     </view>
                     <connections>
@@ -889,7 +877,7 @@ and risk factors for BCVI</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPP-5L-mhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1585" y="10019"/>
+            <point key="canvasLocation" x="2806" y="10069"/>
         </scene>
         <!--Abd Pel Fast-->
         <scene sceneID="v5d-6J-m80">
@@ -903,23 +891,20 @@ and risk factors for BCVI</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBh-fk-zSW">
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VBh-fk-zSW">
                                 <rect key="frame" x="127" y="158" width="320" height="162"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SQ-Na-MVP">
-                                <rect key="frame" x="255" y="92" width="93" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="SUl-fc-bcE"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAST" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SQ-Na-MVP">
+                                <rect key="frame" x="255" y="92" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USJ-IW-jnQ" customClass="HTPressableButton">
-                                <rect key="frame" x="221" y="370" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USJ-IW-jnQ" customClass="HTPressableButton">
+                                <rect key="frame" x="246" y="370" width="120" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="8tV-pk-0ZJ"/>
-                                    <constraint firstAttribute="height" constant="40" id="Kyf-LU-3u1"/>
+                                    <constraint firstAttribute="height" constant="40" id="C9b-rT-BqM"/>
+                                    <constraint firstAttribute="width" constant="120" id="fb2-A3-ta8"/>
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
@@ -929,12 +914,12 @@ and risk factors for BCVI</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1SQ-Na-MVP" firstAttribute="top" secondItem="vvL-Le-zjO" secondAttribute="bottom" constant="72" id="IZp-8t-WZt"/>
-                            <constraint firstItem="USJ-IW-jnQ" firstAttribute="top" secondItem="VBh-fk-zSW" secondAttribute="bottom" constant="50" id="Ivf-Yu-Feq"/>
-                            <constraint firstItem="VBh-fk-zSW" firstAttribute="top" secondItem="1SQ-Na-MVP" secondAttribute="bottom" constant="45" id="UiS-sZ-DyB"/>
-                            <constraint firstItem="VBh-fk-zSW" firstAttribute="leading" secondItem="FN5-0r-oRF" secondAttribute="leading" constant="127" id="e3o-CT-mP6"/>
-                            <constraint firstItem="USJ-IW-jnQ" firstAttribute="leading" secondItem="FN5-0r-oRF" secondAttribute="leading" constant="221" id="ikk-EQ-LDU"/>
-                            <constraint firstItem="1SQ-Na-MVP" firstAttribute="leading" secondItem="FN5-0r-oRF" secondAttribute="leading" constant="255" id="lGW-iN-yfS"/>
+                            <constraint firstItem="1SQ-Na-MVP" firstAttribute="centerX" secondItem="VBh-fk-zSW" secondAttribute="centerX" constant="-11.5" id="IgD-kU-Gkz"/>
+                            <constraint firstItem="VBh-fk-zSW" firstAttribute="trailing" secondItem="USJ-IW-jnQ" secondAttribute="trailing" constant="106" id="bYd-pc-je1"/>
+                            <constraint firstItem="1SQ-Na-MVP" firstAttribute="top" secondItem="vvL-Le-zjO" secondAttribute="bottom" constant="72" id="fjv-ex-6cn"/>
+                            <constraint firstItem="VBh-fk-zSW" firstAttribute="top" secondItem="1SQ-Na-MVP" secondAttribute="bottom" constant="45" id="uY2-eE-HyC"/>
+                            <constraint firstAttribute="centerX" secondItem="1SQ-Na-MVP" secondAttribute="centerX" id="zIn-FY-u1A"/>
+                            <constraint firstItem="USJ-IW-jnQ" firstAttribute="top" secondItem="VBh-fk-zSW" secondAttribute="bottom" constant="50" id="zln-ZR-1vT"/>
                         </constraints>
                     </view>
                     <connections>
@@ -969,7 +954,7 @@ CT scan with IV Contrast </string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5O-J9-RKk" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5O-J9-RKk" customClass="HTPressableButton">
                                 <rect key="frame" x="213" y="404" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="JwN-Il-HGS"/>
@@ -1012,7 +997,7 @@ management</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jY1-zX-MQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2128" y="9357"/>
+            <point key="canvasLocation" x="2150" y="9405"/>
         </scene>
         <!--Blush-->
         <scene sceneID="xqr-vB-F2V">
@@ -1027,10 +1012,10 @@ management</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zee-Sj-baJ">
-                                <rect key="frame" x="155" y="163" width="320" height="162"/>
+                                <rect key="frame" x="155" y="162" width="320" height="162"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yf0-yJ-CfH" customClass="HTPressableButton">
-                                <rect key="frame" x="249" y="375" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yf0-yJ-CfH" customClass="HTPressableButton">
+                                <rect key="frame" x="249" y="374" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="k1g-cY-b3I"/>
                                     <constraint firstAttribute="height" constant="40" id="tVa-uz-Wsu"/>
@@ -1040,8 +1025,8 @@ management</string>
                                     <action selector="nextButtonPressed:" destination="I0r-IL-EAD" eventType="touchUpInside" id="C6F-Yb-qxk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mf-M2-WvT">
-                                <rect key="frame" x="283" y="97" width="93" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blush" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mf-M2-WvT">
+                                <rect key="frame" x="307" y="97" width="44" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -1064,7 +1049,7 @@ management</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RtS-9v-RE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2213" y="10666"/>
+            <point key="canvasLocation" x="2157" y="10069"/>
         </scene>
         <!--Abd Pel Repeat Fast-->
         <scene sceneID="OIP-J6-Bf7">
@@ -1079,22 +1064,21 @@ management</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ph8-Y1-aqM">
-                                <rect key="frame" x="130" y="155" width="320" height="162"/>
+                                <rect key="frame" x="130" y="175" width="320" height="162"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gk-8p-GMS">
-                                <rect key="frame" x="258" y="89" width="93" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="dwF-bW-5hJ"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gk-8p-GMS">
+                                <rect key="frame" x="200" y="92" width="227" height="41"/>
+                                <string key="text">Consider repeat FAST
+ or DPA</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZz-YQ-qmV" customClass="HTPressableButton">
-                                <rect key="frame" x="224" y="367" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZz-YQ-qmV" customClass="HTPressableButton">
+                                <rect key="frame" x="224" y="387" width="120" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="QNa-cJ-22X"/>
-                                    <constraint firstAttribute="width" constant="120" id="UuY-c5-PfR"/>
+                                    <constraint firstAttribute="width" constant="120" id="2zc-42-omn"/>
+                                    <constraint firstAttribute="height" constant="40" id="4tc-Aj-Nup"/>
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
@@ -1107,12 +1091,12 @@ management</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GZz-YQ-qmV" firstAttribute="leading" secondItem="gZ9-V6-EU5" secondAttribute="leading" constant="224" id="3u8-Dv-iyA"/>
-                            <constraint firstItem="Ph8-Y1-aqM" firstAttribute="leading" secondItem="gZ9-V6-EU5" secondAttribute="leading" constant="130" id="Rze-ie-zfA"/>
-                            <constraint firstItem="GZz-YQ-qmV" firstAttribute="top" secondItem="Ph8-Y1-aqM" secondAttribute="bottom" constant="50" id="amP-xS-e5N"/>
-                            <constraint firstItem="8gk-8p-GMS" firstAttribute="leading" secondItem="gZ9-V6-EU5" secondAttribute="leading" constant="258" id="bde-87-YsN"/>
-                            <constraint firstItem="8gk-8p-GMS" firstAttribute="top" secondItem="H2K-ko-Qsf" secondAttribute="bottom" constant="69" id="cCm-GJ-euN"/>
-                            <constraint firstItem="Ph8-Y1-aqM" firstAttribute="top" secondItem="8gk-8p-GMS" secondAttribute="bottom" constant="45" id="qO6-cg-YVq"/>
+                            <constraint firstItem="8gk-8p-GMS" firstAttribute="centerX" secondItem="Ph8-Y1-aqM" secondAttribute="centerX" constant="23.5" id="2rZ-4I-jui"/>
+                            <constraint firstItem="Ph8-Y1-aqM" firstAttribute="top" secondItem="8gk-8p-GMS" secondAttribute="bottom" constant="42" id="AEQ-8l-YTV"/>
+                            <constraint firstItem="GZz-YQ-qmV" firstAttribute="top" secondItem="Ph8-Y1-aqM" secondAttribute="bottom" constant="50" id="IJL-uF-XlI"/>
+                            <constraint firstItem="GZz-YQ-qmV" firstAttribute="trailing" secondItem="Ph8-Y1-aqM" secondAttribute="trailing" constant="-106" id="cOh-OG-ZGO"/>
+                            <constraint firstAttribute="centerX" secondItem="8gk-8p-GMS" secondAttribute="centerX" constant="-13.5" id="kMM-pk-Is6"/>
+                            <constraint firstItem="8gk-8p-GMS" firstAttribute="top" secondItem="H2K-ko-Qsf" secondAttribute="bottom" constant="72" id="wGk-rb-gqK"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1632,10 +1616,10 @@ Conduct a DPA</string>
             </objects>
             <point key="canvasLocation" x="2864" y="15449"/>
         </scene>
-        <!--View Controller-->
+        <!--Blunt Hepatic Part2 Image-->
         <scene sceneID="1iN-3l-WNi">
             <objects>
-                <viewController storyboardIdentifier="BluntHepaticPart2Image" id="nNa-yt-yY3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BluntHepaticPart2Image" id="nNa-yt-yY3" customClass="BluntHepaticPart2Image" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VDZ-VJ-09D"/>
                         <viewControllerLayoutGuide type="bottom" id="rKx-1l-bp6"/>
@@ -1650,7 +1634,7 @@ Conduct a DPA</string>
                                     <constraint firstAttribute="height" constant="496" id="sdk-Yi-nao"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDj-sJ-9v3" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDj-sJ-9v3" customClass="HTPressableButton">
                                 <rect key="frame" x="430" y="540" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="opR-RZ-BFJ"/>
@@ -1676,6 +1660,9 @@ Conduct a DPA</string>
                             <constraint firstItem="IUG-UW-VRm" firstAttribute="leading" secondItem="6g4-k0-rsA" secondAttribute="leadingMargin" id="zZO-ky-mhW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="NDj-sJ-9v3" id="4Ja-xs-xAZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sf0-Sz-cdc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1699,8 +1686,8 @@ Conduct a DPA</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHx-2P-g5S" customClass="HTPressableButton">
-                                <rect key="frame" x="274" y="419" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHx-2P-g5S" customClass="HTPressableButton">
+                                <rect key="frame" x="274" y="418" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="e6m-BC-5tw"/>
                                     <constraint firstAttribute="width" constant="120" id="kh0-Pq-aER"/>
@@ -1716,7 +1703,7 @@ Conduct a DPA</string>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ci8-P1-wuk">
-                                <rect key="frame" x="131" y="170" width="320" height="162"/>
+                                <rect key="frame" x="131" y="169" width="320" height="162"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1750,8 +1737,8 @@ Conduct a DPA</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkq-J1-mMq" customClass="HTPressableButton">
-                                <rect key="frame" x="371" y="382" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkq-J1-mMq" customClass="HTPressableButton">
+                                <rect key="frame" x="308" y="372" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="hVd-GM-46s"/>
                                     <constraint firstAttribute="height" constant="40" id="n5v-S2-tW0"/>
@@ -1780,7 +1767,7 @@ Conduct a DPA</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose one" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgn-gn-MDr">
-                                <rect key="frame" x="82" y="60" width="465" height="26"/>
+                                <rect key="frame" x="36" y="69" width="465" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -1788,14 +1775,14 @@ Conduct a DPA</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZmK-I3-GtT" firstAttribute="centerX" secondItem="jgn-gn-MDr" secondAttribute="centerX" constant="-26.5" id="0Np-Wi-LUJ"/>
-                            <constraint firstItem="nkq-J1-mMq" firstAttribute="top" secondItem="ZmK-I3-GtT" secondAttribute="bottom" constant="76" id="1rY-MI-PPe"/>
-                            <constraint firstItem="jgn-gn-MDr" firstAttribute="top" secondItem="LYK-vf-5OQ" secondAttribute="bottom" constant="40" id="9bD-aj-Kuc"/>
-                            <constraint firstAttribute="centerX" secondItem="jgn-gn-MDr" secondAttribute="centerX" constant="-14.5" id="BKG-YH-xWy"/>
+                            <constraint firstItem="ZmK-I3-GtT" firstAttribute="centerX" secondItem="jgn-gn-MDr" secondAttribute="centerX" constant="19.5" id="0Np-Wi-LUJ"/>
+                            <constraint firstItem="nkq-J1-mMq" firstAttribute="top" secondItem="ZmK-I3-GtT" secondAttribute="bottom" constant="72" id="1rY-MI-PPe"/>
+                            <constraint firstItem="jgn-gn-MDr" firstAttribute="top" secondItem="LYK-vf-5OQ" secondAttribute="bottom" constant="49" id="9bD-aj-Kuc"/>
+                            <constraint firstAttribute="centerX" secondItem="jgn-gn-MDr" secondAttribute="centerX" constant="31.5" id="BKG-YH-xWy"/>
                             <constraint firstItem="jYj-7q-UFj" firstAttribute="top" secondItem="ZmK-I3-GtT" secondAttribute="bottom" constant="155" id="GOz-gs-bNQ"/>
                             <constraint firstItem="jYj-7q-UFj" firstAttribute="centerX" secondItem="ZmK-I3-GtT" secondAttribute="centerX" constant="6.5" id="JSw-cw-MqS"/>
-                            <constraint firstItem="ZmK-I3-GtT" firstAttribute="trailing" secondItem="nkq-J1-mMq" secondAttribute="trailing" constant="-43" id="JwB-Ol-VRZ"/>
-                            <constraint firstItem="ZmK-I3-GtT" firstAttribute="top" secondItem="jgn-gn-MDr" secondAttribute="bottom" constant="58" id="WE0-mn-Hsv"/>
+                            <constraint firstItem="ZmK-I3-GtT" firstAttribute="trailing" secondItem="nkq-J1-mMq" secondAttribute="trailing" constant="20" id="JwB-Ol-VRZ"/>
+                            <constraint firstItem="ZmK-I3-GtT" firstAttribute="top" secondItem="jgn-gn-MDr" secondAttribute="bottom" constant="49" id="WE0-mn-Hsv"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1821,7 +1808,7 @@ Conduct a DPA</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EA3-qV-eHb" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EA3-qV-eHb" customClass="HTPressableButton">
                                 <rect key="frame" x="299" y="455" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="nSx-yq-L8n"/>
@@ -1890,8 +1877,8 @@ Consider angiography</string>
                             <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="65Y-Ke-Mbm">
                                 <rect key="frame" x="131" y="197" width="320" height="162"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSV-hV-Qqr" customClass="HTPressableButton">
-                                <rect key="frame" x="283" y="425" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSV-hV-Qqr" customClass="HTPressableButton">
+                                <rect key="frame" x="324" y="419" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="9uF-BW-qSe"/>
                                     <constraint firstAttribute="width" constant="120" id="Sui-In-Shc"/>
@@ -1910,11 +1897,11 @@ Consider angiography</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="65Y-Ke-Mbm" firstAttribute="trailing" secondItem="ZSV-hV-Qqr" secondAttribute="trailing" constant="41" id="9Cz-UB-CK0"/>
+                            <constraint firstItem="65Y-Ke-Mbm" firstAttribute="trailing" secondItem="ZSV-hV-Qqr" secondAttribute="trailing" constant="48" id="9Cz-UB-CK0"/>
                             <constraint firstItem="65Y-Ke-Mbm" firstAttribute="top" secondItem="coP-H2-Xiq" secondAttribute="bottom" constant="67" id="Sc0-1y-mwI"/>
                             <constraint firstAttribute="centerX" secondItem="coP-H2-Xiq" secondAttribute="centerX" id="fbl-Fi-Yrm"/>
                             <constraint firstItem="65Y-Ke-Mbm" firstAttribute="centerX" secondItem="coP-H2-Xiq" secondAttribute="centerX" constant="32" id="tsi-XU-WVm"/>
-                            <constraint firstItem="ZSV-hV-Qqr" firstAttribute="top" secondItem="65Y-Ke-Mbm" secondAttribute="bottom" constant="73" id="uU1-fX-qMO"/>
+                            <constraint firstItem="ZSV-hV-Qqr" firstAttribute="top" secondItem="65Y-Ke-Mbm" secondAttribute="bottom" constant="66" id="uU1-fX-qMO"/>
                             <constraint firstItem="coP-H2-Xiq" firstAttribute="top" secondItem="lEN-id-n9f" secondAttribute="bottom" constant="83" id="xQY-vA-njN"/>
                         </constraints>
                     </view>
@@ -1940,16 +1927,8 @@ Consider angiography</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQE-0h-hfW">
-                                <rect key="frame" x="226" y="89" width="183" height="41"/>
-                                <string key="text">Selective vessel ligation
-Omental pack</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drb-Dd-qey" customClass="HTPressableButton">
-                                <rect key="frame" x="301" y="411" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drb-Dd-qey" customClass="HTPressableButton">
+                                <rect key="frame" x="267" y="411" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Tll-IG-Ekp"/>
                                     <constraint firstAttribute="width" constant="120" id="W9o-W2-THd"/>
@@ -1969,14 +1948,22 @@ Omental pack</string>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1N-fw-FyQ">
                                 <rect key="frame" x="149" y="203" width="320" height="162"/>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQE-0h-hfW">
+                                <rect key="frame" x="204" y="89" width="183" height="41"/>
+                                <string key="text">Selective vessel ligation
+Omental pack</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="L1N-fw-FyQ" firstAttribute="top" secondItem="pQE-0h-hfW" secondAttribute="bottom" constant="73" id="99R-oY-izW"/>
-                            <constraint firstItem="L1N-fw-FyQ" firstAttribute="centerX" secondItem="pQE-0h-hfW" secondAttribute="centerX" constant="-9" id="Atx-Dv-3KJ"/>
-                            <constraint firstItem="L1N-fw-FyQ" firstAttribute="trailing" secondItem="drb-Dd-qey" secondAttribute="trailing" constant="41" id="Lnd-BZ-glh"/>
-                            <constraint firstItem="drb-Dd-qey" firstAttribute="top" secondItem="L1N-fw-FyQ" secondAttribute="bottom" constant="73" id="MrX-ZP-RzY"/>
-                            <constraint firstAttribute="centerX" secondItem="pQE-0h-hfW" secondAttribute="centerX" constant="-18" id="PBF-DE-9hc"/>
+                            <constraint firstItem="L1N-fw-FyQ" firstAttribute="centerX" secondItem="pQE-0h-hfW" secondAttribute="centerX" constant="13.5" id="Atx-Dv-3KJ"/>
+                            <constraint firstItem="L1N-fw-FyQ" firstAttribute="trailing" secondItem="drb-Dd-qey" secondAttribute="trailing" constant="82" id="Lnd-BZ-glh"/>
+                            <constraint firstItem="drb-Dd-qey" firstAttribute="top" secondItem="L1N-fw-FyQ" secondAttribute="bottom" constant="46" id="MrX-ZP-RzY"/>
+                            <constraint firstAttribute="centerX" secondItem="pQE-0h-hfW" secondAttribute="centerX" constant="4.5" id="PBF-DE-9hc"/>
                             <constraint firstItem="pQE-0h-hfW" firstAttribute="top" secondItem="1DW-XO-32Y" secondAttribute="bottom" constant="69" id="RfQ-I1-lX4"/>
                         </constraints>
                     </view>
@@ -2002,7 +1989,7 @@ Omental pack</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovh-d7-xiW" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovh-d7-xiW" customClass="HTPressableButton">
                                 <rect key="frame" x="368" y="501" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="KVd-Ol-Baa"/>
@@ -2056,8 +2043,8 @@ Omental pack</string>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbY-bZ-Avw">
                                 <rect key="frame" x="124" y="192" width="320" height="162"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbs-mE-NJe" customClass="HTPressableButton">
-                                <rect key="frame" x="288.5" y="413.5" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbs-mE-NJe" customClass="HTPressableButton">
+                                <rect key="frame" x="288" y="444" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0h2-Fo-cWF"/>
                                     <constraint firstAttribute="width" constant="120" id="CMR-Mf-cAC"/>
@@ -2107,8 +2094,19 @@ Omental pack</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSA-Nl-7Wk" customClass="HTPressableButton">
-                                <rect key="frame" x="315" y="412.5" width="120" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOk-6V-8xw">
+                                <rect key="frame" x="163" y="101" width="247" height="41"/>
+                                <string key="text">Initial Assessment 
+Resuscitation</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSK-5l-gof">
+                                <rect key="frame" x="126" y="207" width="320" height="162"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSA-Nl-7Wk" customClass="HTPressableButton">
+                                <rect key="frame" x="280" y="418" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="RLJ-FA-cxW"/>
                                     <constraint firstAttribute="width" constant="120" id="plL-eX-v9y"/>
@@ -2126,24 +2124,15 @@ Omental pack</string>
                                     <action selector="nextButtonPressed:" destination="wfh-uh-Vay" eventType="touchUpInside" id="zXs-sf-GRW"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSK-5l-gof">
-                                <rect key="frame" x="163" y="204" width="320" height="162"/>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Initial Assessment Resuscitation" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOk-6V-8xw">
-                                <rect key="frame" x="238" y="91" width="247" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="uOk-6V-8xw" secondAttribute="centerX" constant="-39.5" id="Ea8-SW-5FZ"/>
-                            <constraint firstItem="mSK-5l-gof" firstAttribute="centerX" secondItem="uOk-6V-8xw" secondAttribute="centerX" constant="-16.5" id="Eem-Si-3T5"/>
-                            <constraint firstItem="mSK-5l-gof" firstAttribute="top" secondItem="uOk-6V-8xw" secondAttribute="bottom" constant="93" id="PC9-se-jtq"/>
-                            <constraint firstItem="KSA-Nl-7Wk" firstAttribute="top" secondItem="mSK-5l-gof" secondAttribute="bottom" constant="46" id="Z2p-KL-wcV"/>
-                            <constraint firstItem="mSK-5l-gof" firstAttribute="trailing" secondItem="KSA-Nl-7Wk" secondAttribute="trailing" constant="48" id="bjj-dU-3MZ"/>
-                            <constraint firstItem="uOk-6V-8xw" firstAttribute="top" secondItem="OhN-JJ-oaO" secondAttribute="bottom" constant="71" id="eUE-sI-L6K"/>
+                            <constraint firstAttribute="centerX" secondItem="uOk-6V-8xw" secondAttribute="centerX" constant="13.5" id="Ea8-SW-5FZ"/>
+                            <constraint firstItem="mSK-5l-gof" firstAttribute="centerX" secondItem="uOk-6V-8xw" secondAttribute="centerX" constant="-0.5" id="Eem-Si-3T5"/>
+                            <constraint firstItem="mSK-5l-gof" firstAttribute="top" secondItem="uOk-6V-8xw" secondAttribute="bottom" constant="65" id="PC9-se-jtq"/>
+                            <constraint firstItem="KSA-Nl-7Wk" firstAttribute="top" secondItem="mSK-5l-gof" secondAttribute="bottom" constant="49" id="Z2p-KL-wcV"/>
+                            <constraint firstItem="mSK-5l-gof" firstAttribute="trailing" secondItem="KSA-Nl-7Wk" secondAttribute="trailing" constant="46" id="bjj-dU-3MZ"/>
+                            <constraint firstItem="uOk-6V-8xw" firstAttribute="top" secondItem="OhN-JJ-oaO" secondAttribute="bottom" constant="81" id="eUE-sI-L6K"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2156,10 +2145,10 @@ Omental pack</string>
             </objects>
             <point key="canvasLocation" x="3726" y="19898"/>
         </scene>
-        <!--View Controller-->
+        <!--Image-->
         <scene sceneID="nKV-dj-dsR">
             <objects>
-                <viewController storyboardIdentifier="PCIP2Image" id="2px-b8-kwG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PCIP2Image" id="2px-b8-kwG" customClass="PCIP2Image" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FjR-k1-nRn"/>
                         <viewControllerLayoutGuide type="bottom" id="moG-Gy-3zm"/>
@@ -2168,8 +2157,8 @@ Omental pack</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWO-vx-KD8" customClass="HTPressableButton">
-                                <rect key="frame" x="349" y="438" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWO-vx-KD8" customClass="HTPressableButton">
+                                <rect key="frame" x="400" y="497" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="5zU-vX-yWP"/>
                                     <constraint firstAttribute="height" constant="40" id="k8i-Uc-GPr"/>
@@ -2189,10 +2178,13 @@ Omental pack</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="moG-Gy-3zm" firstAttribute="top" secondItem="UWO-vx-KD8" secondAttribute="bottom" constant="122" id="5oE-iU-6vc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="UWO-vx-KD8" secondAttribute="trailing" constant="115" id="lcO-Ta-ooL"/>
+                            <constraint firstItem="moG-Gy-3zm" firstAttribute="top" secondItem="UWO-vx-KD8" secondAttribute="bottom" constant="63" id="5oE-iU-6vc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UWO-vx-KD8" secondAttribute="trailing" constant="64" id="lcO-Ta-ooL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="UWO-vx-KD8" id="lhu-qe-0Zz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l0v-if-Gis" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2210,8 +2202,21 @@ Omental pack</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcp-TG-XVI" customClass="HTPressableButton">
-                                <rect key="frame" x="324" y="391" width="120" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CXR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJL-70-8t7">
+                                <rect key="frame" x="193" y="101" width="197" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="EG8-5R-lA1"/>
+                                    <constraint firstAttribute="width" constant="197" id="XsL-1B-iqa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ab-Cx-85D">
+                                <rect key="frame" x="131" y="183" width="320" height="162"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcp-TG-XVI" customClass="HTPressableButton">
+                                <rect key="frame" x="240" y="427" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4g0-4C-eoW"/>
                                     <constraint firstAttribute="width" constant="120" id="Ml1-2d-6RS"/>
@@ -2229,24 +2234,15 @@ Omental pack</string>
                                     <action selector="nextButtonPressed:" destination="wfh-uh-Vay" eventType="touchUpInside" id="tHp-K2-v3N"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ab-Cx-85D">
-                                <rect key="frame" x="159" y="169" width="320" height="162"/>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CXR" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJL-70-8t7">
-                                <rect key="frame" x="267" y="78" width="197" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5ab-Cx-85D" firstAttribute="top" secondItem="jJL-70-8t7" secondAttribute="bottom" constant="50" id="Io5-DU-QLP"/>
-                            <constraint firstItem="5ab-Cx-85D" firstAttribute="trailing" secondItem="Tcp-TG-XVI" secondAttribute="trailing" constant="35" id="P9B-Oj-8Hy"/>
-                            <constraint firstAttribute="centerX" secondItem="jJL-70-8t7" secondAttribute="centerX" constant="-65.5" id="RSZ-ZT-ftR"/>
-                            <constraint firstItem="jJL-70-8t7" firstAttribute="top" secondItem="9Ru-Ne-Rk7" secondAttribute="bottom" constant="58" id="b3h-PS-fim"/>
-                            <constraint firstItem="5ab-Cx-85D" firstAttribute="centerX" secondItem="jJL-70-8t7" secondAttribute="centerX" constant="-46.5" id="i3P-lU-LVd"/>
-                            <constraint firstItem="Tcp-TG-XVI" firstAttribute="top" secondItem="5ab-Cx-85D" secondAttribute="bottom" constant="60" id="v00-QC-dbN"/>
+                            <constraint firstItem="5ab-Cx-85D" firstAttribute="top" secondItem="jJL-70-8t7" secondAttribute="bottom" constant="41" id="Io5-DU-QLP"/>
+                            <constraint firstItem="5ab-Cx-85D" firstAttribute="trailing" secondItem="Tcp-TG-XVI" secondAttribute="trailing" constant="91" id="P9B-Oj-8Hy"/>
+                            <constraint firstAttribute="centerX" secondItem="jJL-70-8t7" secondAttribute="centerX" constant="8.5" id="RSZ-ZT-ftR"/>
+                            <constraint firstItem="jJL-70-8t7" firstAttribute="top" secondItem="9Ru-Ne-Rk7" secondAttribute="bottom" constant="81" id="b3h-PS-fim"/>
+                            <constraint firstItem="5ab-Cx-85D" firstAttribute="centerX" secondItem="jJL-70-8t7" secondAttribute="centerX" constant="-0.5" id="i3P-lU-LVd"/>
+                            <constraint firstItem="Tcp-TG-XVI" firstAttribute="top" secondItem="5ab-Cx-85D" secondAttribute="bottom" constant="82" id="v00-QC-dbN"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2271,14 +2267,18 @@ Omental pack</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Outcome here" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mA-X5-rsW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outcome here" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mA-X5-rsW">
                                 <rect key="frame" x="223" y="88" width="197" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="AoM-h3-rhc"/>
+                                    <constraint firstAttribute="width" constant="197" id="SFZ-x8-uL8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSY-GJ-AIv">
-                                <rect key="frame" x="203" y="354" width="139" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSY-GJ-AIv">
+                                <rect key="frame" x="281" y="359" width="139" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="139" id="bdW-uM-Qi3"/>
                                     <constraint firstAttribute="height" constant="21" id="dfb-lI-NyI"/>
@@ -2290,11 +2290,11 @@ Omental pack</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dSY-GJ-AIv" firstAttribute="centerX" secondItem="4mA-X5-rsW" secondAttribute="centerX" constant="-49" id="Gya-PU-xft"/>
+                            <constraint firstItem="dSY-GJ-AIv" firstAttribute="centerX" secondItem="4mA-X5-rsW" secondAttribute="centerX" constant="29" id="Gya-PU-xft"/>
                             <constraint firstItem="4mA-X5-rsW" firstAttribute="top" secondItem="1JU-D8-dBj" secondAttribute="bottom" constant="68" id="fmJ-or-9uE"/>
-                            <constraint firstItem="dSY-GJ-AIv" firstAttribute="top" secondItem="4mA-X5-rsW" secondAttribute="bottom" constant="225" id="ito-t6-Axa"/>
+                            <constraint firstItem="dSY-GJ-AIv" firstAttribute="top" secondItem="4mA-X5-rsW" secondAttribute="bottom" constant="230" id="ito-t6-Axa"/>
                             <constraint firstAttribute="centerX" secondItem="4mA-X5-rsW" secondAttribute="centerX" constant="-21.5" id="ytI-M3-JNR"/>
-                            <constraint firstAttribute="centerX" secondItem="dSY-GJ-AIv" secondAttribute="centerX" constant="27.5" id="zKa-Ng-YhR"/>
+                            <constraint firstAttribute="centerX" secondItem="dSY-GJ-AIv" secondAttribute="centerX" constant="-50.5" id="zKa-Ng-YhR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2317,7 +2317,7 @@ Omental pack</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y14-OF-eIC" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y14-OF-eIC" customClass="HTPressableButton">
                                 <rect key="frame" x="356" y="469" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="XWx-t9-jt6"/>
@@ -2366,7 +2366,7 @@ Omental pack</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDr-q0-uTe" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDr-q0-uTe" customClass="HTPressableButton">
                                 <rect key="frame" x="288" y="402" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="bbo-hQ-XW5"/>
@@ -2428,7 +2428,7 @@ Omental pack</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gi-CV-8AJ" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gi-CV-8AJ" customClass="HTPressableButton">
                                 <rect key="frame" x="317" y="427" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="L6d-iL-oOU"/>
@@ -2503,7 +2503,7 @@ Moderate peripancreatic fluid</string>
                             <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="blX-Uk-I1L">
                                 <rect key="frame" x="150" y="210" width="320" height="162"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffw-qi-KoZ" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffw-qi-KoZ" customClass="HTPressableButton">
                                 <rect key="frame" x="311" y="446" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="CRT-jD-KDN"/>
@@ -2550,7 +2550,7 @@ Moderate peripancreatic fluid</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0s-gs-Dt7" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0s-gs-Dt7" customClass="HTPressableButton">
                                 <rect key="frame" x="311" y="415" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Rs2-dp-Yr9"/>
@@ -2570,8 +2570,8 @@ Moderate peripancreatic fluid</string>
                                     <segue destination="oaw-Wv-CrR" kind="show" id="sWY-YH-6ku"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nU-Qc-f07">
-                                <rect key="frame" x="172" y="57" width="294.5" height="76"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nU-Qc-f07">
+                                <rect key="frame" x="172" y="57" width="295" height="76"/>
                                 <string key="text">Pancreatic Transection;
 Extensive peripancreatic fluid</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -2580,6 +2580,12 @@ Extensive peripancreatic fluid</string>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="7nU-Qc-f07" secondAttribute="centerX" id="EF3-v0-M6N"/>
+                            <constraint firstItem="7nU-Qc-f07" firstAttribute="top" secondItem="IAE-tQ-UXL" secondAttribute="bottom" constant="37" id="JGn-rz-gn9"/>
+                            <constraint firstItem="g0s-gs-Dt7" firstAttribute="top" secondItem="7nU-Qc-f07" secondAttribute="bottom" constant="282" id="Ymq-xy-K6Z"/>
+                            <constraint firstItem="g0s-gs-Dt7" firstAttribute="centerX" secondItem="7nU-Qc-f07" secondAttribute="centerX" constant="51.5" id="arw-J1-7zA"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="nextButton" destination="g0s-gs-Dt7" id="CPw-3V-veb"/>
@@ -2601,7 +2607,15 @@ Extensive peripancreatic fluid</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1T0-QV-IeK" customClass="HTPressableButton">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqA-m7-woq">
+                                <rect key="frame" x="235" y="160" width="197" height="41"/>
+                                <string key="text">Normal Pancreas or
+Peripancreatic Edema </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1T0-QV-IeK" customClass="HTPressableButton">
                                 <rect key="frame" x="305" y="465" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="1Dq-GK-2i5"/>
@@ -2621,14 +2635,6 @@ Extensive peripancreatic fluid</string>
                                     <segue destination="hWo-Sv-pxK" kind="show" id="FKq-8R-ZZP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqA-m7-woq">
-                                <rect key="frame" x="235" y="160" width="197" height="41"/>
-                                <string key="text">Normal Pancreas or
-Peripancreatic Edema </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2659,7 +2665,7 @@ Peripancreatic Edema </string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saC-du-ctb" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saC-du-ctb" customClass="HTPressableButton">
                                 <rect key="frame" x="305" y="382" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="QQK-Ys-TBP"/>
@@ -2680,7 +2686,7 @@ Peripancreatic Edema </string>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BE5-np-SpZ">
-                                <rect key="frame" x="140" y="160" width="320.5" height="162"/>
+                                <rect key="frame" x="140" y="160" width="321" height="162"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2763,7 +2769,7 @@ Peripancreatic Edema </string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yP-k7-eDh" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yP-k7-eDh" customClass="HTPressableButton">
                                 <rect key="frame" x="305" y="426" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="6ki-AI-EnN"/>
@@ -2783,7 +2789,7 @@ Peripancreatic Edema </string>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ppD-aW-VTa">
-                                <rect key="frame" x="140" y="204" width="320.5" height="162"/>
+                                <rect key="frame" x="140" y="204" width="321" height="162"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2821,7 +2827,7 @@ Peripancreatic Edema </string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euw-PN-8Qe" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euw-PN-8Qe" customClass="HTPressableButton">
                                 <rect key="frame" x="286" y="428" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="FeP-pZ-s4M"/>
@@ -2841,7 +2847,7 @@ Peripancreatic Edema </string>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUa-Ph-Xvs">
-                                <rect key="frame" x="121" y="206" width="320.5" height="162"/>
+                                <rect key="frame" x="121" y="206" width="321" height="162"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2873,8 +2879,21 @@ Peripancreatic Edema </string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGk-Yt-CCI" customClass="HTPressableButton">
-                                <rect key="frame" x="282" y="427" width="120" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAST" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBg-Yo-iU7">
+                                <rect key="frame" x="186" y="125" width="197" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Ggn-Ve-Csh"/>
+                                    <constraint firstAttribute="width" constant="197" id="LCJ-lE-gvd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbL-12-QmP">
+                                <rect key="frame" x="117" y="224" width="320" height="162"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGk-Yt-CCI" customClass="HTPressableButton">
+                                <rect key="frame" x="253" y="464" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="7gw-LL-DBw"/>
                                     <constraint firstAttribute="height" constant="40" id="9Kh-Xz-hkl"/>
@@ -2893,24 +2912,15 @@ Peripancreatic Edema </string>
                                     <action selector="nextButtonPressed:" destination="wfh-uh-Vay" eventType="touchUpInside" id="qbU-6x-Jqa"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bbL-12-QmP">
-                                <rect key="frame" x="117" y="205" width="320" height="162"/>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAST" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBg-Yo-iU7">
-                                <rect key="frame" x="273" y="110" width="197" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bGk-Yt-CCI" firstAttribute="top" secondItem="bbL-12-QmP" secondAttribute="bottom" constant="60" id="6rC-UN-dO3"/>
-                            <constraint firstItem="bbL-12-QmP" firstAttribute="centerX" secondItem="bBg-Yo-iU7" secondAttribute="centerX" constant="-94.5" id="EOr-Q2-c2d"/>
-                            <constraint firstItem="bbL-12-QmP" firstAttribute="trailing" secondItem="bGk-Yt-CCI" secondAttribute="trailing" constant="35" id="QXB-2r-kZD"/>
-                            <constraint firstAttribute="centerX" secondItem="bBg-Yo-iU7" secondAttribute="centerX" constant="-71.5" id="ijp-Wq-chZ"/>
-                            <constraint firstItem="bbL-12-QmP" firstAttribute="top" secondItem="bBg-Yo-iU7" secondAttribute="bottom" constant="54" id="qsU-iT-GJ9"/>
-                            <constraint firstItem="bBg-Yo-iU7" firstAttribute="top" secondItem="Pzy-zc-ojM" secondAttribute="bottom" constant="90" id="wiG-iH-E9y"/>
+                            <constraint firstItem="bGk-Yt-CCI" firstAttribute="top" secondItem="bbL-12-QmP" secondAttribute="bottom" constant="78" id="6rC-UN-dO3"/>
+                            <constraint firstItem="bbL-12-QmP" firstAttribute="centerX" secondItem="bBg-Yo-iU7" secondAttribute="centerX" constant="-7.5" id="EOr-Q2-c2d"/>
+                            <constraint firstItem="bbL-12-QmP" firstAttribute="trailing" secondItem="bGk-Yt-CCI" secondAttribute="trailing" constant="64" id="QXB-2r-kZD"/>
+                            <constraint firstAttribute="centerX" secondItem="bBg-Yo-iU7" secondAttribute="centerX" constant="15.5" id="ijp-Wq-chZ"/>
+                            <constraint firstItem="bbL-12-QmP" firstAttribute="top" secondItem="bBg-Yo-iU7" secondAttribute="bottom" constant="58" id="qsU-iT-GJ9"/>
+                            <constraint firstItem="bBg-Yo-iU7" firstAttribute="top" secondItem="Pzy-zc-ojM" secondAttribute="bottom" constant="105" id="wiG-iH-E9y"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2935,12 +2945,6 @@ Peripancreatic Edema </string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Outcome here" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jp-AB-iBD">
-                                <rect key="frame" x="233" y="111" width="197" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pz5-R5-7eo">
                                 <rect key="frame" x="213" y="377" width="139" height="21"/>
                                 <constraints>
@@ -2951,13 +2955,19 @@ Peripancreatic Edema </string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Outcome here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jp-AB-iBD">
+                                <rect key="frame" x="177" y="106" width="197" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8Jp-AB-iBD" firstAttribute="top" secondItem="daa-Kq-lXn" secondAttribute="bottom" constant="91" id="Ekr-JT-dl9"/>
-                            <constraint firstItem="pz5-R5-7eo" firstAttribute="centerX" secondItem="8Jp-AB-iBD" secondAttribute="centerX" constant="-49" id="Jic-Sy-d7A"/>
-                            <constraint firstAttribute="centerX" secondItem="8Jp-AB-iBD" secondAttribute="centerX" constant="-31.5" id="L8R-rU-IoC"/>
-                            <constraint firstItem="pz5-R5-7eo" firstAttribute="top" secondItem="8Jp-AB-iBD" secondAttribute="bottom" constant="225" id="gCS-mN-OnC"/>
+                            <constraint firstItem="8Jp-AB-iBD" firstAttribute="top" secondItem="daa-Kq-lXn" secondAttribute="bottom" constant="86" id="Ekr-JT-dl9"/>
+                            <constraint firstItem="pz5-R5-7eo" firstAttribute="centerX" secondItem="8Jp-AB-iBD" secondAttribute="centerX" constant="7" id="Jic-Sy-d7A"/>
+                            <constraint firstAttribute="centerX" secondItem="8Jp-AB-iBD" secondAttribute="centerX" constant="24.5" id="L8R-rU-IoC"/>
+                            <constraint firstItem="pz5-R5-7eo" firstAttribute="top" secondItem="8Jp-AB-iBD" secondAttribute="bottom" constant="230" id="gCS-mN-OnC"/>
                             <constraint firstAttribute="centerX" secondItem="pz5-R5-7eo" secondAttribute="centerX" constant="17.5" id="oog-HI-Z1B"/>
                         </constraints>
                     </view>
@@ -2981,8 +2991,20 @@ Peripancreatic Edema </string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DA2-GW-S1c" customClass="HTPressableButton">
-                                <rect key="frame" x="267" y="420" width="120" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6s-QT-a7f">
+                                <rect key="frame" x="169" y="94" width="186" height="75"/>
+                                <string key="text">CTA
++/-EGD/Swallow
++/-Bronchoscopy</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9g0-v5-IR3">
+                                <rect key="frame" x="113" y="224" width="320" height="162"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DA2-GW-S1c" customClass="HTPressableButton">
+                                <rect key="frame" x="267" y="406" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="10l-hI-OxI"/>
                                     <constraint firstAttribute="width" constant="120" id="GiU-Wd-dn5"/>
@@ -3002,29 +3024,17 @@ Peripancreatic Edema </string>
                                     <action selector="nextButtonPressed:" destination="gHV-gA-zi8" eventType="touchUpInside" id="un4-nL-HuE"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9g0-v5-IR3">
-                                <rect key="frame" x="102" y="198" width="320" height="162"/>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6s-QT-a7f">
-                                <rect key="frame" x="236" y="103" width="186" height="75"/>
-                                <string key="text">CTA
-+/-EGD/Swallow
-+/-Bronchoscopy</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="DA2-GW-S1c" secondAttribute="centerX" constant="-27" id="19l-ij-TjS"/>
-                            <constraint firstAttribute="centerX" secondItem="9g0-v5-IR3" secondAttribute="centerX" constant="38" id="4b6-9z-KXk"/>
-                            <constraint firstItem="9g0-v5-IR3" firstAttribute="centerX" secondItem="e6s-QT-a7f" secondAttribute="centerX" constant="-94.5" id="eJj-MJ-oEZ"/>
-                            <constraint firstAttribute="centerX" secondItem="e6s-QT-a7f" secondAttribute="centerX" constant="-56.5" id="oFX-oI-Mgd"/>
-                            <constraint firstItem="e6s-QT-a7f" firstAttribute="top" secondItem="0tw-Oe-NPh" secondAttribute="bottom" constant="83" id="qNY-t3-RHp"/>
-                            <constraint firstItem="DA2-GW-S1c" firstAttribute="top" secondItem="9g0-v5-IR3" secondAttribute="bottom" constant="60" id="wZ9-DO-ZRH"/>
-                            <constraint firstItem="9g0-v5-IR3" firstAttribute="trailing" secondItem="DA2-GW-S1c" secondAttribute="trailing" constant="35" id="x10-9W-qo5"/>
-                            <constraint firstItem="9g0-v5-IR3" firstAttribute="top" secondItem="e6s-QT-a7f" secondAttribute="bottom" constant="54" id="yan-aV-tEg"/>
+                            <constraint firstAttribute="centerX" secondItem="9g0-v5-IR3" secondAttribute="centerX" constant="27" id="4b6-9z-KXk"/>
+                            <constraint firstItem="9g0-v5-IR3" firstAttribute="centerX" secondItem="e6s-QT-a7f" secondAttribute="centerX" constant="11" id="eJj-MJ-oEZ"/>
+                            <constraint firstAttribute="centerX" secondItem="e6s-QT-a7f" secondAttribute="centerX" constant="38" id="oFX-oI-Mgd"/>
+                            <constraint firstItem="e6s-QT-a7f" firstAttribute="top" secondItem="0tw-Oe-NPh" secondAttribute="bottom" constant="74" id="qNY-t3-RHp"/>
+                            <constraint firstItem="DA2-GW-S1c" firstAttribute="top" secondItem="9g0-v5-IR3" secondAttribute="bottom" constant="34" id="wZ9-DO-ZRH"/>
+                            <constraint firstItem="9g0-v5-IR3" firstAttribute="trailing" secondItem="DA2-GW-S1c" secondAttribute="trailing" constant="46" id="x10-9W-qo5"/>
+                            <constraint firstItem="9g0-v5-IR3" firstAttribute="top" secondItem="e6s-QT-a7f" secondAttribute="bottom" constant="55" id="yan-aV-tEg"/>
                         </constraints>
                     </view>
                     <connections>
@@ -3048,12 +3058,6 @@ Peripancreatic Edema </string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Damage Control" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVr-LA-g7u">
-                                <rect key="frame" x="264" y="156" width="197" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zc0-FB-5fv">
                                 <rect key="frame" x="244" y="422" width="139" height="21"/>
                                 <constraints>
@@ -3064,14 +3068,20 @@ Peripancreatic Edema </string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Damage Control" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVr-LA-g7u">
+                                <rect key="frame" x="202" y="139" width="197" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="zc0-FB-5fv" secondAttribute="centerX" constant="-13.5" id="DbG-CK-AeE"/>
-                            <constraint firstItem="zc0-FB-5fv" firstAttribute="top" secondItem="mVr-LA-g7u" secondAttribute="bottom" constant="225" id="TpV-j1-gYZ"/>
-                            <constraint firstItem="mVr-LA-g7u" firstAttribute="top" secondItem="mu4-bP-9Bz" secondAttribute="bottom" constant="136" id="Tv7-Bc-1O9"/>
-                            <constraint firstItem="zc0-FB-5fv" firstAttribute="centerX" secondItem="mVr-LA-g7u" secondAttribute="centerX" constant="-49" id="nwY-bU-4x5"/>
-                            <constraint firstAttribute="centerX" secondItem="mVr-LA-g7u" secondAttribute="centerX" constant="-62.5" id="o16-5W-iuP"/>
+                            <constraint firstItem="zc0-FB-5fv" firstAttribute="top" secondItem="mVr-LA-g7u" secondAttribute="bottom" constant="242" id="TpV-j1-gYZ"/>
+                            <constraint firstItem="mVr-LA-g7u" firstAttribute="top" secondItem="mu4-bP-9Bz" secondAttribute="bottom" constant="119" id="Tv7-Bc-1O9"/>
+                            <constraint firstItem="zc0-FB-5fv" firstAttribute="centerX" secondItem="mVr-LA-g7u" secondAttribute="centerX" constant="13" id="nwY-bU-4x5"/>
+                            <constraint firstAttribute="centerX" secondItem="mVr-LA-g7u" secondAttribute="centerX" constant="-0.5" id="o16-5W-iuP"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -3091,8 +3101,8 @@ Peripancreatic Edema </string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsA-BQ-rZp">
-                                <rect key="frame" x="244" y="388" width="139" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsA-BQ-rZp">
+                                <rect key="frame" x="323" y="418" width="139" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="139" id="4Gn-xz-Zhe"/>
                                     <constraint firstAttribute="height" constant="21" id="vo7-Nf-5wp"/>
@@ -3101,8 +3111,12 @@ Peripancreatic Edema </string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Outcome here" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bp-7j-t5x">
-                                <rect key="frame" x="264" y="122" width="197" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outcome here" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bp-7j-t5x">
+                                <rect key="frame" x="224" y="135" width="197" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="sBv-P2-bOu"/>
+                                    <constraint firstAttribute="width" constant="197" id="tBk-Qs-nia"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -3110,10 +3124,10 @@ Peripancreatic Edema </string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="9Bp-7j-t5x" secondAttribute="centerX" constant="-45.5" id="RKX-pf-edx"/>
-                            <constraint firstItem="JsA-BQ-rZp" firstAttribute="top" secondItem="9Bp-7j-t5x" secondAttribute="bottom" constant="234" id="pVf-M5-6EK"/>
-                            <constraint firstItem="JsA-BQ-rZp" firstAttribute="centerX" secondItem="9Bp-7j-t5x" secondAttribute="centerX" constant="-32" id="q4A-kt-sEX"/>
-                            <constraint firstItem="9Bp-7j-t5x" firstAttribute="top" secondItem="HQm-1n-ysg" secondAttribute="bottom" constant="93" id="tqq-bJ-ktg"/>
+                            <constraint firstAttribute="centerX" secondItem="9Bp-7j-t5x" secondAttribute="centerX" constant="-22.5" id="RKX-pf-edx"/>
+                            <constraint firstItem="JsA-BQ-rZp" firstAttribute="top" secondItem="9Bp-7j-t5x" secondAttribute="bottom" constant="242" id="pVf-M5-6EK"/>
+                            <constraint firstItem="JsA-BQ-rZp" firstAttribute="centerX" secondItem="9Bp-7j-t5x" secondAttribute="centerX" constant="70" id="q4A-kt-sEX"/>
+                            <constraint firstItem="9Bp-7j-t5x" firstAttribute="top" secondItem="HQm-1n-ysg" secondAttribute="bottom" constant="115" id="tqq-bJ-ktg"/>
                         </constraints>
                     </view>
                     <connections>
@@ -3137,13 +3151,16 @@ Peripancreatic Edema </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Penetrating Thoraic Injury" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPZ-8P-4I8">
-                                <rect key="frame" x="227" y="132" width="197" height="41"/>
+                                <rect key="frame" x="186" y="82" width="197" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APS-G6-yGA" customClass="HTPressableButton">
-                                <rect key="frame" x="305" y="447" width="120" height="40"/>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UcC-0f-i89">
+                                <rect key="frame" x="132" y="193" width="320" height="162"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APS-G6-yGA" customClass="HTPressableButton">
+                                <rect key="frame" x="240" y="420" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="0Y5-cv-ctB"/>
                                     <constraint firstAttribute="height" constant="40" id="wVe-CJ-0tD"/>
@@ -3161,18 +3178,15 @@ Peripancreatic Edema </string>
                                     <action selector="nextButtonPressed:" destination="JAc-1n-SNf" eventType="touchUpInside" id="moG-zX-Kfe"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UcC-0f-i89">
-                                <rect key="frame" x="140" y="225" width="320" height="162"/>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="FPZ-8P-4I8" secondAttribute="centerX" constant="-25.5" id="50h-cR-5Mm"/>
-                            <constraint firstItem="FPZ-8P-4I8" firstAttribute="top" secondItem="AyT-gH-1Sp" secondAttribute="bottom" constant="112" id="Bsz-um-txp"/>
-                            <constraint firstItem="UcC-0f-i89" firstAttribute="centerX" secondItem="FPZ-8P-4I8" secondAttribute="centerX" constant="-25.5" id="G4S-ig-JdA"/>
-                            <constraint firstItem="UcC-0f-i89" firstAttribute="trailing" secondItem="APS-G6-yGA" secondAttribute="trailing" constant="35" id="gYz-Mr-Zt8"/>
-                            <constraint firstItem="UcC-0f-i89" firstAttribute="top" secondItem="FPZ-8P-4I8" secondAttribute="bottom" constant="52" id="p45-b4-Wuu"/>
-                            <constraint firstItem="APS-G6-yGA" firstAttribute="top" secondItem="UcC-0f-i89" secondAttribute="bottom" constant="60" id="zZ1-Fp-YN4"/>
+                            <constraint firstAttribute="centerX" secondItem="FPZ-8P-4I8" secondAttribute="centerX" constant="15.5" id="50h-cR-5Mm"/>
+                            <constraint firstItem="FPZ-8P-4I8" firstAttribute="top" secondItem="AyT-gH-1Sp" secondAttribute="bottom" constant="62" id="Bsz-um-txp"/>
+                            <constraint firstItem="UcC-0f-i89" firstAttribute="centerX" secondItem="FPZ-8P-4I8" secondAttribute="centerX" constant="7.5" id="G4S-ig-JdA"/>
+                            <constraint firstItem="UcC-0f-i89" firstAttribute="trailing" secondItem="APS-G6-yGA" secondAttribute="trailing" constant="92" id="gYz-Mr-Zt8"/>
+                            <constraint firstItem="UcC-0f-i89" firstAttribute="top" secondItem="FPZ-8P-4I8" secondAttribute="bottom" constant="70" id="p45-b4-Wuu"/>
+                            <constraint firstItem="APS-G6-yGA" firstAttribute="top" secondItem="UcC-0f-i89" secondAttribute="bottom" constant="85" id="zZ1-Fp-YN4"/>
                         </constraints>
                     </view>
                     <connections>
@@ -3197,13 +3211,17 @@ Peripancreatic Edema </string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pneumothorax" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsM-Uo-gxJ">
-                                <rect key="frame" x="218" y="84" width="197" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pneumothorax" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsM-Uo-gxJ">
+                                <rect key="frame" x="224" y="87" width="197" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="0AM-wb-Jlb"/>
+                                    <constraint firstAttribute="height" constant="41" id="oiY-dJ-Efs"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8X7-Lt-BfB" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8X7-Lt-BfB" customClass="HTPressableButton">
                                 <rect key="frame" x="296" y="399" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="QeI-59-wmr"/>
@@ -3222,18 +3240,18 @@ Peripancreatic Edema </string>
                                     <action selector="nextButtonPressed:" destination="JAc-1n-SNf" eventType="touchUpInside" id="eOB-3s-y4k"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VkP-kR-fFS">
-                                <rect key="frame" x="131" y="177" width="320" height="162"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VkP-kR-fFS">
+                                <rect key="frame" x="121" y="175" width="320" height="162"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VkP-kR-fFS" firstAttribute="trailing" secondItem="8X7-Lt-BfB" secondAttribute="trailing" constant="35" id="57o-Ba-fB6"/>
-                            <constraint firstItem="VsM-Uo-gxJ" firstAttribute="top" secondItem="nhm-ts-N0b" secondAttribute="bottom" constant="64" id="H9w-bR-ZVN"/>
-                            <constraint firstItem="8X7-Lt-BfB" firstAttribute="top" secondItem="VkP-kR-fFS" secondAttribute="bottom" constant="60" id="JNp-Sk-1db"/>
-                            <constraint firstItem="VkP-kR-fFS" firstAttribute="centerX" secondItem="VsM-Uo-gxJ" secondAttribute="centerX" constant="-26" id="Mzl-jY-fhB"/>
-                            <constraint firstItem="VkP-kR-fFS" firstAttribute="top" secondItem="VsM-Uo-gxJ" secondAttribute="bottom" constant="52" id="X3F-Ww-U4a"/>
-                            <constraint firstAttribute="centerX" secondItem="VsM-Uo-gxJ" secondAttribute="centerX" constant="-16.5" id="rL9-Bi-kRp"/>
+                            <constraint firstItem="VkP-kR-fFS" firstAttribute="trailing" secondItem="8X7-Lt-BfB" secondAttribute="trailing" constant="25" id="57o-Ba-fB6"/>
+                            <constraint firstItem="VsM-Uo-gxJ" firstAttribute="top" secondItem="nhm-ts-N0b" secondAttribute="bottom" constant="67" id="H9w-bR-ZVN"/>
+                            <constraint firstItem="8X7-Lt-BfB" firstAttribute="top" secondItem="VkP-kR-fFS" secondAttribute="bottom" constant="62" id="JNp-Sk-1db"/>
+                            <constraint firstItem="VkP-kR-fFS" firstAttribute="centerX" secondItem="VsM-Uo-gxJ" secondAttribute="centerX" constant="-41.5" id="Mzl-jY-fhB"/>
+                            <constraint firstItem="VkP-kR-fFS" firstAttribute="top" secondItem="VsM-Uo-gxJ" secondAttribute="bottom" constant="47" id="X3F-Ww-U4a"/>
+                            <constraint firstAttribute="centerX" secondItem="VsM-Uo-gxJ" secondAttribute="centerX" constant="-22.5" id="rL9-Bi-kRp"/>
                         </constraints>
                     </view>
                     <connections>
@@ -3258,14 +3276,8 @@ Peripancreatic Edema </string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HemoThorax" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SC-0G-jQS">
-                                <rect key="frame" x="240" y="58" width="197" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zud-WA-Q6c" customClass="HTPressableButton">
-                                <rect key="frame" x="318" y="373" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zud-WA-Q6c" customClass="HTPressableButton">
+                                <rect key="frame" x="278" y="441" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="lfg-dY-tNw"/>
                                     <constraint firstAttribute="height" constant="40" id="yXy-kc-bcy"/>
@@ -3283,18 +3295,28 @@ Peripancreatic Edema </string>
                                     <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="z0B-pH-c0m"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ViN-q8-AOo">
-                                <rect key="frame" x="153" y="151" width="320" height="162"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ViN-q8-AOo">
+                                <rect key="frame" x="140" y="189" width="320" height="162"/>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HemoThorax" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SC-0G-jQS">
+                                <rect key="frame" x="228" y="99" width="197" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="4Dp-hS-F2o"/>
+                                    <constraint firstAttribute="width" constant="197" id="beV-76-B0v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="3SC-0G-jQS" secondAttribute="centerX" constant="-38.5" id="NGF-Ev-Faj"/>
-                            <constraint firstItem="3SC-0G-jQS" firstAttribute="top" secondItem="n62-Is-8aD" secondAttribute="bottom" constant="38" id="Rvn-kc-Nd1"/>
-                            <constraint firstItem="zud-WA-Q6c" firstAttribute="top" secondItem="ViN-q8-AOo" secondAttribute="bottom" constant="60" id="Vz4-0A-rPb"/>
-                            <constraint firstItem="ViN-q8-AOo" firstAttribute="top" secondItem="3SC-0G-jQS" secondAttribute="bottom" constant="52" id="ZLm-z4-2MI"/>
-                            <constraint firstItem="ViN-q8-AOo" firstAttribute="centerX" secondItem="3SC-0G-jQS" secondAttribute="centerX" constant="-26" id="iOV-Gw-ZgS"/>
-                            <constraint firstItem="ViN-q8-AOo" firstAttribute="trailing" secondItem="zud-WA-Q6c" secondAttribute="trailing" constant="35" id="wgG-oE-zz1"/>
+                            <constraint firstAttribute="centerX" secondItem="3SC-0G-jQS" secondAttribute="centerX" constant="-26.5" id="NGF-Ev-Faj"/>
+                            <constraint firstItem="3SC-0G-jQS" firstAttribute="top" secondItem="n62-Is-8aD" secondAttribute="bottom" constant="79" id="Rvn-kc-Nd1"/>
+                            <constraint firstItem="zud-WA-Q6c" firstAttribute="top" secondItem="ViN-q8-AOo" secondAttribute="bottom" constant="90" id="Vz4-0A-rPb"/>
+                            <constraint firstItem="ViN-q8-AOo" firstAttribute="top" secondItem="3SC-0G-jQS" secondAttribute="bottom" constant="49" id="ZLm-z4-2MI"/>
+                            <constraint firstItem="ViN-q8-AOo" firstAttribute="centerX" secondItem="3SC-0G-jQS" secondAttribute="centerX" constant="-26.5" id="iOV-Gw-ZgS"/>
+                            <constraint firstItem="ViN-q8-AOo" firstAttribute="trailing" secondItem="zud-WA-Q6c" secondAttribute="trailing" constant="62" id="wgG-oE-zz1"/>
                         </constraints>
                     </view>
                     <connections>
@@ -3319,8 +3341,8 @@ Peripancreatic Edema </string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6s-rh-fH8">
-                                <rect key="frame" x="199" y="388" width="139" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6s-rh-fH8">
+                                <rect key="frame" x="296" y="380" width="139" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="MaT-MG-jnF"/>
                                     <constraint firstAttribute="width" constant="139" id="nO3-I6-KyP"/>
@@ -3329,8 +3351,12 @@ Peripancreatic Edema </string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Outcome here" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NT8-18-8sW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outcome here" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NT8-18-8sW">
                                 <rect key="frame" x="219" y="122" width="197" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="jA8-Bo-8Ik"/>
+                                    <constraint firstAttribute="width" constant="197" id="tCg-Uc-eSi"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -3339,9 +3365,9 @@ Peripancreatic Edema </string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NT8-18-8sW" firstAttribute="top" secondItem="fFS-i4-CnU" secondAttribute="bottom" constant="102" id="0as-09-6zm"/>
-                            <constraint firstItem="d6s-rh-fH8" firstAttribute="centerX" secondItem="NT8-18-8sW" secondAttribute="centerX" constant="-49" id="Fju-1p-nUl"/>
-                            <constraint firstItem="d6s-rh-fH8" firstAttribute="top" secondItem="NT8-18-8sW" secondAttribute="bottom" constant="225" id="Jsz-Ym-lzF"/>
-                            <constraint firstAttribute="centerX" secondItem="NT8-18-8sW" secondAttribute="centerX" id="VDx-bG-Lm3"/>
+                            <constraint firstItem="d6s-rh-fH8" firstAttribute="centerX" secondItem="NT8-18-8sW" secondAttribute="centerX" constant="48" id="Fju-1p-nUl"/>
+                            <constraint firstItem="d6s-rh-fH8" firstAttribute="top" secondItem="NT8-18-8sW" secondAttribute="bottom" constant="217" id="Jsz-Ym-lzF"/>
+                            <constraint firstAttribute="centerX" secondItem="NT8-18-8sW" secondAttribute="centerX" constant="-17.5" id="VDx-bG-Lm3"/>
                         </constraints>
                     </view>
                     <connections>
@@ -3365,13 +3391,13 @@ Peripancreatic Edema </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penetrating Thoraic Injury" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-35-5nG">
-                                <rect key="frame" x="220" y="115" width="196.5" height="20.5"/>
+                                <rect key="frame" x="220" y="115" width="197" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYO-hc-t6S">
-                                <rect key="frame" x="293" y="411.5" width="139" height="21"/>
+                                <rect key="frame" x="293" y="412" width="139" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="139" id="3RP-fa-cSr"/>
                                     <constraint firstAttribute="height" constant="21" id="qd7-Fl-aUu"/>
@@ -3417,7 +3443,7 @@ Clinical Temponade</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ty-9z-5AT" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ty-9z-5AT" customClass="HTPressableButton">
                                 <rect key="frame" x="263" y="419" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="27R-Ws-QFa"/>
@@ -3473,21 +3499,21 @@ Clinical Temponade</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2w3-pq-7dc">
-                                <rect key="frame" x="204" y="109" width="251.5" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2w3-pq-7dc">
+                                <rect key="frame" x="204" y="109" width="252" height="41"/>
                                 <string key="text">Lateral or Posterior Hemothorax/
 Active Hemorrhage</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Anterolateral Thoracotomy" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="np7-E8-bmM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anterolateral Thoracotomy" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="np7-E8-bmM">
                                 <rect key="frame" x="204" y="228" width="204" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABR-gd-Sg2" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABR-gd-Sg2" customClass="HTPressableButton">
                                 <rect key="frame" x="288" y="430" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="0ey-ip-03Y"/>
@@ -3502,6 +3528,8 @@ Active Hemorrhage</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="2w3-pq-7dc" secondAttribute="centerX" constant="-30.5" id="2a9-el-pI6"/>
+                            <constraint firstItem="np7-E8-bmM" firstAttribute="top" secondItem="2w3-pq-7dc" secondAttribute="bottom" constant="78" id="C8s-Ei-yVP"/>
+                            <constraint firstItem="np7-E8-bmM" firstAttribute="centerX" secondItem="2w3-pq-7dc" secondAttribute="centerX" constant="-23.75" id="JFQ-6F-DYw"/>
                             <constraint firstAttribute="centerX" secondItem="ABR-gd-Sg2" secondAttribute="centerX" constant="-44" id="K5A-D4-Uew"/>
                             <constraint firstItem="2w3-pq-7dc" firstAttribute="top" secondItem="3U8-bK-imE" secondAttribute="bottom" constant="89" id="NHH-Gf-fbi"/>
                             <constraint firstItem="ABR-gd-Sg2" firstAttribute="top" secondItem="np7-E8-bmM" secondAttribute="bottom" constant="181" id="bgy-Oj-lVk"/>
@@ -3527,14 +3555,8 @@ Active Hemorrhage</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwB-E7-yEa">
-                                <rect key="frame" x="291" y="104" width="93" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kux-zb-gy4" customClass="HTPressableButton">
-                                <rect key="frame" x="291" y="425" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kux-zb-gy4" customClass="HTPressableButton">
+                                <rect key="frame" x="291" y="424" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="fxQ-Q4-IMO"/>
                                     <constraint firstAttribute="width" constant="120" id="vyL-CR-M6C"/>
@@ -3553,19 +3575,25 @@ Active Hemorrhage</string>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BtJ-KK-WKO">
-                                <rect key="frame" x="139" y="217" width="320" height="162"/>
+                                <rect key="frame" x="139" y="216" width="320" height="162"/>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwB-E7-yEa">
+                                <rect key="frame" x="253" y="108" width="93" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BtJ-KK-WKO" firstAttribute="top" secondItem="hwB-E7-yEa" secondAttribute="bottom" constant="92" id="32K-WY-9BA"/>
+                            <constraint firstItem="BtJ-KK-WKO" firstAttribute="top" secondItem="hwB-E7-yEa" secondAttribute="bottom" constant="87" id="32K-WY-9BA"/>
                             <constraint firstAttribute="centerX" secondItem="BtJ-KK-WKO" secondAttribute="centerX" constant="1" id="BvH-pc-qDO"/>
                             <constraint firstItem="Kux-zb-gy4" firstAttribute="top" secondItem="BtJ-KK-WKO" secondAttribute="bottom" constant="46" id="DOw-dd-YK2"/>
                             <constraint firstAttribute="centerX" secondItem="Kux-zb-gy4" secondAttribute="centerX" constant="-51" id="QjX-yo-M9g"/>
                             <constraint firstItem="BtJ-KK-WKO" firstAttribute="trailing" secondItem="Kux-zb-gy4" secondAttribute="trailing" constant="48" id="WpC-qo-4Sv"/>
-                            <constraint firstItem="BtJ-KK-WKO" firstAttribute="centerX" secondItem="hwB-E7-yEa" secondAttribute="centerX" constant="-38.5" id="j1c-r7-1Pv"/>
-                            <constraint firstAttribute="centerX" secondItem="hwB-E7-yEa" secondAttribute="centerX" constant="-37.5" id="xKy-xQ-8e0"/>
-                            <constraint firstItem="hwB-E7-yEa" firstAttribute="top" secondItem="mnZ-V1-Ppb" secondAttribute="bottom" constant="84" id="yoh-WQ-7Eo"/>
+                            <constraint firstItem="BtJ-KK-WKO" firstAttribute="centerX" secondItem="hwB-E7-yEa" secondAttribute="centerX" constant="-0.5" id="j1c-r7-1Pv"/>
+                            <constraint firstAttribute="centerX" secondItem="hwB-E7-yEa" secondAttribute="centerX" constant="0.5" id="xKy-xQ-8e0"/>
+                            <constraint firstItem="hwB-E7-yEa" firstAttribute="top" secondItem="mnZ-V1-Ppb" secondAttribute="bottom" constant="88" id="yoh-WQ-7Eo"/>
                         </constraints>
                     </view>
                     <connections>
@@ -3649,8 +3677,8 @@ consider vascular isolation
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jg3-FB-MfE" customClass="HTPressableButton">
-                                <rect key="frame" x="311" y="433.5" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jg3-FB-MfE" customClass="HTPressableButton">
+                                <rect key="frame" x="298" y="395" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Dhq-2v-CmH"/>
                                     <constraint firstAttribute="width" constant="120" id="xhG-nM-mje"/>
@@ -3671,7 +3699,9 @@ consider vascular isolation
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Jg3-FB-MfE" firstAttribute="top" secondItem="21b-Sc-fw4" secondAttribute="bottom" constant="262" id="AE0-eN-9wr"/>
                             <constraint firstItem="21b-Sc-fw4" firstAttribute="top" secondItem="552-Tx-Rn3" secondAttribute="bottom" constant="92" id="Ra1-Hn-XEs"/>
+                            <constraint firstItem="21b-Sc-fw4" firstAttribute="centerX" secondItem="Jg3-FB-MfE" secondAttribute="centerX" constant="-58" id="q3S-ct-RBp"/>
                             <constraint firstAttribute="centerX" secondItem="21b-Sc-fw4" secondAttribute="centerX" id="tyY-kH-rAO"/>
                         </constraints>
                     </view>
@@ -3918,7 +3948,7 @@ Consider drainage if evidence of biliary leak
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umr-eQ-018" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umr-eQ-018" customClass="HTPressableButton">
                                 <rect key="frame" x="244" y="399" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="I6f-ro-RFE"/>
@@ -3926,17 +3956,22 @@ Consider drainage if evidence of biliary leak
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <action selector="nextButtonPressed:" destination="FZT-Jc-eVn" eventType="touchUpInside" id="5yV-Ym-ANW"/>
-                                    <action selector="nextButtonPressed:" destination="kko-i3-Nqi" eventType="touchUpInside" id="LAr-jB-bPF"/>
-                                    <action selector="nextButtonPressed:" destination="Xs8-TF-tWd" eventType="touchUpInside" id="kif-RX-8YF"/>
-                                    <action selector="nextButtonPressed:" destination="wfh-uh-Vay" eventType="touchUpInside" id="wA4-Ku-D33"/>
                                     <segue destination="Q66-ch-f6C" kind="show" id="v7e-HA-IOR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNa-EL-WLV">
-                                <rect key="frame" x="244" y="104" width="93" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Observation" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNa-EL-WLV">
+                                <rect key="frame" x="243" y="104" width="94" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="QoB-Zo-6cz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="If failure, then" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awH-Qz-Zp5">
+                                <rect key="frame" x="236" y="182" width="162" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="jyk-ci-lhQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -3946,20 +3981,25 @@ Consider drainage if evidence of biliary leak
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="umr-eQ-018" firstAttribute="top" secondItem="ZNa-EL-WLV" secondAttribute="bottom" constant="274" id="13V-72-H2b"/>
+                            <constraint firstItem="awH-Qz-Zp5" firstAttribute="centerX" secondItem="ZNa-EL-WLV" secondAttribute="centerX" constant="27" id="FPQ-da-2ih"/>
                             <constraint firstItem="umr-eQ-018" firstAttribute="centerX" secondItem="ZNa-EL-WLV" secondAttribute="centerX" constant="13.5" id="IUh-4j-5eJ"/>
+                            <constraint firstItem="awH-Qz-Zp5" firstAttribute="top" secondItem="ZNa-EL-WLV" secondAttribute="bottom" constant="57" id="NIu-TZ-ELz"/>
                             <constraint firstAttribute="centerX" secondItem="ZNa-EL-WLV" secondAttribute="centerX" constant="9.5" id="Tr7-w9-KQa"/>
                             <constraint firstItem="ZNa-EL-WLV" firstAttribute="top" secondItem="12H-Rb-tCb" secondAttribute="bottom" constant="84" id="qbX-SY-7Bx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="umr-eQ-018" id="HC3-ZM-gnR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNk-2D-e0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2916" y="11365"/>
+            <point key="canvasLocation" x="2806" y="10721"/>
         </scene>
-        <!--View Controller-->
+        <!--Final Abdominal-->
         <scene sceneID="8cg-FH-M2z">
             <objects>
-                <viewController storyboardIdentifier="finalAbdominal" id="Q66-ch-f6C" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="finalAbdominal" id="Q66-ch-f6C" customClass="FinalAbdominal" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fax-bw-ZWm"/>
                         <viewControllerLayoutGuide type="bottom" id="76i-Rv-6Yh"/>
@@ -3969,26 +4009,113 @@ Consider drainage if evidence of biliary leak
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nT-ll-1sc" customClass="HTPressableButton">
-                                <rect key="frame" x="218" y="177" width="150" height="150"/>
+                                <rect key="frame" x="206" y="131" width="188" height="105"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="mwV-UN-7NS"/>
+                                    <constraint firstAttribute="height" constant="105" id="d00-S7-YCF"/>
+                                    <constraint firstAttribute="width" constant="188" id="ym9-6V-S8m"/>
                                 </constraints>
                                 <state key="normal" title="Operating Room">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If stable, consider salvage" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suJ-fs-HoF">
+                                <rect key="frame" x="219" y="289" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1JV-tA-9Sl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="If unstable, consider splenectomy" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaF-t4-Kfd">
+                                <rect key="frame" x="189" y="362" width="259" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Bqr-gN-yTv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4L-b7-Onf">
+                                <rect key="frame" x="225" y="442" width="198" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="az6-3O-4nL"/>
+                                    <constraint firstAttribute="width" constant="139" id="mWw-7W-mqm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="76i-Rv-6Yh" firstAttribute="top" secondItem="6nT-ll-1sc" secondAttribute="bottom" constant="273" id="OF3-T4-Lmz"/>
-                            <constraint firstItem="6nT-ll-1sc" firstAttribute="leading" secondItem="yKL-4G-ZpP" secondAttribute="leading" constant="218" id="Wsh-28-sFK"/>
-                            <constraint firstItem="6nT-ll-1sc" firstAttribute="top" secondItem="fax-bw-ZWm" secondAttribute="bottom" constant="157" id="ryG-pY-Cja"/>
+                            <constraint firstItem="HaF-t4-Kfd" firstAttribute="trailing" secondItem="h4L-b7-Onf" secondAttribute="trailing" constant="25" id="0uS-h6-ofn"/>
+                            <constraint firstItem="HaF-t4-Kfd" firstAttribute="top" secondItem="suJ-fs-HoF" secondAttribute="bottom" constant="52" id="5Gl-MA-0eg"/>
+                            <constraint firstItem="HaF-t4-Kfd" firstAttribute="centerX" secondItem="h4L-b7-Onf" secondAttribute="centerX" constant="-5.5" id="GqL-Ne-Vag"/>
+                            <constraint firstItem="suJ-fs-HoF" firstAttribute="top" secondItem="6nT-ll-1sc" secondAttribute="bottom" constant="53" id="MUh-ke-1hL"/>
+                            <constraint firstItem="HaF-t4-Kfd" firstAttribute="centerX" secondItem="suJ-fs-HoF" secondAttribute="centerX" id="NUk-V8-PvN"/>
+                            <constraint firstItem="h4L-b7-Onf" firstAttribute="top" secondItem="HaF-t4-Kfd" secondAttribute="bottom" constant="59" id="Pyb-SY-CHI"/>
+                            <constraint firstAttribute="centerX" secondItem="6nT-ll-1sc" secondAttribute="centerX" id="RjH-N4-urb"/>
+                            <constraint firstItem="suJ-fs-HoF" firstAttribute="centerX" secondItem="6nT-ll-1sc" secondAttribute="centerX" constant="19" id="dkc-2C-Nve"/>
+                            <constraint firstItem="6nT-ll-1sc" firstAttribute="top" secondItem="fax-bw-ZWm" secondAttribute="bottom" constant="111" id="hE3-To-Nis"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="6nT-ll-1sc" id="r6i-FF-ZwG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kde-u1-KiH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2877" y="12056"/>
+            <point key="canvasLocation" x="3454" y="10721"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KUA-ZN-BWZ">
+            <objects>
+                <viewController storyboardIdentifier="otherCausesFinal" id="hdg-gM-pQN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CWE-pS-eTn"/>
+                        <viewControllerLayoutGuide type="bottom" id="crA-aP-Eub"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vpj-Vm-Ws4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyB-YQ-MEW">
+                                <rect key="frame" x="182" y="192" width="225" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="XcX-Lz-lUs"/>
+                                    <constraint firstAttribute="height" constant="80" id="ZRS-ep-I8W"/>
+                                    <constraint firstAttribute="width" constant="225" id="xRU-cS-k6i"/>
+                                </constraints>
+                                <string key="text">Consider other causes
+for instability; operating room</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End of protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nk4-KE-1U1">
+                                <rect key="frame" x="208" y="376" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="17W-eq-mIm"/>
+                                    <constraint firstAttribute="height" constant="21" id="luf-Dv-S5I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nk4-KE-1U1" firstAttribute="top" secondItem="WyB-YQ-MEW" secondAttribute="bottom" constant="104" id="CUD-V9-Uug"/>
+                            <constraint firstItem="nk4-KE-1U1" firstAttribute="centerX" secondItem="WyB-YQ-MEW" secondAttribute="centerX" constant="-17" id="SUB-h5-l89"/>
+                            <constraint firstItem="WyB-YQ-MEW" firstAttribute="top" secondItem="CWE-pS-eTn" secondAttribute="bottom" constant="172" id="WTz-0l-di8"/>
+                            <constraint firstAttribute="centerX" secondItem="WyB-YQ-MEW" secondAttribute="centerX" constant="5.5" id="p6r-ue-f8p"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wX-eh-9bg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3270" y="11451"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QG5-bl-epw">
@@ -4099,7 +4226,7 @@ Consider drainage if evidence of biliary leak
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HkJ-eo-1Hk">
-                                <rect key="frame" x="181" y="228" width="320" height="162"/>
+                                <rect key="frame" x="181" y="227" width="320" height="162"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Physical exam normal? or API &gt;= 0.9" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtX-S5-rmS">
                                 <rect key="frame" x="168" y="161" width="302" height="21"/>
@@ -4107,8 +4234,8 @@ Consider drainage if evidence of biliary leak
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2l-2P-9UA" customClass="HTPressableButton">
-                                <rect key="frame" x="281" y="445" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2l-2P-9UA" customClass="HTPressableButton">
+                                <rect key="frame" x="281" y="444" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="YsP-gK-Nh1"/>
                                     <constraint firstAttribute="width" constant="120" id="sFm-1S-rJt"/>
@@ -4148,7 +4275,7 @@ Consider drainage if evidence of biliary leak
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxy-6J-dNv" customClass="HTPressableButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxy-6J-dNv" customClass="HTPressableButton">
                                 <rect key="frame" x="326" y="434" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="KgD-EV-124"/>
@@ -4213,7 +4340,7 @@ Consider drainage if evidence of biliary leak
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKn-O3-Jer">
-                                <rect key="frame" x="162" y="213" width="320" height="162"/>
+                                <rect key="frame" x="162" y="212" width="320" height="162"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Is Physical exam normal? or API &gt;= 0.9" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzK-u8-dJl">
                                 <rect key="frame" x="166" y="146" width="302" height="21"/>
@@ -4221,8 +4348,8 @@ Consider drainage if evidence of biliary leak
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7D-Ac-dda" customClass="HTPressableButton">
-                                <rect key="frame" x="279" y="430" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7D-Ac-dda" customClass="HTPressableButton">
+                                <rect key="frame" x="279" y="429" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="4gY-bk-cVv"/>
                                     <constraint firstAttribute="height" constant="40" id="OQ2-3y-9j4"/>
@@ -4421,7 +4548,7 @@ and choose one</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FXu-39-YjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2128" y="3133"/>
+            <point key="canvasLocation" x="2122" y="3185"/>
         </scene>
         <!--Hard SignsP2-->
         <scene sceneID="sQL-bT-sgv">
