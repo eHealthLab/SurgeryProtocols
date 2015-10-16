@@ -9,5 +9,19 @@
 #ifndef SurgeryProtocols_BPIExploratoryLaparotomy_h
 #define SurgeryProtocols_BPIExploratoryLaparotomy_h
 
+#import <Foundation/Foundation.h>
+#import<UIKit/UIKit.h>
+#import "HTPressableButton.h"
+#import "UIColor+HTColor.h"
+
+@interface BPIExploratoryLaparotomy: UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+
+@property (strong, nonatomic) IBOutlet HTPressableButton *nextButton;
+@property (weak, nonatomic) IBOutlet UIPickerView *BluntHepaticPicker;
+@property(strong, nonatomic) NSArray *BluntHepaticArray;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+- (IBAction)nextButtonPressed:(id)sender;
+@end
+
 
 #endif

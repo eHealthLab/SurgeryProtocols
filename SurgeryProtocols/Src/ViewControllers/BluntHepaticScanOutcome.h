@@ -19,6 +19,8 @@
 @property (strong, nonatomic) IBOutlet HTPressableButton *nextButton;
 @property (weak, nonatomic) IBOutlet UIPickerView *BluntHepaticPicker;
 @property(strong, nonatomic) NSArray *BluntHepaticArray;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 - (IBAction)nextButtonPressed:(id)sender;
 @end
 

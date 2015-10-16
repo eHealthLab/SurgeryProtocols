@@ -23,7 +23,7 @@
     self.label1.text = @"ERCP+Sphincterotomy";
     
     if([delegate.BluntHepaticScanOutcome isEqualToString:@"Liver Abscess"] || [delegate.BluntHepaticScanOutcome isEqualToString:@"Biloma"]) {
-            self.label1.hidden = true;
+        self.label1.hidden = YES;
     }
     
     

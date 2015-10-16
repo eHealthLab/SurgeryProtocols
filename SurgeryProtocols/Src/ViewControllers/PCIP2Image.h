@@ -14,9 +14,13 @@
 #import "HTPressableButton.h"
 #import "UIColor+HTColor.h"
 
-@interface PCIP2Image: UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface PCIP2Image: UIViewController<UIScrollViewDelegate>
 
 @property (strong, nonatomic) IBOutlet HTPressableButton *nextButton;
+
+@property (strong, nonatomic) IBOutlet UIImageView *image;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 

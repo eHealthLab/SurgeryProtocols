@@ -57,7 +57,7 @@
     
     if ([choice isEqualToString:@"Normal Pancreas"]) {
         
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BPINormalPancreas"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BPIExpectant"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -81,7 +81,7 @@
     
     else {
         
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BPITransection"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BPIExploraxtoryLaparotomy"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";

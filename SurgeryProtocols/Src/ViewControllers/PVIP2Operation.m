@@ -1,0 +1,122 @@
+//
+//  PVIP2Operation.m
+//  SurgeryProtocols
+//
+//  Created by Aarti Munjal on 10/15/15.
+//  Copyright (c) 2015 University of Colorado Denver. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "PVIP2Operation.h"
+#import "AppDelegate.h"
+
+@implementation PVIP2Operation
+{
+    AppDelegate *delegate;
+}
+
+-(void)viewDidLoad
+{
+    
+    delegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+    self.BluntHepaticArray = [[NSArray alloc] initWithObjects:@"<100% transection", @"100% transection", @"Segmental less", @"Self tissue loss over vascular injury", @"Unstable or Gustilp IIIC fracture", @"Exsanguination from injured extremity", nil];
+    
+    self.BluntHepaticPicker.delegate = self;
+    self.BluntHepaticPicker.dataSource = self;
+    
+    [self.BluntHepaticPicker selectRow:0 inComponent:0 animated:NO];
+    
+    self.nextButton.cornerRadius = 10.0;
+    self.nextButton.shadowHeight = self.nextButton.frame.size.height * 0.17;
+    self.nextButton.buttonColor = [UIColor ht_bitterSweetColor];
+    self.nextButton.shadowColor = [UIColor ht_bitterSweetDarkColor];
+    
+    [self.nextButton setTitle:@"Next" forState:UIControlStateNormal];
+    
+    
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return [self.BluntHepaticArray count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return [self.BluntHepaticArray objectAtIndex:row];
+}
+
+- (IBAction)nextButtonPressed:(id)sender {
+    
+    NSString *choice = [self.BluntHepaticArray objectAtIndex:[self.BluntHepaticPicker selectedRowInComponent:0]];
+    
+
+    
+    if ([choice isEqualToString:@"<100% transection"])
+    {
+        delegate.PVIP2OperatioOutcome=@"6-0 polypropylene suture";
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PVIP2OperationOutcome"];
+        
+        UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
+        barButton.title=@"Back";
+        
+        self.navigationController.navigationBar.topItem.backBarButtonItem = barButton;
+        
+        [self.navigationController pushViewController:uiViewController animated:YES];
+    }
+    else if ([choice isEqualToString:@"100% transection"]){
+        delegate.PVIP2OperatioOutcome=@"Assess tension/ end-\nto-end anastomosis";
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PVIP2OperationOutcome"];
+        
+        UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
+        barButton.title=@"Back";
+        
+        self.navigationController.navigationBar.topItem.backBarButtonItem = barButton;
+        
+        [self.navigationController pushViewController:uiViewController animated:YES];
+    }
+    else if ([choice isEqualToString:@"Segmental less"]) {
+        delegate.PVIP2OperatioOutcome=@"Retrieve saphenous vein/ or\n use ringed PTFE graft";
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PVIP2OperationOutcome"];
+        
+        UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
+        barButton.title=@"Back";
+        
+        self.navigationController.navigationBar.topItem.backBarButtonItem = barButton;
+        
+        [self.navigationController pushViewController:uiViewController animated:YES];
+    }
+    else if ([choice isEqualToString:@"Self tissue loss over vascular injury"]) {
+        delegate.PVIP2OperatioOutcome=@"Muscle flap over repair vs.\n extra-anatomic bypass";
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PVIP2OperationOutcome"];
+        
+        UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
+        barButton.title=@"Back";
+        
+        self.navigationController.navigationBar.topItem.backBarButtonItem = barButton;
+        
+        [self.navigationController pushViewController:uiViewController animated:YES];
+    }
+    else {
+        //delegate.PVIP2OperatioOutcome=@"Insert shunt into artery (and vein)";
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PVIP2OperationOutcome2"];
+        
+        UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
+        barButton.title=@"Back";
+        
+        self.navigationController.navigationBar.topItem.backBarButtonItem = barButton;
+        
+        [self.navigationController pushViewController:uiViewController animated:YES];
+    }
+   
+    
+}
+
+
+@end
+

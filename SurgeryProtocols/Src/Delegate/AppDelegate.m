@@ -30,6 +30,11 @@
     self.PCIP1Type=@"";
     self.PCIP1Final=@"";
     self.BPIExpectantFinal=@"";
+    self.BATStableFinalOutcome=@"";
+    self.PVIP1ImagingOutcome=@"";
+    self.PVIP1ImagingType=@"";
+    self.PVIP2OperatioOutcome=@"";
+    self.PVIP2OperatioOutcome2=@"";
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -50,6 +55,11 @@
     self.PCIP1Type=@"";
     self.PCIP1Final=@"";
     self.BPIExpectantFinal=@"";
+    self.BATStableFinalOutcome=@"";
+    self.PVIP1ImagingOutcome=@"";
+    self.PVIP1ImagingType=@"";
+    self.PVIP2OperatioOutcome=@"";
+    self.PVIP2OperatioOutcome2=@"";
 
     return YES;
 }

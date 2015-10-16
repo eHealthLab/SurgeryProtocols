@@ -42,10 +42,46 @@
 		0533D6B81BCC624D00B9536A /* BPIExpectant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6B71BCC624D00B9536A /* BPIExpectant.m */; };
 		0533D6BA1BCC647600B9536A /* BPIExpectantFinal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6B91BCC647600B9536A /* BPIExpectantFinal.m */; };
 		0533D6BE1BCDFB9B00B9536A /* BCVISymptmos.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6BD1BCDFB9B00B9536A /* BCVISymptmos.m */; };
-		0533D6C01BCE0E4400B9536A /* BATImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6BF1BCE0E4400B9536A /* BATImage.m */; };
 		0533D6C41BCE191100B9536A /* FinalAbdominal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6C31BCE191100B9536A /* FinalAbdominal.m */; };
 		0533D6C61BCEBBCE00B9536A /* PCIP2Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6C51BCEBBCE00B9536A /* PCIP2Image.m */; };
 		0533D6CA1BCEC74200B9536A /* BluntHepaticPart2Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6C91BCEC74200B9536A /* BluntHepaticPart2Image.m */; };
+		0533D6CC1BCEE5A900B9536A /* BluntHepticImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6CB1BCEE5A900B9536A /* BluntHepticImage.m */; };
+		0533D6D01BCEFDE400B9536A /* operativeIntervention.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6CF1BCEFDE400B9536A /* operativeIntervention.m */; };
+		0533D6D21BCEFE6900B9536A /* angioembolization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6D11BCEFE6900B9536A /* angioembolization.m */; };
+		0533D6D61BCF08AD00B9536A /* BSIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6D51BCF08AD00B9536A /* BSIImage.m */; };
+		0533D6D91BCF0C7500B9536A /* BATStable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6D81BCF0C7500B9536A /* BATStable.m */; };
+		0533D6DB1BCF0CED00B9536A /* BATImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6DA1BCF0CED00B9536A /* BATImage.m */; };
+		0533D6DF1BCF0D6500B9536A /* BATInitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6DE1BCF0D6500B9536A /* BATInitial.m */; };
+		0533D6E31BCF0DB000B9536A /* BATUnstable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6E21BCF0DAF00B9536A /* BATUnstable.m */; };
+		0533D6E51BCF0DC500B9536A /* BATUnstableFinal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6E41BCF0DC500B9536A /* BATUnstableFinal.m */; };
+		0533D6E91BCF0DEC00B9536A /* BATStableFindings2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6E81BCF0DEC00B9536A /* BATStableFindings2.m */; };
+		0533D6EB1BCF0DF700B9536A /* BATStableFindings3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6EA1BCF0DF700B9536A /* BATStableFindings3.m */; };
+		0533D6EF1BCF0E1100B9536A /* BATStableFindings4.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6EE1BCF0E1100B9536A /* BATStableFindings4.m */; };
+		0533D6F11BCF0E2500B9536A /* BATIsolatedHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6F01BCF0E2500B9536A /* BATIsolatedHead.m */; };
+		0533D6F51BCF0E4600B9536A /* BATStableFinalOutcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6F41BCF0E4600B9536A /* BATStableFinalOutcome.m */; };
+		0533D6F81BCFF28000B9536A /* PVIP1Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6F71BCFF28000B9536A /* PVIP1Image.m */; };
+		0533D6FA1BCFF29400B9536A /* PVIP1Initial.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6F91BCFF29400B9536A /* PVIP1Initial.m */; };
+		0533D6FE1BCFF2B300B9536A /* PVIP1Hard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6FD1BCFF2B300B9536A /* PVIP1Hard.m */; };
+		0533D7001BCFF38100B9536A /* PVIP1Soft.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D6FF1BCFF38100B9536A /* PVIP1Soft.m */; };
+		0533D7041BCFF4E000B9536A /* PVIP1Pulses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7031BCFF4E000B9536A /* PVIP1Pulses.m */; };
+		0533D7061BCFF4F500B9536A /* PVIP1OperatingRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7051BCFF4F500B9536A /* PVIP1OperatingRoom.m */; };
+		0533D70A1BCFF51200B9536A /* PVIP1Imaging.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7091BCFF51200B9536A /* PVIP1Imaging.m */; };
+		0533D70C1BCFF52100B9536A /* PVIP1PulsesOutcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D70B1BCFF52100B9536A /* PVIP1PulsesOutcome.m */; };
+		0533D7101BCFF54400B9536A /* PVIP1PulsesIntermediate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D70F1BCFF54400B9536A /* PVIP1PulsesIntermediate.m */; };
+		0533D7121BCFF55300B9536A /* PVIP1ImagingOutcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7111BCFF55300B9536A /* PVIP1ImagingOutcome.m */; };
+		0533D7161BCFF57300B9536A /* PVIP1AnterigraphyOutcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7151BCFF57300B9536A /* PVIP1AnterigraphyOutcome.m */; };
+		0533D7181BCFF58900B9536A /* PVIP1IRadiology.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7171BCFF58900B9536A /* PVIP1IRadiology.m */; };
+		0533D71C1BD0810B00B9536A /* PVIP2Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D71B1BD0810B00B9536A /* PVIP2Image.m */; };
+		0533D71F1BD0812100B9536A /* PVIP2Initial.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D71E1BD0812100B9536A /* PVIP2Initial.m */; };
+		0533D7221BD0813B00B9536A /* PVIP2Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7211BD0813B00B9536A /* PVIP2Operation.m */; };
+		0533D7241BD0814800B9536A /* PVIP2OperationOutcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7231BD0814800B9536A /* PVIP2OperationOutcome.m */; };
+		0533D7281BD1329F00B9536A /* PVIP2Left.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7271BD1329F00B9536A /* PVIP2Left.m */; };
+		0533D72A1BD132AC00B9536A /* PVIP2Right.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7291BD132AC00B9536A /* PVIP2Right.m */; };
+		0533D72E1BD13C8900B9536A /* PVIP2OperationOutcome2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D72D1BD13C8900B9536A /* PVIP2OperationOutcome2.m */; };
+		0533D7301BD1551400B9536A /* BPIFinal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D72F1BD1551400B9536A /* BPIFinal.m */; };
+		0533D7341BD1554300B9536A /* BPILowRisk2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7331BD1554300B9536A /* BPILowRisk2.m */; };
+		0533D7361BD1555100B9536A /* BPILapGradeV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7351BD1555100B9536A /* BPILapGradeV.m */; };
+		0533D73A1BD15F6500B9536A /* PVIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7391BD15F6500B9536A /* PVIImage.m */; };
 		05784A291BB307BE0096703F /* AbdomnialPelvicCT.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */; };
 		05784A2D1BB309350096703F /* AbdPelFast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A2C1BB309350096703F /* AbdPelFast.m */; };
 		05784A2F1BB30B230096703F /* AbdPelRepeatFast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A2E1BB30B230096703F /* AbdPelRepeatFast.m */; };
@@ -253,14 +289,86 @@
 		0533D6BB1BCC647D00B9536A /* BPIExpectantFinal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPIExpectantFinal.h; sourceTree = "<group>"; };
 		0533D6BC1BCDFB9000B9536A /* BCVISymptmos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCVISymptmos.h; sourceTree = "<group>"; };
 		0533D6BD1BCDFB9B00B9536A /* BCVISymptmos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCVISymptmos.m; sourceTree = "<group>"; };
-		0533D6BF1BCE0E4400B9536A /* BATImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATImage.m; sourceTree = "<group>"; };
-		0533D6C11BCE0E4F00B9536A /* BATImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BATImage.h; sourceTree = "<group>"; };
 		0533D6C21BCE190800B9536A /* FinalAbdominal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinalAbdominal.h; sourceTree = "<group>"; };
 		0533D6C31BCE191100B9536A /* FinalAbdominal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalAbdominal.m; sourceTree = "<group>"; };
 		0533D6C51BCEBBCE00B9536A /* PCIP2Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCIP2Image.m; sourceTree = "<group>"; };
 		0533D6C71BCEBBD400B9536A /* PCIP2Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCIP2Image.h; sourceTree = "<group>"; };
 		0533D6C81BCEC73800B9536A /* BluntHepaticPart2Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluntHepaticPart2Image.h; sourceTree = "<group>"; };
 		0533D6C91BCEC74200B9536A /* BluntHepaticPart2Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluntHepaticPart2Image.m; sourceTree = "<group>"; };
+		0533D6CB1BCEE5A900B9536A /* BluntHepticImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluntHepticImage.m; sourceTree = "<group>"; };
+		0533D6CD1BCEE5B200B9536A /* BluntHepticImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluntHepticImage.h; sourceTree = "<group>"; };
+		0533D6CE1BCEFDDB00B9536A /* operativeIntervention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = operativeIntervention.h; sourceTree = "<group>"; };
+		0533D6CF1BCEFDE400B9536A /* operativeIntervention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = operativeIntervention.m; sourceTree = "<group>"; };
+		0533D6D11BCEFE6900B9536A /* angioembolization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = angioembolization.m; sourceTree = "<group>"; };
+		0533D6D31BCEFE7000B9536A /* angioembolization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = angioembolization.h; sourceTree = "<group>"; };
+		0533D6D41BCF08A700B9536A /* BSIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSIImage.h; sourceTree = "<group>"; };
+		0533D6D51BCF08AD00B9536A /* BSIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSIImage.m; sourceTree = "<group>"; };
+		0533D6D81BCF0C7500B9536A /* BATStable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATStable.m; sourceTree = "<group>"; };
+		0533D6DA1BCF0CED00B9536A /* BATImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATImage.m; sourceTree = "<group>"; };
+		0533D6DC1BCF0CF700B9536A /* BATImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BATImage.h; sourceTree = "<group>"; };
+		0533D6DD1BCF0D5A00B9536A /* BATInitial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BATInitial.h; sourceTree = "<group>"; };
+		0533D6DE1BCF0D6500B9536A /* BATInitial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATInitial.m; sourceTree = "<group>"; };
+		0533D6E01BCF0D8800B9536A /* BATStable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BATStable.h; sourceTree = "<group>"; };
+		0533D6E11BCF0DA600B9536A /* BATUnstable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BATUnstable.h; sourceTree = "<group>"; };
+		0533D6E21BCF0DAF00B9536A /* BATUnstable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATUnstable.m; sourceTree = "<group>"; };
+		0533D6E41BCF0DC500B9536A /* BATUnstableFinal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATUnstableFinal.m; sourceTree = "<group>"; };
+		0533D6E61BCF0DCC00B9536A /* BATUnstableFinal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BATUnstableFinal.h; sourceTree = "<group>"; };
+		0533D6E71BCF0DE100B9536A /* BATStableFindings2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BATStableFindings2.h; sourceTree = "<group>"; };
+		0533D6E81BCF0DEC00B9536A /* BATStableFindings2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATStableFindings2.m; sourceTree = "<group>"; };
+		0533D6EA1BCF0DF700B9536A /* BATStableFindings3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATStableFindings3.m; sourceTree = "<group>"; };
+		0533D6EC1BCF0E0000B9536A /* BATStableFindings3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BATStableFindings3.h; sourceTree = "<group>"; };
+		0533D6ED1BCF0E0900B9536A /* BATStableFindings4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BATStableFindings4.h; sourceTree = "<group>"; };
+		0533D6EE1BCF0E1100B9536A /* BATStableFindings4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATStableFindings4.m; sourceTree = "<group>"; };
+		0533D6F01BCF0E2500B9536A /* BATIsolatedHead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATIsolatedHead.m; sourceTree = "<group>"; };
+		0533D6F21BCF0E2E00B9536A /* BATIsolatedHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BATIsolatedHead.h; sourceTree = "<group>"; };
+		0533D6F31BCF0E3E00B9536A /* BATStableFinalOutcome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BATStableFinalOutcome.h; sourceTree = "<group>"; };
+		0533D6F41BCF0E4600B9536A /* BATStableFinalOutcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATStableFinalOutcome.m; sourceTree = "<group>"; };
+		0533D6F61BCFF27600B9536A /* PVIP1Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP1Image.h; sourceTree = "<group>"; };
+		0533D6F71BCFF28000B9536A /* PVIP1Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP1Image.m; sourceTree = "<group>"; };
+		0533D6F91BCFF29400B9536A /* PVIP1Initial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP1Initial.m; sourceTree = "<group>"; };
+		0533D6FB1BCFF29D00B9536A /* PVIP1Initial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP1Initial.h; sourceTree = "<group>"; };
+		0533D6FC1BCFF2AA00B9536A /* PVIP1Hard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP1Hard.h; sourceTree = "<group>"; };
+		0533D6FD1BCFF2B300B9536A /* PVIP1Hard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP1Hard.m; sourceTree = "<group>"; };
+		0533D6FF1BCFF38100B9536A /* PVIP1Soft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP1Soft.m; sourceTree = "<group>"; };
+		0533D7011BCFF38A00B9536A /* PVIP1Soft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP1Soft.h; sourceTree = "<group>"; };
+		0533D7021BCFF3A000B9536A /* PVIP1Pulses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP1Pulses.h; sourceTree = "<group>"; };
+		0533D7031BCFF4E000B9536A /* PVIP1Pulses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP1Pulses.m; sourceTree = "<group>"; };
+		0533D7051BCFF4F500B9536A /* PVIP1OperatingRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP1OperatingRoom.m; sourceTree = "<group>"; };
+		0533D7071BCFF4FD00B9536A /* PVIP1OperatingRoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP1OperatingRoom.h; sourceTree = "<group>"; };
+		0533D7081BCFF50A00B9536A /* PVIP1Imaging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP1Imaging.h; sourceTree = "<group>"; };
+		0533D7091BCFF51200B9536A /* PVIP1Imaging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP1Imaging.m; sourceTree = "<group>"; };
+		0533D70B1BCFF52100B9536A /* PVIP1PulsesOutcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP1PulsesOutcome.m; sourceTree = "<group>"; };
+		0533D70D1BCFF52B00B9536A /* PVIP1PulsesOutcome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP1PulsesOutcome.h; sourceTree = "<group>"; };
+		0533D70E1BCFF53D00B9536A /* PVIP1PulsesIntermediate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP1PulsesIntermediate.h; sourceTree = "<group>"; };
+		0533D70F1BCFF54400B9536A /* PVIP1PulsesIntermediate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP1PulsesIntermediate.m; sourceTree = "<group>"; };
+		0533D7111BCFF55300B9536A /* PVIP1ImagingOutcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP1ImagingOutcome.m; sourceTree = "<group>"; };
+		0533D7131BCFF55A00B9536A /* PVIP1ImagingOutcome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP1ImagingOutcome.h; sourceTree = "<group>"; };
+		0533D7141BCFF56B00B9536A /* PVIP1AnterigraphyOutcome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP1AnterigraphyOutcome.h; sourceTree = "<group>"; };
+		0533D7151BCFF57300B9536A /* PVIP1AnterigraphyOutcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP1AnterigraphyOutcome.m; sourceTree = "<group>"; };
+		0533D7171BCFF58900B9536A /* PVIP1IRadiology.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP1IRadiology.m; sourceTree = "<group>"; };
+		0533D7191BCFF59200B9536A /* PVIP1IRadiology.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP1IRadiology.h; sourceTree = "<group>"; };
+		0533D71A1BD0810000B9536A /* PVIP2Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP2Image.h; sourceTree = "<group>"; };
+		0533D71B1BD0810B00B9536A /* PVIP2Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP2Image.m; sourceTree = "<group>"; };
+		0533D71D1BD0811700B9536A /* PVIP2Initial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP2Initial.h; sourceTree = "<group>"; };
+		0533D71E1BD0812100B9536A /* PVIP2Initial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP2Initial.m; sourceTree = "<group>"; };
+		0533D7201BD0813100B9536A /* PVIP2Operation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP2Operation.h; sourceTree = "<group>"; };
+		0533D7211BD0813B00B9536A /* PVIP2Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP2Operation.m; sourceTree = "<group>"; };
+		0533D7231BD0814800B9536A /* PVIP2OperationOutcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP2OperationOutcome.m; sourceTree = "<group>"; };
+		0533D7251BD0815100B9536A /* PVIP2OperationOutcome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP2OperationOutcome.h; sourceTree = "<group>"; };
+		0533D7261BD1329600B9536A /* PVIP2Left.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP2Left.h; sourceTree = "<group>"; };
+		0533D7271BD1329F00B9536A /* PVIP2Left.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP2Left.m; sourceTree = "<group>"; };
+		0533D7291BD132AC00B9536A /* PVIP2Right.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP2Right.m; sourceTree = "<group>"; };
+		0533D72B1BD132B500B9536A /* PVIP2Right.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP2Right.h; sourceTree = "<group>"; };
+		0533D72C1BD13C8000B9536A /* PVIP2OperationOutcome2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIP2OperationOutcome2.h; sourceTree = "<group>"; };
+		0533D72D1BD13C8900B9536A /* PVIP2OperationOutcome2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIP2OperationOutcome2.m; sourceTree = "<group>"; };
+		0533D72F1BD1551400B9536A /* BPIFinal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPIFinal.m; sourceTree = "<group>"; };
+		0533D7311BD1551E00B9536A /* BPIFinal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPIFinal.h; sourceTree = "<group>"; };
+		0533D7321BD1553B00B9536A /* BPILowRisk2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPILowRisk2.h; sourceTree = "<group>"; };
+		0533D7331BD1554300B9536A /* BPILowRisk2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPILowRisk2.m; sourceTree = "<group>"; };
+		0533D7351BD1555100B9536A /* BPILapGradeV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPILapGradeV.m; sourceTree = "<group>"; };
+		0533D7371BD1555900B9536A /* BPILapGradeV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPILapGradeV.h; sourceTree = "<group>"; };
+		0533D7381BD15F5C00B9536A /* PVIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIImage.h; sourceTree = "<group>"; };
+		0533D7391BD15F6500B9536A /* PVIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIImage.m; sourceTree = "<group>"; };
 		05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbdomnialPelvicCT.m; sourceTree = "<group>"; };
 		05784A2A1BB307CF0096703F /* AbdominalPelvicCT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdominalPelvicCT.h; sourceTree = "<group>"; };
 		05784A2B1BB3092D0096703F /* AbdPelFast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdPelFast.h; sourceTree = "<group>"; };
@@ -639,6 +747,8 @@
 				0533D6861BCBDF2A00B9536A /* PCIP1Image.m */,
 				0533D6C81BCEC73800B9536A /* BluntHepaticPart2Image.h */,
 				0533D6C91BCEC74200B9536A /* BluntHepaticPart2Image.m */,
+				0533D6DD1BCF0D5A00B9536A /* BATInitial.h */,
+				0533D6DE1BCF0D6500B9536A /* BATInitial.m */,
 				0533D6821BCB8D1000B9536A /* PCIP2CardiacOutcome.m */,
 				0533D6841BCB8D1D00B9536A /* PCIP2CardiacOutcome.h */,
 				0533D6881BCBDFC500B9536A /* PCIP1Options.m */,
@@ -659,12 +769,20 @@
 				0533D6A01BCC543E00B9536A /* BPIInitial.m */,
 				0533D6A21BCC544500B9536A /* BPIInitial.h */,
 				0533D6A31BCC545500B9536A /* BPICTAbdomen.h */,
+				0533D7381BD15F5C00B9536A /* PVIImage.h */,
+				0533D7391BD15F6500B9536A /* PVIImage.m */,
 				0533D6A41BCC545D00B9536A /* BPICTAbdomen.m */,
 				0533D6A61BCC547100B9536A /* BPIExploratoryLaparotomy.m */,
 				0533D6A81BCC547800B9536A /* BPIExploratoryLaparotomy.h */,
 				0533D6A91BCC548C00B9536A /* BPINormalPancreas.h */,
 				0533D6AA1BCC549300B9536A /* BPINormalPancreas.m */,
 				0533D6AC1BCC54A000B9536A /* BPIMainDuct.m */,
+				0533D72F1BD1551400B9536A /* BPIFinal.m */,
+				0533D7311BD1551E00B9536A /* BPIFinal.h */,
+				0533D7321BD1553B00B9536A /* BPILowRisk2.h */,
+				0533D7351BD1555100B9536A /* BPILapGradeV.m */,
+				0533D7371BD1555900B9536A /* BPILapGradeV.h */,
+				0533D7331BD1554300B9536A /* BPILowRisk2.m */,
 				0533D6AE1BCC54A600B9536A /* BPIMainDuct.h */,
 				0533D6911BCBE25C00B9536A /* PCIP1InitialOutcome.h */,
 				1DD19E2B1B617A9D001EA1FC /* FirstViewController.h */,
@@ -678,12 +796,67 @@
 				1DE817B31B81031000789790 /* SuspiciousActivity.h */,
 				1DE817B41B81031000789790 /* SuspiciousActivity.m */,
 				1DE817AE1B80F05200789790 /* ProtocolType.m */,
-				0533D6BF1BCE0E4400B9536A /* BATImage.m */,
-				0533D6C11BCE0E4F00B9536A /* BATImage.h */,
+				0533D6D81BCF0C7500B9536A /* BATStable.m */,
 				1DD19E2E1B617A9D001EA1FC /* SecondViewController.m */,
 				1D0FC6B91B694A8700302C6E /* TraumaTypeViewController.h */,
 				1D0FC6BA1B694A9500302C6E /* TraumaTypeViewController.m */,
 				1D0FC6BC1B6997DB00302C6E /* ECGViewController.m */,
+				0533D6D41BCF08A700B9536A /* BSIImage.h */,
+				0533D6E11BCF0DA600B9536A /* BATUnstable.h */,
+				0533D6E21BCF0DAF00B9536A /* BATUnstable.m */,
+				0533D6E61BCF0DCC00B9536A /* BATUnstableFinal.h */,
+				0533D6E71BCF0DE100B9536A /* BATStableFindings2.h */,
+				0533D6E81BCF0DEC00B9536A /* BATStableFindings2.m */,
+				0533D6EA1BCF0DF700B9536A /* BATStableFindings3.m */,
+				0533D6EC1BCF0E0000B9536A /* BATStableFindings3.h */,
+				0533D6EE1BCF0E1100B9536A /* BATStableFindings4.m */,
+				0533D6F21BCF0E2E00B9536A /* BATIsolatedHead.h */,
+				0533D6F61BCFF27600B9536A /* PVIP1Image.h */,
+				0533D6F71BCFF28000B9536A /* PVIP1Image.m */,
+				0533D6F91BCFF29400B9536A /* PVIP1Initial.m */,
+				0533D6FB1BCFF29D00B9536A /* PVIP1Initial.h */,
+				0533D6FC1BCFF2AA00B9536A /* PVIP1Hard.h */,
+				0533D6FD1BCFF2B300B9536A /* PVIP1Hard.m */,
+				0533D6FF1BCFF38100B9536A /* PVIP1Soft.m */,
+				0533D7011BCFF38A00B9536A /* PVIP1Soft.h */,
+				0533D7021BCFF3A000B9536A /* PVIP1Pulses.h */,
+				0533D7031BCFF4E000B9536A /* PVIP1Pulses.m */,
+				0533D7071BCFF4FD00B9536A /* PVIP1OperatingRoom.h */,
+				0533D7081BCFF50A00B9536A /* PVIP1Imaging.h */,
+				0533D7091BCFF51200B9536A /* PVIP1Imaging.m */,
+				0533D70B1BCFF52100B9536A /* PVIP1PulsesOutcome.m */,
+				0533D70D1BCFF52B00B9536A /* PVIP1PulsesOutcome.h */,
+				0533D70F1BCFF54400B9536A /* PVIP1PulsesIntermediate.m */,
+				0533D71A1BD0810000B9536A /* PVIP2Image.h */,
+				0533D71D1BD0811700B9536A /* PVIP2Initial.h */,
+				0533D71E1BD0812100B9536A /* PVIP2Initial.m */,
+				0533D7201BD0813100B9536A /* PVIP2Operation.h */,
+				0533D7261BD1329600B9536A /* PVIP2Left.h */,
+				0533D7271BD1329F00B9536A /* PVIP2Left.m */,
+				0533D7291BD132AC00B9536A /* PVIP2Right.m */,
+				0533D72B1BD132B500B9536A /* PVIP2Right.h */,
+				0533D7211BD0813B00B9536A /* PVIP2Operation.m */,
+				0533D7231BD0814800B9536A /* PVIP2OperationOutcome.m */,
+				0533D7251BD0815100B9536A /* PVIP2OperationOutcome.h */,
+				0533D72C1BD13C8000B9536A /* PVIP2OperationOutcome2.h */,
+				0533D72D1BD13C8900B9536A /* PVIP2OperationOutcome2.m */,
+				0533D71B1BD0810B00B9536A /* PVIP2Image.m */,
+				0533D7111BCFF55300B9536A /* PVIP1ImagingOutcome.m */,
+				0533D7131BCFF55A00B9536A /* PVIP1ImagingOutcome.h */,
+				0533D7151BCFF57300B9536A /* PVIP1AnterigraphyOutcome.m */,
+				0533D7171BCFF58900B9536A /* PVIP1IRadiology.m */,
+				0533D7191BCFF59200B9536A /* PVIP1IRadiology.h */,
+				0533D7141BCFF56B00B9536A /* PVIP1AnterigraphyOutcome.h */,
+				0533D70E1BCFF53D00B9536A /* PVIP1PulsesIntermediate.h */,
+				0533D7051BCFF4F500B9536A /* PVIP1OperatingRoom.m */,
+				0533D6F31BCF0E3E00B9536A /* BATStableFinalOutcome.h */,
+				0533D6F41BCF0E4600B9536A /* BATStableFinalOutcome.m */,
+				0533D6F01BCF0E2500B9536A /* BATIsolatedHead.m */,
+				0533D6ED1BCF0E0900B9536A /* BATStableFindings4.h */,
+				0533D6E41BCF0DC500B9536A /* BATUnstableFinal.m */,
+				0533D6DA1BCF0CED00B9536A /* BATImage.m */,
+				0533D6DC1BCF0CF700B9536A /* BATImage.h */,
+				0533D6D51BCF08AD00B9536A /* BSIImage.m */,
 				1D0FC6BE1B6997E800302C6E /* ECGViewController.h */,
 				1D0FC6C01B69982500302C6E /* LocationViewController.m */,
 				1D0FC6C21B699D8400302C6E /* LocationViewController.h */,
@@ -793,6 +966,8 @@
 				05943C5A1BB756D7005DF268 /* BluntHepticBlush.h */,
 				05943C5B1BB760DC005DF268 /* BluntHepaticScanOutcome.h */,
 				05943C5C1BB760E3005DF268 /* BluntHepaticScanOutcome.m */,
+				0533D6CE1BCEFDDB00B9536A /* operativeIntervention.h */,
+				0533D6CF1BCEFDE400B9536A /* operativeIntervention.m */,
 				05943C5E1BB82D92005DF268 /* BluntHepaticFinal.m */,
 				05943C601BB82D98005DF268 /* BluntHepaticFinal.h */,
 				05943C611BB83516005DF268 /* BluntHepticPart2Initial.h */,
@@ -800,6 +975,8 @@
 				05943C741BBA98AB005DF268 /* PenetratingAbdominalInjuriesImage.m */,
 				05943C761BBA98B2005DF268 /* PenetratingAbdominalInjuriesImage.h */,
 				0533D6521BCA7FA800B9536A /* BHP2PackAndRes.m */,
+				0533D6CB1BCEE5A900B9536A /* BluntHepticImage.m */,
+				0533D6CD1BCEE5B200B9536A /* BluntHepticImage.h */,
 				0533D65E1BCB08DA00B9536A /* BHP2Pringle.m */,
 				0533D67C1BCB89EF00B9536A /* PCIP2Transmed.m */,
 				0533D67E1BCB89F700B9536A /* PCIP2Transmed.h */,
@@ -835,6 +1012,9 @@
 				0533D6B91BCC647600B9536A /* BPIExpectantFinal.m */,
 				0533D6BB1BCC647D00B9536A /* BPIExpectantFinal.h */,
 				0533D6B71BCC624D00B9536A /* BPIExpectant.m */,
+				0533D6D11BCEFE6900B9536A /* angioembolization.m */,
+				0533D6D31BCEFE7000B9536A /* angioembolization.h */,
+				0533D6E01BCF0D8800B9536A /* BATStable.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1025,29 +1205,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DE817AF1B80F05200789790 /* ProtocolType.m in Sources */,
+				0533D7241BD0814800B9536A /* PVIP2OperationOutcome.m in Sources */,
 				05943C571BB749D1005DF268 /* BluntHepaticRepeatCTScan.m in Sources */,
 				1DD19E331B617A9D001EA1FC /* SecondViewController.m in Sources */,
+				0533D6DB1BCF0CED00B9536A /* BATImage.m in Sources */,
 				0533D69F1BCC53EA00B9536A /* BPIImage.m in Sources */,
 				1DCC35481B8D0B3700FD2B82 /* BCVIGradeInjury.m in Sources */,
 				1DCC35441B8D09A500FD2B82 /* BCVIStop.m in Sources */,
 				0533D6CA1BCEC74200B9536A /* BluntHepaticPart2Image.m in Sources */,
+				0533D7361BD1555100B9536A /* BPILapGradeV.m in Sources */,
 				1D82B02C1B934A6F0066546E /* PVIImagingArteriography.m in Sources */,
 				0533D6811BCB8A0900B9536A /* PCIP2Cardiac.m in Sources */,
+				0533D7121BCFF55300B9536A /* PVIP1ImagingOutcome.m in Sources */,
+				0533D6E51BCF0DC500B9536A /* BATUnstableFinal.m in Sources */,
 				1DCC35301B8CDB0900FD2B82 /* BCVISignsRiskFactors.m in Sources */,
 				1DE817B81B810A8E00789790 /* ZoneSelection.m in Sources */,
 				1DCF03571B910F2F005839B4 /* PAISW.m in Sources */,
 				0533D6BE1BCDFB9B00B9536A /* BCVISymptmos.m in Sources */,
 				1DCC352C1B8CD74100FD2B82 /* BCVIImage.m in Sources */,
+				0533D7281BD1329F00B9536A /* PVIP2Left.m in Sources */,
 				0533D6871BCBDF2A00B9536A /* PCIP1Image.m in Sources */,
 				0533D6BA1BCC647600B9536A /* BPIExpectantFinal.m in Sources */,
 				05943C451BB709F3005DF268 /* Angiography.m in Sources */,
 				0533D6AD1BCC54A000B9536A /* BPIMainDuct.m in Sources */,
 				1D0FC6C71B6AD34600302C6E /* EDTCardiacRhythm.m in Sources */,
+				0533D7041BCFF4E000B9536A /* PVIP1Pulses.m in Sources */,
 				1DCF03501B910A95005839B4 /* PAIHemoStable.m in Sources */,
+				0533D6EF1BCF0E1100B9536A /* BATStableFindings4.m in Sources */,
 				1DCC353E1B8D074A00FD2B82 /* BCVIRepeatMultiscaleScan.m in Sources */,
 				1DCC35361B8CE4B200FD2B82 /* BCVICTScanNegative.m in Sources */,
 				0533D68D1BCBE21C00B9536A /* PCIP1WTA.m in Sources */,
 				0533D6AB1BCC549300B9536A /* BPINormalPancreas.m in Sources */,
+				0533D6F51BCF0E4600B9536A /* BATStableFinalOutcome.m in Sources */,
 				0533D6631BCB09C200B9536A /* BHP2SelectiveVessel.m in Sources */,
 				0533D6951BCBE4B000B9536A /* PCIP1Anterior.m in Sources */,
 				0533D66F1BCB2B9000B9536A /* PCIP2CXR.m in Sources */,
@@ -1055,6 +1244,7 @@
 				1DCF034E1B91094F005839B4 /* PenetratingAbdominalInjuryType.m in Sources */,
 				1D0FC6C51B69C87C00302C6E /* deadEnd.m in Sources */,
 				0533D6591BCA81B400B9536A /* BHP2UnControlledBleeding.m in Sources */,
+				0533D72E1BD13C8900B9536A /* PVIP2OperationOutcome2.m in Sources */,
 				05943C631BB8351D005DF268 /* BluntHepticPart2Initial.m in Sources */,
 				1D725B681B8153CC0006521E /* ResuscitativeThoracotomyImage.m in Sources */,
 				05784A331BB30C460096703F /* AbdominalPelvicCTScan.m in Sources */,
@@ -1062,25 +1252,34 @@
 				0533D6831BCB8D1000B9536A /* PCIP2CardiacOutcome.m in Sources */,
 				1D0FC6CB1B6AD9C200302C6E /* CardiacRhythmType.m in Sources */,
 				05943C591BB756D2005DF268 /* BluntHepticBlush.m in Sources */,
+				0533D6FE1BCFF2B300B9536A /* PVIP1Hard.m in Sources */,
 				1D0FC7171B6B0CB000302C6E /* AFPickerView.m in Sources */,
+				0533D6F81BCFF28000B9536A /* PVIP1Image.m in Sources */,
 				0533D6A11BCC543E00B9536A /* BPIInitial.m in Sources */,
 				1DD19E461B618D6E001EA1FC /* UIImage+HTButton.m in Sources */,
+				0533D7061BCFF4F500B9536A /* PVIP1OperatingRoom.m in Sources */,
 				1DCC35381B8D03B400FD2B82 /* BCVISurgicallyAccessible.m in Sources */,
+				0533D7161BCFF57300B9536A /* PVIP1AnterigraphyOutcome.m in Sources */,
 				0533D6711BCB2B9F00B9536A /* PCIP2Hemothorax.m in Sources */,
 				1D0FC6BD1B6997DB00302C6E /* ECGViewController.m in Sources */,
 				1DD19E311B617A9D001EA1FC /* AppDelegate.m in Sources */,
 				1DD19E441B618D6E001EA1FC /* HTPressableButtonPrefs.m in Sources */,
 				0533D65D1BCB046A00B9536A /* BHP2Laparotomy.m in Sources */,
 				05943C4B1BB745F1005DF268 /* BluntHepticInitial.m in Sources */,
+				0533D71F1BD0812100B9536A /* PVIP2Initial.m in Sources */,
 				1D0FC7231B6B935E00302C6E /* CPPickerView.m in Sources */,
 				1D0FC7291B6B9F8900302C6E /* NonTorsoViewController.m in Sources */,
 				1D0FC6D11B6AF49E00302C6E /* OrEndController.m in Sources */,
+				0533D6E31BCF0DB000B9536A /* BATUnstable.m in Sources */,
 				0533D6771BCB872400B9536A /* PCIP2VATS.m in Sources */,
 				1DE817B21B8101EC00789790 /* HardSignsP2.m in Sources */,
 				0533D68F1BCBE23000B9536A /* PCIP1InitialAssessment.m in Sources */,
 				0533D6A71BCC547100B9536A /* BPIExploratoryLaparotomy.m in Sources */,
+				0533D7101BCFF54400B9536A /* PVIP1PulsesIntermediate.m in Sources */,
 				1DCF03551B910F24005839B4 /* PAIGSW.m in Sources */,
+				0533D7001BCFF38100B9536A /* PVIP1Soft.m in Sources */,
 				0533D6751BCB855500B9536A /* PCIP2Outcome.m in Sources */,
+				0533D7181BCFF58900B9536A /* PVIP1IRadiology.m in Sources */,
 				1DD19E381B617AFF001EA1FC /* main.m in Sources */,
 				0533D6531BCA7FA800B9536A /* BHP2PackAndRes.m in Sources */,
 				1DE817BE1B810CC600789790 /* Zone2.m in Sources */,
@@ -1091,44 +1290,61 @@
 				0533D6B51BCC607F00B9536A /* BPITransection.m in Sources */,
 				1DCF035D1B912476005839B4 /* operatingRoom.m in Sources */,
 				0533D65F1BCB08DA00B9536A /* BHP2Pringle.m in Sources */,
+				0533D6EB1BCF0DF700B9536A /* BATStableFindings3.m in Sources */,
 				0533D6B81BCC624D00B9536A /* BPIExpectant.m in Sources */,
 				0533D6891BCBDFC500B9536A /* PCIP1Options.m in Sources */,
 				1D82B0201B93435E0066546E /* PVIHard.m in Sources */,
+				0533D6D01BCEFDE400B9536A /* operativeIntervention.m in Sources */,
+				0533D6F11BCF0E2500B9536A /* BATIsolatedHead.m in Sources */,
 				1DCC353C1B8D052E00FD2B82 /* BCVIInjuryHealed.m in Sources */,
+				0533D6D61BCF08AD00B9536A /* BSIImage.m in Sources */,
+				0533D6CC1BCEE5A900B9536A /* BluntHepticImage.m in Sources */,
 				1D0FC6C11B69982500302C6E /* LocationViewController.m in Sources */,
 				0533D6A51BCC545D00B9536A /* BPICTAbdomen.m in Sources */,
+				0533D73A1BD15F6500B9536A /* PVIImage.m in Sources */,
+				0533D7221BD0813B00B9536A /* PVIP2Operation.m in Sources */,
 				05784A351BB37FB20096703F /* Blush.m in Sources */,
 				1DCC35421B8D08BB00FD2B82 /* BCVIOperate.m in Sources */,
 				05943C511BB746EF005DF268 /* BLTHepticUnstable.m in Sources */,
+				0533D6DF1BCF0D6500B9536A /* BATInitial.m in Sources */,
 				0533D69B1BCBE4F500B9536A /* PCIP1FinalOptions.m in Sources */,
 				1DD19E431B618D6E001EA1FC /* HTPressableButton.m in Sources */,
 				0533D67B1BCB893A00B9536A /* PCIP2OR.m in Sources */,
 				0533D66B1BCB2B7100B9536A /* PCIP2Pneumothorax.m in Sources */,
+				0533D7301BD1551400B9536A /* BPIFinal.m in Sources */,
 				1D82B0281B93497A0066546E /* PVIImaging.m in Sources */,
 				05943C5F1BB82D92005DF268 /* BluntHepaticFinal.m in Sources */,
+				0533D6FA1BCFF29400B9536A /* PVIP1Initial.m in Sources */,
 				1D82B0221B9343690066546E /* PVISoft.m in Sources */,
 				1DD19E451B618D6E001EA1FC /* UIColor+HTColor.m in Sources */,
 				1DE817BA1B810C9500789790 /* Zone1.m in Sources */,
+				0533D7341BD1554300B9536A /* BPILowRisk2.m in Sources */,
 				1D82B0261B9343900066546E /* PVIOperatingRoom.m in Sources */,
 				0533D6991BCBE4D000B9536A /* PCIP1Lateral.m in Sources */,
 				05784A2D1BB309350096703F /* AbdPelFast.m in Sources */,
 				1D0FC72E1B6BA20F00302C6E /* Tamponade.m in Sources */,
+				0533D70C1BCFF52100B9536A /* PVIP1PulsesOutcome.m in Sources */,
 				05943C4D1BB746D7005DF268 /* BLTHepticStable.m in Sources */,
 				05943C751BBA98AB005DF268 /* PenetratingAbdominalInjuriesImage.m in Sources */,
 				1D0FC7241B6B935E00302C6E /* CPPickerViewCell.m in Sources */,
 				1DCF03591B9118CA005839B4 /* PAIFinal.m in Sources */,
+				0533D71C1BD0810B00B9536A /* PVIP2Image.m in Sources */,
+				0533D70A1BCFF51200B9536A /* PVIP1Imaging.m in Sources */,
 				0533D6C41BCE191100B9536A /* FinalAbdominal.m in Sources */,
 				0533D67D1BCB89EF00B9536A /* PCIP2Transmed.m in Sources */,
 				05784A2F1BB30B230096703F /* AbdPelRepeatFast.m in Sources */,
 				0533D6691BCB2B5B00B9536A /* PCIP2Initial.m in Sources */,
+				0533D6E91BCF0DEC00B9536A /* BATStableFindings2.m in Sources */,
+				0533D6D21BCEFE6900B9536A /* angioembolization.m in Sources */,
 				1D0FC6CD1B6AEA1400302C6E /* SBPContorller.m in Sources */,
+				0533D72A1BD132AC00B9536A /* PVIP2Right.m in Sources */,
 				05943C471BB70C19005DF268 /* Observation.m in Sources */,
 				05943C5D1BB760E3005DF268 /* BluntHepaticScanOutcome.m in Sources */,
 				05943C531BB748FB005DF268 /* BluntHepaticObservation.m in Sources */,
 				1D0FC7271B6B9F7600302C6E /* TorsoViewController.m in Sources */,
 				05784A291BB307BE0096703F /* AbdomnialPelvicCT.m in Sources */,
 				1DE817C01B810CCF00789790 /* Zone3.m in Sources */,
-				0533D6C01BCE0E4400B9536A /* BATImage.m in Sources */,
+				0533D6D91BCF0C7500B9536A /* BATStable.m in Sources */,
 				1DD19E321B617A9D001EA1FC /* FirstViewController.m in Sources */,
 				0533D6C61BCEBBCE00B9536A /* PCIP2Image.m in Sources */,
 				0533D6651BCB0AFF00B9536A /* BHP2SHAL.m in Sources */,

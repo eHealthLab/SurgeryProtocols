@@ -28,6 +28,12 @@
 @property(strong, nonatomic) NSString *PCIP1Type;
 @property(strong, nonatomic) NSString *PCIP1Final;
 @property(strong, nonatomic) NSString *BPIExpectantFinal;
+@property(strong, nonatomic) NSString *BATStableFinalOutcome;
+@property(strong, nonatomic) NSString *PVIP1ImagingOutcome;
+@property(strong, nonatomic) NSString *PVIP1ImagingType;
+@property(strong, nonatomic) NSString *PVIP2OperatioOutcome;
+@property(strong, nonatomic) NSString *PVIP2OperatioOutcome2;
+
 
 @end
 

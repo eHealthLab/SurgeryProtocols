@@ -30,8 +30,10 @@
     self.nextButton.shadowHeight = self.nextButton.frame.size.height * 0.17;
     self.nextButton.buttonColor = [UIColor ht_bitterSweetColor];
     self.nextButton.shadowColor = [UIColor ht_bitterSweetDarkColor];
+
     
-    [self.nextButton setTitle:@"Next" forState:UIControlStateNormal];
+    self.label.text = delegate.BluntHepaticLabel;
+    self.label.numberOfLines=5;
     
 }
 
@@ -55,7 +57,7 @@
     NSString *choice = [self.BluntHepaticArray objectAtIndex:[self.BluntHepaticPicker selectedRowInComponent:0]];
     if ([choice isEqualToString:@"Positive"] && [delegate.BluntHepaticScanOutcome isEqualToString:@"LiverAbscess"]) {
         
-        //delegate.BluntHepaticLabel = @"Successful Management";
+        
         UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BluntHepaticFinal"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
@@ -93,7 +95,7 @@
     }
     
     else {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"angioembolization"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BluntHepaticFinal"];
         delegate.BluntHepaticLabel = @"Laparoscopy with drainage and Continued bilious drainage";
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];

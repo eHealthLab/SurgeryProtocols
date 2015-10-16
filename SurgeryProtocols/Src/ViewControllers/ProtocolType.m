@@ -89,7 +89,7 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else if ([choice isEqualToString:@"Peripheral Vascular Injury – Part 1"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PERIPHERALVASCULARINJURYPART 1"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PVIP1Image"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -99,7 +99,7 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else if ([choice isEqualToString:@"Peripheral Vascular Injury – Part 2"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PERIPHERALVASCULARINJURYPART 2"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PVIP2Image"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -119,7 +119,7 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else if ([choice isEqualToString:@"Blunt Splenic Injury"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BATImage"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BSIImage"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -149,7 +149,7 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     else if ([choice isEqualToString:@"Blunt Pancreatic Injury"]) {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BLUNTPANCREATICINJURY"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BPIImage"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";

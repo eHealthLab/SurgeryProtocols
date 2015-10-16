@@ -48,6 +48,9 @@
     
     NSString *choice = [self.suspiciousActivityArray objectAtIndex:[self.suspiciousActivityView selectedRowInComponent:0]];
     if ([choice isEqualToString:@"Yes"]) {
+        
+        
+        
         UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"zoneSelection"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];

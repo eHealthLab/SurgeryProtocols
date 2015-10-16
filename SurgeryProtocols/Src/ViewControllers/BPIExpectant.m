@@ -64,7 +64,7 @@
     
     [self.navigationController pushViewController:uiViewController animated:YES];
     
-    if ([choice isEqualToString:@"Normal Pancreas"]) {
+    if ([choice isEqualToString:@"Pesudocyst"]) {
         
         delegate.BPIExpectantFinal=@"Cystenterostomy";
         

@@ -55,7 +55,7 @@
     NSString *choice = [self.BluntHepaticArray objectAtIndex:[self.BluntHepaticPicker selectedRowInComponent:0]];
     if ([choice isEqualToString:@"LiverAbscess"]) {
         
-        delegate.self.BluntHepaticScanOutcome = @"LiverAbscess";
+        delegate.BluntHepaticScanOutcome = @"LiverAbscess";
         delegate.BluntHepaticLabel = @"Successful Management";
         UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BluntHepaticScanOutcome"];
         
@@ -68,9 +68,9 @@
     }
     
     else if ([choice isEqualToString:@"Biloma"]) {
-        delegate.self.BluntHepaticScanOutcome = @"Biloma";
+        delegate.BluntHepaticScanOutcome = @"Biloma";
         delegate.BluntHepaticLabel = @"Continued bilious drainage";
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BluntHepaticRepeatCTScan"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BluntHepaticScanOutcome"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
@@ -81,9 +81,9 @@
     }
     
     else {
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"angioembolization"];
-        delegate.BluntHepaticLabel = @"Laparoscopy with drainage and Continued bilious drainage";
-        delegate.self.BluntHepaticScanOutcome = @"Bile ascites/hemoperitoneum";
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BluntHepaticScanOutcome"];
+        delegate.BluntHepaticLabel = @"Laparoscopy with drainage \n Continued bilious drainage";
+        delegate.BluntHepaticScanOutcome = @"Bile ascites/hemoperitoneum";
         //delegate.AbdominalInjuryFinalOutcomeLabel = @"Conduct a CT Scan";
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];

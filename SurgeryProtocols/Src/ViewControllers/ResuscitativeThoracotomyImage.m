@@ -13,20 +13,6 @@
 
 -(void)viewDidLoad
 {
-    /*UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"UCH_13_Shandra_Wilson_468.Jpeg"] drawInRect:self.view.bounds];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    [image drawAtPoint:CGPointZero blendMode:kCGBlendModeOverlay alpha:0.3];
-    UIGraphicsEndImageContext();
-    
-    self.view.backgroundColor = [[UIColor colorWithPatternImage:image] colorWithAlphaComponent:0.8];*/
-    
-    
-    
-    /*UIImageView *imageView = [[UIImageView alloc] initW];
-    imageView.frame = CGRectMake(0, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height);
-    imageView.image = [UIImageView ]*/
-    
     self.scrollView.delegate = self;
 
     self.scrollView.minimumZoomScale=1.0;
@@ -49,15 +35,5 @@
 {
     return self.image;
 }
-/*
-- (IBAction)handlePan:(UIGestureRecognizer *)sender {
-    NSLog(@"panning\n");
-    CGPoint netTranslation;
-    CGPoint translation = [(UIPanGestureRecognizer *) sender translationInView:self.image];
-    sender.view.transform =CGAffineTransformMakeTranslation(netTranslation.x + translation.x, netTranslation.y + translation.y);
-    if (sender.state == UIGestureRecognizerStateEnded) {
-        netTranslation.x += translation.x;
-        netTranslation.y += translation.y;
-    }
-}*/
+
 @end

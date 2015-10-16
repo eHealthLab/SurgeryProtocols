@@ -67,21 +67,9 @@
         [self.navigationController pushViewController:uiViewController animated:YES];
     }
     
-    else if ([choice isEqualToString:@"BIPExpectant"]) {
-        
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BPIMainDuct"];
-        
-        UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
-        barButton.title=@"Back";
-        
-        self.navigationController.navigationBar.topItem.backBarButtonItem = barButton;
-        
-        [self.navigationController pushViewController:uiViewController animated:YES];
-    }
-    
     else {
         
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BPITransection"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BPIExpectant"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";
