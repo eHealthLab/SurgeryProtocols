@@ -14,9 +14,12 @@
 #import "HTPressableButton.h"
 #import "UIColor+HTColor.h"
 
-@interface BATImage: UIViewController
+@interface BATImage: UIViewController<UIScrollViewDelegate>
 
 @property (strong, nonatomic) IBOutlet HTPressableButton *nextButton;
+@property (strong, nonatomic) IBOutlet UIImageView *image;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 
 @end

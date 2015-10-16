@@ -26,8 +26,18 @@
     self.nextButton.shadowColor = [UIColor ht_bitterSweetDarkColor];
     
     [self.nextButton setTitle:@"Next" forState:UIControlStateNormal];
+    self.scrollView.delegate = self;
     
-    
+    self.scrollView.minimumZoomScale=1.0;
+    self.scrollView.maximumZoomScale=6.0;
 }
+
+
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.image;
+}
+
+
 @end
 

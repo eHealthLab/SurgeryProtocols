@@ -17,7 +17,10 @@
 
 -(void)viewDidLoad
 {
+    self.scrollView.delegate = self;
     
+    self.scrollView.minimumZoomScale=1.0;
+    self.scrollView.maximumZoomScale=6.0;
     delegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
     
     self.nextButton.cornerRadius = 10.0;
@@ -29,6 +32,14 @@
     
     
 }
+
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.image;
+}
+
+
+
 @end
 
 

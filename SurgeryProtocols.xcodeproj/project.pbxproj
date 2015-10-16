@@ -82,6 +82,12 @@
 		0533D7341BD1554300B9536A /* BPILowRisk2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7331BD1554300B9536A /* BPILowRisk2.m */; };
 		0533D7361BD1555100B9536A /* BPILapGradeV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7351BD1555100B9536A /* BPILapGradeV.m */; };
 		0533D73A1BD15F6500B9536A /* PVIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7391BD15F6500B9536A /* PVIImage.m */; };
+		0533D73E1BD181AF00B9536A /* Question1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D73D1BD181AF00B9536A /* Question1.m */; };
+		0533D7401BD181B900B9536A /* Question2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D73F1BD181B900B9536A /* Question2.m */; };
+		0533D7421BD181C200B9536A /* Question3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7411BD181C200B9536A /* Question3.m */; };
+		0533D7441BD181CA00B9536A /* Question4.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7431BD181CA00B9536A /* Question4.m */; };
+		0533D7461BD181D300B9536A /* Question5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7451BD181D300B9536A /* Question5.m */; };
+		0533D7481BD181DC00B9536A /* Question6.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7471BD181DC00B9536A /* Question6.m */; };
 		05784A291BB307BE0096703F /* AbdomnialPelvicCT.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */; };
 		05784A2D1BB309350096703F /* AbdPelFast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A2C1BB309350096703F /* AbdPelFast.m */; };
 		05784A2F1BB30B230096703F /* AbdPelRepeatFast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A2E1BB30B230096703F /* AbdPelRepeatFast.m */; };
@@ -369,6 +375,18 @@
 		0533D7371BD1555900B9536A /* BPILapGradeV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPILapGradeV.h; sourceTree = "<group>"; };
 		0533D7381BD15F5C00B9536A /* PVIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVIImage.h; sourceTree = "<group>"; };
 		0533D7391BD15F6500B9536A /* PVIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVIImage.m; sourceTree = "<group>"; };
+		0533D73D1BD181AF00B9536A /* Question1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question1.m; sourceTree = "<group>"; };
+		0533D73F1BD181B900B9536A /* Question2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question2.m; sourceTree = "<group>"; };
+		0533D7411BD181C200B9536A /* Question3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question3.m; sourceTree = "<group>"; };
+		0533D7431BD181CA00B9536A /* Question4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question4.m; sourceTree = "<group>"; };
+		0533D7451BD181D300B9536A /* Question5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question5.m; sourceTree = "<group>"; };
+		0533D7471BD181DC00B9536A /* Question6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question6.m; sourceTree = "<group>"; };
+		0533D7491BD181E400B9536A /* Question1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question1.h; sourceTree = "<group>"; };
+		0533D74A1BD181EC00B9536A /* Question2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question2.h; sourceTree = "<group>"; };
+		0533D74B1BD181F500B9536A /* Question3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question3.h; sourceTree = "<group>"; };
+		0533D74C1BD181FD00B9536A /* Question4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question4.h; sourceTree = "<group>"; };
+		0533D74D1BD1820500B9536A /* Question5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question5.h; sourceTree = "<group>"; };
+		0533D74E1BD1820E00B9536A /* Question6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question6.h; sourceTree = "<group>"; };
 		05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbdomnialPelvicCT.m; sourceTree = "<group>"; };
 		05784A2A1BB307CF0096703F /* AbdominalPelvicCT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdominalPelvicCT.h; sourceTree = "<group>"; };
 		05784A2B1BB3092D0096703F /* AbdPelFast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdPelFast.h; sourceTree = "<group>"; };
@@ -1015,6 +1033,18 @@
 				0533D6D11BCEFE6900B9536A /* angioembolization.m */,
 				0533D6D31BCEFE7000B9536A /* angioembolization.h */,
 				0533D6E01BCF0D8800B9536A /* BATStable.h */,
+				0533D73D1BD181AF00B9536A /* Question1.m */,
+				0533D73F1BD181B900B9536A /* Question2.m */,
+				0533D7431BD181CA00B9536A /* Question4.m */,
+				0533D7451BD181D300B9536A /* Question5.m */,
+				0533D7471BD181DC00B9536A /* Question6.m */,
+				0533D7491BD181E400B9536A /* Question1.h */,
+				0533D74A1BD181EC00B9536A /* Question2.h */,
+				0533D74B1BD181F500B9536A /* Question3.h */,
+				0533D74D1BD1820500B9536A /* Question5.h */,
+				0533D74E1BD1820E00B9536A /* Question6.h */,
+				0533D74C1BD181FD00B9536A /* Question4.h */,
+				0533D7411BD181C200B9536A /* Question3.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1226,6 +1256,7 @@
 				0533D7281BD1329F00B9536A /* PVIP2Left.m in Sources */,
 				0533D6871BCBDF2A00B9536A /* PCIP1Image.m in Sources */,
 				0533D6BA1BCC647600B9536A /* BPIExpectantFinal.m in Sources */,
+				0533D73E1BD181AF00B9536A /* Question1.m in Sources */,
 				05943C451BB709F3005DF268 /* Angiography.m in Sources */,
 				0533D6AD1BCC54A000B9536A /* BPIMainDuct.m in Sources */,
 				1D0FC6C71B6AD34600302C6E /* EDTCardiacRhythm.m in Sources */,
@@ -1237,6 +1268,7 @@
 				0533D68D1BCBE21C00B9536A /* PCIP1WTA.m in Sources */,
 				0533D6AB1BCC549300B9536A /* BPINormalPancreas.m in Sources */,
 				0533D6F51BCF0E4600B9536A /* BATStableFinalOutcome.m in Sources */,
+				0533D7441BD181CA00B9536A /* Question4.m in Sources */,
 				0533D6631BCB09C200B9536A /* BHP2SelectiveVessel.m in Sources */,
 				0533D6951BCBE4B000B9536A /* PCIP1Anterior.m in Sources */,
 				0533D66F1BCB2B9000B9536A /* PCIP2CXR.m in Sources */,
@@ -1291,6 +1323,7 @@
 				1DCF035D1B912476005839B4 /* operatingRoom.m in Sources */,
 				0533D65F1BCB08DA00B9536A /* BHP2Pringle.m in Sources */,
 				0533D6EB1BCF0DF700B9536A /* BATStableFindings3.m in Sources */,
+				0533D7401BD181B900B9536A /* Question2.m in Sources */,
 				0533D6B81BCC624D00B9536A /* BPIExpectant.m in Sources */,
 				0533D6891BCBDFC500B9536A /* PCIP1Options.m in Sources */,
 				1D82B0201B93435E0066546E /* PVIHard.m in Sources */,
@@ -1303,6 +1336,7 @@
 				0533D6A51BCC545D00B9536A /* BPICTAbdomen.m in Sources */,
 				0533D73A1BD15F6500B9536A /* PVIImage.m in Sources */,
 				0533D7221BD0813B00B9536A /* PVIP2Operation.m in Sources */,
+				0533D7461BD181D300B9536A /* Question5.m in Sources */,
 				05784A351BB37FB20096703F /* Blush.m in Sources */,
 				1DCC35421B8D08BB00FD2B82 /* BCVIOperate.m in Sources */,
 				05943C511BB746EF005DF268 /* BLTHepticUnstable.m in Sources */,
@@ -1315,6 +1349,7 @@
 				1D82B0281B93497A0066546E /* PVIImaging.m in Sources */,
 				05943C5F1BB82D92005DF268 /* BluntHepaticFinal.m in Sources */,
 				0533D6FA1BCFF29400B9536A /* PVIP1Initial.m in Sources */,
+				0533D7421BD181C200B9536A /* Question3.m in Sources */,
 				1D82B0221B9343690066546E /* PVISoft.m in Sources */,
 				1DD19E451B618D6E001EA1FC /* UIColor+HTColor.m in Sources */,
 				1DE817BA1B810C9500789790 /* Zone1.m in Sources */,
@@ -1347,6 +1382,7 @@
 				0533D6D91BCF0C7500B9536A /* BATStable.m in Sources */,
 				1DD19E321B617A9D001EA1FC /* FirstViewController.m in Sources */,
 				0533D6C61BCEBBCE00B9536A /* PCIP2Image.m in Sources */,
+				0533D7481BD181DC00B9536A /* Question6.m in Sources */,
 				0533D6651BCB0AFF00B9536A /* BHP2SHAL.m in Sources */,
 				1D725B6A1B81550E0006521E /* PenetratingNeckInjuriesImage.m in Sources */,
 				1D725B6E1B8158940006521E /* TEInjury.m in Sources */,
