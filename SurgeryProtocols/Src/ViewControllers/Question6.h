@@ -20,7 +20,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 - (IBAction)submitButtonPressed:(id)sender;
-@property (weak, nonatomic) IBOutlet UITextView *commentField;
+@property (weak, nonatomic) IBOutlet UITextField *commentField;
+
 
 
 @end

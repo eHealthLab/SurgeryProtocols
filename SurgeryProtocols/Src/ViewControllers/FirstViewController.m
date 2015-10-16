@@ -35,6 +35,16 @@
     
     [self.startButton setTitle:@"Start Here" forState:UIControlStateNormal];
     
+    self.feedbackButton.cornerRadius = 10.0;
+    self.feedbackButton.shadowHeight = self.startButton.frame.size.height * 0.17;
+    
+    
+    self.feedbackButton.buttonColor = [UIColor ht_bitterSweetColor];
+    self.feedbackButton.shadowColor = [UIColor ht_bitterSweetDarkColor];
+    
+    [self.feedbackButton setTitle:@"Feedback" forState:UIControlStateNormal];
+    
+
     
     
     

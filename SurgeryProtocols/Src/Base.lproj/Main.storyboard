@@ -68,6 +68,7 @@ protocol</string>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="81-dashboard.png" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="feedbackButton" destination="YiB-Zm-aDt" id="m4A-L0-WPX"/>
                         <outlet property="startButton" destination="y6h-14-tO9" id="eC4-6h-HkJ"/>
                     </connections>
                 </viewController>
@@ -158,28 +159,28 @@ to share?</string>
                                     <action selector="submitButtonPressed:" destination="7Vz-qQ-cOE" eventType="touchUpInside" id="jZt-kS-wMB"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MC2-V6-dnF">
-                                <rect key="frame" x="189" y="203" width="224" height="121"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Please type here." textAlignment="justified" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="em8-LQ-b5y">
+                                <rect key="frame" x="159" y="215" width="309" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="121" id="VgN-I6-fyt"/>
-                                    <constraint firstAttribute="width" constant="224" id="dT6-ze-iHQ"/>
+                                    <constraint firstAttribute="width" constant="309" id="Wvi-zY-b7W"/>
+                                    <constraint firstAttribute="height" constant="150" id="cnn-4U-Ucv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.88567313759999999" green="0.88567313759999999" blue="0.88567313759999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="em8-LQ-b5y" firstAttribute="top" secondItem="TAV-Iw-PcU" secondAttribute="bottom" constant="2" id="2Vw-TD-o0a"/>
                             <constraint firstAttribute="centerX" secondItem="TAV-Iw-PcU" secondAttribute="centerX" constant="4" id="5Fe-XL-Vgd"/>
-                            <constraint firstItem="TAV-Iw-PcU" firstAttribute="centerX" secondItem="MC2-V6-dnF" secondAttribute="centerX" constant="-5" id="6QR-Q6-a8A"/>
-                            <constraint firstItem="MC2-V6-dnF" firstAttribute="top" secondItem="TAV-Iw-PcU" secondAttribute="bottom" constant="-10" id="EUP-7G-zDm"/>
+                            <constraint firstItem="em8-LQ-b5y" firstAttribute="centerX" secondItem="TAV-Iw-PcU" secondAttribute="centerX" constant="17.5" id="80s-nd-NeA"/>
                             <constraint firstItem="uKA-T0-AgS" firstAttribute="centerX" secondItem="TAV-Iw-PcU" secondAttribute="centerX" id="YO3-aM-jWV"/>
                             <constraint firstItem="TAV-Iw-PcU" firstAttribute="top" secondItem="aQW-76-Tdv" secondAttribute="bottom" constant="29" id="hrh-GL-emV"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="commentField" destination="MC2-V6-dnF" id="8Rp-LB-6M0"/>
+                        <outlet property="commentField" destination="em8-LQ-b5y" id="VRN-sx-MsZ"/>
                         <outlet property="label" destination="TAV-Iw-PcU" id="u3O-Uu-NO1"/>
                         <outlet property="submitButton" destination="uKA-T0-AgS" id="09f-tw-Fe4"/>
                     </connections>

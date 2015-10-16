@@ -13,6 +13,7 @@
 @interface FirstViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet HTPressableButton *startButton;
+@property (weak, nonatomic) IBOutlet HTPressableButton *feedbackButton;
 
 
 
