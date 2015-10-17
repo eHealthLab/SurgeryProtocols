@@ -17,6 +17,9 @@
 @property (strong, nonatomic) IBOutlet HTPressableButton *nextButton;
 @property(strong, nonatomic) NSArray *rhythmArray;
 - (IBAction)nextButtonPressed:(id)sender;
+- (IBAction)moreInfoButtonPressed:(id)sender;
+
+
 @end
 
 #endif

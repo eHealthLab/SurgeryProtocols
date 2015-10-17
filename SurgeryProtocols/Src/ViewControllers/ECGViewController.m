@@ -72,4 +72,16 @@
     
     
 }
+
+-(IBAction)moreInfoButtonPressed:(id)sender {
+    
+    UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MoreInfoController"];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:uiViewController];
+    
+    nav.modalPresentationStyle = UIModalPresentationFullScreen;
+    
+    [self presentViewController:nav animated:NO completion:nil];
+    
+}
 @end

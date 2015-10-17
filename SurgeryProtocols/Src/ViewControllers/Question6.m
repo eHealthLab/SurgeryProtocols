@@ -25,7 +25,7 @@
     self.submitButton.buttonColor = [UIColor ht_bitterSweetColor];
     self.submitButton.shadowColor = [UIColor ht_bitterSweetDarkColor];
     
-    [self.submitButton setTitle:@"Next" forState:UIControlStateNormal];
+    [self.submitButton setTitle:@"Submit" forState:UIControlStateNormal];
     
 }
 

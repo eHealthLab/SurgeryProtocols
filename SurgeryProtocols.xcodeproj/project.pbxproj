@@ -88,6 +88,7 @@
 		0533D7441BD181CA00B9536A /* Question4.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7431BD181CA00B9536A /* Question4.m */; };
 		0533D7461BD181D300B9536A /* Question5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7451BD181D300B9536A /* Question5.m */; };
 		0533D7481BD181DC00B9536A /* Question6.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7471BD181DC00B9536A /* Question6.m */; };
+		053F057A1BD20A6600443251 /* MoreInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053F05791BD20A6600443251 /* MoreInfoController.m */; };
 		05784A291BB307BE0096703F /* AbdomnialPelvicCT.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */; };
 		05784A2D1BB309350096703F /* AbdPelFast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A2C1BB309350096703F /* AbdPelFast.m */; };
 		05784A2F1BB30B230096703F /* AbdPelRepeatFast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A2E1BB30B230096703F /* AbdPelRepeatFast.m */; };
@@ -387,6 +388,8 @@
 		0533D74C1BD181FD00B9536A /* Question4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question4.h; sourceTree = "<group>"; };
 		0533D74D1BD1820500B9536A /* Question5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question5.h; sourceTree = "<group>"; };
 		0533D74E1BD1820E00B9536A /* Question6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question6.h; sourceTree = "<group>"; };
+		053F05781BD20A5900443251 /* MoreInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreInfoController.h; sourceTree = "<group>"; };
+		053F05791BD20A6600443251 /* MoreInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInfoController.m; sourceTree = "<group>"; };
 		05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbdomnialPelvicCT.m; sourceTree = "<group>"; };
 		05784A2A1BB307CF0096703F /* AbdominalPelvicCT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdominalPelvicCT.h; sourceTree = "<group>"; };
 		05784A2B1BB3092D0096703F /* AbdPelFast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdPelFast.h; sourceTree = "<group>"; };
@@ -773,6 +776,8 @@
 				0533D68A1BCBDFCB00B9536A /* PCIP1Options.h */,
 				0533D68B1BCBE21400B9536A /* PCIP1WTA.h */,
 				0533D68C1BCBE21C00B9536A /* PCIP1WTA.m */,
+				053F05781BD20A5900443251 /* MoreInfoController.h */,
+				053F05791BD20A6600443251 /* MoreInfoController.m */,
 				0533D68E1BCBE23000B9536A /* PCIP1InitialAssessment.m */,
 				0533D6901BCBE23700B9536A /* PCIP1InitialAssessment.h */,
 				0533D6921BCBE26400B9536A /* PCIP1InitialOutcome.m */,
@@ -1315,6 +1320,7 @@
 				1DD19E381B617AFF001EA1FC /* main.m in Sources */,
 				0533D6531BCA7FA800B9536A /* BHP2PackAndRes.m in Sources */,
 				1DE817BE1B810CC600789790 /* Zone2.m in Sources */,
+				053F057A1BD20A6600443251 /* MoreInfoController.m in Sources */,
 				1DCC35321B8CDD0B00FD2B82 /* BCVIEmergentYes.m in Sources */,
 				1D82B01C1B93432A0066546E /* PVIAssessment.m in Sources */,
 				1DE817B51B81031000789790 /* SuspiciousActivity.m in Sources */,
@@ -1518,13 +1524,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Sheana Bull (8B2Z9YK54P)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sheana Bull (8B2Z9YK54P)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/SurgeryProtocols/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2f1d2492-2626-47a4-ba07-f7071e51acff";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1533,13 +1539,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Sheana Bull (8B2Z9YK54P)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sheana Bull (8B2Z9YK54P)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/SurgeryProtocols/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2f1d2492-2626-47a4-ba07-f7071e51acff";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

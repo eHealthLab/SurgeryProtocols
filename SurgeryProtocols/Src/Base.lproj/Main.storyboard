@@ -32,14 +32,6 @@
                                     <segue destination="AY0-y3-cbI" kind="show" id="Nrb-W5-Rh4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="140" y="402" width="366" height="39"/>
-                                <string key="text">Press to explore the Resuscitative Thoracotomy 
-protocol</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6h-14-tO9" customClass="HTPressableButton">
                                 <rect key="frame" x="213" y="267" width="174" height="52"/>
                                 <constraints>
@@ -54,12 +46,23 @@ protocol</string>
                                     <segue destination="SUg-sE-6qH" kind="show" id="xtW-Sg-f8F"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Press to explore the trauma protocols" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                                <rect key="frame" x="178" y="401" width="283" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="0L0-nb-WZV"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="283" id="EH1-qn-7td"/>
+                                    <constraint firstAttribute="width" constant="283" id="dej-wk-rEs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YiB-Zm-aDt" firstAttribute="centerX" secondItem="A5M-7J-77L" secondAttribute="centerX" constant="-23" id="1ed-OT-PGM"/>
+                            <constraint firstItem="YiB-Zm-aDt" firstAttribute="centerX" secondItem="A5M-7J-77L" secondAttribute="centerX" constant="-19.5" id="1ed-OT-PGM"/>
                             <constraint firstItem="YiB-Zm-aDt" firstAttribute="top" secondItem="y6h-14-tO9" secondAttribute="bottom" constant="20" id="JJ4-uZ-tBW"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="y6h-14-tO9" secondAttribute="centerX" constant="23" id="cJb-aQ-ykl"/>
+                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="y6h-14-tO9" secondAttribute="centerX" constant="19.5" id="cJb-aQ-ykl"/>
                             <constraint firstItem="YiB-Zm-aDt" firstAttribute="centerX" secondItem="y6h-14-tO9" secondAttribute="centerX" id="gcC-fu-pcs"/>
                             <constraint firstAttribute="centerY" secondItem="y6h-14-tO9" secondAttribute="centerY" constant="5" id="lDj-eA-Kdy"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="YiB-Zm-aDt" secondAttribute="bottom" constant="9" id="ni5-ji-wmy"/>
@@ -8185,14 +8188,25 @@ and CPR &lt; 10min</string>
                                     <action selector="nextButtonPressed:" destination="Ixu-42-znA" eventType="touchUpInside" id="TXt-3w-qsG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEU-ui-usf">
+                                <rect key="frame" x="388" y="130" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moreInfoButtonPressed:" destination="Ixu-42-znA" eventType="touchUpInside" id="WF1-da-Pp5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.87392064140000003" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dGv-6Z-Wof" firstAttribute="centerX" secondItem="Ii1-Xl-WZS" secondAttribute="centerX" constant="28" id="05Q-Os-Lju"/>
                             <constraint firstItem="dGv-6Z-Wof" firstAttribute="top" secondItem="Ii1-Xl-WZS" secondAttribute="bottom" constant="23" id="1Ed-T4-KuP"/>
                             <constraint firstItem="H5g-30-HLD" firstAttribute="top" secondItem="h9D-c8-jo4" secondAttribute="bottom" constant="117" id="OBd-V7-kS4"/>
+                            <constraint firstItem="DEU-ui-usf" firstAttribute="top" secondItem="Ii1-Xl-WZS" secondAttribute="top" constant="-5" id="buH-r8-xtQ"/>
                             <constraint firstItem="h9D-c8-jo4" firstAttribute="centerX" secondItem="dGv-6Z-Wof" secondAttribute="centerX" id="cVK-v3-xcf"/>
                             <constraint firstItem="h9D-c8-jo4" firstAttribute="top" secondItem="dGv-6Z-Wof" secondAttribute="bottom" constant="26" id="fJk-vZ-l4o"/>
+                            <constraint firstItem="DEU-ui-usf" firstAttribute="leading" secondItem="Ii1-Xl-WZS" secondAttribute="trailing" constant="8" id="nvZ-Vo-GyD"/>
                             <constraint firstItem="Ii1-Xl-WZS" firstAttribute="top" secondItem="HdN-jw-FIU" secondAttribute="bottom" constant="115" id="ola-dC-PXv"/>
                             <constraint firstAttribute="centerX" secondItem="Ii1-Xl-WZS" secondAttribute="centerX" constant="14" id="spZ-mF-wb4"/>
                         </constraints>
@@ -8205,6 +8219,43 @@ and CPR &lt; 10min</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8a-25-TlY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2046" y="-310"/>
+        </scene>
+        <!--More Info Controller-->
+        <scene sceneID="V4t-nE-y2M">
+            <objects>
+                <viewController storyboardIdentifier="MoreInfoController" id="e0B-ua-5jM" customClass="MoreInfoController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="08V-WI-xtx"/>
+                        <viewControllerLayoutGuide type="bottom" id="76P-8Q-9ek"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jxS-GT-0cB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFm-51-S2N">
+                                <rect key="frame" x="84" y="113" width="450" height="163"/>
+                                <string key="text">This is a test label. More information on
+ this piece of the protocol can be 
+easily inserted here. Please edit 
+as you see appropriate. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88567313759999999" green="0.88567313759999999" blue="0.88567313759999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="FFm-51-S2N" secondAttribute="centerX" constant="-9" id="Bym-01-jrg"/>
+                            <constraint firstItem="FFm-51-S2N" firstAttribute="top" secondItem="08V-WI-xtx" secondAttribute="bottom" constant="93" id="m0c-q7-ygB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="FFm-51-S2N" id="8Ly-7l-16u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZK-0T-lRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2781" y="-1057"/>
         </scene>
         <!--Dead End-->
         <scene sceneID="wpm-XP-mUp">
