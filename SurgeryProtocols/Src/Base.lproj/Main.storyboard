@@ -850,7 +850,7 @@ and risk factors for BCVI</string>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcr-ty-OW1">
                                 <rect key="frame" x="-2" y="-2" width="602" height="545"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NeckTraumaImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="IZ6-Kw-bwt">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BSI_8.png" translatesAutoresizingMaskIntoConstraints="NO" id="IZ6-Kw-bwt">
                                         <rect key="frame" x="21" y="32" width="561" height="482"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="482" id="utG-V8-xnU"/>
@@ -1303,7 +1303,7 @@ management</string>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lyg-eA-HqO">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="527"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NeckTraumaImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yue-zf-Den">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BHIP1_9.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yue-zf-Den">
                                         <rect key="frame" x="29" y="45" width="542" height="459"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="459" id="NrO-m1-nPg"/>
@@ -1822,7 +1822,7 @@ Conduct a DPA</string>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05g-8F-Amc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="538"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NeckTraumaImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="A5b-xa-SDn">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BHIP2_10.png" translatesAutoresizingMaskIntoConstraints="NO" id="A5b-xa-SDn">
                                         <rect key="frame" x="20" y="31" width="566" height="488"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="488" id="aJF-Ry-t7P"/>
@@ -2182,7 +2182,7 @@ Omental pack</string>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Diz-6a-we0">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="513"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NeckTraumaImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="mXB-jT-JdX">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PCIP1_12.png" translatesAutoresizingMaskIntoConstraints="NO" id="mXB-jT-JdX">
                                         <rect key="frame" x="18" y="36" width="560" height="452"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="452" id="4cX-vO-kt9"/>
@@ -2393,7 +2393,7 @@ Resuscitation</string>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXe-CR-1hv">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="541"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NeckTraumaImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="tWT-kl-M0k">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PCIP2_13.png" translatesAutoresizingMaskIntoConstraints="NO" id="tWT-kl-M0k">
                                         <rect key="frame" x="20" y="31" width="562" height="489"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="489" id="OjO-ec-AMe"/>
@@ -2767,6 +2767,7 @@ Resuscitation</string>
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
+                                    <action selector="nextButtonPressed:" destination="LaQ-BM-0Ph" eventType="touchUpInside" id="00z-dh-jUS"/>
                                     <action selector="nextButtonPressed:" destination="wfh-uh-Vay" eventType="touchUpInside" id="5sL-w0-AaK"/>
                                     <action selector="nextButtonPressed:" destination="DgO-Ud-REG" eventType="touchUpInside" id="FjH-JX-w68"/>
                                     <action selector="nextButtonPressed:" destination="e4U-Tu-n9W" eventType="touchUpInside" id="KaC-pp-dU7"/>
@@ -2792,6 +2793,11 @@ Resuscitation</string>
                             <constraint firstAttribute="centerX" secondItem="v3B-e4-nDu" secondAttribute="centerX" constant="-24.5" id="wIU-X6-0eI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="BluntHepaticPicker" destination="blX-Uk-I1L" id="hKB-sY-W0q"/>
+                        <outlet property="label" destination="v3B-e4-nDu" id="Cp4-ir-GwG"/>
+                        <outlet property="nextButton" destination="ffw-qi-KoZ" id="DGm-iT-c1k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dd7-8n-I7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3069,7 +3075,7 @@ Extensive peripancreatic fluid</string>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyY-wK-njX">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="535"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NeckTraumaImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Bu-5u-SEl">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BAT_7.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Bu-5u-SEl">
                                         <rect key="frame" x="28" y="35" width="551" height="480"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="480" id="Y9P-dQ-NDy"/>
@@ -3109,6 +3115,7 @@ Extensive peripancreatic fluid</string>
                     <connections>
                         <outlet property="image" destination="6Bu-5u-SEl" id="uNQ-S2-hHd"/>
                         <outlet property="nextButton" destination="Toa-Np-u5h" id="tXx-5p-EOL"/>
+                        <outlet property="scrollView" destination="zyY-wK-njX" id="D3q-eD-2XV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNy-eo-6ka" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -9204,7 +9211,13 @@ at all and 5 is completely likely.</string>
         <image name="06-magnify.png" width="24" height="24"/>
         <image name="111-user.png" width="24" height="21"/>
         <image name="81-dashboard.png" width="28" height="28"/>
+        <image name="BAT_7.png" width="1049" height="1913"/>
+        <image name="BHIP1_9.png" width="1130" height="1924"/>
+        <image name="BHIP2_10.png" width="1125" height="1920"/>
+        <image name="BSI_8.png" width="1092" height="1868"/>
         <image name="NeckTraumaImage.png" width="1085" height="1838"/>
+        <image name="PCIP1_12.png" width="1140" height="1929"/>
+        <image name="PCIP2_13.png" width="1127" height="1988"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="SF0-4a-LFa"/>

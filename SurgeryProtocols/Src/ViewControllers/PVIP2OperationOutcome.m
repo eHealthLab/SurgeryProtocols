@@ -108,7 +108,7 @@
     }
     else {
         delegate.PVIP2OperatioOutcome2=@"Topical/intra-arterial\n papaverine";
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PVIP1ImagingOutcome2"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PVIP2Left"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";

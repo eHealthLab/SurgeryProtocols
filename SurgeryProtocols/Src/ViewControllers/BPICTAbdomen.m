@@ -81,7 +81,7 @@
     
     else {
         
-        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BPIExploraxtoryLaparotomy"];
+        UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BPIExploratoryLaparotomy"];
         
         UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
         barButton.title=@"Back";

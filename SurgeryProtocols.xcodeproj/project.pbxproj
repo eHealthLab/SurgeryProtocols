@@ -89,6 +89,14 @@
 		0533D7461BD181D300B9536A /* Question5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7451BD181D300B9536A /* Question5.m */; };
 		0533D7481BD181DC00B9536A /* Question6.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D7471BD181DC00B9536A /* Question6.m */; };
 		053F057A1BD20A6600443251 /* MoreInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053F05791BD20A6600443251 /* MoreInfoController.m */; };
+		053F05811BD21D6500443251 /* BAT_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 053F057B1BD21D6500443251 /* BAT_7.png */; };
+		053F05821BD21D6500443251 /* BHIP1_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 053F057C1BD21D6500443251 /* BHIP1_9.png */; };
+		053F05831BD21D6500443251 /* BSI_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 053F057D1BD21D6500443251 /* BSI_8.png */; };
+		053F05841BD21D6500443251 /* PCIP2_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 053F057E1BD21D6500443251 /* PCIP2_13.png */; };
+		053F05851BD21D6500443251 /* PVIP2.png in Resources */ = {isa = PBXBuildFile; fileRef = 053F057F1BD21D6500443251 /* PVIP2.png */; };
+		053F05861BD21D6500443251 /* PVIP6.png in Resources */ = {isa = PBXBuildFile; fileRef = 053F05801BD21D6500443251 /* PVIP6.png */; };
+		053F05891BD21FA300443251 /* BHIP2_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 053F05871BD21FA300443251 /* BHIP2_10.png */; };
+		053F058A1BD21FA300443251 /* PCIP1_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 053F05881BD21FA300443251 /* PCIP1_12.png */; };
 		05784A291BB307BE0096703F /* AbdomnialPelvicCT.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */; };
 		05784A2D1BB309350096703F /* AbdPelFast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A2C1BB309350096703F /* AbdPelFast.m */; };
 		05784A2F1BB30B230096703F /* AbdPelRepeatFast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05784A2E1BB30B230096703F /* AbdPelRepeatFast.m */; };
@@ -390,6 +398,14 @@
 		0533D74E1BD1820E00B9536A /* Question6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question6.h; sourceTree = "<group>"; };
 		053F05781BD20A5900443251 /* MoreInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreInfoController.h; sourceTree = "<group>"; };
 		053F05791BD20A6600443251 /* MoreInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInfoController.m; sourceTree = "<group>"; };
+		053F057B1BD21D6500443251 /* BAT_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BAT_7.png; sourceTree = "<group>"; };
+		053F057C1BD21D6500443251 /* BHIP1_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BHIP1_9.png; sourceTree = "<group>"; };
+		053F057D1BD21D6500443251 /* BSI_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BSI_8.png; sourceTree = "<group>"; };
+		053F057E1BD21D6500443251 /* PCIP2_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PCIP2_13.png; sourceTree = "<group>"; };
+		053F057F1BD21D6500443251 /* PVIP2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PVIP2.png; sourceTree = "<group>"; };
+		053F05801BD21D6500443251 /* PVIP6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PVIP6.png; sourceTree = "<group>"; };
+		053F05871BD21FA300443251 /* BHIP2_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BHIP2_10.png; sourceTree = "<group>"; };
+		053F05881BD21FA300443251 /* PCIP1_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PCIP1_12.png; sourceTree = "<group>"; };
 		05784A281BB307BE0096703F /* AbdomnialPelvicCT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbdomnialPelvicCT.m; sourceTree = "<group>"; };
 		05784A2A1BB307CF0096703F /* AbdominalPelvicCT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdominalPelvicCT.h; sourceTree = "<group>"; };
 		05784A2B1BB3092D0096703F /* AbdPelFast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbdPelFast.h; sourceTree = "<group>"; };
@@ -621,6 +637,14 @@
 				05943C6A1BBA80DD005DF268 /* Protocol2.png */,
 				1D0FC6DB1B6B059900302C6E /* UCH_13_Shandra_Wilson_185.Jpeg */,
 				1DCF034A1B8F8688005839B4 /* ResuscitativeThoracotomy_scaled.png */,
+				053F05871BD21FA300443251 /* BHIP2_10.png */,
+				053F05881BD21FA300443251 /* PCIP1_12.png */,
+				053F057B1BD21D6500443251 /* BAT_7.png */,
+				053F057C1BD21D6500443251 /* BHIP1_9.png */,
+				053F057D1BD21D6500443251 /* BSI_8.png */,
+				053F057E1BD21D6500443251 /* PCIP2_13.png */,
+				053F057F1BD21D6500443251 /* PVIP2.png */,
+				053F05801BD21D6500443251 /* PVIP6.png */,
 				1DCF03481B8F8684005839B4 /* BLUNT CEREBROVASCULAR INJURIES_scaled.png */,
 				1DE817A71B80F00400789790 /* BLUNT CEREBROVASCULAR INJURIES .png */,
 				1DE817A81B80F00400789790 /* PenetratingNeckInjuries.png */,
@@ -1171,6 +1195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053F05891BD21FA300443251 /* BHIP2_10.png in Resources */,
 				1D0FC7091B6B059900302C6E /* UCH_8_Mathes_50.Jpeg in Resources */,
 				1D0FC7051B6B059900302C6E /* UCH_6_Alessandro_Paniccia_174.Jpeg in Resources */,
 				1D0FC6FA1B6B059900302C6E /* UCH_13_Shandra_Wilson_519.Jpeg in Resources */,
@@ -1188,14 +1213,19 @@
 				05943C421BB70232005DF268 /* NeckTraumaImage.png in Resources */,
 				1DCF034B1B8F8688005839B4 /* ResuscitativeThoracotomy_scaled.png in Resources */,
 				1D0FC7001B6B059900302C6E /* UCH_4_Nydam_243.Jpeg in Resources */,
+				053F058A1BD21FA300443251 /* PCIP1_12.png in Resources */,
 				1DAB4B6F1B6DCBC1008F186F /* beep.wav in Resources */,
 				1D0FC6FB1B6B059900302C6E /* UCH_14_Maria_Cruz_116.Jpeg in Resources */,
 				05943C711BBA80E5005DF268 /* Protocol6.png in Resources */,
 				1D0FC71A1B6B0CB000302C6E /* pickerGlass.png in Resources */,
+				053F05861BD21D6500443251 /* PVIP6.png in Resources */,
+				053F05851BD21D6500443251 /* PVIP2.png in Resources */,
 				1D0FC71D1B6B0CB000302C6E /* pickerShadows@2x.png in Resources */,
+				053F05841BD21D6500443251 /* PCIP2_13.png in Resources */,
 				1D0FC70B1B6B059900302C6E /* UCH_Nehler_Vascular_194.Jpeg in Resources */,
 				1D0FC70C1B6B059900302C6E /* UCH_Nehler_Vascular_226.Jpeg in Resources */,
 				1D0FC70D1B6B059900302C6E /* UCH_Nehler_Vascular_268.Jpeg in Resources */,
+				053F05831BD21D6500443251 /* BSI_8.png in Resources */,
 				1D0FC6F41B6B059900302C6E /* 81-dashboard.png in Resources */,
 				1DD19E301B617A9D001EA1FC /* Main.storyboard in Resources */,
 				1D0FC6FC1B6B059900302C6E /* UCH_14_Maria_Cruz_200.Jpeg in Resources */,
@@ -1212,10 +1242,12 @@
 				1D0FC6F51B6B059900302C6E /* UCH_12_Jeniann_Yi_326.Jpeg in Resources */,
 				1D0FC7061B6B059900302C6E /* UCH_7_Fullerton_107.Jpeg in Resources */,
 				1D0FC6FE1B6B059900302C6E /* UCH_4_Nydam_173.Jpeg in Resources */,
+				053F05821BD21D6500443251 /* BHIP1_9.png in Resources */,
 				1DCF03471B8F825A005839B4 /* PenetratingNeckInjuries_scaled.png in Resources */,
 				05943C701BBA80E5005DF268 /* Protocol5.png in Resources */,
 				1D0FC6F21B6B059900302C6E /* 06-magnify.png in Resources */,
 				1D0FC70A1B6B059900302C6E /* UCH_9_Meguid_127.Jpeg in Resources */,
+				053F05811BD21D6500443251 /* BAT_7.png in Resources */,
 				1DAB4B701B6DCBC1008F186F /* Voicemail.wav in Resources */,
 				1D0FC7071B6B059900302C6E /* UCH_7_Fullerton_143.Jpeg in Resources */,
 				1D0FC6FF1B6B059900302C6E /* UCH_4_Nydam_207.Jpeg in Resources */,
