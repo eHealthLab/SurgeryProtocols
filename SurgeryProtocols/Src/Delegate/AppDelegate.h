@@ -34,6 +34,12 @@
 @property(strong, nonatomic) NSString *PVIP2OperatioOutcome;
 @property(strong, nonatomic) NSString *PVIP2OperatioOutcome2;
 
+@property(strong, nonatomic) NSString *responseQuestion1;
+@property(strong, nonatomic) NSString *responseQuestion2;
+@property(strong, nonatomic) NSString *responseQuestion3;
+@property(strong, nonatomic) NSString *responseQuestion4;
+@property(strong, nonatomic) NSString *responseQuestion5;
+
 
 @end
 

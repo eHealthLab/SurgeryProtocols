@@ -50,6 +50,29 @@
 {
     return [self.BluntHepaticArray objectAtIndex:row];
 }
+
+- (IBAction)nextButtonPressed:(id)sender {
+    
+    
+    delegate.responseQuestion1 = [self.BluntHepaticArray objectAtIndex:[self.BluntHepaticPicker selectedRowInComponent:0]];
+    
+    NSLog(@"response picked up is: %@", delegate.responseQuestion1);
+    
+    // instantiate the view controller for question 2 now
+    
+    UIViewController *uiViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Question2"];
+    
+    uiViewController.title = @"Question 2";
+    
+    UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
+    barButton.title=@"Back";
+    
+    self.navigationController.navigationBar.topItem.backBarButtonItem = barButton;
+    
+    [self.navigationController pushViewController:uiViewController animated:YES];
+    
+}
+
 @end
 
 

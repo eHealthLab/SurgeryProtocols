@@ -21,6 +21,8 @@
 @property(strong, nonatomic) NSArray *BluntHepaticArray;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
+- (IBAction)nextButtonPressed:(id)sender;
+
 @end
 
 

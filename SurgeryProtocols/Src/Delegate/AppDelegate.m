@@ -35,6 +35,13 @@
     self.PVIP1ImagingType=@"";
     self.PVIP2OperatioOutcome=@"";
     self.PVIP2OperatioOutcome2=@"";
+    
+    self.responseQuestion1=@"";
+    self.responseQuestion2=@"";
+    self.responseQuestion3=@"";
+    self.responseQuestion4=@"";
+    self.responseQuestion5=@"";
+
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -60,6 +67,13 @@
     self.PVIP1ImagingType=@"";
     self.PVIP2OperatioOutcome=@"";
     self.PVIP2OperatioOutcome2=@"";
+    
+    self.responseQuestion1=@"";
+    self.responseQuestion2=@"";
+    self.responseQuestion3=@"";
+    self.responseQuestion4=@"";
+    self.responseQuestion5=@"";
+
 
     return YES;
 }
