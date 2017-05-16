@@ -221,6 +221,7 @@
 		1DE817BA1B810C9500789790 /* Zone1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE817B91B810C9500789790 /* Zone1.m */; };
 		1DE817BE1B810CC600789790 /* Zone2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE817BD1B810CC600789790 /* Zone2.m */; };
 		1DE817C01B810CCF00789790 /* Zone3.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE817BF1B810CCF00789790 /* Zone3.m */; };
+		39C78B2A1ECB6E6E00FA0A60 /* Surgery Protocols Copy in Resources */ = {isa = PBXBuildFile; fileRef = 39C78B291ECB6E6E00FA0A60 /* Surgery Protocols Copy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -604,6 +605,7 @@
 		1DE817BD1B810CC600789790 /* Zone2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zone2.m; sourceTree = "<group>"; };
 		1DE817BF1B810CCF00789790 /* Zone3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zone3.m; sourceTree = "<group>"; };
 		1DE817C11B810CD800789790 /* Zone3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Zone3.h; sourceTree = "<group>"; };
+		39C78B291ECB6E6E00FA0A60 /* Surgery Protocols Copy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Surgery Protocols Copy"; path = "../../Desktop/Surgery Protocols Copy"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -718,6 +720,7 @@
 		1DD19DD61B61794B001EA1FC = {
 			isa = PBXGroup;
 			children = (
+				39C78B291ECB6E6E00FA0A60 /* Surgery Protocols Copy */,
 				1DAB4B711B6DCC9F008F186F /* AVFoundation.framework */,
 				1DD19DE11B61794B001EA1FC /* SurgeryProtocols */,
 				1DD19DFE1B61794B001EA1FC /* SurgeryProtocolsTests */,
@@ -1254,6 +1257,7 @@
 				1D0FC7031B6B059900302C6E /* UCH_5_Schulick_187.Jpeg in Resources */,
 				1DD19DF31B61794B001EA1FC /* Images.xcassets in Resources */,
 				1D0FC6F61B6B059900302C6E /* UCH_13_Shandra_Wilson_106.Jpeg in Resources */,
+				39C78B2A1ECB6E6E00FA0A60 /* Surgery Protocols Copy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
